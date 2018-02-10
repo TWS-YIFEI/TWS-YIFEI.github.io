@@ -2,15 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89376999-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-89376999-1');
-</script>
+  
 
   
   <title>Archives: 2016/11 | YIFEI</title>
@@ -214,6 +206,30 @@
 <script src="/js/script.js"></script>
 
 
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Just go go",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn',
+        path:'/'
+    });
+</script>
 
   </div>
 </body>

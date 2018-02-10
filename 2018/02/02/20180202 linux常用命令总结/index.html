@@ -2,15 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89376999-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-89376999-1');
-</script>
+  
 
   
   <title>Linux常用命令总结 | YIFEI</title>
@@ -206,7 +198,7 @@
 <li>-e：显示当前所有进程</li>
 <li>-f: 树形格式显示进程</li>
 <li>-u: 按照用户名或启动时间顺序来显示进程</li>
-<li>-x: 显示无控制终端的进程<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -aux	<span class="comment">//常用组合</span></span><br><span class="line">ps -ef	<span class="comment">//常用组合</span></span><br></pre></td></tr></table></figure>
+<li>-x: 显示无控制终端的进程<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -aux	<span class="comment">//常用组合</span></span><br><span class="line">ps -ef	<span class="comment">//常用组合</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>常见用法：<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ps -aux	&gt; ps1.txt	<span class="comment">//将进程信息输出到ps1.txt</span></span><br><span class="line">more ps1.txt	<span class="comment">//用more命令查看</span></span><br><span class="line"></span><br><span class="line">ps -aux | <span class="keyword">grep</span> <span class="string">'==='</span> 	<span class="comment">//借助grep过滤出满足条件的进程</span></span><br></pre></td></tr></table></figure></p>
@@ -252,7 +244,13 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/02/20180202 linux常用命令总结/" data-id="cjdg2qs9x0012i0bj5elaj5sp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/02/02/20180202 linux常用命令总结/" data-id="cjdgrehkd0012d0bjv1ans8zn" class="article-share-link">Share</a>
+      
+      
+        <a href="/2018/02/02/20180202 linux常用命令总结/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2018/02/02/20180202 linux常用命令总结/" itemprop="commentCount"></span>
+          Comments
+        </a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
@@ -274,6 +272,11 @@
   
 </article>
 
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
 </section>
         
           <aside id="sidebar">
@@ -374,6 +377,30 @@
 <script src="/js/script.js"></script>
 
 
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Just go go",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn',
+        path:'/'
+    });
+</script>
 
   </div>
 </body>
