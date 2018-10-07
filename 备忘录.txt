@@ -4,3 +4,4 @@ image！！！的图片
 google analytics  主题下/partial...googleanalytics.js
 评论系统valine
 主题： 主题里的图片、主题配置
+_posts下面文件夹是对应文章的图片备份
