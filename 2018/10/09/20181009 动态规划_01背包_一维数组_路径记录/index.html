@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'true', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89376999-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89376999-1');
+</script>
+
+
+
+  
+  <title>动态规划_01背包_一维数组_路径记录 | YIFEI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前言　　之前对0-1背包就理解的不是很好，并且时间长了会忘的。　　这次又重新复习一下，理解了好几个以前没理解的点。">
+<meta name="keywords" content="总结,01背包,动态规划">
+<meta property="og:type" content="article">
+<meta property="og:title" content="动态规划_01背包_一维数组_路径记录">
+<meta property="og:url" content="http://yoursite.com/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/index.html">
+<meta property="og:site_name" content="YIFEI">
+<meta property="og:description" content="前言　　之前对0-1背包就理解的不是很好，并且时间长了会忘的。　　这次又重新复习一下，理解了好几个以前没理解的点。">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-09T08:36:01.598Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="动态规划_01背包_一维数组_路径记录">
+<meta name="twitter:description" content="前言　　之前对0-1背包就理解的不是很好，并且时间长了会忘的。　　这次又重新复习一下，理解了好几个以前没理解的点。">
+  
+    <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YIFEI</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">多一份不为什么的坚持！</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/links">Links</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-20181009 动态规划_01背包_一维数组_路径记录" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/" class="article-date">
+  <time datetime="2018-10-08T16:00:01.000Z" itemprop="datePublished">2018-10-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/ACM-Algorithm/">ACM_&_Algorithm</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      动态规划_01背包_一维数组_路径记录
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>前言<br>　　之前对0-1背包就理解的不是很好，并且时间长了会忘的。<br>　　这次又重新复习一下，理解了好几个以前没理解的点。<br>    <a id="more"></a><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br></pre></td><td class="code"><pre><span class="line">题目</span><br><span class="line">　　现有n件物品，每一件的重量是w[i],价值是v[i]。用一个容量为c的背包来装这些东西，</span><br><span class="line">问如何选择物品才能使装的物品价值最大？（每件物品只能放一次）</span><br><span class="line">思路</span><br><span class="line">　　我们会想该放哪i件物品到容量c的背包中呢。</span><br><span class="line">　　我们可以用dp(i,j)来表示前i件物品放入容量j的背包中地最大价值。针对第i件物品,我们要先考虑</span><br><span class="line">　　背包容量是否大于物品容量：</span><br><span class="line">　　　　如果小于：那就不放，dp(i,j)=dp(i<span class="number">-1</span>,j)。</span><br><span class="line">　　　　如果大于：再考虑是否要放入：</span><br><span class="line">　　　　　　　　这个时候要从放或不放第i件物品中选择一个价值更大的：dp(i,j)=max&#123; dp(i<span class="number">-1</span>,j) , dp(i<span class="number">-1</span>,j-w(i))+v(i) &#125;</span><br><span class="line">	另外，起始值dp[<span class="number">0</span>][j]=dp[i][<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line">算法实现</span><br><span class="line">　　首先用二维数组dp(i,j)变成dp[i][j]。</span><br><span class="line">　　dp[i][j]有好多的状态啊，能有n*c个，这么多状态按照怎样的顺序来计算呢，所以需要找出前后关系来。</span><br><span class="line">　　可以看出每一个状态都是跟上一个状态有关的，要求装i件时的价值需要知道装i<span class="number">-1</span>件时候的最大价值，所以得有个外层循环i:<span class="number">0.</span>....n</span><br><span class="line">　　每一次都是只需要dp[i<span class="number">-1</span>][<span class="number">1</span>,<span class="number">2</span>,<span class="number">3.</span>....]中的值，所以对于j来说呢好像顺序无所谓了。</span><br><span class="line">　　由此可以写出代码：</span><br><span class="line">	-----------------------------------------</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line">	<span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> dp[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> T;</span><br><span class="line">		<span class="keyword">int</span> M;</span><br><span class="line">		<span class="keyword">int</span> maxx=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> t[<span class="number">1111</span>];</span><br><span class="line">		<span class="keyword">int</span> p[<span class="number">1111</span>];</span><br><span class="line">		<span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;T,&amp;M)!=EOF)&#123;</span><br><span class="line">			maxx=<span class="number">0</span>;</span><br><span class="line">			<span class="built_in">memset</span>(dp,<span class="number">0</span>,<span class="keyword">sizeof</span>(dp));</span><br><span class="line">			<span class="built_in">memset</span>(path,<span class="number">0</span>,<span class="keyword">sizeof</span>(path));</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=M;i++)&#123;</span><br><span class="line">				<span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;t[i],&amp;p[i]);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=M;i++)&#123;</span><br><span class="line">				<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=T;j++)&#123;  <span class="comment">//因为j的顺序无所谓，for(int j=T;j&gt;=1;j--)也可以</span></span><br><span class="line">					<span class="keyword">if</span>(j&gt;=t[i])&#123;</span><br><span class="line">						dp[i][j]=max(dp[i<span class="number">-1</span>][j],dp[i<span class="number">-1</span>][j-t[i]]+p[i]);       </span><br><span class="line">					&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">						dp[i][j]=dp[i<span class="number">-1</span>][j];</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,dp[M][T]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	-----------------------------------------</span><br><span class="line">打印状态矩阵dp</span><br><span class="line">	样例：</span><br><span class="line">		<span class="number">10</span> <span class="number">5</span><span class="comment">//容量 物品数量</span></span><br><span class="line">		<span class="number">2</span> <span class="number">6</span><span class="comment">//第一件物品的 重量 价值</span></span><br><span class="line">		<span class="number">2</span> <span class="number">3</span></span><br><span class="line">		<span class="number">6</span> <span class="number">5</span></span><br><span class="line">		<span class="number">5</span> <span class="number">4</span></span><br><span class="line">		<span class="number">4</span> <span class="number">6</span></span><br><span class="line"></span><br><span class="line">	  | 	<span class="number">1</span>    <span class="number">2</span>   <span class="number">3</span>    <span class="number">4</span>    <span class="number">5</span>    <span class="number">6</span>    <span class="number">7</span>    <span class="number">8</span>    <span class="number">9</span>    <span class="number">10</span></span><br><span class="line">	--+----------------------------------------------------</span><br><span class="line">	<span class="number">1</span> |	<span class="number">0</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span></span><br><span class="line">	<span class="number">2</span> |	<span class="number">0</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span></span><br><span class="line">	<span class="number">3</span> |	<span class="number">0</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">11</span>   <span class="number">11</span>   <span class="number">14</span></span><br><span class="line">	<span class="number">4</span> |	<span class="number">0</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">10</span>   <span class="number">11</span>   <span class="number">13</span>   <span class="number">14</span></span><br><span class="line">	<span class="number">5</span> |	<span class="number">0</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">12</span>   <span class="number">12</span>   <span class="number">15</span>   <span class="number">15</span>   <span class="number">15</span></span><br><span class="line"></span><br><span class="line">	照着这个矩阵手动推算一遍会加深理解,可以按照i：<span class="number">0.</span>..n,j:<span class="number">0.</span>..c的顺序。</span><br><span class="line">	也可以按照i:<span class="number">0.</span>..n,j:c..<span class="number">.0</span>的顺序，(按照这种顺序推算，也许就可以发现后面讲的优化为一维数组的方法。)</span><br><span class="line"></span><br><span class="line">路径记录</span><br><span class="line">	之前不是说每一件物品都有放或不放两种选择吗，想要记录路径就得在放的时候给标记一下。</span><br><span class="line">	关键代码如下：</span><br><span class="line">	----------------------</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=M;i++)&#123;</span><br><span class="line">		<span class="comment">//for(int j=1;j&lt;=T;j++)&#123;</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=T;j&gt;=<span class="number">1</span>;j--)&#123;</span><br><span class="line">			<span class="keyword">if</span>(j&gt;=t[i])&#123;</span><br><span class="line">				dp[i][j]=max(dp[i<span class="number">-1</span>][j],dp[i<span class="number">-1</span>][j-t[i]]+p[i]);</span><br><span class="line">				<span class="keyword">if</span>(dp[i<span class="number">-1</span>][j]&lt;(dp[i<span class="number">-1</span>][j-t[i]]+p[i]))&#123;<span class="comment">//记录路径</span></span><br><span class="line">					path[i][j]=<span class="number">1</span>;<span class="comment">//记录路径</span></span><br><span class="line">				&#125;<span class="comment">//记录路径</span></span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				dp[i][j]=dp[i<span class="number">-1</span>][j];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	----------------------</span><br><span class="line">路径输出</span><br><span class="line">	下面是路径矩阵</span><br><span class="line">	<span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span></span><br><span class="line">	<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span></span><br><span class="line">	<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span></span><br><span class="line">	<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span></span><br><span class="line">	<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span></span><br><span class="line">	我们需要从这个矩阵中找出选取的哪些物品，应当从最后一个状态往前找。</span><br><span class="line">	比如说有多条从一个点出发的路径，你想要找到达顶点a的路径，肯定是从a往前这一条路找过去就行了。</span><br><span class="line">	代码如下：</span><br><span class="line">	----------------------</span><br><span class="line">	<span class="keyword">int</span> i=M,j=T;<span class="comment">//物品数量 背包容量</span></span><br><span class="line">	<span class="keyword">while</span>(i&amp;&amp;j)&#123;</span><br><span class="line">		<span class="keyword">if</span>(path[i][j]==<span class="number">1</span>)&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d "</span>,i);</span><br><span class="line">			j-=t[i];</span><br><span class="line">		&#125;</span><br><span class="line">		i--;</span><br><span class="line">	&#125;</span><br><span class="line">	---------------------</span><br><span class="line"></span><br><span class="line">一维数组优化</span><br><span class="line">	还是以上面的数据为例：</span><br><span class="line">	  | 	<span class="number">1</span>    <span class="number">2</span>   <span class="number">3</span>    <span class="number">4</span>    <span class="number">5</span>    <span class="number">6</span>    <span class="number">7</span>    <span class="number">8</span>    <span class="number">9</span>    <span class="number">10</span></span><br><span class="line">	--+----------------------------------------------------</span><br><span class="line">	<span class="number">1</span> |	<span class="number">0</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">6</span></span><br><span class="line">	<span class="number">2</span> |	<span class="number">0</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span></span><br><span class="line">	<span class="number">3</span> |	<span class="number">0</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">11</span>   <span class="number">11</span>   <span class="number">14</span></span><br><span class="line">	<span class="number">4</span> |	<span class="number">0</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">10</span>   <span class="number">11</span>   <span class="number">13</span>   <span class="number">14</span></span><br><span class="line">	<span class="number">5</span> |	<span class="number">0</span>    <span class="number">6</span>    <span class="number">6</span>    <span class="number">9</span>    <span class="number">9</span>    <span class="number">12</span>   <span class="number">12</span>   <span class="number">15</span>   <span class="number">15</span>   <span class="number">15</span></span><br><span class="line">	观察这个矩阵，会发现某一个状态dp[i][j]跟两个元素有关，一个是它的正上方的元素，另一个是它的上一行的左边的某一个元素</span><br><span class="line">	上面不是说过内层循环j可以从T...<span class="number">.0</span>吗，也就是j的顺序是无所谓的。</span><br><span class="line">	那么我们可以用这种顺序来观察上面的矩阵，</span><br><span class="line">	当我们计算dp[<span class="number">2</span>][<span class="number">10</span>]的时候，dp[<span class="number">2</span>][<span class="number">10</span>]=max&#123;dp[<span class="number">1</span>][<span class="number">10</span>],dp[<span class="number">1</span>][<span class="number">10</span><span class="number">-2</span>]+<span class="number">3</span>&#125;,结果是<span class="number">9</span>，这时候可以不用把<span class="number">9</span>写在第二行里，</span><br><span class="line">	我们可以把它写在dp[<span class="number">1</span>][<span class="number">10</span>]的位置(其实这个位置原来的数据已经没用了，因为后面任何一个状态都不会再用刀这个值了)</span><br><span class="line">	同样一次类推，把数据都写在第一行。</span><br><span class="line">	就这样每一行从后往前计算，只用一个一维数组就够了。</span><br><span class="line">	(如果每一行从前往后计算是不可以用一维数组的，比如在计算完dp[<span class="number">2</span>][<span class="number">4</span>]的时候，如果覆盖掉dp[<span class="number">1</span>][<span class="number">4</span>]的值，</span><br><span class="line">	但是再计算后面的dp[<span class="number">2</span>][*]的时候是会用到那个值的)</span><br><span class="line">	最终代码：</span><br><span class="line">------------------------------------------------</span><br><span class="line">#include&lt;cstdio&gt;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;cstring&gt;</span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> dp[<span class="number">1005</span>];</span><br><span class="line"><span class="keyword">int</span> path[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    <span class="keyword">int</span> M;</span><br><span class="line">    <span class="keyword">int</span> t[<span class="number">1111</span>];</span><br><span class="line">    <span class="keyword">int</span> p[<span class="number">1111</span>];</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;T,&amp;M)!=EOF)&#123;</span><br><span class="line">        <span class="built_in">memset</span>(dp,<span class="number">0</span>,<span class="keyword">sizeof</span>(dp));</span><br><span class="line">        <span class="built_in">memset</span>(path,<span class="number">0</span>,<span class="keyword">sizeof</span>(path));</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=M;i++)&#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;t[i],&amp;p[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=M;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=T;j&gt;=<span class="number">1</span>;j--)&#123;</span><br><span class="line">                <span class="keyword">if</span>(j&gt;=t[i]&amp;&amp;dp[j]&lt;dp[j-t[i]]+p[i])&#123;</span><br><span class="line">                    path[i][j]=<span class="number">1</span>;</span><br><span class="line">                    dp[j]=dp[j-t[i]]+p[i];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,dp[T]);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=M;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=T;j++)&#123;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d "</span>,path[i][j]);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> i=M,j=T;</span><br><span class="line">        <span class="keyword">while</span>(i&amp;&amp;j)&#123;</span><br><span class="line">            <span class="keyword">if</span>(path[i][j]==<span class="number">1</span>)&#123;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d "</span>,i);</span><br><span class="line">                j-=t[i];</span><br><span class="line">            &#125;</span><br><span class="line">            i--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">10 5</span></span><br><span class="line"><span class="comment">2 6</span></span><br><span class="line"><span class="comment">2 3</span></span><br><span class="line"><span class="comment">6 5</span></span><br><span class="line"><span class="comment">5 4</span></span><br><span class="line"><span class="comment">4 6</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">---------------------------------------------------------</span><br></pre></td></tr></table></figure></p>
+<p>欢迎与我分享你的经验和见解。<br>转载请注明出处：<a href="http://taowusheng.cn/" target="_blank" rel="noopener">http://taowusheng.cn/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/" data-id="cjn1gi2sc001wpwbjqqmkmcy4" class="article-share-link">Share</a>
+      
+      
+        <a href="/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/01背包/">01背包</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/动态规划/">动态规划</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/总结/">总结</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/10/08/20181008 kali常用配置/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">kali常用配置</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM-Algorithm/">ACM_&_Algorithm</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CTF/">CTF</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA笔记/">JAVA笔记</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/kali/">kali</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思考/">思考</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/总结/">总结</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活随笔/">生活随笔</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/01背包/" style="font-size: 10px;">01背包</a> <a href="/tags/ACM/" style="font-size: 17.5px;">ACM</a> <a href="/tags/CTF/" style="font-size: 10px;">CTF</a> <a href="/tags/GUI/" style="font-size: 10px;">GUI</a> <a href="/tags/IO/" style="font-size: 10px;">IO</a> <a href="/tags/JAVA/" style="font-size: 20px;">JAVA</a> <a href="/tags/Linux/" style="font-size: 12.5px;">Linux</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/VMware/" style="font-size: 10px;">VMware</a> <a href="/tags/bellman/" style="font-size: 10px;">bellman</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/floyd/" style="font-size: 10px;">floyd</a> <a href="/tags/jdbc/" style="font-size: 10px;">jdbc</a> <a href="/tags/kali/" style="font-size: 10px;">kali</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/mail服务器/" style="font-size: 10px;">mail服务器</a> <a href="/tags/md5注入/" style="font-size: 10px;">md5注入</a> <a href="/tags/postfix/" style="font-size: 10px;">postfix</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/北京工业大学/" style="font-size: 10px;">北京工业大学</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/年终总结/" style="font-size: 10px;">年终总结</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a> <a href="/tags/思考/" style="font-size: 15px;">思考</a> <a href="/tags/总结/" style="font-size: 15px;">总结</a> <a href="/tags/挑战程序设计竞赛/" style="font-size: 12.5px;">挑战程序设计竞赛</a> <a href="/tags/摄影/" style="font-size: 10px;">摄影</a> <a href="/tags/数据库/" style="font-size: 12.5px;">数据库</a> <a href="/tags/最短路径算法/" style="font-size: 10px;">最短路径算法</a> <a href="/tags/生活随笔/" style="font-size: 10px;">生活随笔</a> <a href="/tags/碎碎念/" style="font-size: 10px;">碎碎念</a> <a href="/tags/立flag/" style="font-size: 10px;">立flag</a> <a href="/tags/经历/" style="font-size: 10px;">经历</a> <a href="/tags/网络编程/" style="font-size: 10px;">网络编程</a> <a href="/tags/考研/" style="font-size: 10px;">考研</a> <a href="/tags/计划/" style="font-size: 10px;">计划</a> <a href="/tags/计算机技术/" style="font-size: 10px;">计算机技术</a> <a href="/tags/读书笔记/" style="font-size: 12.5px;">读书笔记</a> <a href="/tags/面向对象/" style="font-size: 10px;">面向对象</a> <a href="/tags/黑客与画家/" style="font-size: 10px;">黑客与画家</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/">动态规划_01背包_一维数组_路径记录</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/08/20181008 kali常用配置/">kali常用配置</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/07/20181007 实验吧_后台登录/">实验吧_后台登录</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/25/20180425 java_多线程/">java多线程</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/23/20180423 javaUDP/">javaUDP</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">visiters</h3>
+    <div class="widget">
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=534a4dn9fi8&amp;m=0c&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;cw=ffffff&amp;cb=000000" async="async"></script>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016-2018 Tao WuSheng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/links" class="mobile-nav-link">Links</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Please leave your footprints...",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
+
+  </div>
+</body>
+</html>
