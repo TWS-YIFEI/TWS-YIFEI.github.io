@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'true', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89376999-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89376999-1');
+</script>
+
+
+
+  
+  <title>20181027 密码学知识总结 | YIFEI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="[toc] 前言　　很喜欢这种开放性题目的作业，每个人可以根据自己的兴趣来选择相应的题目。也是一个锻炼自主学习能力的机会。　　学习密码学用图片可以很难直观地展现算法的流程，推荐一本书《图解密码技术》，书中有大量的图片，可以用来入门。 1 现代密码学1.1 对称密码体制1.1.1 简介　　之所以叫对称密码，是因为加密秘钥与解密秘钥是同一个。这样通讯双方只需要掌握一个秘钥就可以，并且在加密解密的硬件">
+<meta name="keywords" content="密码学,密码体制,公钥密码,对称密码,RSA,DES,SHA">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20181027 密码学知识总结">
+<meta property="og:url" content="http://yoursite.com/2018/10/27/20181027 密码学知识总结/index.html">
+<meta property="og:site_name" content="YIFEI">
+<meta property="og:description" content="[toc] 前言　　很喜欢这种开放性题目的作业，每个人可以根据自己的兴趣来选择相应的题目。也是一个锻炼自主学习能力的机会。　　学习密码学用图片可以很难直观地展现算法的流程，推荐一本书《图解密码技术》，书中有大量的图片，可以用来入门。 1 现代密码学1.1 对称密码体制1.1.1 简介　　之所以叫对称密码，是因为加密秘钥与解密秘钥是同一个。这样通讯双方只需要掌握一个秘钥就可以，并且在加密解密的硬件">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-28T07:12:14.171Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="20181027 密码学知识总结">
+<meta name="twitter:description" content="[toc] 前言　　很喜欢这种开放性题目的作业，每个人可以根据自己的兴趣来选择相应的题目。也是一个锻炼自主学习能力的机会。　　学习密码学用图片可以很难直观地展现算法的流程，推荐一本书《图解密码技术》，书中有大量的图片，可以用来入门。 1 现代密码学1.1 对称密码体制1.1.1 简介　　之所以叫对称密码，是因为加密秘钥与解密秘钥是同一个。这样通讯双方只需要掌握一个秘钥就可以，并且在加密解密的硬件">
+  
+    <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YIFEI</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">多一份不为什么的坚持！</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/links">Links</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-20181027 密码学知识总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/27/20181027 密码学知识总结/" class="article-date">
+  <time datetime="2018-10-26T16:00:01.000Z" itemprop="datePublished">2018-10-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/notes/">notes</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      20181027 密码学知识总结
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>[toc]</p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>　　很喜欢这种开放性题目的作业，每个人可以根据自己的兴趣来选择相应的题目。也是一个锻炼自主学习能力的机会。<br>　　学习密码学用图片可以很难直观地展现算法的流程，推荐一本书《图解密码技术》，书中有大量的图片，可以用来入门。</p>
+<h1 id="1-现代密码学"><a href="#1-现代密码学" class="headerlink" title="1 现代密码学"></a>1 现代密码学</h1><h2 id="1-1-对称密码体制"><a href="#1-1-对称密码体制" class="headerlink" title="1.1 对称密码体制"></a>1.1 对称密码体制</h2><h3 id="1-1-1-简介"><a href="#1-1-1-简介" class="headerlink" title="1.1.1 简介"></a>1.1.1 简介</h3><p>　　之所以叫对称密码，是因为加密秘钥与解密秘钥是同一个。这样通讯双方只需要掌握一个秘钥就可以，并且在加密解密的硬件和软件实现上更加容易和高效。</p>
+<h3 id="1-1-2-优缺点"><a href="#1-1-2-优缺点" class="headerlink" title="1.1.2 优缺点"></a>1.1.2 优缺点</h3><h4 id="1-1-2-1-优点"><a href="#1-1-2-1-优点" class="headerlink" title="1.1.2.1 优点"></a>1.1.2.1 优点</h4><ul>
+<li>算法公开</li>
+<li>计算量小</li>
+<li>加密速度快</li>
+<li>加密效率高<h4 id="1-1-2-2-缺点"><a href="#1-1-2-2-缺点" class="headerlink" title="1.1.2.2 缺点"></a>1.1.2.2 缺点</h4></li>
+<li>双方使用同样钥匙，安全性得不到保证</li>
+<li>密钥管理困难，使用成本较高<h3 id="1-1-3-DES"><a href="#1-1-3-DES" class="headerlink" title="1.1.3 DES"></a>1.1.3 DES</h3><h4 id="1-1-3-1-简介"><a href="#1-1-3-1-简介" class="headerlink" title="1.1.3.1 简介"></a>1.1.3.1 简介</h4>　　DES全称为Data Encryption Standard，即数据加密标准，是一种使用密钥加密的块算法，1977年被美国联邦政府的国家标准局确定为联邦资料处理标准（FIPS），并授权在非密级政府通信中使用，随后该算法在国际上广泛流传开来。传统的DES只有56位的密钥。<h4 id="1-1-3-2-步骤"><a href="#1-1-3-2-步骤" class="headerlink" title="1.1.3.2 步骤"></a>1.1.3.2 步骤</h4>　　DES是一种16轮循环的加密算法，并且每一次读入64比特明文。下面是一轮循环的基本步骤：</li>
+<li>将输入的数据等分为左右两部分。</li>
+<li>将右侧数据直接发送到输出的右侧。</li>
+<li>将右侧数据发送到轮函数。</li>
+<li>轮函数根据右侧数据和子密钥，计算出一串比特序列。</li>
+<li>将上一步得到的比特序列与左侧数据进行XOR运算，并将结果作为加密后的左侧。<h4 id="1-1-3-3-XOR"><a href="#1-1-3-3-XOR" class="headerlink" title="1.1.3.3 XOR"></a>1.1.3.3 XOR</h4>　　由于加密解密是同样的密钥，并且为了方便和效率，DES的加密和解密可以用同样的结构来实现，于是正好可以利用异或(同0异1)运算的特性。例如：<blockquote>
+<p>十进制数字 6　　0110<br>异或 5　　　　　0101<br>结果 3　　　　　0011<br>再异或 5　　　　0101<br>结果 6　　　　　0110</p>
+</blockquote>
+</li>
+</ul>
+<p>　　可以看到异或两次之后，又恢复了原来的数字，其中第一次异或5可以看作加密的过程，第二次异或5就相当于解密的过程。</p>
+<h3 id="1-1-4-3DES"><a href="#1-1-4-3DES" class="headerlink" title="1.1.4 3DES"></a>1.1.4 3DES</h3><p>　　由于随着计算能力的提高，DES已经可以在现实地时间内被暴力破解，因此需要一种来替代DES的分组密码，于是三重DES被开发出来。简单地说，三重DES就是将DES重复三次，不过并不是进行三次加密，而是加密→解密→加密的过程。当三次操作的密钥相同时，3DES就变成了普通的DES，这一设计实现了对DES的兼容。当三次的密钥都不相同时才是真正的3DES。</p>
+<h3 id="1-1-5-AES"><a href="#1-1-5-AES" class="headerlink" title="1.1.5 AES"></a>1.1.5 AES</h3><h4 id="1-1-5-1-简介"><a href="#1-1-5-1-简介" class="headerlink" title="1.1.5.1 简介"></a>1.1.5.1 简介</h4><p>　　由于3DES的处理速度不高，而且在安全性方面出现一些问题，出现了一种新的对称密码标准AES。AES是采用公开竞选的方式进行的，通过竞争来实现标准化，并且密码算法可以得到所有人的评审。最终AES选定了名为Rijndael的对称密码算法。<br>　　Rijndael的分组长度为128比特，秘钥长度有128、192、256比特三种。</p>
+<h4 id="1-1-5-2-步骤-以128比特为例"><a href="#1-1-5-2-步骤-以128比特为例" class="headerlink" title="1.1.5.2 步骤(以128比特为例)"></a>1.1.5.2 步骤(以128比特为例)</h4><ul>
+<li>将128比特分为4组，每组四个字节。</li>
+<li>将每一组的字节按照一定规律打乱。</li>
+<li>与轮密钥进行XOR处理输出。</li>
+</ul>
+<h2 id="1-2-公钥密码体制"><a href="#1-2-公钥密码体制" class="headerlink" title="1.2 公钥密码体制"></a>1.2 公钥密码体制</h2><h3 id="1-2-1-简介"><a href="#1-2-1-简介" class="headerlink" title="1.2.1 简介"></a>1.2.1 简介</h3><p>　　在对称密码中，由于加密解密的密钥是相同的，所以需要向接受者配送密钥，这一问题称为密钥配送问题。于是产生了公钥密码。<br>　　在公钥密码中有公钥和私钥，发送者用公钥加密，接受者用私钥解密。其中公钥可以公开，私钥是保密的。与对称密码区分开来，公钥密码也叫非对称密码。</p>
+<h3 id="1-2-2-优缺点"><a href="#1-2-2-优缺点" class="headerlink" title="1.2.2 优缺点"></a>1.2.2 优缺点</h3><h4 id="1-2-2-1-优点"><a href="#1-2-2-1-优点" class="headerlink" title="1.2.2.1 优点"></a>1.2.2.1 优点</h4><ul>
+<li>方便解决密钥分发问题</li>
+<li>可以应用于签名，进行身份验证</li>
+<li>基于数学难题，比较安全<h4 id="1-2-2-2-缺点"><a href="#1-2-2-2-缺点" class="headerlink" title="1.2.2.2 缺点"></a>1.2.2.2 缺点</h4></li>
+<li>速度较慢</li>
+<li>需要安全保存私钥，引入新的问题</li>
+<li>有公钥认证问题<h3 id="1-2-3-数学原理"><a href="#1-2-3-数学原理" class="headerlink" title="1.2.3 数学原理"></a>1.2.3 数学原理</h3><h4 id="1-2-3-1-对数-amp-离散对数"><a href="#1-2-3-1-对数-amp-离散对数" class="headerlink" title="1.2.3.1 对数&amp;离散对数"></a>1.2.3.1 对数&amp;离散对数</h4></li>
+<li>7<sup>□</sup>=49 我们可以很快求出□中的数字。</li>
+<li>7<sup>□</sup>mod 13=8，此时我们想要求□就需要进行多次尝试</li>
+<li>7<sup>0</sup>mod 13=1</li>
+<li>7<sup>1</sup>mod 13=7</li>
+<li>··· ···</li>
+<li>7<sup>9</sup>mod 13=8</li>
+<li>当数字很大时，求离散对数是很困难的。<h3 id="1-2-4-RSA"><a href="#1-2-4-RSA" class="headerlink" title="1.2.4 RSA"></a>1.2.4 RSA</h3><h4 id="1-2-4-1-简介"><a href="#1-2-4-1-简介" class="headerlink" title="1.2.4.1 简介"></a>1.2.4.1 简介</h4>　　RSA是一种公钥密码算法，名字是由三位开发者的姓氏首字母组成。这种算法还可以用于数字签名。<h4 id="1-2-4-2-加解密"><a href="#1-2-4-2-加解密" class="headerlink" title="1.2.4.2 加解密"></a>1.2.4.2 加解密</h4></li>
+<li>密文=明文<sup>E</sup> mod N　　加密</li>
+<li>明文=密文<sup>D</sup> mod N　　解密</li>
+<li>其中E与N的组合就是公钥</li>
+<li>D与N的组合是私钥</li>
+<li>当然D与E是有着紧密联系的<h4 id="1-2-4-3-密钥对生成"><a href="#1-2-4-3-密钥对生成" class="headerlink" title="1.2.4.3 密钥对生成"></a>1.2.4.3 密钥对生成</h4></li>
+<li>求N：准备两个很大的质数p,q，N=p*q</li>
+<li>求L：L=lcm（p-1,q-1)</li>
+<li>求E：使用随机数生成器得到E，使其满足(1&lt;E&lt;L) &amp;&amp; (gcd(E,L)=1)</li>
+<li>求D：求出D，使其满足(1&lt;D&lt;L) &amp;&amp; (E*D mod L =1)</li>
+<li>(E,N)和(D,N)分别为公私钥。<h4 id="1-2-4-4-对RSA的攻击"><a href="#1-2-4-4-对RSA的攻击" class="headerlink" title="1.2.4.4 对RSA的攻击"></a>1.2.4.4 对RSA的攻击</h4></li>
+<li>暴力破解，目前还没有可行的算法。</li>
+<li>中间人攻击<h3 id="1-2-5-其他公钥密码"><a href="#1-2-5-其他公钥密码" class="headerlink" title="1.2.5 其他公钥密码"></a>1.2.5 其他公钥密码</h3><h4 id="1-2-5-1-ELGamal"><a href="#1-2-5-1-ELGamal" class="headerlink" title="1.2.5.1 ELGamal"></a>1.2.5.1 ELGamal</h4>　　是由Taher ELGamal设计的公钥算法。RSA是利用了质因数分解的困难度，而ELGamal方式是利用mod N下求离散对数的困难度。<br>　　这种方式有一个缺点，就是经过加密后的密文会变成明文的两倍。<h4 id="1-2-5-2-Rabin"><a href="#1-2-5-2-Rabin" class="headerlink" title="1.2.5.2 Rabin"></a>1.2.5.2 Rabin</h4>　　是由Rabin设计的算法，利用了mod N下求平方根的困难度。<h4 id="1-2-5-3-椭圆曲线密码"><a href="#1-2-5-3-椭圆曲线密码" class="headerlink" title="1.2.5.3 椭圆曲线密码"></a>1.2.5.3 椭圆曲线密码</h4>　　是最近比较受关注的一种公钥密码算法，他的密钥长度比RSA短。它是通过将椭圆曲线上的特定点进行特殊的乘法运算来实现的，李永乐乘法运算的逆运算非常困难这个特性。<h2 id="1-3-量子密码体制"><a href="#1-3-量子密码体制" class="headerlink" title="1.3 量子密码体制"></a>1.3 量子密码体制</h2><h3 id="1-1-1-简介-1"><a href="#1-1-1-简介-1" class="headerlink" title="1.1.1 简介"></a>1.1.1 简介</h3>　　有望成为“完美的密码技术”，利用光子的量子特性来实现通信，并且利用了以下两个事实：<br>　　（1）无法准确测出光子的偏振方向。<br>　　（2）测量行为本身会导致光子的状态发生改变。<h3 id="1-1-2-特点"><a href="#1-1-2-特点" class="headerlink" title="1.1.2 特点"></a>1.1.2 特点</h3></li>
+<li>有望使一次性密码本成为可行。</li>
+<li>以前的密码将会被全部破译。</li>
+<li>理论完美，但其中有不完美的人类。<h2 id="1-4-其他技术"><a href="#1-4-其他技术" class="headerlink" title="1.4 其他技术"></a>1.4 其他技术</h2><h3 id="1-4-1-单向散列函数"><a href="#1-4-1-单向散列函数" class="headerlink" title="1.4.1 单向散列函数"></a>1.4.1 单向散列函数</h3><h4 id="1-4-1-1-概念"><a href="#1-4-1-1-概念" class="headerlink" title="1.4.1.1 概念"></a>1.4.1.1 概念</h4></li>
+<li>消息→单向散列函数→散列值</li>
+<li>根据任意长度消息计算出固定长度的散列值</li>
+<li>能够快速计算出散列值</li>
+<li>弱抗碰撞性：找到与该条消息散列值相同的另一条消息是很困难的。</li>
+<li>强抗碰撞性：找到两条散列值相同的消息(山大王小云破解了MD5的这一特性)</li>
+<li>单向性</li>
+<li>解决消息的完整性(一致性)问题<h4 id="1-4-1-2-应用"><a href="#1-4-1-2-应用" class="headerlink" title="1.4.1.2 应用"></a>1.4.1.2 应用</h4></li>
+<li>检测消息是否被篡改</li>
+<li>用于基于口令的加密</li>
+<li>消息认证码</li>
+<li>数字签名</li>
+<li>伪随机数生成器<h4 id="1-4-1-3-具体实例"><a href="#1-4-1-3-具体实例" class="headerlink" title="1.4.1.3 具体实例"></a>1.4.1.3 具体实例</h4></li>
+<li>MD4、MD5</li>
+<li>SHA-1、SHA-256、SHA-384、SHA-512<h4 id="1-4-1-4-攻击"><a href="#1-4-1-4-攻击" class="headerlink" title="1.4.1.4 攻击"></a>1.4.1.4 攻击</h4></li>
+<li>暴力破解</li>
+<li>破解强坑碰撞性<h3 id="1-4-2-消息认证码"><a href="#1-4-2-消息认证码" class="headerlink" title="1.4.2 消息认证码"></a>1.4.2 消息认证码</h3><h4 id="1-4-2-1-概念"><a href="#1-4-2-1-概念" class="headerlink" title="1.4.2.1 概念"></a>1.4.2.1 概念</h4></li>
+<li>这是一种用来确认消息在传送之后是否完整的技术。</li>
+<li>将消息通过密钥生成消息认证码之后跟加密后的消息一块发送，接收者解密消息之后生成消息认证码判断是否相同。</li>
+<li>将密钥与单向散列函数结合的一种技术。</li>
+<li>无法解决第三方证明的问题</li>
+<li>不能防止否认<h4 id="1-4-2-2-攻击"><a href="#1-4-2-2-攻击" class="headerlink" title="1.4.2.2 攻击"></a>1.4.2.2 攻击</h4></li>
+<li>重放攻击：M截获A给B发送的消息，然后给B发送100次。(当消息是：给xxxxx汇款xx元。)</li>
+<li>防御重放攻击：可以给每条消息添加序号或时间戳。<h3 id="1-4-3-数字签名"><a href="#1-4-3-数字签名" class="headerlink" title="1.4.3 数字签名"></a>1.4.3 数字签名</h3><h4 id="1-4-3-1-概念"><a href="#1-4-3-1-概念" class="headerlink" title="1.4.3.1 概念"></a>1.4.3.1 概念</h4></li>
+<li>就像现实生活中的签字一样，用来判断消息是谁发出的，并且消息发出者本人不能否认。</li>
+<li>由私钥对消息进行加密，用公钥进行解密。</li>
+<li>可以对消息直接签名/对散列值签名</li>
+<li>用来判断软件是否被篡改<h4 id="1-4-3-2-攻击"><a href="#1-4-3-2-攻击" class="headerlink" title="1.4.3.2 攻击"></a>1.4.3.2 攻击</h4></li>
+<li>中间人攻击 <h3 id="1-4-4-证书"><a href="#1-4-4-证书" class="headerlink" title="1.4.4 证书"></a>1.4.4 证书</h3><h4 id="1-4-4-1-概念"><a href="#1-4-4-1-概念" class="headerlink" title="1.4.4.1 概念"></a>1.4.4.1 概念</h4></li>
+<li>认证机构T用自己的私钥来对B的公钥进行签名之后就得到T颁发给B的证书</li>
+<li>可以通过判断证书是否正确来判断自己收到的密钥是否合法<h4 id="1-4-4-2-攻击"><a href="#1-4-4-2-攻击" class="headerlink" title="1.4.4.2 攻击"></a>1.4.4.2 攻击</h4></li>
+<li>攻击者将被签名的公钥替换成自己的。</li>
+<li>窃取认证机构私钥进行攻击</li>
+<li>利用CRL发布的时间差进行攻击</li>
+</ul>
+<h1 id="2-密码算法设计"><a href="#2-密码算法设计" class="headerlink" title="2 密码算法设计"></a>2 密码算法设计</h1><h2 id="2-1-思想"><a href="#2-1-思想" class="headerlink" title="2.1 思想"></a>2.1 思想</h2><ul>
+<li>混淆（confusion）和扩散(diffusion)<h2 id="2-2-柯克霍夫原则-Kerckhoffs’s-principle"><a href="#2-2-柯克霍夫原则-Kerckhoffs’s-principle" class="headerlink" title="2.2 柯克霍夫原则(Kerckhoffs’s principle)"></a>2.2 柯克霍夫原则(Kerckhoffs’s principle)</h2></li>
+<li>即使非数学上不可破解，系统也应在实质（实用）程度上无法破解。</li>
+<li>系统内不应含任何机密物，即使落入敌人手中也不会造成困扰。</li>
+<li>密匙必须易于沟通和记忆，而不须写下；且双方可以容易的改变密匙。</li>
+<li>系统应可以用于电讯。</li>
+<li>系统应可以携带，不应需要两个人或以上才能使用（应只要一个人就能使用）。</li>
+<li>系统应容易使用，不致让用户的脑力过分操劳，也无需记得长串的规则。<h1 id="3-密码安全性分析"><a href="#3-密码安全性分析" class="headerlink" title="3 密码安全性分析"></a>3 密码安全性分析</h1><h2 id="3-1-攻击方式"><a href="#3-1-攻击方式" class="headerlink" title="3.1 攻击方式"></a>3.1 攻击方式</h2></li>
+<li>唯密文攻击：只知道密文</li>
+<li>已知明文攻击：知道密文和对应明文</li>
+<li>选择明文攻击：知道密文和明文，还可以得到自己所选择的明文的密文</li>
+<li>自适应选择明文攻击</li>
+<li>选择密文攻击</li>
+<li>选择密钥攻击</li>
+<li>软磨硬泡攻击：比较有效的攻击，一般通过威胁、勒索、贿赂等方式获取密钥。<h2 id="3-2-古典密码"><a href="#3-2-古典密码" class="headerlink" title="3.2 古典密码"></a>3.2 古典密码</h2></li>
+<li>频率分析<h2 id="3-3-现代密码"><a href="#3-3-现代密码" class="headerlink" title="3.3 现代密码"></a>3.3 现代密码</h2></li>
+<li>差分密码分析</li>
+<li>线性密码分析</li>
+<li>强力攻击</li>
+</ul>
+<h1 id="3-参考文献"><a href="#3-参考文献" class="headerlink" title="3 参考文献"></a>3 参考文献</h1><ul>
+<li>《图解密码技术》结城浩</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%9F%AF%E5%85%8B%E9%9C%8D%E5%A4%AB%E5%8E%9F%E5%89%87" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/%E6%9F%AF%E5%85%8B%E9%9C%8D%E5%A4%AB%E5%8E%9F%E5%89%87</a></li>
+<li><a href="https://blog.csdn.net/kikajack/article/details/78298227" target="_blank" rel="noopener">https://blog.csdn.net/kikajack/article/details/78298227</a></li>
+<li><a href="https://www.zhihu.com/question/27116375" target="_blank" rel="noopener">https://www.zhihu.com/question/27116375</a></li>
+<li><a href="https://blog.csdn.net/kikajack/article/details/78298227?utm_source=blogxgwz1" target="_blank" rel="noopener">https://blog.csdn.net/kikajack/article/details/78298227?utm_source=blogxgwz1</a></li>
+<li><a href="https://blog.csdn.net/alexander115/article/details/80392521?utm_source=blogxgwz1" target="_blank" rel="noopener">https://blog.csdn.net/alexander115/article/details/80392521?utm_source=blogxgwz1</a></li>
+</ul>
+<p>迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/" target="_blank" rel="noopener">http://taowusheng.cn/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/10/27/20181027 密码学知识总结/" data-id="cjnsjf7vy003pqcbjlb5qsspm" class="article-share-link">Share</a>
+      
+      
+        <a href="/2018/10/27/20181027 密码学知识总结/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2018/10/27/20181027 密码学知识总结/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DES/">DES</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RSA/">RSA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SHA/">SHA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/公钥密码/">公钥密码</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/密码体制/">密码体制</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/密码学/">密码学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/对称密码/">对称密码</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/10/21/20181021 PAM_验证模块开发实例/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">PAM_验证模块开发实例</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM-Algorithm/">ACM_&_Algorithm</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CTF/">CTF</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA笔记/">JAVA笔记</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux-Kernel/">Linux_Kernel</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/notes/">notes</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思考/">思考</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/总结/">总结</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活随笔/">生活随笔</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/01背包/" style="font-size: 10px;">01背包</a> <a href="/tags/ACM/" style="font-size: 17.5px;">ACM</a> <a href="/tags/CTF/" style="font-size: 10px;">CTF</a> <a href="/tags/DES/" style="font-size: 10px;">DES</a> <a href="/tags/GUI/" style="font-size: 10px;">GUI</a> <a href="/tags/IO/" style="font-size: 10px;">IO</a> <a href="/tags/JAVA/" style="font-size: 20px;">JAVA</a> <a href="/tags/Linux/" style="font-size: 12.5px;">Linux</a> <a href="/tags/RSA/" style="font-size: 10px;">RSA</a> <a href="/tags/SHA/" style="font-size: 10px;">SHA</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/auth/" style="font-size: 10px;">auth</a> <a href="/tags/bellman/" style="font-size: 10px;">bellman</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/floyd/" style="font-size: 10px;">floyd</a> <a href="/tags/jdbc/" style="font-size: 10px;">jdbc</a> <a href="/tags/kernal/" style="font-size: 10px;">kernal</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/mail服务器/" style="font-size: 10px;">mail服务器</a> <a href="/tags/md5注入/" style="font-size: 10px;">md5注入</a> <a href="/tags/pam/" style="font-size: 10px;">pam</a> <a href="/tags/postfix/" style="font-size: 10px;">postfix</a> <a href="/tags/公钥密码/" style="font-size: 10px;">公钥密码</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/北京工业大学/" style="font-size: 10px;">北京工业大学</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/密码体制/" style="font-size: 10px;">密码体制</a> <a href="/tags/密码学/" style="font-size: 10px;">密码学</a> <a href="/tags/对称密码/" style="font-size: 10px;">对称密码</a> <a href="/tags/年终总结/" style="font-size: 10px;">年终总结</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a> <a href="/tags/思考/" style="font-size: 15px;">思考</a> <a href="/tags/总结/" style="font-size: 15px;">总结</a> <a href="/tags/挑战程序设计竞赛/" style="font-size: 12.5px;">挑战程序设计竞赛</a> <a href="/tags/摄影/" style="font-size: 10px;">摄影</a> <a href="/tags/数据库/" style="font-size: 12.5px;">数据库</a> <a href="/tags/最短路径算法/" style="font-size: 10px;">最短路径算法</a> <a href="/tags/生活随笔/" style="font-size: 10px;">生活随笔</a> <a href="/tags/碎碎念/" style="font-size: 10px;">碎碎念</a> <a href="/tags/立flag/" style="font-size: 10px;">立flag</a> <a href="/tags/经历/" style="font-size: 10px;">经历</a> <a href="/tags/网络编程/" style="font-size: 10px;">网络编程</a> <a href="/tags/考研/" style="font-size: 10px;">考研</a> <a href="/tags/计划/" style="font-size: 10px;">计划</a> <a href="/tags/计算机技术/" style="font-size: 10px;">计算机技术</a> <a href="/tags/读书笔记/" style="font-size: 12.5px;">读书笔记</a> <a href="/tags/面向对象/" style="font-size: 10px;">面向对象</a> <a href="/tags/黑客与画家/" style="font-size: 10px;">黑客与画家</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/10/27/20181027 密码学知识总结/">20181027 密码学知识总结</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/21/20181021 PAM_验证模块开发实例/">PAM_验证模块开发实例</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/">动态规划_01背包_一维数组_路径记录</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/07/20181007 实验吧_后台登录/">实验吧_后台登录</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/25/20180425 java_多线程/">java多线程</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">visiters</h3>
+    <div class="widget">
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=534a4dn9fi8&amp;m=0c&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;cw=ffffff&amp;cb=000000" async="async"></script>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016-2018 Tao WuSheng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/links" class="mobile-nav-link">Links</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Please leave your footprints...",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
+
+  </div>
+</body>
+</html>
