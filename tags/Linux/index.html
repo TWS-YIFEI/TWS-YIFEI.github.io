@@ -175,7 +175,7 @@ ga('send', 'pageview');
       <ul>
         
           <li>
-            <a href="/2018/10/27/20181027 密码学知识总结/">20181027 密码学知识总结</a>
+            <a href="/2018/10/27/20181027 密码学知识总结/">密码学知识总结</a>
           </li>
         
           <li>
@@ -239,6 +239,38 @@ ga('send', 'pageview');
 
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Please leave your footprints...",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
+
+  </div>
+</body>
+</html>ncybox.pack.js"></script>
 
 
 <script src="/js/script.js"></script>
