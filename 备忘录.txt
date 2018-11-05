@@ -1,6 +1,5 @@
 总配置文件：根目录下
 source中的文章等文件
-image！！！的图片
 google analytics  主题下/partial...googleanalytics.js
 评论系统valine
 主题： 主题里的图片、主题配置
