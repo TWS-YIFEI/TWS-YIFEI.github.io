@@ -5,9 +5,9 @@
   <subtitle>每当我找到生命的意义，它就又变了...</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://taowusheng.cn/"/>
   <updated>2018-11-16T06:01:29.018Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://taowusheng.cn/</id>
   
   <author>
     <name>Tao WuSheng</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>2018年书单</title>
-    <link href="http://yoursite.com/2018/12/31/20181231%202018%E5%B9%B4%E4%B9%A6%E5%8D%95/"/>
-    <id>http://yoursite.com/2018/12/31/20181231 2018年书单/</id>
+    <link href="http://taowusheng.cn/2018/12/31/20181231%202018%E5%B9%B4%E4%B9%A6%E5%8D%95/"/>
+    <id>http://taowusheng.cn/2018/12/31/20181231 2018年书单/</id>
     <published>2018-12-30T16:00:01.000Z</published>
     <updated>2018-11-16T06:01:29.018Z</updated>
     
@@ -30,19 +30,19 @@
     
     </summary>
     
-      <category term="reading" scheme="http://yoursite.com/categories/reading/"/>
+      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
     
     
-      <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
     
-      <category term="书单" scheme="http://yoursite.com/tags/%E4%B9%A6%E5%8D%95/"/>
+      <category term="书单" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E5%8D%95/"/>
     
   </entry>
   
   <entry>
     <title>王爽汇编语言实验16</title>
-    <link href="http://yoursite.com/2018/11/18/20181118%20%E7%8E%8B%E7%88%BD%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%AE%9E%E9%AA%8C16/"/>
-    <id>http://yoursite.com/2018/11/18/20181118 王爽汇编语言实验16/</id>
+    <link href="http://taowusheng.cn/2018/11/18/20181118%20%E7%8E%8B%E7%88%BD%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%AE%9E%E9%AA%8C16/"/>
+    <id>http://taowusheng.cn/2018/11/18/20181118 王爽汇编语言实验16/</id>
     <published>2018-11-17T16:00:01.000Z</published>
     <updated>2018-11-18T04:00:30.165Z</updated>
     
@@ -52,19 +52,19 @@
     
     </summary>
     
-      <category term="Assembly" scheme="http://yoursite.com/categories/Assembly/"/>
+      <category term="Assembly" scheme="http://taowusheng.cn/categories/Assembly/"/>
     
     
-      <category term="Assembly" scheme="http://yoursite.com/tags/Assembly/"/>
+      <category term="Assembly" scheme="http://taowusheng.cn/tags/Assembly/"/>
     
-      <category term="汇编" scheme="http://yoursite.com/tags/%E6%B1%87%E7%BC%96/"/>
+      <category term="汇编" scheme="http://taowusheng.cn/tags/%E6%B1%87%E7%BC%96/"/>
     
   </entry>
   
   <entry>
     <title>如何向别人请教问题</title>
-    <link href="http://yoursite.com/2018/11/16/20181116%20%E5%A6%82%E4%BD%95%E5%90%91%E5%88%AB%E4%BA%BA%E8%AF%B7%E6%95%99%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2018/11/16/20181116 如何向别人请教问题/</id>
+    <link href="http://taowusheng.cn/2018/11/16/20181116%20%E5%A6%82%E4%BD%95%E5%90%91%E5%88%AB%E4%BA%BA%E8%AF%B7%E6%95%99%E9%97%AE%E9%A2%98/"/>
+    <id>http://taowusheng.cn/2018/11/16/20181116 如何向别人请教问题/</id>
     <published>2018-11-15T16:00:01.000Z</published>
     <updated>2018-11-18T02:53:02.170Z</updated>
     
@@ -74,21 +74,21 @@
     
     </summary>
     
-      <category term="thought" scheme="http://yoursite.com/categories/thought/"/>
+      <category term="thought" scheme="http://taowusheng.cn/categories/thought/"/>
     
     
-      <category term="thought" scheme="http://yoursite.com/tags/thought/"/>
+      <category term="thought" scheme="http://taowusheng.cn/tags/thought/"/>
     
-      <category term="提问的智慧" scheme="http://yoursite.com/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/"/>
+      <category term="提问的智慧" scheme="http://taowusheng.cn/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/"/>
     
-      <category term="搜索" scheme="http://yoursite.com/tags/%E6%90%9C%E7%B4%A2/"/>
+      <category term="搜索" scheme="http://taowusheng.cn/tags/%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   
   <entry>
     <title>WIN10下UEFI开发环境搭建</title>
-    <link href="http://yoursite.com/2018/11/12/20181112%20UEFI%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://yoursite.com/2018/11/12/20181112 UEFI开发环境搭建/</id>
+    <link href="http://taowusheng.cn/2018/11/12/20181112%20UEFI%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://taowusheng.cn/2018/11/12/20181112 UEFI开发环境搭建/</id>
     <published>2018-11-11T16:00:01.000Z</published>
     <updated>2018-11-12T12:19:17.809Z</updated>
     
@@ -99,27 +99,27 @@
     
     </summary>
     
-      <category term="Unknown" scheme="http://yoursite.com/categories/Unknown/"/>
+      <category term="Unknown" scheme="http://taowusheng.cn/categories/Unknown/"/>
     
     
-      <category term="UEFI" scheme="http://yoursite.com/tags/UEFI/"/>
+      <category term="UEFI" scheme="http://taowusheng.cn/tags/UEFI/"/>
     
-      <category term="UDK" scheme="http://yoursite.com/tags/UDK/"/>
+      <category term="UDK" scheme="http://taowusheng.cn/tags/UDK/"/>
     
-      <category term="EDK" scheme="http://yoursite.com/tags/EDK/"/>
+      <category term="EDK" scheme="http://taowusheng.cn/tags/EDK/"/>
     
-      <category term="patch" scheme="http://yoursite.com/tags/patch/"/>
+      <category term="patch" scheme="http://taowusheng.cn/tags/patch/"/>
     
-      <category term="vs2013" scheme="http://yoursite.com/tags/vs2013/"/>
+      <category term="vs2013" scheme="http://taowusheng.cn/tags/vs2013/"/>
     
-      <category term="win10" scheme="http://yoursite.com/tags/win10/"/>
+      <category term="win10" scheme="http://taowusheng.cn/tags/win10/"/>
     
   </entry>
   
   <entry>
     <title>SSL协议的基本原理</title>
-    <link href="http://yoursite.com/2018/10/29/20181029%20SSL%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/"/>
-    <id>http://yoursite.com/2018/10/29/20181029 SSL协议的基本原理/</id>
+    <link href="http://taowusheng.cn/2018/10/29/20181029%20SSL%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/"/>
+    <id>http://taowusheng.cn/2018/10/29/20181029 SSL协议的基本原理/</id>
     <published>2018-10-28T16:00:01.000Z</published>
     <updated>2018-10-31T03:43:12.431Z</updated>
     
@@ -130,25 +130,25 @@
     
     </summary>
     
-      <category term="cryptography" scheme="http://yoursite.com/categories/cryptography/"/>
+      <category term="cryptography" scheme="http://taowusheng.cn/categories/cryptography/"/>
     
     
-      <category term="密码学" scheme="http://yoursite.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
-      <category term="cryptography" scheme="http://yoursite.com/tags/cryptography/"/>
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
-      <category term="SSL" scheme="http://yoursite.com/tags/SSL/"/>
+      <category term="SSL" scheme="http://taowusheng.cn/tags/SSL/"/>
     
-      <category term="公钥" scheme="http://yoursite.com/tags/%E5%85%AC%E9%92%A5/"/>
+      <category term="公钥" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5/"/>
     
-      <category term="私钥" scheme="http://yoursite.com/tags/%E7%A7%81%E9%92%A5/"/>
+      <category term="私钥" scheme="http://taowusheng.cn/tags/%E7%A7%81%E9%92%A5/"/>
     
   </entry>
   
   <entry>
     <title>密码学知识总结</title>
-    <link href="http://yoursite.com/2018/10/27/20181027%20%E5%AF%86%E7%A0%81%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2018/10/27/20181027 密码学知识总结/</id>
+    <link href="http://taowusheng.cn/2018/10/27/20181027%20%E5%AF%86%E7%A0%81%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2018/10/27/20181027 密码学知识总结/</id>
     <published>2018-10-26T16:00:01.000Z</published>
     <updated>2018-10-29T04:17:38.849Z</updated>
     
@@ -159,31 +159,31 @@
     
     </summary>
     
-      <category term="cryptography" scheme="http://yoursite.com/categories/cryptography/"/>
+      <category term="cryptography" scheme="http://taowusheng.cn/categories/cryptography/"/>
     
     
-      <category term="密码学" scheme="http://yoursite.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
-      <category term="密码体制" scheme="http://yoursite.com/tags/%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6/"/>
+      <category term="密码体制" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6/"/>
     
-      <category term="公钥密码" scheme="http://yoursite.com/tags/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81/"/>
+      <category term="公钥密码" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81/"/>
     
-      <category term="对称密码" scheme="http://yoursite.com/tags/%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81/"/>
+      <category term="对称密码" scheme="http://taowusheng.cn/tags/%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81/"/>
     
-      <category term="RSA" scheme="http://yoursite.com/tags/RSA/"/>
+      <category term="RSA" scheme="http://taowusheng.cn/tags/RSA/"/>
     
-      <category term="DES" scheme="http://yoursite.com/tags/DES/"/>
+      <category term="DES" scheme="http://taowusheng.cn/tags/DES/"/>
     
-      <category term="SHA" scheme="http://yoursite.com/tags/SHA/"/>
+      <category term="SHA" scheme="http://taowusheng.cn/tags/SHA/"/>
     
-      <category term="cryptography" scheme="http://yoursite.com/tags/cryptography/"/>
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
   <entry>
     <title>PAM_验证模块开发实例</title>
-    <link href="http://yoursite.com/2018/10/21/20181021%20PAM_%E9%AA%8C%E8%AF%81%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%E5%AE%9E%E4%BE%8B/"/>
-    <id>http://yoursite.com/2018/10/21/20181021 PAM_验证模块开发实例/</id>
+    <link href="http://taowusheng.cn/2018/10/21/20181021%20PAM_%E9%AA%8C%E8%AF%81%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%E5%AE%9E%E4%BE%8B/"/>
+    <id>http://taowusheng.cn/2018/10/21/20181021 PAM_验证模块开发实例/</id>
     <published>2018-10-20T16:00:01.000Z</published>
     <updated>2018-10-26T02:42:58.472Z</updated>
     
@@ -193,23 +193,23 @@
     
     </summary>
     
-      <category term="Linux_Kernel" scheme="http://yoursite.com/categories/Linux-Kernel/"/>
+      <category term="Linux_Kernel" scheme="http://taowusheng.cn/categories/Linux-Kernel/"/>
     
     
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
-      <category term="kernal" scheme="http://yoursite.com/tags/kernal/"/>
+      <category term="kernal" scheme="http://taowusheng.cn/tags/kernal/"/>
     
-      <category term="pam" scheme="http://yoursite.com/tags/pam/"/>
+      <category term="pam" scheme="http://taowusheng.cn/tags/pam/"/>
     
-      <category term="auth" scheme="http://yoursite.com/tags/auth/"/>
+      <category term="auth" scheme="http://taowusheng.cn/tags/auth/"/>
     
   </entry>
   
   <entry>
     <title>动态规划_01背包_一维数组_路径记录</title>
-    <link href="http://yoursite.com/2018/10/09/20181009%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92_01%E8%83%8C%E5%8C%85_%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84_%E8%B7%AF%E5%BE%84%E8%AE%B0%E5%BD%95/"/>
-    <id>http://yoursite.com/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/</id>
+    <link href="http://taowusheng.cn/2018/10/09/20181009%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92_01%E8%83%8C%E5%8C%85_%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84_%E8%B7%AF%E5%BE%84%E8%AE%B0%E5%BD%95/"/>
+    <id>http://taowusheng.cn/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/</id>
     <published>2018-10-08T16:00:01.000Z</published>
     <updated>2018-10-09T08:36:01.598Z</updated>
     
@@ -220,21 +220,21 @@
     
     </summary>
     
-      <category term="ACM_&amp;_Algorithm" scheme="http://yoursite.com/categories/ACM-Algorithm/"/>
+      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
     
-      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
-      <category term="01背包" scheme="http://yoursite.com/tags/01%E8%83%8C%E5%8C%85/"/>
+      <category term="01背包" scheme="http://taowusheng.cn/tags/01%E8%83%8C%E5%8C%85/"/>
     
-      <category term="动态规划" scheme="http://yoursite.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+      <category term="动态规划" scheme="http://taowusheng.cn/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
   </entry>
   
   <entry>
     <title>实验吧_后台登录</title>
-    <link href="http://yoursite.com/2018/10/07/20181007%20%E5%AE%9E%E9%AA%8C%E5%90%A7_%E5%90%8E%E5%8F%B0%E7%99%BB%E5%BD%95/"/>
-    <id>http://yoursite.com/2018/10/07/20181007 实验吧_后台登录/</id>
+    <link href="http://taowusheng.cn/2018/10/07/20181007%20%E5%AE%9E%E9%AA%8C%E5%90%A7_%E5%90%8E%E5%8F%B0%E7%99%BB%E5%BD%95/"/>
+    <id>http://taowusheng.cn/2018/10/07/20181007 实验吧_后台登录/</id>
     <published>2018-10-06T16:00:01.000Z</published>
     <updated>2018-11-08T08:22:49.119Z</updated>
     
@@ -245,19 +245,19 @@
     
     </summary>
     
-      <category term="Security" scheme="http://yoursite.com/categories/Security/"/>
+      <category term="Security" scheme="http://taowusheng.cn/categories/Security/"/>
     
     
-      <category term="CTF" scheme="http://yoursite.com/tags/CTF/"/>
+      <category term="CTF" scheme="http://taowusheng.cn/tags/CTF/"/>
     
-      <category term="md5注入" scheme="http://yoursite.com/tags/md5%E6%B3%A8%E5%85%A5/"/>
+      <category term="md5注入" scheme="http://taowusheng.cn/tags/md5%E6%B3%A8%E5%85%A5/"/>
     
   </entry>
   
   <entry>
     <title>java多线程</title>
-    <link href="http://yoursite.com/2018/04/25/20180425%20java_%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    <id>http://yoursite.com/2018/04/25/20180425 java_多线程/</id>
+    <link href="http://taowusheng.cn/2018/04/25/20180425%20java_%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    <id>http://taowusheng.cn/2018/04/25/20180425 java_多线程/</id>
     <published>2018-04-24T16:00:01.000Z</published>
     <updated>2018-10-29T04:25:29.668Z</updated>
     
@@ -268,21 +268,21 @@
     
     </summary>
     
-      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/categories/JAVA/"/>
     
     
-      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
-      <category term="Thread" scheme="http://yoursite.com/tags/Thread/"/>
+      <category term="Thread" scheme="http://taowusheng.cn/tags/Thread/"/>
     
-      <category term="多线程" scheme="http://yoursite.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+      <category term="多线程" scheme="http://taowusheng.cn/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>javaUDP</title>
-    <link href="http://yoursite.com/2018/04/23/20180423%20javaUDP/"/>
-    <id>http://yoursite.com/2018/04/23/20180423 javaUDP/</id>
+    <link href="http://taowusheng.cn/2018/04/23/20180423%20javaUDP/"/>
+    <id>http://taowusheng.cn/2018/04/23/20180423 javaUDP/</id>
     <published>2018-04-22T16:00:01.000Z</published>
     <updated>2018-10-29T04:25:24.546Z</updated>
     
@@ -293,21 +293,21 @@
     
     </summary>
     
-      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/categories/JAVA/"/>
     
     
-      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
-      <category term="UDP" scheme="http://yoursite.com/tags/UDP/"/>
+      <category term="UDP" scheme="http://taowusheng.cn/tags/UDP/"/>
     
-      <category term="网络编程" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+      <category term="网络编程" scheme="http://taowusheng.cn/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>javaGUI</title>
-    <link href="http://yoursite.com/2018/04/22/20180421%20java_GUI/"/>
-    <id>http://yoursite.com/2018/04/22/20180421 java_GUI/</id>
+    <link href="http://taowusheng.cn/2018/04/22/20180421%20java_GUI/"/>
+    <id>http://taowusheng.cn/2018/04/22/20180421 java_GUI/</id>
     <published>2018-04-21T16:00:01.000Z</published>
     <updated>2018-10-29T04:25:18.807Z</updated>
     
@@ -318,19 +318,19 @@
     
     </summary>
     
-      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/categories/JAVA/"/>
     
     
-      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
-      <category term="GUI" scheme="http://yoursite.com/tags/GUI/"/>
+      <category term="GUI" scheme="http://taowusheng.cn/tags/GUI/"/>
     
   </entry>
   
   <entry>
     <title>javaIO流</title>
-    <link href="http://yoursite.com/2018/04/20/20180420%20javaIO%E6%B5%81/"/>
-    <id>http://yoursite.com/2018/04/20/20180420 javaIO流/</id>
+    <link href="http://taowusheng.cn/2018/04/20/20180420%20javaIO%E6%B5%81/"/>
+    <id>http://taowusheng.cn/2018/04/20/20180420 javaIO流/</id>
     <published>2018-04-19T16:00:01.000Z</published>
     <updated>2018-10-29T04:25:11.811Z</updated>
     
@@ -341,19 +341,19 @@
     
     </summary>
     
-      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/categories/JAVA/"/>
     
     
-      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
-      <category term="IO" scheme="http://yoursite.com/tags/IO/"/>
+      <category term="IO" scheme="http://taowusheng.cn/tags/IO/"/>
     
   </entry>
   
   <entry>
     <title>考研总结</title>
-    <link href="http://yoursite.com/2018/03/28/20180328%20%E8%80%83%E7%A0%94%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2018/03/28/20180328 考研总结/</id>
+    <link href="http://taowusheng.cn/2018/03/28/20180328%20%E8%80%83%E7%A0%94%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2018/03/28/20180328 考研总结/</id>
     <published>2018-03-27T16:00:01.000Z</published>
     <updated>2018-10-29T04:23:53.405Z</updated>
     
@@ -363,21 +363,21 @@
     
     </summary>
     
-      <category term="thought" scheme="http://yoursite.com/categories/thought/"/>
+      <category term="thought" scheme="http://taowusheng.cn/categories/thought/"/>
     
     
-      <category term="考研" scheme="http://yoursite.com/tags/%E8%80%83%E7%A0%94/"/>
+      <category term="考研" scheme="http://taowusheng.cn/tags/%E8%80%83%E7%A0%94/"/>
     
-      <category term="计算机技术" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/"/>
+      <category term="计算机技术" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="北京工业大学" scheme="http://yoursite.com/tags/%E5%8C%97%E4%BA%AC%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6/"/>
+      <category term="北京工业大学" scheme="http://taowusheng.cn/tags/%E5%8C%97%E4%BA%AC%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>Linux常用命令总结</title>
-    <link href="http://yoursite.com/2018/02/02/20180202%20linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2018/02/02/20180202 linux常用命令总结/</id>
+    <link href="http://taowusheng.cn/2018/02/02/20180202%20linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2018/02/02/20180202 linux常用命令总结/</id>
     <published>2018-02-01T16:00:01.000Z</published>
     <updated>2018-02-04T13:22:39.056Z</updated>
     
@@ -388,17 +388,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux" scheme="http://taowusheng.cn/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="http://taowusheng.cn/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>java异常处理</title>
-    <link href="http://yoursite.com/2018/01/23/20180123%20java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
-    <id>http://yoursite.com/2018/01/23/20180123 java异常处理/</id>
+    <link href="http://taowusheng.cn/2018/01/23/20180123%20java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
+    <id>http://taowusheng.cn/2018/01/23/20180123 java异常处理/</id>
     <published>2018-01-22T16:00:01.000Z</published>
     <updated>2018-10-29T04:25:04.369Z</updated>
     
@@ -409,19 +409,19 @@
     
     </summary>
     
-      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/categories/JAVA/"/>
     
     
-      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
-      <category term="异常处理" scheme="http://yoursite.com/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
+      <category term="异常处理" scheme="http://taowusheng.cn/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>常用sql语句整理</title>
-    <link href="http://yoursite.com/2018/01/22/20180122%20%E5%B8%B8%E7%94%A8sql%E8%AF%AD%E5%8F%A5%E6%95%B4%E7%90%86/"/>
-    <id>http://yoursite.com/2018/01/22/20180122 常用sql语句整理/</id>
+    <link href="http://taowusheng.cn/2018/01/22/20180122%20%E5%B8%B8%E7%94%A8sql%E8%AF%AD%E5%8F%A5%E6%95%B4%E7%90%86/"/>
+    <id>http://taowusheng.cn/2018/01/22/20180122 常用sql语句整理/</id>
     <published>2018-01-21T16:00:01.000Z</published>
     <updated>2018-01-22T11:48:51.807Z</updated>
     
@@ -432,19 +432,19 @@
     
     </summary>
     
-      <category term="SQL" scheme="http://yoursite.com/categories/SQL/"/>
+      <category term="SQL" scheme="http://taowusheng.cn/categories/SQL/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
+      <category term="SQL" scheme="http://taowusheng.cn/tags/SQL/"/>
     
   </entry>
   
   <entry>
     <title>这些java面向对象的知识，你都知道吗？</title>
-    <link href="http://yoursite.com/2018/01/12/20180112%20java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
-    <id>http://yoursite.com/2018/01/12/20180112 java面向对象/</id>
+    <link href="http://taowusheng.cn/2018/01/12/20180112%20java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    <id>http://taowusheng.cn/2018/01/12/20180112 java面向对象/</id>
     <published>2018-01-11T16:00:01.000Z</published>
     <updated>2018-10-29T04:24:59.436Z</updated>
     
@@ -455,19 +455,19 @@
     
     </summary>
     
-      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/categories/JAVA/"/>
     
     
-      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
-      <category term="面向对象" scheme="http://yoursite.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+      <category term="面向对象" scheme="http://taowusheng.cn/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
   </entry>
   
   <entry>
     <title>JDBC连接数据库</title>
-    <link href="http://yoursite.com/2017/05/15/20170515%20JDBC%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    <id>http://yoursite.com/2017/05/15/20170515 JDBC连接数据库/</id>
+    <link href="http://taowusheng.cn/2017/05/15/20170515%20JDBC%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <id>http://taowusheng.cn/2017/05/15/20170515 JDBC连接数据库/</id>
     <published>2017-05-14T16:00:01.000Z</published>
     <updated>2018-10-29T04:24:50.078Z</updated>
     
@@ -478,21 +478,21 @@
     
     </summary>
     
-      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/categories/JAVA/"/>
     
     
-      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+      <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
-      <category term="jdbc" scheme="http://yoursite.com/tags/jdbc/"/>
+      <category term="jdbc" scheme="http://taowusheng.cn/tags/jdbc/"/>
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
   <entry>
     <title>2017山东省赛总结</title>
-    <link href="http://yoursite.com/2017/05/10/20170510%202017%E5%B1%B1%E4%B8%9C%E7%9C%81%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2017/05/10/20170510 2017山东省赛总结/</id>
+    <link href="http://taowusheng.cn/2017/05/10/20170510%202017%E5%B1%B1%E4%B8%9C%E7%9C%81%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2017/05/10/20170510 2017山东省赛总结/</id>
     <published>2017-05-09T16:00:01.000Z</published>
     <updated>2018-10-29T04:24:03.968Z</updated>
     
@@ -503,21 +503,21 @@
     
     </summary>
     
-      <category term="thought" scheme="http://yoursite.com/categories/thought/"/>
+      <category term="thought" scheme="http://taowusheng.cn/categories/thought/"/>
     
     
-      <category term="思考" scheme="http://yoursite.com/tags/%E6%80%9D%E8%80%83/"/>
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
-      <category term="ACM" scheme="http://yoursite.com/tags/ACM/"/>
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
-      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
+      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
   <entry>
     <title>2016年我似乎一事无成</title>
-    <link href="http://yoursite.com/2017/03/12/20170312%202016%E5%B9%B4%E6%88%91%E4%BC%BC%E4%B9%8E%E4%B8%80%E4%BA%8B%E6%97%A0%E6%88%90/"/>
-    <id>http://yoursite.com/2017/03/12/20170312 2016年我似乎一事无成/</id>
+    <link href="http://taowusheng.cn/2017/03/12/20170312%202016%E5%B9%B4%E6%88%91%E4%BC%BC%E4%B9%8E%E4%B8%80%E4%BA%8B%E6%97%A0%E6%88%90/"/>
+    <id>http://taowusheng.cn/2017/03/12/20170312 2016年我似乎一事无成/</id>
     <published>2017-03-11T16:00:01.000Z</published>
     <updated>2018-10-29T04:24:15.247Z</updated>
     
@@ -528,23 +528,23 @@
     
     </summary>
     
-      <category term="thought" scheme="http://yoursite.com/categories/thought/"/>
+      <category term="thought" scheme="http://taowusheng.cn/categories/thought/"/>
     
     
-      <category term="思考" scheme="http://yoursite.com/tags/%E6%80%9D%E8%80%83/"/>
+      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
     
-      <category term="年终总结" scheme="http://yoursite.com/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+      <category term="年终总结" scheme="http://taowusheng.cn/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
     
-      <category term="计划" scheme="http://yoursite.com/tags/%E8%AE%A1%E5%88%92/"/>
+      <category term="计划" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E5%88%92/"/>
     
-      <category term="立flag" scheme="http://yoursite.com/tags/%E7%AB%8Bflag/"/>
+      <category term="立flag" scheme="http://taowusheng.cn/tags/%E7%AB%8Bflag/"/>
     
   </entry>
   
   <entry>
     <title>最短路问题(Bellman/Dijkstra/Floyd)</title>
-    <link href="http://yoursite.com/2017/01/22/20170122%20%E6%9C%80%E7%9F%AD%E8%B7%AF%E9%97%AE%E9%A2%98(Bellman%20Dijkstra%20Floyd)/"/>
-    <id>http://yoursite.com/2017/01/22/20170122 最短路问题(Bellman Dijkstra Floyd)/</id>
+    <link href="http://taowusheng.cn/2017/01/22/20170122%20%E6%9C%80%E7%9F%AD%E8%B7%AF%E9%97%AE%E9%A2%98(Bellman%20Dijkstra%20Floyd)/"/>
+    <id>http://taowusheng.cn/2017/01/22/20170122 最短路问题(Bellman Dijkstra Floyd)/</id>
     <published>2017-01-21T16:00:01.000Z</published>
     <updated>2017-05-16T02:02:32.366Z</updated>
     
@@ -555,27 +555,27 @@
     
     </summary>
     
-      <category term="ACM_&amp;_Algorithm" scheme="http://yoursite.com/categories/ACM-Algorithm/"/>
+      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
     
-      <category term="ACM" scheme="http://yoursite.com/tags/ACM/"/>
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
-      <category term="挑战程序设计竞赛" scheme="http://yoursite.com/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
+      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
-      <category term="最短路径算法" scheme="http://yoursite.com/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95/"/>
+      <category term="最短路径算法" scheme="http://taowusheng.cn/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95/"/>
     
-      <category term="dijkstra" scheme="http://yoursite.com/tags/dijkstra/"/>
+      <category term="dijkstra" scheme="http://taowusheng.cn/tags/dijkstra/"/>
     
-      <category term="floyd" scheme="http://yoursite.com/tags/floyd/"/>
+      <category term="floyd" scheme="http://taowusheng.cn/tags/floyd/"/>
     
-      <category term="bellman" scheme="http://yoursite.com/tags/bellman/"/>
+      <category term="bellman" scheme="http://taowusheng.cn/tags/bellman/"/>
     
   </entry>
   
   <entry>
     <title>some sentence about the ACM</title>
-    <link href="http://yoursite.com/2017/01/08/20170108%20some%20sentence%20about%20the%20ACM/"/>
-    <id>http://yoursite.com/2017/01/08/20170108 some sentence about the ACM/</id>
+    <link href="http://taowusheng.cn/2017/01/08/20170108%20some%20sentence%20about%20the%20ACM/"/>
+    <id>http://taowusheng.cn/2017/01/08/20170108 some sentence about the ACM/</id>
     <published>2017-01-07T16:00:01.000Z</published>
     <updated>2017-01-23T10:29:56.872Z</updated>
     
@@ -586,17 +586,17 @@
     
     </summary>
     
-      <category term="ACM_&amp;_Algorithm" scheme="http://yoursite.com/categories/ACM-Algorithm/"/>
+      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
     
-      <category term="ACM" scheme="http://yoursite.com/tags/ACM/"/>
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
   </entry>
   
   <entry>
     <title>ubuntu下如何配置postfix服务器</title>
-    <link href="http://yoursite.com/2016/12/26/20161226%20ubuntu%E4%B8%8B%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AEpostfix%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    <id>http://yoursite.com/2016/12/26/20161226 ubuntu下如何配置postfix服务器/</id>
+    <link href="http://taowusheng.cn/2016/12/26/20161226%20ubuntu%E4%B8%8B%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AEpostfix%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://taowusheng.cn/2016/12/26/20161226 ubuntu下如何配置postfix服务器/</id>
     <published>2016-12-25T16:00:01.000Z</published>
     <updated>2017-01-08T13:42:35.279Z</updated>
     
@@ -607,21 +607,21 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux" scheme="http://taowusheng.cn/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="http://taowusheng.cn/tags/Linux/"/>
     
-      <category term="postfix" scheme="http://yoursite.com/tags/postfix/"/>
+      <category term="postfix" scheme="http://taowusheng.cn/tags/postfix/"/>
     
-      <category term="mail服务器" scheme="http://yoursite.com/tags/mail%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="mail服务器" scheme="http://taowusheng.cn/tags/mail%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
   <entry>
     <title>2016年11月读书笔记</title>
-    <link href="http://yoursite.com/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/12/03/20161204 2016年11月读书笔记/</id>
+    <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
     <published>2016-12-02T16:00:01.000Z</published>
     <updated>2018-10-29T04:19:29.184Z</updated>
     
@@ -633,21 +633,44 @@
     
     </summary>
     
-      <category term="reading" scheme="http://yoursite.com/categories/reading/"/>
+      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
     
     
-      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="挑战程序设计竞赛" scheme="http://yoursite.com/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
+      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
-      <category term="黑客与画家" scheme="http://yoursite.com/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
+      <category term="黑客与画家" scheme="http://taowusheng.cn/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ACM六个月总结</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2017-01-23T10:30:03.610Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
+    
+    </summary>
+    
+      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
   <entry>
     <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
-    <link href="http://yoursite.com/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
     <published>2016-12-02T16:00:01.000Z</published>
     <updated>2018-10-29T04:19:10.984Z</updated>
     
@@ -664,42 +687,19 @@
     
     </summary>
     
-      <category term="reading" scheme="http://yoursite.com/categories/reading/"/>
+      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
     
     
-      <category term="摄影" scheme="http://yoursite.com/tags/%E6%91%84%E5%BD%B1/"/>
+      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
     
-      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACM六个月总结</title>
-    <link href="http://yoursite.com/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2016/12/03/20161203 ACM六个月总结/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2017-01-23T10:30:03.610Z</updated>
-    
-    <summary type="html">
-    
-      &lt;hr&gt;
-&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
-    
-    </summary>
-    
-      <category term="ACM_&amp;_Algorithm" scheme="http://yoursite.com/categories/ACM-Algorithm/"/>
-    
-    
-      <category term="ACM" scheme="http://yoursite.com/tags/ACM/"/>
-    
-      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>16年ACM青岛区域赛11.11晚</title>
-    <link href="http://yoursite.com/2016/11/11/20161111%2016%E5%B9%B4ACM%E9%9D%92%E5%B2%9B%E5%8C%BA%E5%9F%9F%E8%B5%9B11-11%E6%99%9A/"/>
-    <id>http://yoursite.com/2016/11/11/20161111 16年ACM青岛区域赛11-11晚/</id>
+    <link href="http://taowusheng.cn/2016/11/11/20161111%2016%E5%B9%B4ACM%E9%9D%92%E5%B2%9B%E5%8C%BA%E5%9F%9F%E8%B5%9B11-11%E6%99%9A/"/>
+    <id>http://taowusheng.cn/2016/11/11/20161111 16年ACM青岛区域赛11-11晚/</id>
     <published>2016-11-10T16:00:01.000Z</published>
     <updated>2018-10-29T04:20:28.258Z</updated>
     
@@ -710,19 +710,19 @@
     
     </summary>
     
-      <category term="life" scheme="http://yoursite.com/categories/life/"/>
+      <category term="life" scheme="http://taowusheng.cn/categories/life/"/>
     
     
-      <category term="生活随笔" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+      <category term="生活随笔" scheme="http://taowusheng.cn/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
     
-      <category term="碎碎念" scheme="http://yoursite.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+      <category term="碎碎念" scheme="http://taowusheng.cn/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
   </entry>
   
   <entry>
     <title>我为什么要写博客</title>
-    <link href="http://yoursite.com/2016/10/03/20161003%20%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2016/10/03/20161003 我为什么要写博客/</id>
+    <link href="http://taowusheng.cn/2016/10/03/20161003%20%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://taowusheng.cn/2016/10/03/20161003 我为什么要写博客/</id>
     <published>2016-10-02T16:21:41.000Z</published>
     <updated>2018-10-29T04:23:28.917Z</updated>
     
@@ -733,21 +733,21 @@
     
     </summary>
     
-      <category term="thought" scheme="http://yoursite.com/categories/thought/"/>
+      <category term="thought" scheme="http://taowusheng.cn/categories/thought/"/>
     
     
-      <category term="思考" scheme="http://yoursite.com/tags/%E6%80%9D%E8%80%83/"/>
+      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
     
-      <category term="经历" scheme="http://yoursite.com/tags/%E7%BB%8F%E5%8E%86/"/>
+      <category term="经历" scheme="http://taowusheng.cn/tags/%E7%BB%8F%E5%8E%86/"/>
     
-      <category term="thought" scheme="http://yoursite.com/tags/thought/"/>
+      <category term="thought" scheme="http://taowusheng.cn/tags/thought/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/01/01/20161001%20hello-world/"/>
-    <id>http://yoursite.com/2016/01/01/20161001 hello-world/</id>
+    <link href="http://taowusheng.cn/2016/01/01/20161001%20hello-world/"/>
+    <id>http://taowusheng.cn/2016/01/01/20161001 hello-world/</id>
     <published>2015-12-31T16:00:01.000Z</published>
     <updated>2018-01-11T09:14:33.739Z</updated>
     

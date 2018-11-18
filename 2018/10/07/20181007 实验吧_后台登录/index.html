@@ -35,7 +35,7 @@ ga('send', 'pageview');
 <meta name="keywords" content="CTF,md5注入">
 <meta property="og:type" content="article">
 <meta property="og:title" content="实验吧_后台登录">
-<meta property="og:url" content="http://yoursite.com/2018/10/07/20181007 实验吧_后台登录/index.html">
+<meta property="og:url" content="http://taowusheng.cn/2018/10/07/20181007 实验吧_后台登录/index.html">
 <meta property="og:site_name" content="YIFEI">
 <meta property="og:description" content="第一个CTF题！">
 <meta property="og:locale" content="default">
@@ -94,7 +94,7 @@ ga('send', 'pageview');
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://taowusheng.cn"></form>
       </div>
     </div>
   </div>
@@ -131,12 +131,12 @@ ga('send', 'pageview');
         <hr>
 <p>　　第一个CTF题！                    <a id="more"></a><br>　　题目链接：<a href="http://ctf5.shiyanbar.com/web/houtai/ffifdyop.php" target="_blank" rel="noopener">http://ctf5.shiyanbar.com/web/houtai/ffifdyop.php</a><br>　　思路：应该算是一个经验题吧，没做过的很难获取flag。<br>　　一般思路是按F12看源码,关键源码如下：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=<span class="string">"position:relative;margin:0 auto;width:300px;height:200px;padding-top:100px;font-size:20px;"</span>&gt;</span><br><span class="line">	&lt;form action=<span class="string">""</span> method=<span class="string">"post"</span>&gt;</span><br><span class="line">		&lt;table&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				请用管理员密码进行登录~~</span><br><span class="line">			&lt;/tr&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				&lt;td&gt;密码：&lt;/td&gt;&lt;td&gt;&lt;input type=<span class="string">"text"</span> name=<span class="string">'password'</span>&gt;&lt;/td&gt;</span><br><span class="line">			&lt;/tr&gt;</span><br><span class="line">			&lt;tr&gt;</span><br><span class="line">				&lt;td&gt;&lt;input type=<span class="string">"submit"</span> name=<span class="string">'submit'</span> style=<span class="string">"margin-left:30px;"</span>&gt;&lt;/td&gt;</span><br><span class="line">			&lt;/tr&gt;</span><br><span class="line">		&lt;/table&gt;</span><br><span class="line">	&lt;/form&gt;</span><br><span class="line">	﻿	&lt;/div&gt;</span><br><span class="line">	&lt;!-- $password=$_POST[<span class="string">'password'</span>];</span><br><span class="line">	$sql = <span class="string">"SELECT * FROM admin WHERE username = 'admin' and password = '"</span>.md5($password,<span class="keyword">true</span>).<span class="string">"'"</span>;</span><br><span class="line">	$result=mysqli_query($link,$sql);</span><br><span class="line">		<span class="keyword">if</span>(mysqli_num_rows($result)&gt;<span class="number">0</span>)&#123;</span><br><span class="line">			<span class="keyword">echo</span> <span class="string">'flag is :'</span>.$flag;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span>&#123;</span><br><span class="line">			<span class="keyword">echo</span> <span class="string">'密码错误!'</span>;</span><br><span class="line">		&#125; --&gt;</span><br></pre></td></tr></table></figure></p>
 <p>可以直接看到php代码，能够看出只要sql语句能够查到东西就能获取到flag，所以可以用sql注入，<br>如果输入的是  ‘or’&lt;某个真值&gt;  就能达到目的了，关键在于md5($password,true)，首先对输入的东西进行MD5加密，<br>所以得找到一个字符串，md5加密之后是想要的字符。<br>而地址栏中的“ffifdyop”md5加密之后是”276f722736c95d99e921722cf9ed621c”(十六进制显示),这个十六进制串可以在<a href="http://www.5ixuexiwang.com/str/from-hex.php" target="_blank" rel="noopener">http://www.5ixuexiwang.com/str/from-hex.php</a><br>转成字符串 ‘or’6É]é!r,ùíb ,前面有’or’就够了，后面一串垃圾值就代表一个真值。<br>另：<br>md5(string,raw)<br>string　　必需。规定要计算的字符串。<br>raw　　　　可选。规定十六进制或二进制输出格式：<br>　　　　TRUE - 原始 16 字符二进制格式<br>　　　　FALSE - 默认。32 字符十六进制数    </p>
-<p>欢迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/" target="_blank" rel="noopener">http://taowusheng.cn/</a></p>
+<p>欢迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/">http://taowusheng.cn/</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/07/20181007 实验吧_后台登录/" data-id="cjomctd4q001mfkbjc2cyqe7g" class="article-share-link">Share</a>
+      <a data-url="http://taowusheng.cn/2018/10/07/20181007 实验吧_后台登录/" data-id="cjomf0qpy001ml4bj27d3rn1z" class="article-share-link">Share</a>
       
       
         <a href="/2018/10/07/20181007 实验吧_后台登录/#comments" class="article-comment-link">
