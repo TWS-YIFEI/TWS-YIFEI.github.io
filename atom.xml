@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>YIFEI</title>
+  
+  <subtitle>每当我找到生命的意义，它就又变了...</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-11-16T06:01:29.018Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Tao WuSheng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018年书单</title>
+    <link href="http://yoursite.com/2018/12/31/20181231%202018%E5%B9%B4%E4%B9%A6%E5%8D%95/"/>
+    <id>http://yoursite.com/2018/12/31/20181231 2018年书单/</id>
+    <published>2018-12-30T16:00:01.000Z</published>
+    <updated>2018-11-16T06:01:29.018Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;读书使人进步，骄傲使人落后 :)&lt;br&gt;
+    
+    </summary>
+    
+      <category term="reading" scheme="http://yoursite.com/categories/reading/"/>
+    
+    
+      <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
+    
+      <category term="书单" scheme="http://yoursite.com/tags/%E4%B9%A6%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>王爽汇编语言实验16</title>
+    <link href="http://yoursite.com/2018/11/18/20181118%20%E7%8E%8B%E7%88%BD%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%AE%9E%E9%AA%8C16/"/>
+    <id>http://yoursite.com/2018/11/18/20181118 王爽汇编语言实验16/</id>
+    <published>2018-11-17T16:00:01.000Z</published>
+    <updated>2018-11-18T04:00:30.165Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+    
+    </summary>
+    
+      <category term="Assembly" scheme="http://yoursite.com/categories/Assembly/"/>
+    
+    
+      <category term="Assembly" scheme="http://yoursite.com/tags/Assembly/"/>
+    
+      <category term="汇编" scheme="http://yoursite.com/tags/%E6%B1%87%E7%BC%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何向别人请教问题</title>
+    <link href="http://yoursite.com/2018/11/16/20181116%20%E5%A6%82%E4%BD%95%E5%90%91%E5%88%AB%E4%BA%BA%E8%AF%B7%E6%95%99%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2018/11/16/20181116 如何向别人请教问题/</id>
+    <published>2018-11-15T16:00:01.000Z</published>
+    <updated>2018-11-18T02:53:02.170Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+    
+    </summary>
+    
+      <category term="thought" scheme="http://yoursite.com/categories/thought/"/>
+    
+    
+      <category term="thought" scheme="http://yoursite.com/tags/thought/"/>
+    
+      <category term="提问的智慧" scheme="http://yoursite.com/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/"/>
+    
+      <category term="搜索" scheme="http://yoursite.com/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WIN10下UEFI开发环境搭建</title>
+    <link href="http://yoursite.com/2018/11/12/20181112%20UEFI%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://yoursite.com/2018/11/12/20181112 UEFI开发环境搭建/</id>
+    <published>2018-11-11T16:00:01.000Z</published>
+    <updated>2018-11-12T12:19:17.809Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;　　不开发UEFI却要搭建开发环境…&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Unknown" scheme="http://yoursite.com/categories/Unknown/"/>
+    
+    
+      <category term="UEFI" scheme="http://yoursite.com/tags/UEFI/"/>
+    
+      <category term="UDK" scheme="http://yoursite.com/tags/UDK/"/>
+    
+      <category term="EDK" scheme="http://yoursite.com/tags/EDK/"/>
+    
+      <category term="patch" scheme="http://yoursite.com/tags/patch/"/>
+    
+      <category term="vs2013" scheme="http://yoursite.com/tags/vs2013/"/>
+    
+      <category term="win10" scheme="http://yoursite.com/tags/win10/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SSL协议的基本原理</title>
+    <link href="http://yoursite.com/2018/10/29/20181029%20SSL%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/"/>
+    <id>http://yoursite.com/2018/10/29/20181029 SSL协议的基本原理/</id>
+    <published>2018-10-28T16:00:01.000Z</published>
+    <updated>2018-10-31T03:43:12.431Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;　　SSL/TLS是世界上应用最广泛的密码通信协议，当我们上网页时会发现一些网址前面是”https”，这就说明这个页面是使用了SSL/TLS技术进行通信，这种方式在很大程度上可以保证通信内容的机密性。
+    
+    </summary>
+    
+      <category term="cryptography" scheme="http://yoursite.com/categories/cryptography/"/>
+    
+    
+      <category term="密码学" scheme="http://yoursite.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+      <category term="cryptography" scheme="http://yoursite.com/tags/cryptography/"/>
+    
+      <category term="SSL" scheme="http://yoursite.com/tags/SSL/"/>
+    
+      <category term="公钥" scheme="http://yoursite.com/tags/%E5%85%AC%E9%92%A5/"/>
+    
+      <category term="私钥" scheme="http://yoursite.com/tags/%E7%A7%81%E9%92%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>密码学知识总结</title>
+    <link href="http://yoursite.com/2018/10/27/20181027%20%E5%AF%86%E7%A0%81%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2018/10/27/20181027 密码学知识总结/</id>
+    <published>2018-10-26T16:00:01.000Z</published>
+    <updated>2018-10-29T04:17:38.849Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;　　很喜欢这种开放性题目的作业，每个人可以根据自己的兴趣来选择相应的题目。也是一个锻炼自主学习能力的机会。&lt;br&gt;　　学习密码学用图片可以很难直观地展现算法的流程，推荐一本书《图解密码技术》，书中有大量的图片，可以用来入门。
+    
+    </summary>
+    
+      <category term="cryptography" scheme="http://yoursite.com/categories/cryptography/"/>
+    
+    
+      <category term="密码学" scheme="http://yoursite.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+      <category term="密码体制" scheme="http://yoursite.com/tags/%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6/"/>
+    
+      <category term="公钥密码" scheme="http://yoursite.com/tags/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81/"/>
+    
+      <category term="对称密码" scheme="http://yoursite.com/tags/%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81/"/>
+    
+      <category term="RSA" scheme="http://yoursite.com/tags/RSA/"/>
+    
+      <category term="DES" scheme="http://yoursite.com/tags/DES/"/>
+    
+      <category term="SHA" scheme="http://yoursite.com/tags/SHA/"/>
+    
+      <category term="cryptography" scheme="http://yoursite.com/tags/cryptography/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAM_验证模块开发实例</title>
+    <link href="http://yoursite.com/2018/10/21/20181021%20PAM_%E9%AA%8C%E8%AF%81%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%E5%AE%9E%E4%BE%8B/"/>
+    <id>http://yoursite.com/2018/10/21/20181021 PAM_验证模块开发实例/</id>
+    <published>2018-10-20T16:00:01.000Z</published>
+    <updated>2018-10-26T02:42:58.472Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;　　操作系统安全布置的作业，搞了一周多，虽然做完了。
+    
+    </summary>
+    
+      <category term="Linux_Kernel" scheme="http://yoursite.com/categories/Linux-Kernel/"/>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+      <category term="kernal" scheme="http://yoursite.com/tags/kernal/"/>
+    
+      <category term="pam" scheme="http://yoursite.com/tags/pam/"/>
+    
+      <category term="auth" scheme="http://yoursite.com/tags/auth/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>动态规划_01背包_一维数组_路径记录</title>
+    <link href="http://yoursite.com/2018/10/09/20181009%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92_01%E8%83%8C%E5%8C%85_%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84_%E8%B7%AF%E5%BE%84%E8%AE%B0%E5%BD%95/"/>
+    <id>http://yoursite.com/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/</id>
+    <published>2018-10-08T16:00:01.000Z</published>
+    <updated>2018-10-09T08:36:01.598Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;前言&lt;br&gt;　　之前对0-1背包就理解的不是很好，并且时间长了会忘的。&lt;br&gt;　　这次又重新复习一下，理解了好几个以前没理解的点。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ACM_&amp;_Algorithm" scheme="http://yoursite.com/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="01背包" scheme="http://yoursite.com/tags/01%E8%83%8C%E5%8C%85/"/>
+    
+      <category term="动态规划" scheme="http://yoursite.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实验吧_后台登录</title>
+    <link href="http://yoursite.com/2018/10/07/20181007%20%E5%AE%9E%E9%AA%8C%E5%90%A7_%E5%90%8E%E5%8F%B0%E7%99%BB%E5%BD%95/"/>
+    <id>http://yoursite.com/2018/10/07/20181007 实验吧_后台登录/</id>
+    <published>2018-10-06T16:00:01.000Z</published>
+    <updated>2018-11-08T08:22:49.119Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;　　第一个CTF题！
+    
+    </summary>
+    
+      <category term="Security" scheme="http://yoursite.com/categories/Security/"/>
+    
+    
+      <category term="CTF" scheme="http://yoursite.com/tags/CTF/"/>
+    
+      <category term="md5注入" scheme="http://yoursite.com/tags/md5%E6%B3%A8%E5%85%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java多线程</title>
+    <link href="http://yoursite.com/2018/04/25/20180425%20java_%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    <id>http://yoursite.com/2018/04/25/20180425 java_多线程/</id>
+    <published>2018-04-24T16:00:01.000Z</published>
+    <updated>2018-10-29T04:25:29.668Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;　　java多线程….笔记&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+    
+    
+      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+    
+      <category term="Thread" scheme="http://yoursite.com/tags/Thread/"/>
+    
+      <category term="多线程" scheme="http://yoursite.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javaUDP</title>
+    <link href="http://yoursite.com/2018/04/23/20180423%20javaUDP/"/>
+    <id>http://yoursite.com/2018/04/23/20180423 javaUDP/</id>
+    <published>2018-04-22T16:00:01.000Z</published>
+    <updated>2018-10-29T04:25:24.546Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;　　javaUDP….笔记&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+    
+    
+      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+    
+      <category term="UDP" scheme="http://yoursite.com/tags/UDP/"/>
+    
+      <category term="网络编程" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javaGUI</title>
+    <link href="http://yoursite.com/2018/04/22/20180421%20java_GUI/"/>
+    <id>http://yoursite.com/2018/04/22/20180421 java_GUI/</id>
+    <published>2018-04-21T16:00:01.000Z</published>
+    <updated>2018-10-29T04:25:18.807Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;　　javaGUI….笔记&lt;br&gt;　　了解即可。。。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+    
+    
+      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+    
+      <category term="GUI" scheme="http://yoursite.com/tags/GUI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javaIO流</title>
+    <link href="http://yoursite.com/2018/04/20/20180420%20javaIO%E6%B5%81/"/>
+    <id>http://yoursite.com/2018/04/20/20180420 javaIO流/</id>
+    <published>2018-04-19T16:00:01.000Z</published>
+    <updated>2018-10-29T04:25:11.811Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;　　javaIO流….笔记&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+    
+    
+      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+    
+      <category term="IO" scheme="http://yoursite.com/tags/IO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>考研总结</title>
+    <link href="http://yoursite.com/2018/03/28/20180328%20%E8%80%83%E7%A0%94%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2018/03/28/20180328 考研总结/</id>
+    <published>2018-03-27T16:00:01.000Z</published>
+    <updated>2018-10-29T04:23:53.405Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;　　在复习的过程中，我一直想能在考研结束后写一篇总结，把自己在大半年的学习中获得的一些经验和收获记录下来，希望能给后来人一些帮助。
+    
+    </summary>
+    
+      <category term="thought" scheme="http://yoursite.com/categories/thought/"/>
+    
+    
+      <category term="考研" scheme="http://yoursite.com/tags/%E8%80%83%E7%A0%94/"/>
+    
+      <category term="计算机技术" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="北京工业大学" scheme="http://yoursite.com/tags/%E5%8C%97%E4%BA%AC%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux常用命令总结</title>
+    <link href="http://yoursite.com/2018/02/02/20180202%20linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2018/02/02/20180202 linux常用命令总结/</id>
+    <published>2018-02-01T16:00:01.000Z</published>
+    <updated>2018-02-04T13:22:39.056Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;preface&quot;&gt;&lt;a href=&quot;#preface&quot; class=&quot;headerlink&quot; title=&quot;preface&quot;&gt;&lt;/a&gt;preface&lt;/h2&gt;&lt;p&gt;　　使用linux你永远也无法避过命令行，能熟练地掌握常用命令是一种必备的技能。
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java异常处理</title>
+    <link href="http://yoursite.com/2018/01/23/20180123%20java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
+    <id>http://yoursite.com/2018/01/23/20180123 java异常处理/</id>
+    <published>2018-01-22T16:00:01.000Z</published>
+    <updated>2018-10-29T04:25:04.369Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;　　o(╯□╰)o&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+    
+    
+      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+    
+      <category term="异常处理" scheme="http://yoursite.com/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用sql语句整理</title>
+    <link href="http://yoursite.com/2018/01/22/20180122%20%E5%B8%B8%E7%94%A8sql%E8%AF%AD%E5%8F%A5%E6%95%B4%E7%90%86/"/>
+    <id>http://yoursite.com/2018/01/22/20180122 常用sql语句整理/</id>
+    <published>2018-01-21T16:00:01.000Z</published>
+    <updated>2018-01-22T11:48:51.807Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;什么是SQL&quot;&gt;&lt;a href=&quot;#什么是SQL&quot; class=&quot;headerlink&quot; title=&quot;什么是SQL?&quot;&gt;&lt;/a&gt;什么是SQL?&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="SQL" scheme="http://yoursite.com/categories/SQL/"/>
+    
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这些java面向对象的知识，你都知道吗？</title>
+    <link href="http://yoursite.com/2018/01/12/20180112%20java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    <id>http://yoursite.com/2018/01/12/20180112 java面向对象/</id>
+    <published>2018-01-11T16:00:01.000Z</published>
+    <updated>2018-10-29T04:24:59.436Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;　　我发现自己真的没学过java…… o(╯□╰)o&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+    
+    
+      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+    
+      <category term="面向对象" scheme="http://yoursite.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JDBC连接数据库</title>
+    <link href="http://yoursite.com/2017/05/15/20170515%20JDBC%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <id>http://yoursite.com/2017/05/15/20170515 JDBC连接数据库/</id>
+    <published>2017-05-14T16:00:01.000Z</published>
+    <updated>2018-10-29T04:24:50.078Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;　　用java连接mysql数据库。
+    
+    </summary>
+    
+      <category term="JAVA" scheme="http://yoursite.com/categories/JAVA/"/>
+    
+    
+      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+    
+      <category term="jdbc" scheme="http://yoursite.com/tags/jdbc/"/>
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2017山东省赛总结</title>
+    <link href="http://yoursite.com/2017/05/10/20170510%202017%E5%B1%B1%E4%B8%9C%E7%9C%81%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2017/05/10/20170510 2017山东省赛总结/</id>
+    <published>2017-05-09T16:00:01.000Z</published>
+    <updated>2018-10-29T04:24:03.968Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;　　今年的省赛已经结束，这意味着我的ACM之路要告一段落了。开始复习考研，没有很多时间用来A题了。　 距离上次省赛已经有一年时间，上次省赛我还是一个什么都不会的弱菜。而这次省赛，我仍然是一个弱菜&lt;del&gt;~~(&amp;gt;_&amp;lt;)&lt;/del&gt;~~&lt;br&gt;　　这次省赛是带着遗憾离开的。。。
+    
+    </summary>
+    
+      <category term="thought" scheme="http://yoursite.com/categories/thought/"/>
+    
+    
+      <category term="思考" scheme="http://yoursite.com/tags/%E6%80%9D%E8%80%83/"/>
+    
+      <category term="ACM" scheme="http://yoursite.com/tags/ACM/"/>
+    
+      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2016年我似乎一事无成</title>
+    <link href="http://yoursite.com/2017/03/12/20170312%202016%E5%B9%B4%E6%88%91%E4%BC%BC%E4%B9%8E%E4%B8%80%E4%BA%8B%E6%97%A0%E6%88%90/"/>
+    <id>http://yoursite.com/2017/03/12/20170312 2016年我似乎一事无成/</id>
+    <published>2017-03-11T16:00:01.000Z</published>
+    <updated>2018-10-29T04:24:15.247Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;似乎自从上了大学自己的思想观念一直在发生着巨大的变化，今年也不例外。2016年，是大二下学期和大三上学期，这期间有一些收获，但是还有很多遗憾。
+    
+    </summary>
+    
+      <category term="thought" scheme="http://yoursite.com/categories/thought/"/>
+    
+    
+      <category term="思考" scheme="http://yoursite.com/tags/%E6%80%9D%E8%80%83/"/>
+    
+      <category term="年终总结" scheme="http://yoursite.com/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="计划" scheme="http://yoursite.com/tags/%E8%AE%A1%E5%88%92/"/>
+    
+      <category term="立flag" scheme="http://yoursite.com/tags/%E7%AB%8Bflag/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最短路问题(Bellman/Dijkstra/Floyd)</title>
+    <link href="http://yoursite.com/2017/01/22/20170122%20%E6%9C%80%E7%9F%AD%E8%B7%AF%E9%97%AE%E9%A2%98(Bellman%20Dijkstra%20Floyd)/"/>
+    <id>http://yoursite.com/2017/01/22/20170122 最短路问题(Bellman Dijkstra Floyd)/</id>
+    <published>2017-01-21T16:00:01.000Z</published>
+    <updated>2017-05-16T02:02:32.366Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;寒假了，继续学习停滞了许久的算法。接着从图论开始看起，之前觉得超级难的最短路问题，经过两天的苦读，终于算是有所收获。把自己的理解记录下来，可以加深印象，并且以后再忘了的时候可以再看。&lt;br&gt;最短路问题在程序竞赛中是经常出现的内容，解决单源最短路经问题的有bellman-ford和dijkstra两种算法，其中，dijikstra算法是对bellman的改进。解决任意两点间的最短路有Floyd-warshall算法。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ACM_&amp;_Algorithm" scheme="http://yoursite.com/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://yoursite.com/tags/ACM/"/>
+    
+      <category term="挑战程序设计竞赛" scheme="http://yoursite.com/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
+    
+      <category term="最短路径算法" scheme="http://yoursite.com/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="dijkstra" scheme="http://yoursite.com/tags/dijkstra/"/>
+    
+      <category term="floyd" scheme="http://yoursite.com/tags/floyd/"/>
+    
+      <category term="bellman" scheme="http://yoursite.com/tags/bellman/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>some sentence about the ACM</title>
+    <link href="http://yoursite.com/2017/01/08/20170108%20some%20sentence%20about%20the%20ACM/"/>
+    <id>http://yoursite.com/2017/01/08/20170108 some sentence about the ACM/</id>
+    <published>2017-01-07T16:00:01.000Z</published>
+    <updated>2017-01-23T10:29:56.872Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;有一些话，只有做过ACM的人才能体会到，在搜题解的时候见到，这些话一路陪伴着我们，激励着我们。在此记录下来，相信总有一句会让你有所感触，会让你想起曾经刷题的日子。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ACM_&amp;_Algorithm" scheme="http://yoursite.com/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://yoursite.com/tags/ACM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu下如何配置postfix服务器</title>
+    <link href="http://yoursite.com/2016/12/26/20161226%20ubuntu%E4%B8%8B%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AEpostfix%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://yoursite.com/2016/12/26/20161226 ubuntu下如何配置postfix服务器/</id>
+    <published>2016-12-25T16:00:01.000Z</published>
+    <updated>2017-01-08T13:42:35.279Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;这里只是采用的最简单的配置，最后只能简单地发送邮件，也没有配置接收邮件的功能。更不用说一些安全问题。所以说配置一个邮件服务器可以简单，也可以很难。配置一个可用的企业级服务器还是很麻烦的，以后学习了再慢慢更新吧。&lt;br&gt;另外在我搜教程的时候，总是感觉教程质量参差不齐，有时候照着做却得不到正确的结果。但后来却发现，虽然确实有这方面的原因，但另一方面可能是因为自己对此没有一个大概的了解，然后导致某一步的代码输错。所以要做一个根本不了解的东西，最好不要上来就搜教程，可以先了解一下比较基本的知识，对流程和其中的一些逻辑有个大概的了解，这样反而会为后期节省很多时间。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="postfix" scheme="http://yoursite.com/tags/postfix/"/>
+    
+      <category term="mail服务器" scheme="http://yoursite.com/tags/mail%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2016年11月读书笔记</title>
+    <link href="http://yoursite.com/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/12/03/20161204 2016年11月读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2018-10-29T04:19:29.184Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;挑战程序设计竞赛/C++函数速查手册/黑客与画家&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;挑战程序设计竞赛11.03&lt;br&gt;今天读了二叉搜索树的实现以及set和map的简单用法。&lt;br&gt;  二叉搜索树实际上就是一颗二叉树，但它有一个特点，就是每个节点左二子的值小于它的值，右儿子的值大于它的值。&lt;br&gt;由于是一个树形结构，他能高效的进行插入，删除，查找。每次操作时间复杂度都在logn以内。&lt;br&gt;C++的stl里面有用二叉搜索树实现的set容器，可以很方便地直接调用。
+    
+    </summary>
+    
+      <category term="reading" scheme="http://yoursite.com/categories/reading/"/>
+    
+    
+      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="挑战程序设计竞赛" scheme="http://yoursite.com/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
+    
+      <category term="黑客与画家" scheme="http://yoursite.com/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
+    <link href="http://yoursite.com/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2018-10-29T04:19:10.984Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。。。百度上有对他的更详细的信息，想了解的自己去看。出于对他的好奇买了这本书看了一下。书很薄，唉，但我断断续续的看了几个星期。读了之后我很赞同他对摄影的许多态度，挑了一些语句记录下来。另外书是繁体字，感觉比较影响阅读！！！有种想给翻译为简体字的冲动。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;有时候不尽满意，我们便会动也不动，等待什么事情发生；有时候整个画面都松散了，拍不到好照片已成为定局，突然有个人从眼前经过，我们透过观景窗跟随他的路径，我们等待、在等待、、、然后按下快门，至此才才带着背包里好像装了一些东西的感觉离开。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;摄影，意味着头脑、眼睛与心灵都落在同意瞄准线上。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;摄影，是一种生活方式。
+    
+    </summary>
+    
+      <category term="reading" scheme="http://yoursite.com/categories/reading/"/>
+    
+    
+      <category term="摄影" scheme="http://yoursite.com/tags/%E6%91%84%E5%BD%B1/"/>
+    
+      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ACM六个月总结</title>
+    <link href="http://yoursite.com/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2016/12/03/20161203 ACM六个月总结/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2017-01-23T10:30:03.610Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
+    
+    </summary>
+    
+      <category term="ACM_&amp;_Algorithm" scheme="http://yoursite.com/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://yoursite.com/tags/ACM/"/>
+    
+      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>16年ACM青岛区域赛11.11晚</title>
+    <link href="http://yoursite.com/2016/11/11/20161111%2016%E5%B9%B4ACM%E9%9D%92%E5%B2%9B%E5%8C%BA%E5%9F%9F%E8%B5%9B11-11%E6%99%9A/"/>
+    <id>http://yoursite.com/2016/11/11/20161111 16年ACM青岛区域赛11-11晚/</id>
+    <published>2016-11-10T16:00:01.000Z</published>
+    <updated>2018-10-29T04:20:28.258Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;  现在住在一个小宾馆里面，房间里挺冷的，已经很晚了，却没有睡意。
+    
+    </summary>
+    
+      <category term="life" scheme="http://yoursite.com/categories/life/"/>
+    
+    
+      <category term="生活随笔" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="碎碎念" scheme="http://yoursite.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我为什么要写博客</title>
+    <link href="http://yoursite.com/2016/10/03/20161003%20%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2016/10/03/20161003 我为什么要写博客/</id>
+    <published>2016-10-02T16:21:41.000Z</published>
+    <updated>2018-10-29T04:23:28.917Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;现在身在一所普通二本院校，计算机专业，已经大三，但感觉自己现在还是什么都不会。大一整天忙于各种事情，为了改善自己比较内向的性格，锻炼自己的人际交往能力，和舍友参加了院里的迎新晚会，表演了一个小品，参加院里的运动会（虽然我并不是一个擅长运动的人），去面试机房管理员。。。大二在机房留下了，成为一名组长，又经常为机房的事情奔波，感觉对自己的能力又有了很多锻炼。但是又没有更多的时间来学习。&lt;br&gt;  到现在终于有更多的时间了，重新审视一下自己，四级还没有过，专业知识学的并不怎么样，项目经验没有，开始喜欢上ACM，但难得要命。自己可能唯一变化比较大的就是很少的人会说我内向了。。。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="thought" scheme="http://yoursite.com/categories/thought/"/>
+    
+    
+      <category term="思考" scheme="http://yoursite.com/tags/%E6%80%9D%E8%80%83/"/>
+    
+      <category term="经历" scheme="http://yoursite.com/tags/%E7%BB%8F%E5%8E%86/"/>
+    
+      <category term="thought" scheme="http://yoursite.com/tags/thought/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2016/01/01/20161001%20hello-world/"/>
+    <id>http://yoursite.com/2016/01/01/20161001 hello-world/</id>
+    <published>2015-12-31T16:00:01.000Z</published>
+    <updated>2018-01-11T09:14:33.739Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
