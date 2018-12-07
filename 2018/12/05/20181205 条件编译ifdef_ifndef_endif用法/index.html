@@ -29,19 +29,19 @@ ga('send', 'pageview');
 
 
   
-  <title>\#ifdef_\#ifndef_\#endif用法 | YIFEI</title>
+  <title>条件编译ifdef_ifndef_endif用法 | YIFEI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="前言C语言中的预处理功能有三种,分别是宏定义,文件包含和条件编译,这里说的就是”条件编译”.其实看名字就能看出来,满足一定条件才进行编译,是给编译器看的.">
 <meta name="keywords" content="C,预处理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="\#ifdef_\#ifndef_\#endif用法">
-<meta property="og:url" content="http://taowusheng.cn/2018/12/05/20181205 #ifdef_#ifndef_#endif用法/index.html">
+<meta property="og:title" content="条件编译ifdef_ifndef_endif用法">
+<meta property="og:url" content="http://taowusheng.cn/2018/12/05/20181205 条件编译ifdef_ifndef_endif用法/index.html">
 <meta property="og:site_name" content="YIFEI">
 <meta property="og:description" content="前言C语言中的预处理功能有三种,分别是宏定义,文件包含和条件编译,这里说的就是”条件编译”.其实看名字就能看出来,满足一定条件才进行编译,是给编译器看的.">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-07T10:25:43.481Z">
+<meta property="og:updated_time" content="2018-12-07T10:29:26.070Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="\#ifdef_\#ifndef_\#endif用法">
+<meta name="twitter:title" content="条件编译ifdef_ifndef_endif用法">
 <meta name="twitter:description" content="前言C语言中的预处理功能有三种,分别是宏定义,文件包含和条件编译,这里说的就是”条件编译”.其实看名字就能看出来,满足一定条件才进行编译,是给编译器看的.">
   
     <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
@@ -102,9 +102,9 @@ ga('send', 'pageview');
 
 </header>
       <div class="outer">
-        <section id="main"><article id="post-20181205 #ifdef_#ifndef_#endif用法" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-20181205 条件编译ifdef_ifndef_endif用法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/12/05/20181205 #ifdef_#ifndef_#endif用法/" class="article-date">
+    <a href="/2018/12/05/20181205 条件编译ifdef_ifndef_endif用法/" class="article-date">
   <time datetime="2018-12-04T16:00:01.000Z" itemprop="datePublished">2018-12-05</time>
 </a>
     
@@ -120,7 +120,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      \#ifdef_\#ifndef_\#endif用法
+      条件编译ifdef_ifndef_endif用法
     </h1>
   
 
@@ -129,7 +129,7 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>C语言中的预处理功能有三种,分别是宏定义,文件包含和条件编译,这里说的就是”条件编译”.<br>其实看名字就能看出来,满足一定条件才进行编译,是给编译器看的.<br><a id="more"></a><br>只要学过if else语句的人,就能很容易理解这个.</p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>C语言中的预处理功能有三种,分别是宏定义,文件包含和条件编译,这里说的就是”条件编译”.<br>其实看名字就能看出来,满足一定条件才进行编译,是给编译器看的.    <a id="more"></a><br>只要学过if else语句的人,就能很容易理解这个.</p>
 <h3 id="ifdef"><a href="#ifdef" class="headerlink" title="#ifdef"></a>#ifdef</h3><p>就是”if define”的意思,即”如果定义了”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#ifdef 标识符1</span><br><span class="line"> 程序段1</span><br><span class="line">#else</span><br><span class="line"> 程序段2</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure></p>
 <p>如果定义过标识符1,那就执行程序段1,负责执行程序段2.也可以有如下用法:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#ifdef 标识符1</span><br><span class="line"> 程序段1</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure></p>
 <h3 id="ifndef"><a href="#ifndef" class="headerlink" title="#ifndef"></a>#ifndef</h3><p>“if not define”,如果没有定义过.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#ifndef 标识符1</span><br><span class="line"> 程序段1</span><br><span class="line">#else</span><br><span class="line"> 程序段2</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure></p>
@@ -160,11 +160,11 @@ category : ACM_&_Algorithm CTF C_C++ C++ JAVA Linux Linux_Kernel SQL cryptograph
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://taowusheng.cn/2018/12/05/20181205 #ifdef_#ifndef_#endif用法/" data-id="cjpdvxtjk002l7cbj6vsx43h0" class="article-share-link">Share</a>
+      <a data-url="http://taowusheng.cn/2018/12/05/20181205 条件编译ifdef_ifndef_endif用法/" data-id="cjpdxmocc002jo0bjretmt6e9" class="article-share-link">Share</a>
       
       
-        <a href="/2018/12/05/20181205 #ifdef_#ifndef_#endif用法/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2018/12/05/20181205 #ifdef_#ifndef_#endif用法/" itemprop="commentCount"></span>
+        <a href="/2018/12/05/20181205 条件编译ifdef_ifndef_endif用法/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2018/12/05/20181205 条件编译ifdef_ifndef_endif用法/" itemprop="commentCount"></span>
           Comments
         </a>
       
@@ -254,7 +254,7 @@ category : ACM_&_Algorithm CTF C_C++ C++ JAVA Linux Linux_Kernel SQL cryptograph
           </li>
         
           <li>
-            <a href="/2018/12/05/20181205 #ifdef_#ifndef_#endif用法/">\#ifdef_\#ifndef_\#endif用法</a>
+            <a href="/2018/12/05/20181205 条件编译ifdef_ifndef_endif用法/">条件编译ifdef_ifndef_endif用法</a>
           </li>
         
           <li>

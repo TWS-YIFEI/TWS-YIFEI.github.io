@@ -83,25 +83,25 @@
     
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
+      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
+    
       <category term="gcc" scheme="http://taowusheng.cn/tags/gcc/"/>
     
       <category term="g++" scheme="http://taowusheng.cn/tags/g/"/>
     
-      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
-    
   </entry>
   
   <entry>
-    <title>\#ifdef_\#ifndef_\#endif用法</title>
-    <link href="http://taowusheng.cn/2018/12/05/20181205%20#ifdef_#ifndef_#endif%E7%94%A8%E6%B3%95/"/>
-    <id>http://taowusheng.cn/2018/12/05/20181205 #ifdef_#ifndef_#endif用法/</id>
+    <title>条件编译ifdef_ifndef_endif用法</title>
+    <link href="http://taowusheng.cn/2018/12/05/20181205%20%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91ifdef_ifndef_endif%E7%94%A8%E6%B3%95/"/>
+    <id>http://taowusheng.cn/2018/12/05/20181205 条件编译ifdef_ifndef_endif用法/</id>
     <published>2018-12-04T16:00:01.000Z</published>
-    <updated>2018-12-07T10:25:43.481Z</updated>
+    <updated>2018-12-07T10:29:26.070Z</updated>
     
     <summary type="html">
     
       &lt;hr&gt;
-&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;C语言中的预处理功能有三种,分别是宏定义,文件包含和条件编译,这里说的就是”条件编译”.&lt;br&gt;其实看名字就能看出来,满足一定条件才进行编译,是给编译器看的.&lt;br&gt;
+&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;C语言中的预处理功能有三种,分别是宏定义,文件包含和条件编译,这里说的就是”条件编译”.&lt;br&gt;其实看名字就能看出来,满足一定条件才进行编译,是给编译器看的.
     
     </summary>
     
@@ -133,9 +133,9 @@
     
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
-      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
-    
       <category term="git" scheme="http://taowusheng.cn/tags/git/"/>
+    
+      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
     
       <category term="github" scheme="http://taowusheng.cn/tags/github/"/>
     
@@ -771,6 +771,35 @@
   </entry>
   
   <entry>
+    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2018-10-29T04:19:10.984Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。。。百度上有对他的更详细的信息，想了解的自己去看。出于对他的好奇买了这本书看了一下。书很薄，唉，但我断断续续的看了几个星期。读了之后我很赞同他对摄影的许多态度，挑了一些语句记录下来。另外书是繁体字，感觉比较影响阅读！！！有种想给翻译为简体字的冲动。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;有时候不尽满意，我们便会动也不动，等待什么事情发生；有时候整个画面都松散了，拍不到好照片已成为定局，突然有个人从眼前经过，我们透过观景窗跟随他的路径，我们等待、在等待、、、然后按下快门，至此才才带着背包里好像装了一些东西的感觉离开。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;摄影，意味着头脑、眼睛与心灵都落在同意瞄准线上。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;摄影，是一种生活方式。
+    
+    </summary>
+    
+      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
+    
+    
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2016年11月读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
@@ -816,35 +845,6 @@
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2018-10-29T04:19:10.984Z</updated>
-    
-    <summary type="html">
-    
-      &lt;hr&gt;
-&lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。。。百度上有对他的更详细的信息，想了解的自己去看。出于对他的好奇买了这本书看了一下。书很薄，唉，但我断断续续的看了几个星期。读了之后我很赞同他对摄影的许多态度，挑了一些语句记录下来。另外书是繁体字，感觉比较影响阅读！！！有种想给翻译为简体字的冲动。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;有时候不尽满意，我们便会动也不动，等待什么事情发生；有时候整个画面都松散了，拍不到好照片已成为定局，突然有个人从眼前经过，我们透过观景窗跟随他的路径，我们等待、在等待、、、然后按下快门，至此才才带着背包里好像装了一些东西的感觉离开。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;摄影，意味着头脑、眼睛与心灵都落在同意瞄准线上。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;摄影，是一种生活方式。
-    
-    </summary>
-    
-      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
-    
-    
-      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
-    
-      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
