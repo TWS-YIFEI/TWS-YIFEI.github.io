@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://taowusheng.cn/"/>
-  <updated>2018-12-07T10:14:46.606Z</updated>
+  <updated>2018-12-25T05:52:22.496Z</updated>
   <id>http://taowusheng.cn/</id>
   
   <author>
@@ -21,12 +21,11 @@
     <link href="http://taowusheng.cn/2018/12/31/20181231%202018%E5%B9%B4%E4%B9%A6%E5%8D%95/"/>
     <id>http://taowusheng.cn/2018/12/31/20181231 2018年书单/</id>
     <published>2018-12-30T16:00:01.000Z</published>
-    <updated>2018-12-07T10:14:46.606Z</updated>
+    <updated>2018-12-25T05:52:22.496Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;读书使人进步，骄傲使人落后 :)&lt;br&gt;
+      &lt;p&gt;读书使人进步，骄傲使人落后 :)&lt;br&gt;
     
     </summary>
     
@@ -40,16 +39,129 @@
   </entry>
   
   <entry>
+    <title>如何使用gcc_g++</title>
+    <link href="http://taowusheng.cn/2018/12/25/20181225%20%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8gcc_g++/"/>
+    <id>http://taowusheng.cn/2018/12/25/20181225 如何使用gcc_g++/</id>
+    <published>2018-12-24T16:00:01.000Z</published>
+    <updated>2018-12-25T05:52:58.097Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;首先gcc与GCC要区分对待,GCC原名为GNU C Compiler,是一个C编译器的代号,但是后来不断地扩展,开始支持很多语言,GCC也就变成了编译器家族GNU Compiler Collection.&lt;br&gt;另外GNU的意思是GNU not Unix的递归简写(-_-所以那个G到底是啥意思?),这是一个由Stallman发起的一个操作系统计划,但是最后各种编译器什么的工具都写好了,核心的内核没有开发成功,但最后Linux填补了这个空白.
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://taowusheng.cn/categories/Linux/"/>
+    
+    
+      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
+    
+      <category term="gcc" scheme="http://taowusheng.cn/tags/gcc/"/>
+    
+      <category term="g++" scheme="http://taowusheng.cn/tags/g/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux软件安装命令记录</title>
+    <link href="http://taowusheng.cn/2018/12/23/20181223%20linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/"/>
+    <id>http://taowusheng.cn/2018/12/23/20181223 linux软件安装命令记录/</id>
+    <published>2018-12-22T16:00:01.000Z</published>
+    <updated>2018-12-25T05:53:05.705Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;在虚拟机中的kali安装VMware-Tools&quot;&gt;&lt;a href=&quot;#在虚拟机中的kali安装VMware-Tools&quot; class=&quot;headerlink&quot; title=&quot;在虚拟机中的kali安装VMware Tools  &quot;&gt;&lt;/a&gt;在虚拟机中的kali安装VMware Tools
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://taowusheng.cn/categories/Linux/"/>
+    
+    
+      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
+    
+      <category term="VMware" scheme="http://taowusheng.cn/tags/VMware/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C笔记</title>
+    <link href="http://taowusheng.cn/2018/12/22/20181222%20C%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2018/12/22/20181222 C笔记/</id>
+    <published>2018-12-21T16:00:01.000Z</published>
+    <updated>2018-12-25T05:53:20.064Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;虽说C语言学了好多年了，但是还是很多东西没有真正搞清楚啊。&lt;br&gt;define|typedef|static|const|数组&amp;amp;指针|多维数组&lt;br&gt;
+    
+    </summary>
+    
+      <category term="C_C++" scheme="http://taowusheng.cn/categories/C-C/"/>
+    
+    
+      <category term="C" scheme="http://taowusheng.cn/tags/C/"/>
+    
+      <category term="C++" scheme="http://taowusheng.cn/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《只是为了好玩》读后感</title>
+    <link href="http://taowusheng.cn/2018/12/15/20181215%20%E3%80%8A%E5%8F%AA%E6%98%AF%E4%B8%BA%E4%BA%86%E5%A5%BD%E7%8E%A9%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
+    <id>http://taowusheng.cn/2018/12/15/20181215 《只是为了好玩》读后感/</id>
+    <published>2018-12-14T16:00:01.000Z</published>
+    <updated>2018-12-25T05:54:52.417Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　Linus有句名言:”Talk is cheap,show me the code.”
+    
+    </summary>
+    
+      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
+    
+    
+      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+      <category term="linus" scheme="http://taowusheng.cn/tags/linus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++统计字符频数_英文字符</title>
+    <link href="http://taowusheng.cn/2018/12/09/20181209%20C++%E7%BB%9F%E8%AE%A1%E5%AD%97%E7%AC%A6%E9%A2%91%E6%95%B0_%E8%8B%B1%E6%96%87%E5%AD%97%E7%AC%A6/"/>
+    <id>http://taowusheng.cn/2018/12/09/20181209 C++统计字符频数_英文字符/</id>
+    <published>2018-12-08T16:00:01.000Z</published>
+    <updated>2018-12-25T05:54:52.433Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前给自己提了一个需求:统计一个混合中英文字符和各种符号的文件的各字符数量,结果发现,事情并没有想象的那么简单.于是先写个只统计英文字符的程序吧.
+    
+    </summary>
+    
+      <category term="C_C++" scheme="http://taowusheng.cn/categories/C-C/"/>
+    
+    
+      <category term="C++" scheme="http://taowusheng.cn/tags/C/"/>
+    
+      <category term="map" scheme="http://taowusheng.cn/tags/map/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用gdb调试程序</title>
     <link href="http://taowusheng.cn/2018/12/07/20181207%20%E4%BD%BF%E7%94%A8gdb%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F/"/>
     <id>http://taowusheng.cn/2018/12/07/20181207 使用gdb调试程序/</id>
     <published>2018-12-06T16:00:01.000Z</published>
-    <updated>2018-12-07T10:14:46.606Z</updated>
+    <updated>2018-12-25T05:54:43.636Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;gdb调试C/C++程序命令速记…&lt;br&gt;
+      &lt;p&gt;gdb调试C/C++程序命令速记…&lt;br&gt;
     
     </summary>
     
@@ -65,43 +177,15 @@
   </entry>
   
   <entry>
-    <title>如何使用gcc_g++</title>
-    <link href="http://taowusheng.cn/2018/12/06/20181206%20%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8gcc_g++/"/>
-    <id>http://taowusheng.cn/2018/12/06/20181206 如何使用gcc_g++/</id>
-    <published>2018-12-05T16:00:01.000Z</published>
-    <updated>2018-12-07T10:24:06.455Z</updated>
-    
-    <summary type="html">
-    
-      &lt;hr&gt;
-&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;首先gcc与GCC要区分对待,GCC原名为GNU C Compiler,是一个C编译器的代号,但是后来不断地扩展,开始支持很多语言,GCC也就变成了编译器家族GNU Compiler Collection.
-    
-    </summary>
-    
-      <category term="Linux" scheme="http://taowusheng.cn/categories/Linux/"/>
-    
-    
-      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
-    
-      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
-    
-      <category term="gcc" scheme="http://taowusheng.cn/tags/gcc/"/>
-    
-      <category term="g++" scheme="http://taowusheng.cn/tags/g/"/>
-    
-  </entry>
-  
-  <entry>
     <title>条件编译ifdef_ifndef_endif用法</title>
     <link href="http://taowusheng.cn/2018/12/05/20181205%20%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91ifdef_ifndef_endif%E7%94%A8%E6%B3%95/"/>
     <id>http://taowusheng.cn/2018/12/05/20181205 条件编译ifdef_ifndef_endif用法/</id>
     <published>2018-12-04T16:00:01.000Z</published>
-    <updated>2018-12-07T10:29:26.070Z</updated>
+    <updated>2018-12-25T05:54:35.527Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;C语言中的预处理功能有三种,分别是宏定义,文件包含和条件编译,这里说的就是”条件编译”.&lt;br&gt;其实看名字就能看出来,满足一定条件才进行编译,是给编译器看的.
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;C语言中的预处理功能有三种,分别是宏定义,文件包含和条件编译,这里说的就是”条件编译”.&lt;br&gt;其实看名字就能看出来,满足一定条件才进行编译,是给编译器看的.
     
     </summary>
     
@@ -119,12 +203,11 @@
     <link href="http://taowusheng.cn/2018/11/23/20181123%20git%E5%91%BD%E4%BB%A4%E9%80%9F%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2018/11/23/20181123 git命令速记/</id>
     <published>2018-11-22T16:00:01.000Z</published>
-    <updated>2018-12-07T10:14:46.575Z</updated>
+    <updated>2018-12-25T05:54:31.434Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;git是一个很神奇的工具，是由Linux的发起者linus用c语言编写的…
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;git是一个很神奇的工具，是由Linux的发起者linus用c语言编写的…
     
     </summary>
     
@@ -148,12 +231,11 @@
     <link href="http://taowusheng.cn/2018/11/22/20181122%20vim%E5%91%BD%E4%BB%A4%E9%80%9F%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2018/11/22/20181122 vim命令速记/</id>
     <published>2018-11-21T16:00:01.000Z</published>
-    <updated>2018-12-07T10:14:46.559Z</updated>
+    <updated>2018-12-25T05:54:28.028Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt; vim命令速记…
+      &lt;p&gt; vim命令速记…
     
     </summary>
     
@@ -171,12 +253,11 @@
     <link href="http://taowusheng.cn/2018/11/20/20181120%20%E6%B1%87%E7%BC%96%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2018/11/20/20181120 汇编笔记/</id>
     <published>2018-11-19T16:00:01.000Z</published>
-    <updated>2018-11-27T01:45:02.410Z</updated>
+    <updated>2018-12-25T05:54:23.028Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;汇编…&lt;br&gt;
+      &lt;p&gt;汇编…&lt;br&gt;
     
     </summary>
     
@@ -194,11 +275,17 @@
     <link href="http://taowusheng.cn/2018/11/18/20181118%20%E7%8E%8B%E7%88%BD%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%AE%9E%E9%AA%8C16/"/>
     <id>http://taowusheng.cn/2018/11/18/20181118 王爽汇编语言实验16/</id>
     <published>2018-11-17T16:00:01.000Z</published>
-    <updated>2018-11-18T04:00:30.165Z</updated>
+    <updated>2018-12-25T05:54:19.232Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
+      
+      
+        
+        
+          
+        
+      
     
     </summary>
     
@@ -216,11 +303,17 @@
     <link href="http://taowusheng.cn/2018/11/16/20181116%20%E5%A6%82%E4%BD%95%E5%90%91%E5%88%AB%E4%BA%BA%E8%AF%B7%E6%95%99%E9%97%AE%E9%A2%98/"/>
     <id>http://taowusheng.cn/2018/11/16/20181116 如何向别人请教问题/</id>
     <published>2018-11-15T16:00:01.000Z</published>
-    <updated>2018-11-18T02:53:02.170Z</updated>
+    <updated>2018-12-25T05:54:12.607Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
+      
+      
+        
+        
+          
+        
+      
     
     </summary>
     
@@ -240,12 +333,11 @@
     <link href="http://taowusheng.cn/2018/11/12/20181112%20UEFI%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>http://taowusheng.cn/2018/11/12/20181112 UEFI开发环境搭建/</id>
     <published>2018-11-11T16:00:01.000Z</published>
-    <updated>2018-11-12T12:19:17.809Z</updated>
+    <updated>2018-12-25T05:54:08.232Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;　　不开发UEFI却要搭建开发环境…&lt;br&gt;
+      &lt;p&gt;　　不开发UEFI却要搭建开发环境…&lt;br&gt;
     
     </summary>
     
@@ -271,27 +363,26 @@
     <link href="http://taowusheng.cn/2018/10/29/20181029%20SSL%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/"/>
     <id>http://taowusheng.cn/2018/10/29/20181029 SSL协议的基本原理/</id>
     <published>2018-10-28T16:00:01.000Z</published>
-    <updated>2018-10-31T03:43:12.431Z</updated>
+    <updated>2018-12-25T05:54:01.514Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;　　SSL/TLS是世界上应用最广泛的密码通信协议，当我们上网页时会发现一些网址前面是”https”，这就说明这个页面是使用了SSL/TLS技术进行通信，这种方式在很大程度上可以保证通信内容的机密性。
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;　　SSL/TLS是世界上应用最广泛的密码通信协议，当我们上网页时会发现一些网址前面是”https”，这就说明这个页面是使用了SSL/TLS技术进行通信，这种方式在很大程度上可以保证通信内容的机密性。
     
     </summary>
     
       <category term="cryptography" scheme="http://taowusheng.cn/categories/cryptography/"/>
     
     
+      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
+    
       <category term="SSL" scheme="http://taowusheng.cn/tags/SSL/"/>
     
       <category term="公钥" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5/"/>
     
       <category term="私钥" scheme="http://taowusheng.cn/tags/%E7%A7%81%E9%92%A5/"/>
-    
-      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
-    
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -300,12 +391,11 @@
     <link href="http://taowusheng.cn/2018/10/27/20181027%20%E5%AF%86%E7%A0%81%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/10/27/20181027 密码学知识总结/</id>
     <published>2018-10-26T16:00:01.000Z</published>
-    <updated>2018-10-29T04:17:38.849Z</updated>
+    <updated>2018-12-25T05:53:55.843Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;　　很喜欢这种开放性题目的作业，每个人可以根据自己的兴趣来选择相应的题目。也是一个锻炼自主学习能力的机会。&lt;br&gt;　　学习密码学用图片可以很难直观地展现算法的流程，推荐一本书《图解密码技术》，书中有大量的图片，可以用来入门。
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;　　很喜欢这种开放性题目的作业，每个人可以根据自己的兴趣来选择相应的题目。也是一个锻炼自主学习能力的机会。&lt;br&gt;　　学习密码学用图片可以很难直观地展现算法的流程，推荐一本书《图解密码技术》，书中有大量的图片，可以用来入门。
     
     </summary>
     
@@ -313,8 +403,6 @@
     
     
       <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
-    
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
       <category term="密码体制" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6/"/>
     
@@ -327,6 +415,8 @@
       <category term="DES" scheme="http://taowusheng.cn/tags/DES/"/>
     
       <category term="SHA" scheme="http://taowusheng.cn/tags/SHA/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -361,12 +451,11 @@
     <link href="http://taowusheng.cn/2018/10/09/20181009%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92_01%E8%83%8C%E5%8C%85_%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84_%E8%B7%AF%E5%BE%84%E8%AE%B0%E5%BD%95/"/>
     <id>http://taowusheng.cn/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/</id>
     <published>2018-10-08T16:00:01.000Z</published>
-    <updated>2018-10-09T08:36:01.598Z</updated>
+    <updated>2018-12-25T05:53:38.297Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;前言&lt;br&gt;　　之前对0-1背包就理解的不是很好，并且时间长了会忘的。&lt;br&gt;　　这次又重新复习一下，理解了好几个以前没理解的点。&lt;br&gt;
+      &lt;p&gt;前言&lt;br&gt;　　之前对0-1背包就理解的不是很好，并且时间长了会忘的。&lt;br&gt;　　这次又重新复习一下，理解了好几个以前没理解的点。&lt;br&gt;
     
     </summary>
     
@@ -386,12 +475,11 @@
     <link href="http://taowusheng.cn/2018/10/07/20181007%20%E5%AE%9E%E9%AA%8C%E5%90%A7_%E5%90%8E%E5%8F%B0%E7%99%BB%E5%BD%95/"/>
     <id>http://taowusheng.cn/2018/10/07/20181007 实验吧_后台登录/</id>
     <published>2018-10-06T16:00:01.000Z</published>
-    <updated>2018-11-08T08:22:49.119Z</updated>
+    <updated>2018-12-25T05:55:59.033Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;　　第一个CTF题！
+      &lt;p&gt;　　第一个CTF题！
     
     </summary>
     
@@ -409,12 +497,11 @@
     <link href="http://taowusheng.cn/2018/04/25/20180425%20java_%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     <id>http://taowusheng.cn/2018/04/25/20180425 java_多线程/</id>
     <published>2018-04-24T16:00:01.000Z</published>
-    <updated>2018-10-29T04:25:29.668Z</updated>
+    <updated>2018-12-25T05:55:59.064Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;　　java多线程….笔记&lt;br&gt;
+      &lt;p&gt;　　java多线程….笔记&lt;br&gt;
     
     </summary>
     
@@ -434,12 +521,11 @@
     <link href="http://taowusheng.cn/2018/04/23/20180423%20javaUDP/"/>
     <id>http://taowusheng.cn/2018/04/23/20180423 javaUDP/</id>
     <published>2018-04-22T16:00:01.000Z</published>
-    <updated>2018-10-29T04:25:24.546Z</updated>
+    <updated>2018-12-25T05:55:59.080Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;　　javaUDP….笔记&lt;br&gt;
+      &lt;p&gt;　　javaUDP….笔记&lt;br&gt;
     
     </summary>
     
@@ -459,12 +545,11 @@
     <link href="http://taowusheng.cn/2018/04/22/20180421%20java_GUI/"/>
     <id>http://taowusheng.cn/2018/04/22/20180421 java_GUI/</id>
     <published>2018-04-21T16:00:01.000Z</published>
-    <updated>2018-10-29T04:25:18.807Z</updated>
+    <updated>2018-12-25T05:55:59.093Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;　　javaGUI….笔记&lt;br&gt;　　了解即可。。。&lt;br&gt;
+      &lt;p&gt;　　javaGUI….笔记&lt;br&gt;　　了解即可。。。&lt;br&gt;
     
     </summary>
     
@@ -482,12 +567,11 @@
     <link href="http://taowusheng.cn/2018/04/20/20180420%20javaIO%E6%B5%81/"/>
     <id>http://taowusheng.cn/2018/04/20/20180420 javaIO流/</id>
     <published>2018-04-19T16:00:01.000Z</published>
-    <updated>2018-10-29T04:25:11.811Z</updated>
+    <updated>2018-12-25T05:55:59.109Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;　　javaIO流….笔记&lt;br&gt;
+      &lt;p&gt;　　javaIO流….笔记&lt;br&gt;
     
     </summary>
     
@@ -531,12 +615,11 @@
     <link href="http://taowusheng.cn/2018/02/02/20180202%20linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/02/02/20180202 linux常用命令总结/</id>
     <published>2018-02-01T16:00:01.000Z</published>
-    <updated>2018-11-27T01:28:04.623Z</updated>
+    <updated>2018-12-25T05:56:27.898Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h2 id=&quot;preface&quot;&gt;&lt;a href=&quot;#preface&quot; class=&quot;headerlink&quot; title=&quot;preface&quot;&gt;&lt;/a&gt;preface&lt;/h2&gt;&lt;p&gt;　　使用linux你永远也无法避过命令行，能熟练地掌握常用命令是一种必备的技能。
+      &lt;h2 id=&quot;preface&quot;&gt;&lt;a href=&quot;#preface&quot; class=&quot;headerlink&quot; title=&quot;preface&quot;&gt;&lt;/a&gt;preface&lt;/h2&gt;&lt;p&gt;　　使用linux你永远也无法避过命令行，能熟练地掌握常用命令是一种必备的技能。
     
     </summary>
     
@@ -552,12 +635,11 @@
     <link href="http://taowusheng.cn/2018/01/23/20180123%20java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
     <id>http://taowusheng.cn/2018/01/23/20180123 java异常处理/</id>
     <published>2018-01-22T16:00:01.000Z</published>
-    <updated>2018-10-29T04:25:04.369Z</updated>
+    <updated>2018-12-25T05:56:26.695Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;　　o(╯□╰)o&lt;br&gt;
+      &lt;p&gt;　　o(╯□╰)o&lt;br&gt;
     
     </summary>
     
@@ -575,12 +657,11 @@
     <link href="http://taowusheng.cn/2018/01/22/20180122%20%E5%B8%B8%E7%94%A8sql%E8%AF%AD%E5%8F%A5%E6%95%B4%E7%90%86/"/>
     <id>http://taowusheng.cn/2018/01/22/20180122 常用sql语句整理/</id>
     <published>2018-01-21T16:00:01.000Z</published>
-    <updated>2018-01-22T11:48:51.807Z</updated>
+    <updated>2018-12-25T05:56:25.648Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h2 id=&quot;什么是SQL&quot;&gt;&lt;a href=&quot;#什么是SQL&quot; class=&quot;headerlink&quot; title=&quot;什么是SQL?&quot;&gt;&lt;/a&gt;什么是SQL?&lt;/h2&gt;
+      &lt;h2 id=&quot;什么是SQL&quot;&gt;&lt;a href=&quot;#什么是SQL&quot; class=&quot;headerlink&quot; title=&quot;什么是SQL?&quot;&gt;&lt;/a&gt;什么是SQL?&lt;/h2&gt;
     
     </summary>
     
@@ -598,12 +679,11 @@
     <link href="http://taowusheng.cn/2018/01/12/20180112%20java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     <id>http://taowusheng.cn/2018/01/12/20180112 java面向对象/</id>
     <published>2018-01-11T16:00:01.000Z</published>
-    <updated>2018-10-29T04:24:59.436Z</updated>
+    <updated>2018-12-25T05:56:50.485Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;　　我发现自己真的没学过java…… o(╯□╰)o&lt;br&gt;
+      &lt;p&gt;　　我发现自己真的没学过java…… o(╯□╰)o&lt;br&gt;
     
     </summary>
     
@@ -621,12 +701,11 @@
     <link href="http://taowusheng.cn/2017/05/15/20170515%20JDBC%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     <id>http://taowusheng.cn/2017/05/15/20170515 JDBC连接数据库/</id>
     <published>2017-05-14T16:00:01.000Z</published>
-    <updated>2018-10-29T04:24:50.078Z</updated>
+    <updated>2018-12-25T05:56:50.500Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;　　用java连接mysql数据库。
+      &lt;p&gt;　　用java连接mysql数据库。
     
     </summary>
     
@@ -646,12 +725,11 @@
     <link href="http://taowusheng.cn/2017/05/10/20170510%202017%E5%B1%B1%E4%B8%9C%E7%9C%81%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2017/05/10/20170510 2017山东省赛总结/</id>
     <published>2017-05-09T16:00:01.000Z</published>
-    <updated>2018-10-29T04:24:03.968Z</updated>
+    <updated>2018-12-25T05:56:50.516Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;　　今年的省赛已经结束，这意味着我的ACM之路要告一段落了。开始复习考研，没有很多时间用来A题了。　 距离上次省赛已经有一年时间，上次省赛我还是一个什么都不会的弱菜。而这次省赛，我仍然是一个弱菜&lt;del&gt;~~(&amp;gt;_&amp;lt;)&lt;/del&gt;~~&lt;br&gt;　　这次省赛是带着遗憾离开的。。。
+      &lt;p&gt;　　今年的省赛已经结束，这意味着我的ACM之路要告一段落了。开始复习考研，没有很多时间用来A题了。　 距离上次省赛已经有一年时间，上次省赛我还是一个什么都不会的弱菜。而这次省赛，我仍然是一个弱菜&lt;del&gt;~~(&amp;gt;_&amp;lt;)&lt;/del&gt;~~&lt;br&gt;　　这次省赛是带着遗憾离开的。。。
     
     </summary>
     
@@ -671,12 +749,11 @@
     <link href="http://taowusheng.cn/2017/03/12/20170312%202016%E5%B9%B4%E6%88%91%E4%BC%BC%E4%B9%8E%E4%B8%80%E4%BA%8B%E6%97%A0%E6%88%90/"/>
     <id>http://taowusheng.cn/2017/03/12/20170312 2016年我似乎一事无成/</id>
     <published>2017-03-11T16:00:01.000Z</published>
-    <updated>2018-10-29T04:24:15.247Z</updated>
+    <updated>2018-12-25T05:56:50.516Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;似乎自从上了大学自己的思想观念一直在发生着巨大的变化，今年也不例外。2016年，是大二下学期和大三上学期，这期间有一些收获，但是还有很多遗憾。
+      &lt;p&gt;似乎自从上了大学自己的思想观念一直在发生着巨大的变化，今年也不例外。2016年，是大二下学期和大三上学期，这期间有一些收获，但是还有很多遗憾。
     
     </summary>
     
@@ -698,12 +775,11 @@
     <link href="http://taowusheng.cn/2017/01/22/20170122%20%E6%9C%80%E7%9F%AD%E8%B7%AF%E9%97%AE%E9%A2%98(Bellman%20Dijkstra%20Floyd)/"/>
     <id>http://taowusheng.cn/2017/01/22/20170122 最短路问题(Bellman Dijkstra Floyd)/</id>
     <published>2017-01-21T16:00:01.000Z</published>
-    <updated>2017-05-16T02:02:32.366Z</updated>
+    <updated>2018-12-25T05:56:50.532Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;寒假了，继续学习停滞了许久的算法。接着从图论开始看起，之前觉得超级难的最短路问题，经过两天的苦读，终于算是有所收获。把自己的理解记录下来，可以加深印象，并且以后再忘了的时候可以再看。&lt;br&gt;最短路问题在程序竞赛中是经常出现的内容，解决单源最短路经问题的有bellman-ford和dijkstra两种算法，其中，dijikstra算法是对bellman的改进。解决任意两点间的最短路有Floyd-warshall算法。&lt;br&gt;
+      &lt;p&gt;寒假了，继续学习停滞了许久的算法。接着从图论开始看起，之前觉得超级难的最短路问题，经过两天的苦读，终于算是有所收获。把自己的理解记录下来，可以加深印象，并且以后再忘了的时候可以再看。&lt;br&gt;最短路问题在程序竞赛中是经常出现的内容，解决单源最短路经问题的有bellman-ford和dijkstra两种算法，其中，dijikstra算法是对bellman的改进。解决任意两点间的最短路有Floyd-warshall算法。&lt;br&gt;
     
     </summary>
     
@@ -729,12 +805,11 @@
     <link href="http://taowusheng.cn/2017/01/08/20170108%20some%20sentence%20about%20the%20ACM/"/>
     <id>http://taowusheng.cn/2017/01/08/20170108 some sentence about the ACM/</id>
     <published>2017-01-07T16:00:01.000Z</published>
-    <updated>2017-01-23T10:29:56.872Z</updated>
+    <updated>2018-12-25T05:57:21.422Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;有一些话，只有做过ACM的人才能体会到，在搜题解的时候见到，这些话一路陪伴着我们，激励着我们。在此记录下来，相信总有一句会让你有所感触，会让你想起曾经刷题的日子。&lt;br&gt;
+      &lt;p&gt;有一些话，只有做过ACM的人才能体会到，在搜题解的时候见到，这些话一路陪伴着我们，激励着我们。在此记录下来，相信总有一句会让你有所感触，会让你想起曾经刷题的日子。&lt;br&gt;
     
     </summary>
     
@@ -750,12 +825,11 @@
     <link href="http://taowusheng.cn/2016/12/26/20161226%20ubuntu%E4%B8%8B%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AEpostfix%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     <id>http://taowusheng.cn/2016/12/26/20161226 ubuntu下如何配置postfix服务器/</id>
     <published>2016-12-25T16:00:01.000Z</published>
-    <updated>2017-01-08T13:42:35.279Z</updated>
+    <updated>2018-12-25T05:57:21.453Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;这里只是采用的最简单的配置，最后只能简单地发送邮件，也没有配置接收邮件的功能。更不用说一些安全问题。所以说配置一个邮件服务器可以简单，也可以很难。配置一个可用的企业级服务器还是很麻烦的，以后学习了再慢慢更新吧。&lt;br&gt;另外在我搜教程的时候，总是感觉教程质量参差不齐，有时候照着做却得不到正确的结果。但后来却发现，虽然确实有这方面的原因，但另一方面可能是因为自己对此没有一个大概的了解，然后导致某一步的代码输错。所以要做一个根本不了解的东西，最好不要上来就搜教程，可以先了解一下比较基本的知识，对流程和其中的一些逻辑有个大概的了解，这样反而会为后期节省很多时间。&lt;br&gt;
+      &lt;p&gt;这里只是采用的最简单的配置，最后只能简单地发送邮件，也没有配置接收邮件的功能。更不用说一些安全问题。所以说配置一个邮件服务器可以简单，也可以很难。配置一个可用的企业级服务器还是很麻烦的，以后学习了再慢慢更新吧。&lt;br&gt;另外在我搜教程的时候，总是感觉教程质量参差不齐，有时候照着做却得不到正确的结果。但后来却发现，虽然确实有这方面的原因，但另一方面可能是因为自己对此没有一个大概的了解，然后导致某一步的代码输错。所以要做一个根本不了解的东西，最好不要上来就搜教程，可以先了解一下比较基本的知识，对流程和其中的一些逻辑有个大概的了解，这样反而会为后期节省很多时间。&lt;br&gt;
     
     </summary>
     
@@ -771,45 +845,15 @@
   </entry>
   
   <entry>
-    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2018-10-29T04:19:10.984Z</updated>
-    
-    <summary type="html">
-    
-      &lt;hr&gt;
-&lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。。。百度上有对他的更详细的信息，想了解的自己去看。出于对他的好奇买了这本书看了一下。书很薄，唉，但我断断续续的看了几个星期。读了之后我很赞同他对摄影的许多态度，挑了一些语句记录下来。另外书是繁体字，感觉比较影响阅读！！！有种想给翻译为简体字的冲动。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;有时候不尽满意，我们便会动也不动，等待什么事情发生；有时候整个画面都松散了，拍不到好照片已成为定局，突然有个人从眼前经过，我们透过观景窗跟随他的路径，我们等待、在等待、、、然后按下快门，至此才才带着背包里好像装了一些东西的感觉离开。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;摄影，意味着头脑、眼睛与心灵都落在同意瞄准线上。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;摄影，是一种生活方式。
-    
-    </summary>
-    
-      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
-    
-    
-      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
-    
-  </entry>
-  
-  <entry>
     <title>2016年11月读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
     <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2018-10-29T04:19:29.184Z</updated>
+    <updated>2018-12-25T05:57:11.891Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;挑战程序设计竞赛/C++函数速查手册/黑客与画家&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;挑战程序设计竞赛/C++函数速查手册/黑客与画家&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;挑战程序设计竞赛11.03&lt;br&gt;今天读了二叉搜索树的实现以及set和map的简单用法。&lt;br&gt;  二叉搜索树实际上就是一颗二叉树，但它有一个特点，就是每个节点左二子的值小于它的值，右儿子的值大于它的值。&lt;br&gt;由于是一个树形结构，他能高效的进行插入，删除，查找。每次操作时间复杂度都在logn以内。&lt;br&gt;C++的stl里面有用二叉搜索树实现的set容器，可以很方便地直接调用。
     
     </summary>
@@ -826,16 +870,43 @@
   </entry>
   
   <entry>
+    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2018-12-25T05:55:59.124Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。。。百度上有对他的更详细的信息，想了解的自己去看。出于对他的好奇买了这本书看了一下。书很薄，唉，但我断断续续的看了几个星期。读了之后我很赞同他对摄影的许多态度，挑了一些语句记录下来。另外书是繁体字，感觉比较影响阅读！！！有种想给翻译为简体字的冲动。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;有时候不尽满意，我们便会动也不动，等待什么事情发生；有时候整个画面都松散了，拍不到好照片已成为定局，突然有个人从眼前经过，我们透过观景窗跟随他的路径，我们等待、在等待、、、然后按下快门，至此才才带着背包里好像装了一些东西的感觉离开。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;摄影，意味着头脑、眼睛与心灵都落在同意瞄准线上。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;摄影，是一种生活方式。
+    
+    </summary>
+    
+      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
+    
+    
+      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
+    
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ACM六个月总结</title>
     <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
     <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2017-01-23T10:30:03.610Z</updated>
+    <updated>2018-12-25T05:57:21.469Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
     
     </summary>
     
@@ -853,12 +924,11 @@
     <link href="http://taowusheng.cn/2016/11/11/20161111%2016%E5%B9%B4ACM%E9%9D%92%E5%B2%9B%E5%8C%BA%E5%9F%9F%E8%B5%9B11-11%E6%99%9A/"/>
     <id>http://taowusheng.cn/2016/11/11/20161111 16年ACM青岛区域赛11-11晚/</id>
     <published>2016-11-10T16:00:01.000Z</published>
-    <updated>2018-10-29T04:20:28.258Z</updated>
+    <updated>2018-12-25T05:57:36.651Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;  现在住在一个小宾馆里面，房间里挺冷的，已经很晚了，却没有睡意。
+      &lt;p&gt;  现在住在一个小宾馆里面，房间里挺冷的，已经很晚了，却没有睡意。
     
     </summary>
     
@@ -876,12 +946,11 @@
     <link href="http://taowusheng.cn/2016/10/03/20161003%20%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2/"/>
     <id>http://taowusheng.cn/2016/10/03/20161003 我为什么要写博客/</id>
     <published>2016-10-02T16:21:41.000Z</published>
-    <updated>2018-10-29T04:23:28.917Z</updated>
+    <updated>2018-12-25T05:57:35.698Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;现在身在一所普通二本院校，计算机专业，已经大三，但感觉自己现在还是什么都不会。大一整天忙于各种事情，为了改善自己比较内向的性格，锻炼自己的人际交往能力，和舍友参加了院里的迎新晚会，表演了一个小品，参加院里的运动会（虽然我并不是一个擅长运动的人），去面试机房管理员。。。大二在机房留下了，成为一名组长，又经常为机房的事情奔波，感觉对自己的能力又有了很多锻炼。但是又没有更多的时间来学习。&lt;br&gt;  到现在终于有更多的时间了，重新审视一下自己，四级还没有过，专业知识学的并不怎么样，项目经验没有，开始喜欢上ACM，但难得要命。自己可能唯一变化比较大的就是很少的人会说我内向了。。。&lt;br&gt;
+      &lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;现在身在一所普通二本院校，计算机专业，已经大三，但感觉自己现在还是什么都不会。大一整天忙于各种事情，为了改善自己比较内向的性格，锻炼自己的人际交往能力，和舍友参加了院里的迎新晚会，表演了一个小品，参加院里的运动会（虽然我并不是一个擅长运动的人），去面试机房管理员。。。大二在机房留下了，成为一名组长，又经常为机房的事情奔波，感觉对自己的能力又有了很多锻炼。但是又没有更多的时间来学习。&lt;br&gt;  到现在终于有更多的时间了，重新审视一下自己，四级还没有过，专业知识学的并不怎么样，项目经验没有，开始喜欢上ACM，但难得要命。自己可能唯一变化比较大的就是很少的人会说我内向了。。。&lt;br&gt;
     
     </summary>
     
