@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://taowusheng.cn/"/>
-  <updated>2018-12-25T05:52:22.496Z</updated>
+  <updated>2019-01-16T10:39:07.610Z</updated>
   <id>http://taowusheng.cn/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>与神对话_笔记</title>
+    <link href="http://taowusheng.cn/2019/01/16/20190112%20%E4%B8%8E%E7%A5%9E%E5%AF%B9%E8%AF%9D_%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2019/01/16/20190112 与神对话_笔记/</id>
+    <published>2019-01-16T10:27:10.801Z</published>
+    <updated>2019-01-16T10:39:07.610Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;欲望和需要不是相同的东西(不过你们大多数人在现世生活里将它们混为一谈)。
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018年书单</title>
     <link href="http://taowusheng.cn/2018/12/31/20181231%202018%E5%B9%B4%E4%B9%A6%E5%8D%95/"/>
     <id>http://taowusheng.cn/2018/12/31/20181231 2018年书单/</id>
     <published>2018-12-30T16:00:01.000Z</published>
-    <updated>2018-12-25T05:52:22.496Z</updated>
+    <updated>2019-01-16T10:44:05.620Z</updated>
     
     <summary type="html">
     
@@ -29,12 +52,38 @@
     
     </summary>
     
-      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
     
     
       <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
     
       <category term="书单" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年终总结</title>
+    <link href="http://taowusheng.cn/2018/12/30/20181230%202018%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2018/12/30/20181230 2018年终总结/</id>
+    <published>2018-12-29T16:00:01.000Z</published>
+    <updated>2019-01-16T10:25:51.871Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;转眼就到了2019了,才想起来2017的总结还没写呢.那就17,18一块总(记)结(录)了吧.&lt;br&gt;生活仍然在不断变化着,这两年确实发生了好多事呢.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
+    
+    
+      <category term="thought" scheme="http://taowusheng.cn/tags/thought/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="2018" scheme="http://taowusheng.cn/tags/2018/"/>
+    
+      <category term="2017" scheme="http://taowusheng.cn/tags/2017/"/>
     
   </entry>
   
@@ -100,9 +149,9 @@
       <category term="C_C++" scheme="http://taowusheng.cn/categories/C-C/"/>
     
     
-      <category term="C" scheme="http://taowusheng.cn/tags/C/"/>
-    
       <category term="C++" scheme="http://taowusheng.cn/tags/C/"/>
+    
+      <category term="C" scheme="http://taowusheng.cn/tags/C/"/>
     
   </entry>
   
@@ -111,7 +160,7 @@
     <link href="http://taowusheng.cn/2018/12/15/20181215%20%E3%80%8A%E5%8F%AA%E6%98%AF%E4%B8%BA%E4%BA%86%E5%A5%BD%E7%8E%A9%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
     <id>http://taowusheng.cn/2018/12/15/20181215 《只是为了好玩》读后感/</id>
     <published>2018-12-14T16:00:01.000Z</published>
-    <updated>2018-12-25T05:54:52.417Z</updated>
+    <updated>2019-01-16T10:44:05.683Z</updated>
     
     <summary type="html">
     
@@ -119,7 +168,7 @@
     
     </summary>
     
-      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
     
     
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
@@ -203,7 +252,7 @@
     <link href="http://taowusheng.cn/2018/11/23/20181123%20git%E5%91%BD%E4%BB%A4%E9%80%9F%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2018/11/23/20181123 git命令速记/</id>
     <published>2018-11-22T16:00:01.000Z</published>
-    <updated>2018-12-25T05:54:31.434Z</updated>
+    <updated>2019-01-16T10:25:52.043Z</updated>
     
     <summary type="html">
     
@@ -231,7 +280,7 @@
     <link href="http://taowusheng.cn/2018/11/22/20181122%20vim%E5%91%BD%E4%BB%A4%E9%80%9F%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2018/11/22/20181122 vim命令速记/</id>
     <published>2018-11-21T16:00:01.000Z</published>
-    <updated>2018-12-25T05:54:28.028Z</updated>
+    <updated>2019-01-16T10:25:51.855Z</updated>
     
     <summary type="html">
     
@@ -242,9 +291,9 @@
       <category term="Linux" scheme="http://taowusheng.cn/categories/Linux/"/>
     
     
-      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
-    
       <category term="vim" scheme="http://taowusheng.cn/tags/vim/"/>
+    
+      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
   </entry>
   
@@ -297,7 +346,7 @@
     <link href="http://taowusheng.cn/2018/11/16/20181116%20%E5%A6%82%E4%BD%95%E5%90%91%E5%88%AB%E4%BA%BA%E8%AF%B7%E6%95%99%E9%97%AE%E9%A2%98/"/>
     <id>http://taowusheng.cn/2018/11/16/20181116 如何向别人请教问题/</id>
     <published>2018-11-15T16:00:01.000Z</published>
-    <updated>2018-12-30T01:58:53.662Z</updated>
+    <updated>2019-01-16T10:25:51.840Z</updated>
     
     <summary type="html">
     
@@ -305,7 +354,7 @@
     
     </summary>
     
-      <category term="thought" scheme="http://taowusheng.cn/categories/thought/"/>
+      <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
       <category term="thought" scheme="http://taowusheng.cn/tags/thought/"/>
@@ -351,7 +400,7 @@
     <link href="http://taowusheng.cn/2018/10/29/20181029%20SSL%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/"/>
     <id>http://taowusheng.cn/2018/10/29/20181029 SSL协议的基本原理/</id>
     <published>2018-10-28T16:00:01.000Z</published>
-    <updated>2018-12-25T05:54:01.514Z</updated>
+    <updated>2019-01-16T10:45:08.998Z</updated>
     
     <summary type="html">
     
@@ -359,7 +408,7 @@
     
     </summary>
     
-      <category term="cryptography" scheme="http://taowusheng.cn/categories/cryptography/"/>
+      <category term="Cryptography" scheme="http://taowusheng.cn/categories/Cryptography/"/>
     
     
       <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
@@ -379,7 +428,7 @@
     <link href="http://taowusheng.cn/2018/10/27/20181027%20%E5%AF%86%E7%A0%81%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/10/27/20181027 密码学知识总结/</id>
     <published>2018-10-26T16:00:01.000Z</published>
-    <updated>2018-12-25T05:53:55.843Z</updated>
+    <updated>2019-01-16T10:45:01.637Z</updated>
     
     <summary type="html">
     
@@ -387,7 +436,7 @@
     
     </summary>
     
-      <category term="cryptography" scheme="http://taowusheng.cn/categories/cryptography/"/>
+      <category term="Cryptography" scheme="http://taowusheng.cn/categories/Cryptography/"/>
     
     
       <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
@@ -577,7 +626,7 @@
     <link href="http://taowusheng.cn/2018/03/28/20180328%20%E8%80%83%E7%A0%94%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/03/28/20180328 考研总结/</id>
     <published>2018-03-27T16:00:01.000Z</published>
-    <updated>2018-11-19T11:19:15.202Z</updated>
+    <updated>2019-01-16T10:25:51.824Z</updated>
     
     <summary type="html">
     
@@ -585,7 +634,7 @@
     
     </summary>
     
-      <category term="thought" scheme="http://taowusheng.cn/categories/thought/"/>
+      <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
@@ -656,9 +705,9 @@
       <category term="SQL" scheme="http://taowusheng.cn/categories/SQL/"/>
     
     
-      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="SQL" scheme="http://taowusheng.cn/tags/SQL/"/>
+    
+      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -700,11 +749,11 @@
       <category term="JAVA" scheme="http://taowusheng.cn/categories/JAVA/"/>
     
     
+      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
       <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
       <category term="jdbc" scheme="http://taowusheng.cn/tags/jdbc/"/>
-    
-      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -713,7 +762,7 @@
     <link href="http://taowusheng.cn/2017/05/10/20170510%202017%E5%B1%B1%E4%B8%9C%E7%9C%81%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2017/05/10/20170510 2017山东省赛总结/</id>
     <published>2017-05-09T16:00:01.000Z</published>
-    <updated>2018-12-25T05:56:50.516Z</updated>
+    <updated>2019-01-16T10:25:51.809Z</updated>
     
     <summary type="html">
     
@@ -721,7 +770,7 @@
     
     </summary>
     
-      <category term="thought" scheme="http://taowusheng.cn/categories/thought/"/>
+      <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
       <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
@@ -737,7 +786,7 @@
     <link href="http://taowusheng.cn/2017/03/12/20170312%202016%E5%B9%B4%E6%88%91%E4%BC%BC%E4%B9%8E%E4%B8%80%E4%BA%8B%E6%97%A0%E6%88%90/"/>
     <id>http://taowusheng.cn/2017/03/12/20170312 2016年我似乎一事无成/</id>
     <published>2017-03-11T16:00:01.000Z</published>
-    <updated>2018-12-25T05:56:50.516Z</updated>
+    <updated>2019-01-16T10:25:51.793Z</updated>
     
     <summary type="html">
     
@@ -745,7 +794,7 @@
     
     </summary>
     
-      <category term="thought" scheme="http://taowusheng.cn/categories/thought/"/>
+      <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
       <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
@@ -837,7 +886,7 @@
     <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
     <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2018-12-25T05:57:11.891Z</updated>
+    <updated>2019-01-16T10:44:12.511Z</updated>
     
     <summary type="html">
     
@@ -846,7 +895,7 @@
     
     </summary>
     
-      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
     
     
       <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
@@ -854,6 +903,28 @@
       <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
       <category term="黑客与画家" scheme="http://taowusheng.cn/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-01-16T10:44:03.511Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
+    
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -880,33 +951,11 @@
   </entry>
   
   <entry>
-    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2018-12-30T01:59:51.365Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
-    
-    </summary>
-    
-      <category term="reading" scheme="http://taowusheng.cn/categories/reading/"/>
-    
-    
-      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
-    
-      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>16年ACM青岛区域赛11.11晚</title>
     <link href="http://taowusheng.cn/2016/11/11/20161111%2016%E5%B9%B4ACM%E9%9D%92%E5%B2%9B%E5%8C%BA%E5%9F%9F%E8%B5%9B11-11%E6%99%9A/"/>
     <id>http://taowusheng.cn/2016/11/11/20161111 16年ACM青岛区域赛11-11晚/</id>
     <published>2016-11-10T16:00:01.000Z</published>
-    <updated>2018-12-25T05:57:36.651Z</updated>
+    <updated>2019-01-16T10:45:41.959Z</updated>
     
     <summary type="html">
     
@@ -914,7 +963,7 @@
     
     </summary>
     
-      <category term="life" scheme="http://taowusheng.cn/categories/life/"/>
+      <category term="Life" scheme="http://taowusheng.cn/categories/Life/"/>
     
     
       <category term="生活随笔" scheme="http://taowusheng.cn/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
@@ -928,7 +977,7 @@
     <link href="http://taowusheng.cn/2016/10/03/20161003%20%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2/"/>
     <id>http://taowusheng.cn/2016/10/03/20161003 我为什么要写博客/</id>
     <published>2016-10-02T16:21:41.000Z</published>
-    <updated>2018-12-25T05:57:35.698Z</updated>
+    <updated>2019-01-16T10:25:51.762Z</updated>
     
     <summary type="html">
     
@@ -936,7 +985,7 @@
     
     </summary>
     
-      <category term="thought" scheme="http://taowusheng.cn/categories/thought/"/>
+      <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
       <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
