@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://taowusheng.cn/"/>
-  <updated>2019-01-21T05:07:04.076Z</updated>
+  <updated>2019-03-02T15:03:01.040Z</updated>
   <id>http://taowusheng.cn/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018川藏线骑行</title>
+    <link href="http://taowusheng.cn/2019/03/02/20190302%202018%E5%B7%9D%E8%97%8F%E7%BA%BF%E9%AA%91%E8%A1%8C/"/>
+    <id>http://taowusheng.cn/2019/03/02/20190302 2018川藏线骑行/</id>
+    <published>2019-03-01T16:00:01.000Z</published>
+    <updated>2019-03-02T15:03:01.040Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;(多图预警~~)&lt;br&gt;距离骑行完川藏线已经将近半年了，现在回想起那一个月，都觉得像做了一场梦，只不过这个梦却格外清晰。脑海中会不时的想起每一次骑到山顶时的快乐、路途中壮丽的景色、无数次跟徒步者骑行者互道加油、与藏民们互道”扎西德勒”，也有半夜由于缺氧醒来，又在大口的呼吸中睡去…
+    
+    </summary>
+    
+      <category term="Life" scheme="http://taowusheng.cn/categories/Life/"/>
+    
+    
+      <category term="2018" scheme="http://taowusheng.cn/tags/2018/"/>
+    
+      <category term="骑行" scheme="http://taowusheng.cn/tags/%E9%AA%91%E8%A1%8C/"/>
+    
+      <category term="川藏线" scheme="http://taowusheng.cn/tags/%E5%B7%9D%E8%97%8F%E7%BA%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Qt导出exe程序并打包</title>
+    <link href="http://taowusheng.cn/2019/01/29/20190129%20Qt%E5%AF%BC%E5%87%BAexe%E7%A8%8B%E5%BA%8F%E5%B9%B6%E6%89%93%E5%8C%85/"/>
+    <id>http://taowusheng.cn/2019/01/29/20190129 Qt导出exe程序并打包/</id>
+    <published>2019-01-28T16:00:01.000Z</published>
+    <updated>2019-02-28T14:35:23.804Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Qt导出exe步骤记录。
+    
+    </summary>
+    
+      <category term="Qt" scheme="http://taowusheng.cn/categories/Qt/"/>
+    
+    
+      <category term="Qt" scheme="http://taowusheng.cn/tags/Qt/"/>
+    
+  </entry>
   
   <entry>
     <title>面向过程与面向对象_文本查询程序</title>
@@ -34,11 +78,11 @@
     
       <category term="面向对象" scheme="http://taowusheng.cn/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
-      <category term="cpp" scheme="http://taowusheng.cn/tags/cpp/"/>
-    
       <category term="面向过程" scheme="http://taowusheng.cn/tags/%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/"/>
     
       <category term="文本查询" scheme="http://taowusheng.cn/tags/%E6%96%87%E6%9C%AC%E6%9F%A5%E8%AF%A2/"/>
+    
+      <category term="cpp" scheme="http://taowusheng.cn/tags/cpp/"/>
     
   </entry>
   
@@ -220,9 +264,9 @@
       <category term="C_C++" scheme="http://taowusheng.cn/categories/C-C/"/>
     
     
-      <category term="C++" scheme="http://taowusheng.cn/tags/C/"/>
-    
       <category term="C" scheme="http://taowusheng.cn/tags/C/"/>
+    
+      <category term="C++" scheme="http://taowusheng.cn/tags/C/"/>
     
   </entry>
   
@@ -313,9 +357,9 @@
     
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
-      <category term="gdb" scheme="http://taowusheng.cn/tags/gdb/"/>
-    
       <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
+    
+      <category term="gdb" scheme="http://taowusheng.cn/tags/gdb/"/>
     
   </entry>
   
@@ -359,9 +403,9 @@
     
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
-      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
-    
       <category term="git" scheme="http://taowusheng.cn/tags/git/"/>
+    
+      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
     
       <category term="github" scheme="http://taowusheng.cn/tags/github/"/>
     
@@ -1001,28 +1045,6 @@
   </entry>
   
   <entry>
-    <title>ACM六个月总结</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2018-12-25T05:57:21.469Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
-    
-    </summary>
-    
-      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
-    
-    
-      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
-    
-      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
     <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
@@ -1041,6 +1063,28 @@
       <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
     
       <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ACM六个月总结</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2018-12-25T05:57:21.469Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
+    
+    </summary>
+    
+      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
