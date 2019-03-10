@@ -39,14 +39,14 @@ ga('send', 'pageview');
 <meta property="og:site_name" content="YIFEI">
 <meta property="og:description" content="preface　　使用linux你永远也无法避过命令行，能熟练地掌握常用命令是一种必备的技能。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://ohpezrhej.bkt.clouddn.com/20180202Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93%20001.png">
-<meta property="og:image" content="http://ohpezrhej.bkt.clouddn.com/20180202Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93%20002.png">
-<meta property="og:image" content="http://ohpezrhej.bkt.clouddn.com/20180202Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93%20003.png">
-<meta property="og:updated_time" content="2018-12-25T05:56:27.898Z">
+<meta property="og:image" content="https://i.loli.net/2019/03/09/5c8339c2d59ce.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/09/5c8339c2d58a2.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/09/5c8339c316a29.png">
+<meta property="og:updated_time" content="2019-03-10T01:46:22.534Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用命令总结">
 <meta name="twitter:description" content="preface　　使用linux你永远也无法避过命令行，能熟练地掌握常用命令是一种必备的技能。">
-<meta name="twitter:image" content="http://ohpezrhej.bkt.clouddn.com/20180202Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93%20001.png">
+<meta name="twitter:image" content="https://i.loli.net/2019/03/09/5c8339c2d59ce.png">
   
     <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
   
@@ -150,12 +150,10 @@ ga('send', 'pageview');
 </ul>
 <h3 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h3><ul>
 <li>print work directory ：打印工作目录</li>
-<li><p>输出当前路径</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pwd</span><br></pre></td></tr></table></figure>
-<div align="center"><br><img src="http://ohpezrhej.bkt.clouddn.com/20180202Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93%20001.png" alt="打印当前路径"><br></div>
-
+<li>输出当前路径<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pwd</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
+<p><img src="https://i.loli.net/2019/03/09/5c8339c2d59ce.png" title="20180202Linux常用命令总结 001.png"></p>
 <h3 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h3><ul>
 <li>change directory</li>
 <li>切换目录<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /	//切换到根目录</span><br><span class="line">cd /etc/python3	//切换到目录下</span><br><span class="line">cd .. 	//切换到上一层目录</span><br></pre></td></tr></table></figure>
@@ -194,16 +192,12 @@ ga('send', 'pageview');
 </ul>
 <h3 id="chmod"><a href="#chmod" class="headerlink" title="chmod"></a>chmod</h3><ul>
 <li>change mode</li>
-<li>修改权限<br>方式①： </li>
+<li>修改权限<br>方式①：<br><img src="https://i.loli.net/2019/03/09/5c8339c2d58a2.png" title="20180202Linux常用命令总结 002.png"></li>
 </ul>
-<div align="center"><br><img src="http://ohpezrhej.bkt.clouddn.com/20180202Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93%20002.png" alt="chmod"><br></div>
-
 <p>u:user即当前用户 g:group当前用户所属组 o: others其他用户 a：all所有<br>r:read读权限 w：write写 x：execute执行</p>
 <p>for example：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod u-r 1.txt	//去除当前用户对1.txt的读权限</span><br></pre></td></tr></table></figure></p>
 <p>方式②：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 1.txt</span><br></pre></td></tr></table></figure></p>
-<p>三个数代表的意思：777分别转换为二进制是 111 111 111 ，这九位分别对应以下1-9位权限的有无</p>
-<div align="center"><br><img src="http://ohpezrhej.bkt.clouddn.com/20180202Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93%20003.png" alt="chmod2"><br></div>
-
+<p>三个数代表的意思：777分别转换为二进制是 111 111 111 ，这九位分别对应以下1-9位权限的有无<br><img src="https://i.loli.net/2019/03/09/5c8339c316a29.png" title="20180202Linux常用命令总结 003.png"></p>
 <h3 id="df"><a href="#df" class="headerlink" title="df"></a>df</h3><ul>
 <li>disk free</li>
 <li>查看当前系统磁盘信息</li>
@@ -273,7 +267,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://taowusheng.cn/2018/02/02/20180202 linux常用命令总结/" data-id="cjsue35ww000zhwbjvbidugp0" class="article-share-link">Share</a>
+      <a data-url="http://taowusheng.cn/2018/02/02/20180202 linux常用命令总结/" data-id="cjt29d4yf000m94bj6pft3hhh" class="article-share-link">Share</a>
       
       
         <a href="/2018/02/02/20180202 linux常用命令总结/#comments" class="article-comment-link">

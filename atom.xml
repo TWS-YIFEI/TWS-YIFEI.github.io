@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://taowusheng.cn/"/>
-  <updated>2019-03-04T13:36:47.935Z</updated>
+  <updated>2019-03-08T14:54:01.918Z</updated>
   <id>http://taowusheng.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://taowusheng.cn/2019/03/02/20190302%202018%E5%B7%9D%E8%97%8F%E7%BA%BF%E9%AA%91%E8%A1%8C/"/>
     <id>http://taowusheng.cn/2019/03/02/20190302 2018川藏线骑行/</id>
     <published>2019-03-01T16:00:01.000Z</published>
-    <updated>2019-03-04T13:36:47.935Z</updated>
+    <updated>2019-03-08T14:54:01.918Z</updated>
     
     <summary type="html">
     
@@ -357,9 +357,9 @@
     
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
-      <category term="gdb" scheme="http://taowusheng.cn/tags/gdb/"/>
-    
       <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
+    
+      <category term="gdb" scheme="http://taowusheng.cn/tags/gdb/"/>
     
   </entry>
   
@@ -390,7 +390,7 @@
     <link href="http://taowusheng.cn/2018/11/23/20181123%20git%E5%91%BD%E4%BB%A4%E9%80%9F%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2018/11/23/20181123 git命令速记/</id>
     <published>2018-11-22T16:00:01.000Z</published>
-    <updated>2019-01-16T10:25:52.043Z</updated>
+    <updated>2019-03-10T01:46:22.581Z</updated>
     
     <summary type="html">
     
@@ -403,9 +403,9 @@
     
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
-      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
-    
       <category term="git" scheme="http://taowusheng.cn/tags/git/"/>
+    
+      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
     
       <category term="github" scheme="http://taowusheng.cn/tags/github/"/>
     
@@ -538,7 +538,7 @@
     <link href="http://taowusheng.cn/2018/10/29/20181029%20SSL%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/"/>
     <id>http://taowusheng.cn/2018/10/29/20181029 SSL协议的基本原理/</id>
     <published>2018-10-28T16:00:01.000Z</published>
-    <updated>2019-01-16T10:45:08.998Z</updated>
+    <updated>2019-03-10T01:46:22.581Z</updated>
     
     <summary type="html">
     
@@ -566,7 +566,7 @@
     <link href="http://taowusheng.cn/2018/10/27/20181027%20%E5%AF%86%E7%A0%81%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/10/27/20181027 密码学知识总结/</id>
     <published>2018-10-26T16:00:01.000Z</published>
-    <updated>2019-01-16T10:45:01.637Z</updated>
+    <updated>2019-03-10T01:46:22.566Z</updated>
     
     <summary type="html">
     
@@ -600,7 +600,7 @@
     <link href="http://taowusheng.cn/2018/10/21/20181021%20PAM_%E9%AA%8C%E8%AF%81%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%E5%AE%9E%E4%BE%8B/"/>
     <id>http://taowusheng.cn/2018/10/21/20181021 PAM_验证模块开发实例/</id>
     <published>2018-10-20T16:00:01.000Z</published>
-    <updated>2018-10-26T02:42:58.472Z</updated>
+    <updated>2019-03-10T01:46:22.566Z</updated>
     
     <summary type="html">
     
@@ -672,7 +672,7 @@
     <link href="http://taowusheng.cn/2018/04/25/20180425%20java_%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     <id>http://taowusheng.cn/2018/04/25/20180425 java_多线程/</id>
     <published>2018-04-24T16:00:01.000Z</published>
-    <updated>2018-12-25T05:55:59.064Z</updated>
+    <updated>2019-03-10T01:46:22.550Z</updated>
     
     <summary type="html">
     
@@ -742,7 +742,7 @@
     <link href="http://taowusheng.cn/2018/04/20/20180420%20javaIO%E6%B5%81/"/>
     <id>http://taowusheng.cn/2018/04/20/20180420 javaIO流/</id>
     <published>2018-04-19T16:00:01.000Z</published>
-    <updated>2018-12-25T05:55:59.109Z</updated>
+    <updated>2019-03-10T01:46:22.550Z</updated>
     
     <summary type="html">
     
@@ -764,7 +764,7 @@
     <link href="http://taowusheng.cn/2018/03/28/20180328%20%E8%80%83%E7%A0%94%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/03/28/20180328 考研总结/</id>
     <published>2018-03-27T16:00:01.000Z</published>
-    <updated>2019-01-16T10:25:51.824Z</updated>
+    <updated>2019-03-10T01:46:22.534Z</updated>
     
     <summary type="html">
     
@@ -790,7 +790,7 @@
     <link href="http://taowusheng.cn/2018/02/02/20180202%20linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/02/02/20180202 linux常用命令总结/</id>
     <published>2018-02-01T16:00:01.000Z</published>
-    <updated>2018-12-25T05:56:27.898Z</updated>
+    <updated>2019-03-10T01:46:22.534Z</updated>
     
     <summary type="html">
     
@@ -961,9 +961,9 @@
       <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
     
-      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
-    
       <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
+    
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="最短路径算法" scheme="http://taowusheng.cn/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95/"/>
     
@@ -1020,6 +1020,28 @@
   </entry>
   
   <entry>
+    <title>ACM六个月总结</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2018-12-25T05:57:21.469Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
+    
+    </summary>
+    
+      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2016年11月读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
@@ -1041,28 +1063,6 @@
       <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
       <category term="黑客与画家" scheme="http://taowusheng.cn/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACM六个月总结</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2018-12-25T05:57:21.469Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
-    
-    </summary>
-    
-      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
-    
-    
-      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
-    
-      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   

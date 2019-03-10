@@ -39,16 +39,16 @@ ga('send', 'pageview');
 <meta property="og:site_name" content="YIFEI">
 <meta property="og:description" content="简介　　SSL/TLS是世界上应用最广泛的密码通信协议，当我们上网页时会发现一些网址前面是”https”，这就说明这个页面是使用了SSL/TLS技术进行通信，这种方式在很大程度上可以保证通信内容的机密性。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://i.loli.net/2018/10/29/5bd7100204adf.png">
-<meta property="og:image" content="https://i.loli.net/2018/10/29/5bd7100216d9d.png">
-<meta property="og:image" content="https://i.loli.net/2018/10/29/5bd71001cef47.png">
-<meta property="og:image" content="https://i.loli.net/2018/10/29/5bd71001d9182.png">
-<meta property="og:image" content="https://i.loli.net/2018/10/29/5bd710006221a.png">
-<meta property="og:updated_time" content="2019-01-16T10:45:08.998Z">
+<meta property="og:image" content="https://i.loli.net/2019/03/09/5c834910b8af8.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/09/5c834910bd32b.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/09/5c834910baa52.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/09/5c834910bf488.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/09/5c8349108ceaa.png">
+<meta property="og:updated_time" content="2019-03-10T01:46:22.581Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSL协议的基本原理">
 <meta name="twitter:description" content="简介　　SSL/TLS是世界上应用最广泛的密码通信协议，当我们上网页时会发现一些网址前面是”https”，这就说明这个页面是使用了SSL/TLS技术进行通信，这种方式在很大程度上可以保证通信内容的机密性。">
-<meta name="twitter:image" content="https://i.loli.net/2018/10/29/5bd7100204adf.png">
+<meta name="twitter:image" content="https://i.loli.net/2019/03/09/5c834910b8af8.png">
   
     <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
   
@@ -136,9 +136,9 @@ ga('send', 'pageview');
       
         <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>　　SSL/TLS是世界上应用最广泛的密码通信协议，当我们上网页时会发现一些网址前面是”https”，这就说明这个页面是使用了SSL/TLS技术进行通信，这种方式在很大程度上可以保证通信内容的机密性。   <a id="more"></a><br>　　TLS实际上是SSL的改进版本，分别是transport layer security 和 secure socket layer，人们一般将SSL和TLS作为一个整体来看待。<br>　　SSL/TLS可以承载HTTP和其他的一些协议，比如发送邮件时使用的SMTP(邮件传输协议)、POP3(邮局协议)。这样SSL就可以对传输的信息进行加密，从而保证机密性。<br>　　这种技术提供了一个通信的框架，里面用到了对称密码、公钥密码、数字签名、单向散列函数、伪随机数生成器、消息认证码等技术，如果哪一部分出现问题，我们可以灵活地替换该部分。</p>
 <h2 id="SSL-TLS的结构"><a href="#SSL-TLS的结构" class="headerlink" title="SSL/TLS的结构"></a>SSL/TLS的结构</h2><h3 id="层次化的协议"><a href="#层次化的协议" class="headerlink" title="层次化的协议"></a>层次化的协议</h3><p>　　TLS协议是由“TLS记录协议”和“TLS握手协议”组成的，TLS记录协议位于底层负责进行加密，位于上层的TLS握手协议负责其他操作，他们的结构如下：</p>
-<p><img src="https://i.loli.net/2018/10/29/5bd7100204adf.png" alt="TLSstructure.png"></p>
+<p><img src="https://i.loli.net/2019/03/09/5c834910b8af8.png" alt="TLSstructure.png" title="TLSstructure.png"></p>
 <h3 id="TLS记录协议"><a href="#TLS记录协议" class="headerlink" title="TLS记录协议"></a>TLS记录协议</h3><p>　　负责消息的压缩、加密以及数据的认证。处理工程如下：</p>
-<p><img src="https://i.loli.net/2018/10/29/5bd7100216d9d.png" alt="TLS记录协议.png"></p>
+<p><img src="https://i.loli.net/2019/03/09/5c834910bd32b.png" alt="TLS记录协议.png" title="TLS记录协议.png"></p>
 <ul>
 <li>将消息分割成小片段，然后对每个片段进行压缩，压缩算法需要与通信对象进行协商。</li>
 <li>将每个压缩的片段加上消息认证码，这是为了保证完整性并进行数据的认证。通过附加消息的MAC值，可以识别出篡改。与此同时，为了防止重放攻击，在计算消息认证码时，还加上了片段的编号，单向散列函数的算法。以及消息认证码所使用的共享密钥都需要与通信对象协商决定。</li>
@@ -165,8 +165,7 @@ ga('send', 'pageview');
 <h3 id="应用数据协议"><a href="#应用数据协议" class="headerlink" title="应用数据协议"></a>应用数据协议</h3><ul>
 <li>将TLS上面承载的应用数据传达给通信对象的协议。</li>
 </ul>
-<h2 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h2><h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><p><img src="https://i.loli.net/2018/10/29/5bd71001cef47.png" alt="SSLstep1.png"></p>
-<p><img src="https://i.loli.net/2018/10/29/5bd71001d9182.png" alt="SSLstep2.png"></p>
+<h2 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h2><h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><p><img src="https://i.loli.net/2019/03/09/5c834910baa52.png" alt="SSLstep1.png" title="SSLstep1.png"><br><img src="https://i.loli.net/2019/03/09/5c834910bf488.png" alt="SSLstep2.png" title="SSLstep2.png"></p>
 <h3 id="1-ClientHello（客户端→服务器）"><a href="#1-ClientHello（客户端→服务器）" class="headerlink" title="(1)ClientHello（客户端→服务器）"></a>(1)ClientHello（客户端→服务器）</h3><p>　　客户端向服务器发出加密通信的请求。在这一步，客户端主要向服务器提供以下信息：</p>
 <ul>
 <li>支持的协议版本，比如TLS 1.0版。</li>
@@ -234,7 +233,7 @@ ga('send', 'pageview');
 <li>客户端和服务器之间生成了密码通信用的共享密钥</li>
 <li>客户端和服务器之间生成了消息认证码中用的共享密钥</li>
 </ul>
-<h2 id="抓包分析"><a href="#抓包分析" class="headerlink" title="抓包分析"></a>抓包分析</h2><p><img src="https://i.loli.net/2018/10/29/5bd710006221a.png" alt="SSL抓包.png"><br>　　以对淘宝抓包为例，可以看到，首先客户端对服务器发送ClientHello，然后服务器端分别回复ServerHello、Certificate、ServerKeyExchange、ServerHelloDone，其中没有请求我们客户端的证书。然后客户端开始发送ClientKeyExchange、ChangeCipherSpec、EncryptedHandshakeMessage。最后服务器端回复NewS二十四onTicket、ChangeCiherSpec、EncryptedHandshakeMessage。其中比我们之前的少了(5)、(7)步。</p>
+<h2 id="抓包分析"><a href="#抓包分析" class="headerlink" title="抓包分析"></a>抓包分析</h2><p><img src="https://i.loli.net/2019/03/09/5c8349108ceaa.png" alt="SSL抓包.png" title="SSL抓包.png"><br>　　以对淘宝抓包为例，可以看到，首先客户端对服务器发送ClientHello，然后服务器端分别回复ServerHello、Certificate、ServerKeyExchange、ServerHelloDone，其中没有请求我们客户端的证书。然后客户端开始发送ClientKeyExchange、ChangeCipherSpec、EncryptedHandshakeMessage。最后服务器端回复NewS二十四onTicket、ChangeCiherSpec、EncryptedHandshakeMessage。其中比我们之前的少了(5)、(7)步。</p>
 <h2 id="对SSL-TLS的攻击"><a href="#对SSL-TLS的攻击" class="headerlink" title="对SSL/TLS的攻击"></a>对SSL/TLS的攻击</h2><ul>
 <li>对各个密码技术的攻击</li>
 <li>利用证书的时间差进行攻击</li>
@@ -243,10 +242,11 @@ ga('send', 'pageview');
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] <a href="https://www.jianshu.com/p/6b690f04a12b" target="_blank" rel="noopener">https://www.jianshu.com/p/6b690f04a12b</a><br>[2] <a href="https://blog.csdn.net/ustccw/article/details/76691248" target="_blank" rel="noopener">https://blog.csdn.net/ustccw/article/details/76691248</a><br>[3] <a href="https://www.jianshu.com/p/8d7c8f59ea21" target="_blank" rel="noopener">https://www.jianshu.com/p/8d7c8f59ea21</a><br>[4] 《图解密码技术》</p>
 <p>迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/">http://taowusheng.cn/</a></p>
 <!-- category :  cryptography  -->
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://taowusheng.cn/2018/10/29/20181029 SSL协议的基本原理/" data-id="cjsue35xr001whwbjm5aq0b3i" class="article-share-link">Share</a>
+      <a data-url="http://taowusheng.cn/2018/10/29/20181029 SSL协议的基本原理/" data-id="cjt29d4zq001m94bj7fyduaf4" class="article-share-link">Share</a>
       
       
         <a href="/2018/10/29/20181029 SSL协议的基本原理/#comments" class="article-comment-link">
