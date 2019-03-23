@@ -39,10 +39,12 @@ ga('send', 'pageview');
 <meta property="og:site_name" content="YIFEI">
 <meta property="og:description" content="前言首先gcc与GCC要区分对待,GCC原名为GNU C Compiler,是一个C编译器的代号,但是后来不断地扩展,开始支持很多语言,GCC也就变成了编译器家族GNU Compiler Collection.另外GNU的意思是GNU not Unix的递归简写(-_-所以那个G到底是啥意思?),这是一个由Stallman发起的一个操作系统计划,但是最后各种编译器什么的工具都写好了,核心的内核没有">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-25T05:52:58.097Z">
+<meta property="og:image" content="https://i.loli.net/2019/03/09/5c83597c2edc8.jpg">
+<meta property="og:updated_time" content="2019-03-23T13:41:56.877Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何使用gcc_g++">
 <meta name="twitter:description" content="前言首先gcc与GCC要区分对待,GCC原名为GNU C Compiler,是一个C编译器的代号,但是后来不断地扩展,开始支持很多语言,GCC也就变成了编译器家族GNU Compiler Collection.另外GNU的意思是GNU not Unix的递归简写(-_-所以那个G到底是啥意思?),这是一个由Stallman发起的一个操作系统计划,但是最后各种编译器什么的工具都写好了,核心的内核没有">
+<meta name="twitter:image" content="https://i.loli.net/2019/03/09/5c83597c2edc8.jpg">
   
     <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
   
@@ -129,7 +131,7 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>首先gcc与GCC要区分对待,GCC原名为GNU C Compiler,是一个C编译器的代号,但是后来不断地扩展,开始支持很多语言,GCC也就变成了编译器家族GNU Compiler Collection.<br>另外GNU的意思是GNU not Unix的递归简写(-_-所以那个G到底是啥意思?),这是一个由Stallman发起的一个操作系统计划,但是最后各种编译器什么的工具都写好了,核心的内核没有开发成功,但最后Linux填补了这个空白.  <a id="more"></a></p>
-<h3 id="编译的四个阶段"><a href="#编译的四个阶段" class="headerlink" title="编译的四个阶段"></a>编译的四个阶段</h3><p>如果只是在命令行编译一下c或c++程序,直接看后面的命令就可以了,但是了解一下编译的的过程,会加深对gcc的理解.<br>(环境:ubuntu 18.04 | 已安装gcc/g++)<br>1.预处理阶段 .c &gt;&gt;&gt; .i<br>在这个阶段,编译器先把人方便看的程序处理成编译器方便看的程序.</p>
+<h3 id="编译的四个阶段"><a href="#编译的四个阶段" class="headerlink" title="编译的四个阶段"></a>编译的四个阶段</h3><p>如果只是在命令行编译一下c或c++程序,直接看后面的命令就可以了,但是了解一下编译的的过程,会加深对gcc的理解.<br><img src="https://i.loli.net/2019/03/09/5c83597c2edc8.jpg" alt="gccfourstep.jpg" title="gccfourstep.jpg"><br>(环境:ubuntu 18.04 | 已安装gcc/g++)<br>1.预处理阶段 .c &gt;&gt;&gt; .i<br>在这个阶段,编译器先把人方便看的程序处理成编译器方便看的程序.</p>
 <ul>
 <li>#define删掉,然后展开所有宏定义</li>
 <li>处理那些#include,把包含的那些头文件复制过来.</li>
@@ -142,9 +144,9 @@ ga('send', 'pageview');
 <ul>
 <li>语法分析</li>
 <li>词法分析</li>
-<li>生成汇编代码<br>通过命令 g++ -S test.i -o test.s 可以生成汇编代码,代码太长,就不粘贴了.<br>3.生成机器码 .s &gt;&gt;&gt; .o<br>通过 g++ -c test.s -o test.o 生成目标文件,如果程序只有一个文件,这时候应该就可以执行了.如果有多个.o文件,还得需要下一步链接后再运行.<br>这一步也可以用GNU自带的汇编器as来将汇编文件生成机器码,命令如下:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">as test.s -o test.o</span><br></pre></td></tr></table></figure>
-</li>
+<li>生成汇编代码<br>通过命令 g++ -S test.i -o test.s 可以生成汇编代码,代码太长,就不粘贴了.</li>
 </ul>
+<p>3.生成机器码 .s &gt;&gt;&gt; .o<br>通过 g++ -c test.s -o test.o 生成目标文件,如果程序只有一个文件,这时候应该就可以执行了.如果有多个.o文件,还得需要下一步链接后再运行.<br>这一步也可以用GNU自带的汇编器as来将汇编文件生成机器码,命令如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">as test.s -o test.o</span><br></pre></td></tr></table></figure></p>
 <p>这里可以借助hexdump工具来查看二进制文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexdump -C test.o &gt; a.txt</span><br><span class="line">vim a.txt</span><br></pre></td></tr></table></figure></p>
 <p>4.链接.o文件 .o &gt;&gt;&gt; 可执行文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">g++ test.o -o test</span><br><span class="line">./test #然后就可以运行文件了</span><br></pre></td></tr></table></figure></p>
 <h3 id="gcc-amp-g"><a href="#gcc-amp-g" class="headerlink" title="gcc &amp; g++"></a>gcc &amp; g++</h3><p>这两个都是编译器的名字,一般看名字会感觉gcc用来编译c语言,g++用来编译c++的,但实际上这两个既能编译c语言,又能编译c++,g++可以算是gcc的另一个版本.<br>当gcc编译c程序时 gcc a.c -o a #这样就生成可执行文件a了<br>当gcc编译c++程序时 gcc a.cpp -lstdc++ #加个-lstdc++链接上c++的库才行.<br>当g++编译c程序时,跟gcc用法是一样的,实际上g++在编译c程序是也是直接调用的gcc<br>当g++编译cpp程序时,看下面一节. </p>
@@ -157,7 +159,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://taowusheng.cn/2018/12/25/20181225 如何使用gcc_g++/" data-id="cjt29d51h003294bjufkm11us" class="article-share-link">Share</a>
+      <a data-url="http://taowusheng.cn/2018/12/25/20181225 如何使用gcc_g++/" data-id="cjt7b6cpc002y5cbj10x4uyqt" class="article-share-link">Share</a>
       
       
         <a href="/2018/12/25/20181225 如何使用gcc_g++/#comments" class="article-comment-link">
