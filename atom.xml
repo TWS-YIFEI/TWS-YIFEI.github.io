@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://taowusheng.cn/"/>
-  <updated>2019-03-08T14:54:01.918Z</updated>
+  <updated>2019-04-16T11:12:50.643Z</updated>
   <id>http://taowusheng.cn/</id>
   
   <author>
@@ -17,11 +17,90 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>坚持阅读</title>
+    <link href="http://taowusheng.cn/2029/11/11/20291111%20%E5%9D%9A%E6%8C%81%E9%98%85%E8%AF%BB/"/>
+    <id>http://taowusheng.cn/2029/11/11/20291111 坚持阅读/</id>
+    <published>2029-11-10T16:00:01.000Z</published>
+    <updated>2019-04-16T11:12:50.643Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;　　整理一个书单，希望自己能够一直坚持下去。
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+      <category term="书单" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E5%8D%95/"/>
+    
+      <category term="阅读" scheme="http://taowusheng.cn/tags/%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="计算机" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+      <category term="读书" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>unix编程实践_7_事件驱动编程</title>
+    <link href="http://taowusheng.cn/2019/03/26/20190326%20unix%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5_7_%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E7%BC%96%E7%A8%8B/"/>
+    <id>http://taowusheng.cn/2019/03/26/20190326 unix编程实践_7_事件驱动编程/</id>
+    <published>2019-03-25T16:00:01.000Z</published>
+    <updated>2019-04-16T11:02:13.974Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在unxi/linux编程实践第七章的基础上完成的一个小的终端弹球游戏,先来个截图。
+    
+    </summary>
+    
+      <category term="Linux_Kernel" scheme="http://taowusheng.cn/categories/Linux-Kernel/"/>
+    
+    
+      <category term="unix编程实践" scheme="http://taowusheng.cn/tags/unix%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/"/>
+    
+      <category term="信号" scheme="http://taowusheng.cn/tags/%E4%BF%A1%E5%8F%B7/"/>
+    
+      <category term="计时器" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E6%97%B6%E5%99%A8/"/>
+    
+      <category term="事件驱动" scheme="http://taowusheng.cn/tags/%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8/"/>
+    
+      <category term="curses" scheme="http://taowusheng.cn/tags/curses/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>密码学知识点思维导图_简略</title>
+    <link href="http://taowusheng.cn/2019/03/18/20190318%20%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+    <id>http://taowusheng.cn/2019/03/18/20190318 现代密码学思维导图/</id>
+    <published>2019-03-17T16:00:01.000Z</published>
+    <updated>2019-04-16T11:16:21.550Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一段时间不看就都忘了，做一个思维导图复习一下。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Cryptography" scheme="http://taowusheng.cn/categories/Cryptography/"/>
+    
+    
+      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+      <category term="思维导图" scheme="http://taowusheng.cn/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018川藏线骑行</title>
     <link href="http://taowusheng.cn/2019/03/02/20190302%202018%E5%B7%9D%E8%97%8F%E7%BA%BF%E9%AA%91%E8%A1%8C/"/>
     <id>http://taowusheng.cn/2019/03/02/20190302 2018川藏线骑行/</id>
     <published>2019-03-01T16:00:01.000Z</published>
-    <updated>2019-03-08T14:54:01.918Z</updated>
+    <updated>2019-04-16T11:14:30.791Z</updated>
     
     <summary type="html">
     
@@ -65,7 +144,7 @@
     <link href="http://taowusheng.cn/2019/01/19/20190119%20%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E4%B8%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E6%96%87%E6%9C%AC%E6%9F%A5%E8%AF%A2%E7%A8%8B%E5%BA%8F/"/>
     <id>http://taowusheng.cn/2019/01/19/20190119 面向过程与面向对象_文本查询程序/</id>
     <published>2019-01-18T16:00:01.000Z</published>
-    <updated>2019-01-21T05:07:04.076Z</updated>
+    <updated>2019-04-16T11:18:39.717Z</updated>
     
     <summary type="html">
     
@@ -73,7 +152,7 @@
     
     </summary>
     
-      <category term="C_C++" scheme="http://taowusheng.cn/categories/C-C/"/>
+      <category term="C_Cpp" scheme="http://taowusheng.cn/categories/C-Cpp/"/>
     
     
       <category term="面向对象" scheme="http://taowusheng.cn/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
@@ -91,7 +170,7 @@
     <link href="http://taowusheng.cn/2019/01/18/20190118%20Cpp%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7/"/>
     <id>http://taowusheng.cn/2019/01/18/20190118 Cpp运算符优先级/</id>
     <published>2019-01-17T16:00:01.000Z</published>
-    <updated>2019-01-21T05:07:04.068Z</updated>
+    <updated>2019-04-16T11:19:24.807Z</updated>
     
     <summary type="html">
     
@@ -99,7 +178,7 @@
     
     </summary>
     
-      <category term="C_C++" scheme="http://taowusheng.cn/categories/C-C/"/>
+      <category term="C_Cpp" scheme="http://taowusheng.cn/categories/C-Cpp/"/>
     
     
       <category term="cpp" scheme="http://taowusheng.cn/tags/cpp/"/>
@@ -113,7 +192,7 @@
     <link href="http://taowusheng.cn/2019/01/16/20190112%20%E4%B8%8E%E7%A5%9E%E5%AF%B9%E8%AF%9D_%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2019/01/16/20190112 与神对话_笔记/</id>
     <published>2019-01-16T10:27:10.801Z</published>
-    <updated>2019-01-16T10:39:07.610Z</updated>
+    <updated>2019-04-16T11:13:02.970Z</updated>
     
     <summary type="html">
     
@@ -136,7 +215,7 @@
     <link href="http://taowusheng.cn/2019/01/13/20190113%20%E7%91%9C%E4%BC%BD%E4%B9%8B%E8%B7%AF_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2019/01/13/20190113 瑜伽之路_读书笔记/</id>
     <published>2019-01-12T16:00:01.000Z</published>
-    <updated>2019-01-21T05:07:04.062Z</updated>
+    <updated>2019-04-16T11:13:14.345Z</updated>
     
     <summary type="html">
     
@@ -181,7 +260,7 @@
     <link href="http://taowusheng.cn/2018/12/30/20181230%202018%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/12/30/20181230 2018年终总结/</id>
     <published>2018-12-29T16:00:01.000Z</published>
-    <updated>2019-01-16T10:25:51.871Z</updated>
+    <updated>2019-04-16T11:11:27.086Z</updated>
     
     <summary type="html">
     
@@ -253,7 +332,7 @@
     <link href="http://taowusheng.cn/2018/12/22/20181222%20C%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2018/12/22/20181222 C笔记/</id>
     <published>2018-12-21T16:00:01.000Z</published>
-    <updated>2018-12-25T05:53:20.064Z</updated>
+    <updated>2019-04-16T11:19:20.714Z</updated>
     
     <summary type="html">
     
@@ -261,12 +340,12 @@
     
     </summary>
     
-      <category term="C_C++" scheme="http://taowusheng.cn/categories/C-C/"/>
+      <category term="C_Cpp" scheme="http://taowusheng.cn/categories/C-Cpp/"/>
     
-    
-      <category term="C++" scheme="http://taowusheng.cn/tags/C/"/>
     
       <category term="C" scheme="http://taowusheng.cn/tags/C/"/>
+    
+      <category term="C++" scheme="http://taowusheng.cn/tags/C/"/>
     
   </entry>
   
@@ -275,7 +354,7 @@
     <link href="http://taowusheng.cn/2018/12/18/20181218%20C++%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2018/12/18/20181218 C++笔记/</id>
     <published>2018-12-17T16:00:01.000Z</published>
-    <updated>2019-01-21T05:07:04.052Z</updated>
+    <updated>2019-04-16T11:19:15.183Z</updated>
     
     <summary type="html">
     
@@ -284,7 +363,7 @@
     
     </summary>
     
-      <category term="C_C++" scheme="http://taowusheng.cn/categories/C-C/"/>
+      <category term="C_Cpp" scheme="http://taowusheng.cn/categories/C-Cpp/"/>
     
     
       <category term="c++" scheme="http://taowusheng.cn/tags/c/"/>
@@ -322,7 +401,7 @@
     <link href="http://taowusheng.cn/2018/12/09/20181209%20C++%E7%BB%9F%E8%AE%A1%E5%AD%97%E7%AC%A6%E9%A2%91%E6%95%B0_%E8%8B%B1%E6%96%87%E5%AD%97%E7%AC%A6/"/>
     <id>http://taowusheng.cn/2018/12/09/20181209 C++统计字符频数_英文字符/</id>
     <published>2018-12-08T16:00:01.000Z</published>
-    <updated>2018-12-25T05:54:52.433Z</updated>
+    <updated>2019-04-16T11:19:06.433Z</updated>
     
     <summary type="html">
     
@@ -330,7 +409,7 @@
     
     </summary>
     
-      <category term="C_C++" scheme="http://taowusheng.cn/categories/C-C/"/>
+      <category term="C_Cpp" scheme="http://taowusheng.cn/categories/C-Cpp/"/>
     
     
       <category term="C++" scheme="http://taowusheng.cn/tags/C/"/>
@@ -368,7 +447,7 @@
     <link href="http://taowusheng.cn/2018/12/05/20181205%20%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91ifdef_ifndef_endif%E7%94%A8%E6%B3%95/"/>
     <id>http://taowusheng.cn/2018/12/05/20181205 条件编译ifdef_ifndef_endif用法/</id>
     <published>2018-12-04T16:00:01.000Z</published>
-    <updated>2018-12-25T05:54:35.527Z</updated>
+    <updated>2019-04-16T11:19:06.465Z</updated>
     
     <summary type="html">
     
@@ -376,7 +455,7 @@
     
     </summary>
     
-      <category term="C_C++" scheme="http://taowusheng.cn/categories/C-C/"/>
+      <category term="C_Cpp" scheme="http://taowusheng.cn/categories/C-Cpp/"/>
     
     
       <category term="C" scheme="http://taowusheng.cn/tags/C/"/>
@@ -484,7 +563,7 @@
     <link href="http://taowusheng.cn/2018/11/16/20181116%20%E5%A6%82%E4%BD%95%E5%90%91%E5%88%AB%E4%BA%BA%E8%AF%B7%E6%95%99%E9%97%AE%E9%A2%98/"/>
     <id>http://taowusheng.cn/2018/11/16/20181116 如何向别人请教问题/</id>
     <published>2018-11-15T16:00:01.000Z</published>
-    <updated>2019-01-16T10:25:51.840Z</updated>
+    <updated>2019-04-16T11:11:20.399Z</updated>
     
     <summary type="html">
     
@@ -626,7 +705,7 @@
     <link href="http://taowusheng.cn/2018/10/09/20181009%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92_01%E8%83%8C%E5%8C%85_%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84_%E8%B7%AF%E5%BE%84%E8%AE%B0%E5%BD%95/"/>
     <id>http://taowusheng.cn/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/</id>
     <published>2018-10-08T16:00:01.000Z</published>
-    <updated>2018-12-25T05:53:38.297Z</updated>
+    <updated>2019-04-16T11:21:17.403Z</updated>
     
     <summary type="html">
     
@@ -634,7 +713,7 @@
     
     </summary>
     
-      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
     
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
@@ -843,9 +922,9 @@
       <category term="SQL" scheme="http://taowusheng.cn/categories/SQL/"/>
     
     
-      <category term="SQL" scheme="http://taowusheng.cn/tags/SQL/"/>
-    
       <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="SQL" scheme="http://taowusheng.cn/tags/SQL/"/>
     
   </entry>
   
@@ -889,9 +968,9 @@
     
       <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
-      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="jdbc" scheme="http://taowusheng.cn/tags/jdbc/"/>
+    
+      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -950,7 +1029,7 @@
     <link href="http://taowusheng.cn/2017/01/22/20170122%20%E6%9C%80%E7%9F%AD%E8%B7%AF%E9%97%AE%E9%A2%98(Bellman%20Dijkstra%20Floyd)/"/>
     <id>http://taowusheng.cn/2017/01/22/20170122 最短路问题(Bellman Dijkstra Floyd)/</id>
     <published>2017-01-21T16:00:01.000Z</published>
-    <updated>2018-12-25T05:56:50.532Z</updated>
+    <updated>2019-04-16T11:21:17.450Z</updated>
     
     <summary type="html">
     
@@ -958,12 +1037,12 @@
     
     </summary>
     
-      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
-    
-      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
       <category term="最短路径算法" scheme="http://taowusheng.cn/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95/"/>
     
@@ -980,7 +1059,7 @@
     <link href="http://taowusheng.cn/2017/01/08/20170108%20some%20sentence%20about%20the%20ACM/"/>
     <id>http://taowusheng.cn/2017/01/08/20170108 some sentence about the ACM/</id>
     <published>2017-01-07T16:00:01.000Z</published>
-    <updated>2018-12-25T05:57:21.422Z</updated>
+    <updated>2019-04-16T11:21:05.123Z</updated>
     
     <summary type="html">
     
@@ -988,7 +1067,7 @@
     
     </summary>
     
-      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
     
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
@@ -1020,50 +1099,6 @@
   </entry>
   
   <entry>
-    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-01-16T10:44:03.511Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACM六个月总结</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2018-12-25T05:57:21.469Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
-    
-    </summary>
-    
-      <category term="ACM_&amp;_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
-    
-    
-      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
-    
-      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
     <title>2016年11月读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
@@ -1085,6 +1120,50 @@
       <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
       <category term="黑客与画家" scheme="http://taowusheng.cn/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-01-16T10:44:03.511Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
+    
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ACM六个月总结</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-04-16T11:21:05.138Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
+    
+    </summary>
+    
+      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
