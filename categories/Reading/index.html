@@ -29,20 +29,18 @@ ga('send', 'pageview');
 
 
   
-  <title>C笔记 | YIFEI</title>
+  <title>Category: Reading | YIFEI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="虽说C语言学了好多年了，但是还是很多东西没有真正搞清楚啊。define|typedef|static|const|数组&amp;amp;指针|多维数组">
-<meta name="keywords" content="C,C++">
-<meta property="og:type" content="article">
-<meta property="og:title" content="C笔记">
-<meta property="og:url" content="http://taowusheng.cn/2018/12/22/20181222 C笔记/index.html">
+  <meta name="description" content="一切有为法，如梦幻泡影，如露亦如电，应作如是观。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="YIFEI">
+<meta property="og:url" content="http://taowusheng.cn/categories/Reading/index.html">
 <meta property="og:site_name" content="YIFEI">
-<meta property="og:description" content="虽说C语言学了好多年了，但是还是很多东西没有真正搞清楚啊。define|typedef|static|const|数组&amp;amp;指针|多维数组">
+<meta property="og:description" content="一切有为法，如梦幻泡影，如露亦如电，应作如是观。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-16T11:19:20.714Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="C笔记">
-<meta name="twitter:description" content="虽说C语言学了好多年了，但是还是很多东西没有真正搞清楚啊。define|typedef|static|const|数组&amp;amp;指针|多维数组">
+<meta name="twitter:title" content="YIFEI">
+<meta name="twitter:description" content="一切有为法，如梦幻泡影，如露亦如电，应作如是观。">
   
     <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
   
@@ -102,111 +100,185 @@ ga('send', 'pageview');
 
 </header>
       <div class="outer">
-        <section id="main"><article id="post-20181222 C笔记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/22/20181222 C笔记/" class="article-date">
-  <time datetime="2018-12-21T16:00:01.000Z" itemprop="datePublished">2018-12-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/C-Cpp/">C_Cpp</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+        <section id="main">
   
-    <h1 class="article-title" itemprop="name">
-      C笔记
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2029" class="archive-year">2029</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2029/11/11/20291111 坚持阅读/" class="archive-article-date">
+  <time datetime="2029-11-10T16:00:01.000Z" itemprop="datePublished">Nov 11</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2029/11/11/20291111 坚持阅读/">坚持阅读</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>虽说C语言学了好多年了，但是还是很多东西没有真正搞清楚啊。<br>define|typedef|static|const|数组&amp;指针|多维数组<br><a id="more"></a></p>
-<h2 id="define宏定义"><a href="#define宏定义" class="headerlink" title="define宏定义"></a>define宏定义</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">一般形式为：<span class="meta">#<span class="meta-keyword">define</span> 标识符 字符串</span></span><br><span class="line">例如：<span class="meta">#<span class="meta-keyword">define</span> PI 3.14</span></span><br><span class="line">在编译预处理时会将PI进行替换，并且只是简单地字符串替换！</span><br><span class="line">作用域是当前文件。</span><br><span class="line">* 方便程序修改</span><br><span class="line">* 提高程序运行效率</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> A a+b </span></span><br><span class="line">...</span><br><span class="line"><span class="keyword">int</span> a=<span class="number">2</span>,b=<span class="number">3</span>;</span><br><span class="line"><span class="keyword">int</span> c=A*A; <span class="comment">// &gt;&gt;&gt; c=a+b*a+b,此时c=11,而不是25;</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d"</span>,c); </span><br><span class="line">...</span><br><span class="line">所以有时候可以加个括号</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> A (a+b)</span></span><br></pre></td></tr></table></figure>
-<h2 id="typedef"><a href="#typedef" class="headerlink" title="typedef"></a>typedef</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">用来给类型起个新名字</span><br><span class="line">一般形式: typedef *** newname;</span><br><span class="line">example: typedef int INT;</span><br><span class="line">		 typedef long long ll;</span><br><span class="line">* 会对***进行编译,把***当做一个整体,然后起一个新名字</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#define INT1 int*</span><br><span class="line">typedef int* INT2;</span><br><span class="line">...</span><br><span class="line">INT1 p1,p2; // &gt;&gt;&gt; int *p1,p2; //创建一个指针int型指针p1和int变量p2.</span><br><span class="line">INT2 p3,p4; // &gt;&gt;&gt; int *p3; int*p4; //创建两个int型指针变量</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-<p>还可以用来定义机器无关的类型<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">你可以定义一个叫 REAL 的浮点类型，在目标机器上它可以获得最高的精度：</span><br><span class="line">typedef long double REAL;</span><br><span class="line">在不支持 long double 的机器上，该 typedef 看起来会是下面这样：</span><br><span class="line">typedef double REAL;</span><br><span class="line">并且，在连 double 都不支持的机器上，该 typedef 看起来会是这样：</span><br><span class="line">typedef float REAL;</span><br></pre></td></tr></table></figure></p>
-<h2 id="static"><a href="#static" class="headerlink" title="static"></a>static</h2><ul>
-<li><p>修饰局部变量时，称为静态变量。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">可以提高局部变量的持久性，函数调用结束时，该变量并不会释放，第二次调用函数时，值还是之前的。</span><br><span class="line">会在静态数据区创建，初始值为0.</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修饰函数，该函数的作用域为当前文件。</p>
-</li>
-<li>修饰全局变量，限定作用域为当前文件。</li>
-</ul>
-<h2 id="const关键字"><a href="#const关键字" class="headerlink" title="const关键字"></a>const关键字</h2><ul>
-<li>不是常量，是一个只读变量</li>
-<li>不能放在case关键字后面也说明const不是一个常量。</li>
-<li>定义时赋值，之后不允许修改。</li>
-<li><p>修饰普通变量</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> a;</span><br><span class="line">a还是一个<span class="keyword">int</span>型变量，<span class="keyword">const</span> <span class="keyword">int</span> 顺序可以互换：</span><br><span class="line"><span class="keyword">int</span> <span class="keyword">const</span> a;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修饰数组</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> a[<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> <span class="keyword">const</span> a[<span class="number">5</span>];</span><br><span class="line">只读数组</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修饰指针</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> *p;</span><br><span class="line"><span class="keyword">char</span> <span class="keyword">const</span> *p;<span class="comment">//这两种，const都是修饰*p,则p指向的变量只读。(与下一种对照记忆)</span></span><br><span class="line"><span class="keyword">char</span> * <span class="keyword">const</span> p;<span class="comment">//const很明显修饰指针p，则指针p不能被修改。</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> * <span class="keyword">const</span> p;<span class="comment">//指针p不能被修改，指向的对象也不能被修改。</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>还可以用在函数传值，增强程序健壮性</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">apple</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *a)</span></span>&#123;<span class="comment">//防止修改a指向的字符串</span></span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">apple</span><span class="params">(<span class="keyword">char</span> * <span class="keyword">const</span> a)</span></span>&#123;<span class="comment">//防止修改a本身</span></span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="数组-amp-指针"><a href="#数组-amp-指针" class="headerlink" title="数组&amp;指针"></a>数组&amp;指针</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> *p=<span class="string">"hello"</span>;<span class="comment">//字符串是一个只读的常量</span></span><br><span class="line"><span class="keyword">char</span> a[]=<span class="string">"hello"</span>;<span class="comment">//此时初始化的数组可以修改。</span></span><br></pre></td></tr></table></figure>
-<h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h2><p>C语言不能像一位数组那样，给函数传递一个多维数组。<br>只能再函数的形参处写明除第一下标之外的其他下标。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">function</span><span class="params">(<span class="keyword">int</span> a[])</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> a[<span class="number">10</span>];</span><br><span class="line">function(a);</span><br><span class="line">-----------------------------------</span><br><span class="line"><span class="keyword">int</span> function（<span class="keyword">int</span> a[][<span class="number">3</span>][<span class="number">4</span>]);<span class="comment">//需写明下标</span></span><br><span class="line"><span class="keyword">int</span> a[<span class="number">4</span>][<span class="number">3</span>][<span class="number">4</span>];</span><br><span class="line">function(a);</span><br></pre></td></tr></table></figure></p>
-<p>欢迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/">http://taowusheng.cn/</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://taowusheng.cn/2018/12/22/20181222 C笔记/" data-id="cjujpqbg10031gwbj5u82b5cj" class="article-share-link">Share</a>
-      
-      
-        <a href="/2018/12/22/20181222 C笔记/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2018/12/22/20181222 C笔记/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
-
-    </footer>
+    </header>
   </div>
+</article>
   
     
-<nav id="article-nav">
+    
+      
+        </div></section>
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/01/16/20190112 与神对话_笔记/" class="archive-article-date">
+  <time datetime="2019-01-16T10:27:10.801Z" itemprop="datePublished">Jan 16</time>
+</a>
+      
   
-    <a href="/2018/12/23/20181223 linux软件安装命令记录/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          linux软件安装命令记录
-        
-      </div>
-    </a>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/01/16/20190112 与神对话_笔记/">与神对话_笔记</a>
+    </h1>
   
-  
-    <a href="/2018/12/18/20181218 C++笔记/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">C++笔记</div>
-    </a>
-  
-</nav>
 
-  
+    </header>
+  </div>
 </article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/01/13/20190113 瑜伽之路_读书笔记/" class="archive-article-date">
+  <time datetime="2019-01-12T16:00:01.000Z" itemprop="datePublished">Jan 13</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/01/13/20190113 瑜伽之路_读书笔记/">瑜伽之路_读书笔记</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+      
+        </div></section>
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2018/12/31/20181231 2018年书单/" class="archive-article-date">
+  <time datetime="2018-12-30T16:00:01.000Z" itemprop="datePublished">Dec 31</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/12/31/20181231 2018年书单/">2018年书单</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2018/12/15/20181215 《只是为了好玩》读后感/" class="archive-article-date">
+  <time datetime="2018-12-14T16:00:01.000Z" itemprop="datePublished">Dec 15</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/12/15/20181215 《只是为了好玩》读后感/">《只是为了好玩》读后感</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+      
+        </div></section>
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2016/12/03/20161204 2016年11月读书笔记/" class="archive-article-date">
+  <time datetime="2016-12-02T16:00:01.000Z" itemprop="datePublished">Dec 3</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/12/03/20161204 2016年11月读书笔记/">2016年11月读书笔记</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/" class="archive-article-date">
+  <time datetime="2016-12-02T16:00:01.000Z" itemprop="datePublished">Dec 3</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/">《决定性瞬间--布列松谈摄影》读书笔记</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
+  
 
 
-
-  <section id="comments" class="vcomment">
-
-  </section>
 </section>
         
           <aside id="sidebar">
