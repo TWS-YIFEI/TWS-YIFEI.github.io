@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'true', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89376999-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89376999-1');
+</script>
+
+
+
+  
+  <title>Cpp虚函数相关知识点 | YIFEI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="什么是虚函数？析构函数什么时候该声明为虚函数？什么是虚基类？">
+<meta name="keywords" content="Cpp,虚函数,虚基类,析构函数,知识点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cpp虚函数相关知识点">
+<meta property="og:url" content="http://taowusheng.cn/2019/05/18/20190518 C++虚函数相关知识点/index.html">
+<meta property="og:site_name" content="YIFEI">
+<meta property="og:description" content="什么是虚函数？析构函数什么时候该声明为虚函数？什么是虚基类？">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-21T06:58:51.040Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cpp虚函数相关知识点">
+<meta name="twitter:description" content="什么是虚函数？析构函数什么时候该声明为虚函数？什么是虚基类？">
+  
+    <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YIFEI</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">每当我找到生命的意义，它就又变了...</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/links">Links</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://taowusheng.cn"></form>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-20190518 C++虚函数相关知识点" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/18/20190518 C++虚函数相关知识点/" class="article-date">
+  <time datetime="2019-05-17T16:00:01.000Z" itemprop="datePublished">2019-05-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/C-Cpp/">C_Cpp</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Cpp虚函数相关知识点
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>什么是虚函数？析构函数什么时候该声明为虚函数？什么是虚基类？<br><a id="more"></a></p>
+<h3 id="虚函数"><a href="#虚函数" class="headerlink" title="虚函数"></a>虚函数</h3><p>虚函数是用来实现多态的一种机制，在类中成员函数前面加一个virtual，这个<br>函数就变成了虚函数。如下代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">base</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"this is base class"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>那么怎样让它起作用呢？当子类child继承base的时候，创建一个base类的指针，让它<br>指向子类对象，这时候用基类指针调用print()，此时会自动判断，然后调用子类中的函数，<br>如果不加virtual，基类指针就直接调用基类的print了。代码如下：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">base</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"this is base class"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">child</span>:</span><span class="keyword">public</span> base&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"this is child class"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    child c;</span><br><span class="line">    base *ptr=&amp;c;</span><br><span class="line">    ptr-&gt;print();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在Java中，类中的成员函数默认都是虚函数。</p>
+<h3 id="虚函数表"><a href="#虚函数表" class="headerlink" title="虚函数表"></a>虚函数表</h3><p>如果想知道是怎么实现的呢，就要说起虚函数表了。<br>如果一个类中有虚函数，那么编译器会在类的开始位置设置一个虚函数指针，指向一个数组(每一个元素都是函数指针)，<br>这个数组就是虚函数表，它存储着每个虚函数的地址。<br>当子类继承基类的时候，也会连这个虚函数表一块继承过来，然后把里面的函数指针改成子类中的虚函数地址。<br>由于使用虚函数会导致建立虚函数表，所以会使程序内存消耗变大，效率降低。<br>可以看这一篇文章<a href="http://blog.kongfy.com/2015/08/%E6%8E%A2%E7%B4%A2c%E8%99%9A%E5%87%BD%E6%95%B0%E5%9C%A8g%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0/" target="_blank" rel="noopener">探索C++虚函数在g++中的实现</a>，讲的很详细。</p>
+<h3 id="析构函数为什么是虚函数"><a href="#析构函数为什么是虚函数" class="headerlink" title="析构函数为什么是虚函数"></a>析构函数为什么是虚函数</h3><p>明白了虚函数的特点，这个问题就不难了。<br>当基类指针指向子类对象的时候，在对象使用完毕需要释放时，肯定需要调用子类对象的析构函数呀，所以这种情况下析构函数也得是虚函数。<br>也可以看这段话：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">基类指针可以指向派生类的对象（多态性），如果删除该指针<span class="keyword">delete</span> []p；</span><br><span class="line">就会调用该指针指向的派生类析构函数，而派生类的析构函数又自动调用</span><br><span class="line">基类的析构函数，这样整个派生类的对象完全被释放。</span><br><span class="line">如果析构函数不被声明成虚函数，则编译器实施静态绑定，</span><br><span class="line">在删除基类指针时，只会调用基类的析构函数而不调用派生类析构函数，</span><br><span class="line">这样就会造成派生类对象析构不完全。所以，将析构函数</span><br><span class="line">声明为虚函数是十分必要的。</span><br></pre></td></tr></table></figure></p>
+<h3 id="虚基类"><a href="#虚基类" class="headerlink" title="虚基类"></a>虚基类</h3><p>先看实现形式：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Base</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"this is Base class"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Child1</span>:</span><span class="keyword">virtual</span> <span class="keyword">public</span> Base&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"this is Child1 class"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>当Child1虚继承Base时，就说Base是Child1的虚基类。<br>那这样做能解决什么问题呢？<br>有这样一种情况：<br>首先我们知道，当子类继承父类的时候，子类中会有父类的成员的一份拷贝。<br>当Child1，Child2继承Base，然后grandson又多继承自两个Child时，grandson中<br>就会有Child1，Child2，Base中的多份成员了。但是我们其实根本不需要这么多份<br>拷贝。先看代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Base</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> a=<span class="number">1</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Child1</span>:</span><span class="keyword">public</span> Base&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Child2</span>:</span><span class="keyword">public</span> Base&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Grandson</span>:</span><span class="keyword">public</span> Child1,<span class="keyword">public</span> Child2&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;a&lt;&lt;<span class="built_in">endl</span>;<span class="comment">//此行报错</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Grandson grandson;</span><br><span class="line">    grandson.print();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>当我们使用虚继承的时候，就不会有多份拷贝了：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Base</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> a=<span class="number">1</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Child1</span>:</span><span class="keyword">virtual</span> <span class="keyword">public</span> Base&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Child2</span>:</span><span class="keyword">virtual</span> <span class="keyword">public</span> Base&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Grandson</span>:</span><span class="keyword">public</span> Child1,<span class="keyword">public</span> Child2&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;a&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Grandson grandson;</span><br><span class="line">    grandson.print();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>输出结果：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure></p>
+<p>当使用多重继承的时候很容出现二义性问题，一般不推荐使用多重继承。<br>Java中就直接删除了多重继承的特性。</p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li><a href="https://www.cnblogs.com/yiranlaobaitu/p/3764422.html" target="_blank" rel="noopener">C++虚基类详解</a></li>
+<li><a href="https://www.cnblogs.com/yangguang-it/p/6511532.html" target="_blank" rel="noopener">c++多继承浅析</a></li>
+<li><a href="https://blog.csdn.net/qq_38410730/article/details/80563010" target="_blank" rel="noopener">C++继承和派生类、虚基类</a></li>
+</ul>
+<!-- 
+category : ACM_Algorithm CTF C_Cpp JAVA Linux Linux_Kernel 
+SQL Cryptography Life Reading Thought Security Unknown Tools  
+Network Qt Trusted_Computing English
+　　←全角空格
+![keyboard](https://img-bter)   ←图片
+[keyboard](https://img-bter)    ←超链接
+
+-->
+<p>如有错误，还请指正。<br>欢迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/">http://taowusheng.cn/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://taowusheng.cn/2019/05/18/20190518 C++虚函数相关知识点/" data-id="cjvxgcntn004n3sbj8i3qpemk" class="article-share-link">Share</a>
+      
+      
+        <a href="/2019/05/18/20190518 C++虚函数相关知识点/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2019/05/18/20190518 C++虚函数相关知识点/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cpp/">Cpp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/析构函数/">析构函数</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/知识点/">知识点</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/虚函数/">虚函数</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/虚基类/">虚基类</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2029/11/11/20291111 坚持阅读/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          坚持阅读
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/04/18/20190418 记一次OpenStack环境搭建及问题记录/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">记一次OpenStack环境搭建及问题记录</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM-Algorithm/">ACM_Algorithm</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Assembly/">Assembly</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/C-Cpp/">C_Cpp</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Cryptography/">Cryptography</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux-Kernel/">Linux_Kernel</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt/">Qt</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading/">Reading</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Security/">Security</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Thought/">Thought</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Trusted-Computing/">Trusted_Computing</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Unknown/">Unknown</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/01背包/" style="font-size: 10px;">01背包</a> <a href="/tags/2017/" style="font-size: 10px;">2017</a> <a href="/tags/2018/" style="font-size: 12px;">2018</a> <a href="/tags/ACM/" style="font-size: 16px;">ACM</a> <a href="/tags/Assembly/" style="font-size: 12px;">Assembly</a> <a href="/tags/C/" style="font-size: 12px;">C</a> <a href="/tags/C/" style="font-size: 12px;">C++</a> <a href="/tags/CTF/" style="font-size: 10px;">CTF</a> <a href="/tags/Cpp/" style="font-size: 10px;">Cpp</a> <a href="/tags/DES/" style="font-size: 10px;">DES</a> <a href="/tags/EDK/" style="font-size: 10px;">EDK</a> <a href="/tags/GMP/" style="font-size: 10px;">GMP</a> <a href="/tags/GUI/" style="font-size: 10px;">GUI</a> <a href="/tags/IO/" style="font-size: 10px;">IO</a> <a href="/tags/JAVA/" style="font-size: 20px;">JAVA</a> <a href="/tags/Linux/" style="font-size: 14px;">Linux</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/RSA/" style="font-size: 10px;">RSA</a> <a href="/tags/SHA/" style="font-size: 10px;">SHA</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/TSS/" style="font-size: 10px;">TSS</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/UDK/" style="font-size: 10px;">UDK</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/UEFI/" style="font-size: 10px;">UEFI</a> <a href="/tags/VMware/" style="font-size: 10px;">VMware</a> <a href="/tags/auth/" style="font-size: 10px;">auth</a> <a href="/tags/bellman/" style="font-size: 10px;">bellman</a> <a href="/tags/bjut/" style="font-size: 10px;">bjut</a> <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/cpp/" style="font-size: 12px;">cpp</a> <a href="/tags/cryptography/" style="font-size: 12px;">cryptography</a> <a href="/tags/curses/" style="font-size: 10px;">curses</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/emulator/" style="font-size: 10px;">emulator</a> <a href="/tags/floyd/" style="font-size: 10px;">floyd</a> <a href="/tags/g/" style="font-size: 10px;">g++</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/gdb/" style="font-size: 10px;">gdb</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/jdbc/" style="font-size: 10px;">jdbc</a> <a href="/tags/kernal/" style="font-size: 10px;">kernal</a> <a href="/tags/linus/" style="font-size: 10px;">linus</a> <a href="/tags/linux/" style="font-size: 20px;">linux</a> <a href="/tags/mail服务器/" style="font-size: 10px;">mail服务器</a> <a href="/tags/map/" style="font-size: 10px;">map</a> <a href="/tags/md5注入/" style="font-size: 10px;">md5注入</a> <a href="/tags/notes/" style="font-size: 10px;">notes</a> <a href="/tags/openstack/" style="font-size: 10px;">openstack</a> <a href="/tags/pam/" style="font-size: 10px;">pam</a> <a href="/tags/patch/" style="font-size: 10px;">patch</a> <a href="/tags/postfix/" style="font-size: 10px;">postfix</a> <a href="/tags/reading/" style="font-size: 18px;">reading</a> <a href="/tags/thought/" style="font-size: 14px;">thought</a> <a href="/tags/tools/" style="font-size: 12px;">tools</a> <a href="/tags/tpm/" style="font-size: 10px;">tpm</a> <a href="/tags/trousers/" style="font-size: 10px;">trousers</a> <a href="/tags/trusted-computing/" style="font-size: 10px;">trusted_computing</a> <a href="/tags/unix编程实践/" style="font-size: 10px;">unix编程实践</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vs2013/" style="font-size: 10px;">vs2013</a> <a href="/tags/win10/" style="font-size: 10px;">win10</a> <a href="/tags/书单/" style="font-size: 12px;">书单</a> <a href="/tags/事件驱动/" style="font-size: 10px;">事件驱动</a> <a href="/tags/优先级/" style="font-size: 10px;">优先级</a> <a href="/tags/信号/" style="font-size: 10px;">信号</a> <a href="/tags/公钥/" style="font-size: 10px;">公钥</a> <a href="/tags/公钥密码/" style="font-size: 10px;">公钥密码</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/可信计算/" style="font-size: 12px;">可信计算</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/密码体制/" style="font-size: 10px;">密码体制</a> <a href="/tags/密码学/" style="font-size: 14px;">密码学</a> <a href="/tags/对称密码/" style="font-size: 10px;">对称密码</a> <a href="/tags/川藏线/" style="font-size: 10px;">川藏线</a> <a href="/tags/年终总结/" style="font-size: 10px;">年终总结</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a> <a href="/tags/思维导图/" style="font-size: 10px;">思维导图</a> <a href="/tags/思考/" style="font-size: 14px;">思考</a> <a href="/tags/总结/" style="font-size: 18px;">总结</a> <a href="/tags/挑战程序设计竞赛/" style="font-size: 12px;">挑战程序设计竞赛</a> <a href="/tags/提问的智慧/" style="font-size: 10px;">提问的智慧</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/摄影/" style="font-size: 10px;">摄影</a> <a href="/tags/数据库/" style="font-size: 12px;">数据库</a> <a href="/tags/文本查询/" style="font-size: 10px;">文本查询</a> <a href="/tags/最短路径算法/" style="font-size: 10px;">最短路径算法</a> <a href="/tags/析构函数/" style="font-size: 10px;">析构函数</a> <a href="/tags/汇编/" style="font-size: 10px;">汇编</a> <a href="/tags/汇编语言/" style="font-size: 10px;">汇编语言</a> <a href="/tags/生活随笔/" style="font-size: 10px;">生活随笔</a> <a href="/tags/知识点/" style="font-size: 10px;">知识点</a> <a href="/tags/碎碎念/" style="font-size: 10px;">碎碎念</a> <a href="/tags/私钥/" style="font-size: 10px;">私钥</a> <a href="/tags/立flag/" style="font-size: 10px;">立flag</a> <a href="/tags/经历/" style="font-size: 10px;">经历</a> <a href="/tags/网络编程/" style="font-size: 10px;">网络编程</a> <a href="/tags/考研/" style="font-size: 10px;">考研</a> <a href="/tags/虚函数/" style="font-size: 10px;">虚函数</a> <a href="/tags/虚基类/" style="font-size: 10px;">虚基类</a> <a href="/tags/计划/" style="font-size: 10px;">计划</a> <a href="/tags/计时器/" style="font-size: 10px;">计时器</a> <a href="/tags/计算机/" style="font-size: 10px;">计算机</a> <a href="/tags/计算机技术/" style="font-size: 10px;">计算机技术</a> <a href="/tags/读书/" style="font-size: 10px;">读书</a> <a href="/tags/读书笔记/" style="font-size: 16px;">读书笔记</a> <a href="/tags/重定向/" style="font-size: 10px;">重定向</a> <a href="/tags/阅读/" style="font-size: 10px;">阅读</a> <a href="/tags/面向对象/" style="font-size: 12px;">面向对象</a> <a href="/tags/面向过程/" style="font-size: 10px;">面向过程</a> <a href="/tags/预处理/" style="font-size: 10px;">预处理</a> <a href="/tags/骑行/" style="font-size: 10px;">骑行</a> <a href="/tags/黑客与画家/" style="font-size: 10px;">黑客与画家</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2029/11/">November 2029</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2029/11/11/20291111 坚持阅读/">坚持阅读</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/18/20190518 C++虚函数相关知识点/">Cpp虚函数相关知识点</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/18/20190418 记一次OpenStack环境搭建及问题记录/">记一次OpenStack环境搭建及问题记录</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/15/20190415 ubuntu安装TPM_emulator和TSS/">ubuntu下安装TPM_emulator和TSS</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/26/20190326 unix编程实践_7_事件驱动编程/">unix编程实践_7_事件驱动编程</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">visiters</h3>
+    <div class="widget">
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=534a4dn9fi8&amp;m=0c&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;cw=ffffff&amp;cb=000000" async="async"></script>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016-2018 Tao WuSheng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/links" class="mobile-nav-link">Links</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'true' == true;
+    var verify = 'true' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Please leave your footprints...",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
+
+  </div>
+</body>
+</html>
