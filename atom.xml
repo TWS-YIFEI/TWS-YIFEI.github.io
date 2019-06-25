@@ -46,6 +46,30 @@
   </entry>
   
   <entry>
+    <title>webbench源码浅析</title>
+    <link href="http://taowusheng.cn/2019/06/22/20190622%20webbench%E6%BA%90%E7%A0%81%E6%B5%85%E6%9E%90/"/>
+    <id>http://taowusheng.cn/2019/06/22/20190622 webbench源码浅析/</id>
+    <published>2019-06-21T16:00:01.000Z</published>
+    <updated>2019-06-25T12:12:59.357Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Webbench是一个在Linux下使用的非常简单的网站侧压工具。它使用fork()模拟多个客户端同时访问url，测试网站在压力下工作的性能。&lt;br&gt;只有socket.c和webbench.c两个文件.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="System_Programming" scheme="http://taowusheng.cn/categories/System-Programming/"/>
+    
+    
+      <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
+    
+      <category term="Network_Programming" scheme="http://taowusheng.cn/tags/Network-Programming/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux下精简线程池的实现</title>
     <link href="http://taowusheng.cn/2019/06/01/20190601%20Linux%E4%B8%8B%E7%B2%BE%E7%AE%80%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
     <id>http://taowusheng.cn/2019/06/01/20190601 Linux下精简线程池的实现/</id>
@@ -61,11 +85,11 @@
       <category term="System_Programming" scheme="http://taowusheng.cn/categories/System-Programming/"/>
     
     
+      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
+    
       <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
     
       <category term="线程池" scheme="http://taowusheng.cn/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/"/>
-    
-      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -74,7 +98,7 @@
     <link href="http://taowusheng.cn/2019/05/29/20190529%20tinyhttpd%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
     <id>http://taowusheng.cn/2019/05/29/20190529 tinyhttpd源码阅读/</id>
     <published>2019-05-28T16:00:01.000Z</published>
-    <updated>2019-05-31T13:30:17.711Z</updated>
+    <updated>2019-06-25T12:12:59.357Z</updated>
     
     <summary type="html">
     
@@ -87,9 +111,9 @@
     
       <category term="网络编程" scheme="http://taowusheng.cn/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
-    
       <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
     
       <category term="web服务器" scheme="http://taowusheng.cn/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
@@ -124,7 +148,7 @@
     <link href="http://taowusheng.cn/2019/05/21/20190521%20Effective_Cpp%E4%B8%AD%E7%9A%8455%E4%B8%AA%E5%BB%BA%E8%AE%AE/"/>
     <id>http://taowusheng.cn/2019/05/21/20190521 Effective_Cpp中的55个建议/</id>
     <published>2019-05-20T16:00:01.000Z</published>
-    <updated>2019-06-11T07:50:34.072Z</updated>
+    <updated>2019-06-11T07:54:58.448Z</updated>
     
     <summary type="html">
     
@@ -138,6 +162,30 @@
       <category term="Cpp" scheme="http://taowusheng.cn/tags/Cpp/"/>
     
       <category term="Effective_Cpp" scheme="http://taowusheng.cn/tags/Effective-Cpp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cpp后台学习计划与记录</title>
+    <link href="http://taowusheng.cn/2019/05/20/20190520%20Cpp%E5%90%8E%E5%8F%B0%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92%E4%B8%8E%E8%AE%B0%E5%BD%95/"/>
+    <id>http://taowusheng.cn/2019/05/20/20190520 Cpp后台学习计划与记录/</id>
+    <published>2019-05-19T16:00:01.000Z</published>
+    <updated>2019-06-25T12:12:59.357Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Cpp后台需要学习的知识多而杂，务必要制定一个切实可行的学习计划。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="C_Cpp" scheme="http://taowusheng.cn/categories/C-Cpp/"/>
+    
+    
+      <category term="Cpp" scheme="http://taowusheng.cn/tags/Cpp/"/>
+    
+      <category term="学习计划" scheme="http://taowusheng.cn/tags/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"/>
+    
+      <category term="学习之路" scheme="http://taowusheng.cn/tags/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
     
   </entry>
   
@@ -192,38 +240,6 @@
   </entry>
   
   <entry>
-    <title>暗时间_读书笔记</title>
-    <link href="http://taowusheng.cn/2019/04/16/20190416%20%E6%9A%97%E6%97%B6%E9%97%B4_%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2019/04/16/20190416 暗时间_笔记/</id>
-    <published>2019-04-15T16:00:01.000Z</published>
-    <updated>2019-05-31T13:37:55.747Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;一本应该早点去读的好书，作者是刘未鹏。里面的有关心智、个人成长、心理学的内容给我带来许多新的思考。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
-    
-      <category term="暗时间" scheme="http://taowusheng.cn/tags/%E6%9A%97%E6%97%B6%E9%97%B4/"/>
-    
-      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
-    
-      <category term="心智" scheme="http://taowusheng.cn/tags/%E5%BF%83%E6%99%BA/"/>
-    
-      <category term="心理学" scheme="http://taowusheng.cn/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
-    
-  </entry>
-  
-  <entry>
     <title>我是一只IT小小鸟_书摘</title>
     <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
     <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
@@ -250,6 +266,38 @@
       <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
     
       <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>暗时间_读书笔记</title>
+    <link href="http://taowusheng.cn/2019/04/16/20190416%20%E6%9A%97%E6%97%B6%E9%97%B4_%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2019/04/16/20190416 暗时间_笔记/</id>
+    <published>2019-04-15T16:00:01.000Z</published>
+    <updated>2019-05-31T13:37:55.747Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一本应该早点去读的好书，作者是刘未鹏。里面的有关心智、个人成长、心理学的内容给我带来许多新的思考。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
+    
+      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    
+      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    
+      <category term="暗时间" scheme="http://taowusheng.cn/tags/%E6%9A%97%E6%97%B6%E9%97%B4/"/>
+    
+      <category term="心智" scheme="http://taowusheng.cn/tags/%E5%BF%83%E6%99%BA/"/>
+    
+      <category term="心理学" scheme="http://taowusheng.cn/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
   </entry>
   
@@ -430,7 +478,7 @@
     <link href="http://taowusheng.cn/2019/01/18/20190118%20Cpp%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7/"/>
     <id>http://taowusheng.cn/2019/01/18/20190118 Cpp运算符优先级/</id>
     <published>2019-01-17T16:00:01.000Z</published>
-    <updated>2019-06-01T10:12:27.344Z</updated>
+    <updated>2019-06-25T12:12:59.357Z</updated>
     
     <summary type="html">
     
@@ -729,7 +777,7 @@
     <link href="http://taowusheng.cn/2018/11/23/20181123%20git%E5%91%BD%E4%BB%A4%E9%80%9F%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2018/11/23/20181123 git命令速记/</id>
     <published>2018-11-22T16:00:01.000Z</published>
-    <updated>2019-03-10T01:46:22.581Z</updated>
+    <updated>2019-06-25T12:12:59.357Z</updated>
     
     <summary type="html">
     
@@ -1359,6 +1407,31 @@
   </entry>
   
   <entry>
+    <title>2016年11月读书笔记</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-01-16T10:44:12.511Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;挑战程序设计竞赛/C++函数速查手册/黑客与画家&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;挑战程序设计竞赛11.03&lt;br&gt;今天读了二叉搜索树的实现以及set和map的简单用法。&lt;br&gt;  二叉搜索树实际上就是一颗二叉树，但它有一个特点，就是每个节点左二子的值小于它的值，右儿子的值大于它的值。&lt;br&gt;由于是一个树形结构，他能高效的进行插入，删除，查找。每次操作时间复杂度都在logn以内。&lt;br&gt;C++的stl里面有用二叉搜索树实现的set容器，可以很方便地直接调用。
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
+    
+      <category term="黑客与画家" scheme="http://taowusheng.cn/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
@@ -1399,31 +1472,6 @@
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2016年11月读书笔记</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-01-16T10:44:12.511Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;挑战程序设计竞赛/C++函数速查手册/黑客与画家&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;挑战程序设计竞赛11.03&lt;br&gt;今天读了二叉搜索树的实现以及set和map的简单用法。&lt;br&gt;  二叉搜索树实际上就是一颗二叉树，但它有一个特点，就是每个节点左二子的值小于它的值，右儿子的值大于它的值。&lt;br&gt;由于是一个树形结构，他能高效的进行插入，删除，查找。每次操作时间复杂度都在logn以内。&lt;br&gt;C++的stl里面有用二叉搜索树实现的set容器，可以很方便地直接调用。
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
-    
-      <category term="黑客与画家" scheme="http://taowusheng.cn/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
     
   </entry>
   
