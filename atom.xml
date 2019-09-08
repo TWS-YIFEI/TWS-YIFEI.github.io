@@ -46,6 +46,74 @@
   </entry>
   
   <entry>
+    <title>valgrind的安装及简单使用</title>
+    <link href="http://taowusheng.cn/2019/09/08/20190823%20valgrind%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
+    <id>http://taowusheng.cn/2019/09/08/20190823 valgrind的安装及简单使用/</id>
+    <published>2019-09-08T15:25:20.567Z</published>
+    <updated>2019-09-08T15:30:08.406Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;valgrind的安装及简单使用&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Tools" scheme="http://taowusheng.cn/categories/Tools/"/>
+    
+    
+      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
+    
+      <category term="valgrind" scheme="http://taowusheng.cn/tags/valgrind/"/>
+    
+      <category term="内存泄漏" scheme="http://taowusheng.cn/tags/%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The_Furthest_Distance_in_the_World</title>
+    <link href="http://taowusheng.cn/2019/08/24/20190824%20The_Furthest_Distance_in_the_World/"/>
+    <id>http://taowusheng.cn/2019/08/24/20190824 The_Furthest_Distance_in_the_World/</id>
+    <published>2019-08-23T16:00:01.000Z</published>
+    <updated>2019-09-08T15:32:01.146Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;The-furthest-distance-in-the-world&quot;&gt;&lt;a href=&quot;#The-furthest-distance-in-the-world&quot; class=&quot;headerlink&quot; title=&quot;The furthest distance in the world&quot;&gt;&lt;/a&gt;The furthest distance in the world&lt;/h5&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="http://taowusheng.cn/categories/English/"/>
+    
+    
+      <category term="English" scheme="http://taowusheng.cn/tags/English/"/>
+    
+      <category term="世界上最遥远的距离" scheme="http://taowusheng.cn/tags/%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E9%81%A5%E8%BF%9C%E7%9A%84%E8%B7%9D%E7%A6%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何用Cpp实现一个内存池</title>
+    <link href="http://taowusheng.cn/2019/08/22/20190822%20%E5%A6%82%E4%BD%95%E7%94%A8Cpp%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%86%85%E5%AD%98%E6%B1%A0/"/>
+    <id>http://taowusheng.cn/2019/08/22/20190822 如何用Cpp实现一个内存池/</id>
+    <published>2019-08-21T16:00:01.000Z</published>
+    <updated>2019-09-08T15:25:20.567Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;当需要频繁的进行new和delete操作时，可能会导致产生很多内存碎片。&lt;br&gt;所以用一个内存池来对这些空间进行管理，可以有效地提高内存利用率。&lt;br&gt;另外也可以用内存池和placement new来一块使用。&lt;br&gt;在STL中也有一个内存池的实现，还是非常巧妙的。在此学习并模仿着写一个。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="System_Programming" scheme="http://taowusheng.cn/categories/System-Programming/"/>
+    
+    
+      <category term="Cpp" scheme="http://taowusheng.cn/tags/Cpp/"/>
+    
+      <category term="内存池" scheme="http://taowusheng.cn/tags/%E5%86%85%E5%AD%98%E6%B1%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>TinyXml的简单使用以及几种数据传输格式的对比</title>
     <link href="http://taowusheng.cn/2019/08/10/20190810%20TinyXml%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
     <id>http://taowusheng.cn/2019/08/10/20190810 TinyXml的简单使用/</id>
@@ -257,11 +325,11 @@
       <category term="System_Programming" scheme="http://taowusheng.cn/categories/System-Programming/"/>
     
     
+      <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
+    
       <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
     
       <category term="Network_Programming" scheme="http://taowusheng.cn/tags/Network-Programming/"/>
-    
-      <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
     
   </entry>
   
@@ -281,9 +349,9 @@
       <category term="System_Programming" scheme="http://taowusheng.cn/categories/System-Programming/"/>
     
     
-      <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
-    
       <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
     
       <category term="线程池" scheme="http://taowusheng.cn/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/"/>
     
@@ -366,7 +434,7 @@
     <link href="http://taowusheng.cn/2019/05/20/20190520%20Cpp%E5%90%8E%E5%8F%B0%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92%E4%B8%8E%E8%AE%B0%E5%BD%95/"/>
     <id>http://taowusheng.cn/2019/05/20/20190520 Cpp后台学习计划与记录/</id>
     <published>2019-05-19T16:00:01.000Z</published>
-    <updated>2019-07-06T03:02:46.323Z</updated>
+    <updated>2019-09-08T15:25:20.567Z</updated>
     
     <summary type="html">
     
@@ -436,6 +504,36 @@
   </entry>
   
   <entry>
+    <title>我是一只IT小小鸟_书摘</title>
+    <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
+    <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
+    <published>2019-04-15T16:00:01.000Z</published>
+    <updated>2019-05-31T13:38:43.436Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我是从暗时间里看到的这本书。算是一本比较贴近生活的书，书中每个作者的经历能给我们带来一些参考。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
+    
+      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    
+      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    
+      <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
+    
+      <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>暗时间_读书笔记</title>
     <link href="http://taowusheng.cn/2019/04/16/20190416%20%E6%9A%97%E6%97%B6%E9%97%B4_%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2019/04/16/20190416 暗时间_笔记/</id>
@@ -464,36 +562,6 @@
       <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
       <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我是一只IT小小鸟_书摘</title>
-    <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
-    <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
-    <published>2019-04-15T16:00:01.000Z</published>
-    <updated>2019-05-31T13:38:43.436Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我是从暗时间里看到的这本书。算是一本比较贴近生活的书，书中每个作者的经历能给我们带来一些参考。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
-    
-      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
-    
-      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
-    
-      <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
-    
-      <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
     
   </entry>
   
@@ -775,9 +843,9 @@
       <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
-      <category term="thought" scheme="http://taowusheng.cn/tags/thought/"/>
-    
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="thought" scheme="http://taowusheng.cn/tags/thought/"/>
     
       <category term="2018" scheme="http://taowusheng.cn/tags/2018/"/>
     
@@ -786,11 +854,11 @@
   </entry>
   
   <entry>
-    <title>如何使用gcc_g++</title>
-    <link href="http://taowusheng.cn/2018/12/25/20181225%20%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8gcc_g++/"/>
-    <id>http://taowusheng.cn/2018/12/25/20181225 如何使用gcc_g++/</id>
+    <title>Cpp程序的编译过程</title>
+    <link href="http://taowusheng.cn/2018/12/25/20181225%20Cpp%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/"/>
+    <id>http://taowusheng.cn/2018/12/25/20181225 Cpp程序的编译过程/</id>
     <published>2018-12-24T16:00:01.000Z</published>
-    <updated>2019-03-23T13:41:56.877Z</updated>
+    <updated>2019-09-08T15:25:20.567Z</updated>
     
     <summary type="html">
     
@@ -814,11 +882,17 @@
     <link href="http://taowusheng.cn/2018/12/23/20181223%20%E5%B8%B8%E7%94%A8linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/"/>
     <id>http://taowusheng.cn/2018/12/23/20181223 常用linux软件安装过程记录/</id>
     <published>2018-12-22T16:00:01.000Z</published>
-    <updated>2019-07-26T04:37:26.055Z</updated>
+    <updated>2019-09-08T15:25:20.535Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;在虚拟机中的kali安装VMware-Tools&quot;&gt;&lt;a href=&quot;#在虚拟机中的kali安装VMware-Tools&quot; class=&quot;headerlink&quot; title=&quot;在虚拟机中的kali安装VMware Tools  &quot;&gt;&lt;/a&gt;在虚拟机中的kali安装VMware Tools
+      
+      
+        
+        
+          
+        
+      
     
     </summary>
     
@@ -1132,15 +1206,15 @@
       <category term="Cryptography" scheme="http://taowusheng.cn/categories/Cryptography/"/>
     
     
+      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
+    
       <category term="SSL" scheme="http://taowusheng.cn/tags/SSL/"/>
     
       <category term="公钥" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5/"/>
     
       <category term="私钥" scheme="http://taowusheng.cn/tags/%E7%A7%81%E9%92%A5/"/>
-    
-      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
-    
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -1162,8 +1236,6 @@
     
       <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
-    
       <category term="密码体制" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6/"/>
     
       <category term="公钥密码" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81/"/>
@@ -1175,6 +1247,8 @@
       <category term="DES" scheme="http://taowusheng.cn/tags/DES/"/>
     
       <category term="SHA" scheme="http://taowusheng.cn/tags/SHA/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -1233,12 +1307,12 @@
     <link href="http://taowusheng.cn/2018/10/08/20181224%20%E9%9D%A2%E8%AF%95%E4%B8%AD%E5%92%8C%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84linux%E5%91%BD%E4%BB%A4/"/>
     <id>http://taowusheng.cn/2018/10/08/20181224 面试中和工作中常用的linux命令/</id>
     <published>2018-10-07T16:00:01.000Z</published>
-    <updated>2019-07-26T04:37:26.055Z</updated>
+    <updated>2019-09-08T15:25:20.535Z</updated>
     
     <summary type="html">
     
       &lt;hr&gt;
-&lt;p&gt;find|grep|ssh|文件传输scp|sz|清屏|创建链接|查看端口占用情况|管道|重定向|sed|&lt;br&gt;
+&lt;p&gt;find|grep|ssh|文件传输scp|sz|清屏|创建链接|查看端口占用情况|\&lt;br&gt;管道|重定向|sed|统计代码行|md5sum|解压乱码问题|&lt;br&gt;
     
     </summary>
     
@@ -1449,9 +1523,9 @@
       <category term="SQL" scheme="http://taowusheng.cn/categories/SQL/"/>
     
     
-      <category term="SQL" scheme="http://taowusheng.cn/tags/SQL/"/>
-    
       <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="SQL" scheme="http://taowusheng.cn/tags/SQL/"/>
     
   </entry>
   
@@ -1495,9 +1569,9 @@
     
       <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
-      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="jdbc" scheme="http://taowusheng.cn/tags/jdbc/"/>
+    
+      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -1517,11 +1591,11 @@
       <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
-      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
-    
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
@@ -1567,9 +1641,9 @@
       <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
     
-      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
-    
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
       <category term="最短路径算法" scheme="http://taowusheng.cn/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95/"/>
     
@@ -1626,28 +1700,6 @@
   </entry>
   
   <entry>
-    <title>ACM六个月总结</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-04-16T11:21:05.138Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
-    
-    </summary>
-    
-      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
-    
-    
-      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
-    
-      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
     <title>2016年11月读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
@@ -1691,6 +1743,28 @@
       <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
     
       <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ACM六个月总结</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-04-16T11:21:05.138Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
+    
+    </summary>
+    
+      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
