@@ -46,6 +46,52 @@
   </entry>
   
   <entry>
+    <title>网络编程入门_回显服务器</title>
+    <link href="http://taowusheng.cn/2019/09/28/20190928%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E5%9B%9E%E6%98%BE%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://taowusheng.cn/2019/09/28/20190928 网络编程入门_回显服务器/</id>
+    <published>2019-09-27T16:00:01.000Z</published>
+    <updated>2019-10-11T14:01:37.986Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以回显服务器为例，整理一下网络编程的基础知识。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Network_Programming" scheme="http://taowusheng.cn/categories/Network-Programming/"/>
+    
+    
+      <category term="网络编程" scheme="http://taowusheng.cn/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="Network_Programming" scheme="http://taowusheng.cn/tags/Network-Programming/"/>
+    
+      <category term="回显服务器" scheme="http://taowusheng.cn/tags/%E5%9B%9E%E6%98%BE%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>STL源码剖析_迭代器</title>
+    <link href="http://taowusheng.cn/2019/09/24/20190924%20STL%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90_%E8%BF%AD%E4%BB%A3%E5%99%A8/"/>
+    <id>http://taowusheng.cn/2019/09/24/20190924 STL源码剖析_迭代器/</id>
+    <published>2019-09-23T16:00:01.000Z</published>
+    <updated>2019-10-11T13:55:48.940Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;按照《STL源码剖析》中STL知识的编排顺序，学习完空间配置器之后，就是迭代器和traits编程技法了，学习完这三个概念，才算做好了继续学习stl的准备。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="C_Cpp" scheme="http://taowusheng.cn/categories/C-Cpp/"/>
+    
+    
+      <category term="C_Cpp" scheme="http://taowusheng.cn/tags/C-Cpp/"/>
+    
+      <category term="STL" scheme="http://taowusheng.cn/tags/STL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何读取Linux进程中的代码段和数据段</title>
     <link href="http://taowusheng.cn/2019/09/23/20190923%20%E5%A6%82%E4%BD%95%E8%AF%BB%E5%8F%96Linux%E8%BF%9B%E7%A8%8B%E4%B8%AD%E7%9A%84%E4%BB%A3%E7%A0%81%E6%AE%B5%E5%92%8C%E6%95%B0%E6%8D%AE%E6%AE%B5/"/>
     <id>http://taowusheng.cn/2019/09/23/20190923 如何读取Linux进程中的代码段和数据段/</id>
@@ -76,7 +122,7 @@
     <link href="http://taowusheng.cn/2019/09/11/20190911%20%E9%95%BF%E6%9C%9F%E6%8A%95%E8%B5%84%E5%85%A5%E9%97%A8%E8%AF%BE/"/>
     <id>http://taowusheng.cn/2019/09/11/20190911 长期投资入门课/</id>
     <published>2019-09-10T16:00:01.000Z</published>
-    <updated>2019-09-27T05:40:36.178Z</updated>
+    <updated>2019-09-27T05:46:19.752Z</updated>
     
     <summary type="html">
     
@@ -700,6 +746,72 @@
   </entry>
   
   <entry>
+    <title>基础知识_Cpp</title>
+    <link href="http://taowusheng.cn/2019/03/22/20190322%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_Cpp/"/>
+    <id>http://taowusheng.cn/2019/03/22/20190322 基础知识_Cpp/</id>
+    <published>2019-03-21T16:00:01.000Z</published>
+    <updated>2019-10-11T13:55:48.940Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Cpp基础知识与常见题目。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
+    
+    
+      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
+    
+      <category term="Cpp" scheme="http://taowusheng.cn/tags/Cpp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础知识_操作系统</title>
+    <link href="http://taowusheng.cn/2019/03/20/20190320%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://taowusheng.cn/2019/03/20/20190320 基础知识_操作系统/</id>
+    <published>2019-03-19T16:00:01.000Z</published>
+    <updated>2019-10-11T13:55:48.925Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;操作系统基础知识与常见题目。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
+    
+    
+      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
+    
+      <category term="操作系统" scheme="http://taowusheng.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础知识_网络</title>
+    <link href="http://taowusheng.cn/2019/03/20/20190321%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E7%BD%91%E7%BB%9C/"/>
+    <id>http://taowusheng.cn/2019/03/20/20190321 基础知识_网络/</id>
+    <published>2019-03-19T16:00:01.000Z</published>
+    <updated>2019-10-11T14:04:15.020Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;计算机网络基础知识与常见题目。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
+    
+    
+      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
+    
+      <category term="计算机网络" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>可信计算常用术语整理</title>
     <link href="http://taowusheng.cn/2019/03/19/20190317%20%E5%8F%AF%E4%BF%A1%E8%AE%A1%E7%AE%97%E5%B8%B8%E7%94%A8%E6%9C%AF%E8%AF%AD%E6%95%B4%E7%90%86/"/>
     <id>http://taowusheng.cn/2019/03/19/20190317 可信计算常用术语整理/</id>
@@ -803,11 +915,11 @@
     
       <category term="面向对象" scheme="http://taowusheng.cn/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
-      <category term="cpp" scheme="http://taowusheng.cn/tags/cpp/"/>
-    
       <category term="面向过程" scheme="http://taowusheng.cn/tags/%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/"/>
     
       <category term="文本查询" scheme="http://taowusheng.cn/tags/%E6%96%87%E6%9C%AC%E6%9F%A5%E8%AF%A2/"/>
+    
+      <category term="cpp" scheme="http://taowusheng.cn/tags/cpp/"/>
     
   </entry>
   
@@ -917,9 +1029,9 @@
       <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
-      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
       <category term="thought" scheme="http://taowusheng.cn/tags/thought/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
       <category term="2018" scheme="http://taowusheng.cn/tags/2018/"/>
     
@@ -1132,6 +1244,8 @@
       <category term="Linux" scheme="http://taowusheng.cn/categories/Linux/"/>
     
     
+      <category term="notes" scheme="http://taowusheng.cn/tags/notes/"/>
+    
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
       <category term="git" scheme="http://taowusheng.cn/tags/git/"/>
@@ -1139,8 +1253,6 @@
       <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
     
       <category term="github" scheme="http://taowusheng.cn/tags/github/"/>
-    
-      <category term="notes" scheme="http://taowusheng.cn/tags/notes/"/>
     
   </entry>
   
@@ -1280,15 +1392,15 @@
       <category term="Cryptography" scheme="http://taowusheng.cn/categories/Cryptography/"/>
     
     
+      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
+    
       <category term="SSL" scheme="http://taowusheng.cn/tags/SSL/"/>
     
       <category term="公钥" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5/"/>
     
       <category term="私钥" scheme="http://taowusheng.cn/tags/%E7%A7%81%E9%92%A5/"/>
-    
-      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
-    
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -1310,8 +1422,6 @@
     
       <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
-    
       <category term="密码体制" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6/"/>
     
       <category term="公钥密码" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81/"/>
@@ -1323,6 +1433,8 @@
       <category term="DES" scheme="http://taowusheng.cn/tags/DES/"/>
     
       <category term="SHA" scheme="http://taowusheng.cn/tags/SHA/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -1349,6 +1461,31 @@
       <category term="pam" scheme="http://taowusheng.cn/tags/pam/"/>
     
       <category term="auth" scheme="http://taowusheng.cn/tags/auth/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>笔记_未分类</title>
+    <link href="http://taowusheng.cn/2018/10/20/20181020%20%E7%AC%94%E8%AE%B0_%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    <id>http://taowusheng.cn/2018/10/20/20181020 笔记_未分类/</id>
+    <published>2018-10-19T16:00:01.000Z</published>
+    <updated>2019-10-11T14:10:20.076Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;未分类笔记…&lt;br&gt;adblock|查看网页发布时间|抓包常用过滤器语法|误修改passwd文件|&lt;br&gt;前后台进程的转换|&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Unknown" scheme="http://taowusheng.cn/categories/Unknown/"/>
+    
+    
+      <category term="JavaScript" scheme="http://taowusheng.cn/tags/JavaScript/"/>
+    
+      <category term="notes" scheme="http://taowusheng.cn/tags/notes/"/>
+    
+      <category term="web" scheme="http://taowusheng.cn/tags/web/"/>
     
   </entry>
   
@@ -1597,9 +1734,9 @@
       <category term="SQL" scheme="http://taowusheng.cn/categories/SQL/"/>
     
     
-      <category term="SQL" scheme="http://taowusheng.cn/tags/SQL/"/>
-    
       <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="SQL" scheme="http://taowusheng.cn/tags/SQL/"/>
     
   </entry>
   
@@ -1643,9 +1780,9 @@
     
       <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
-      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="jdbc" scheme="http://taowusheng.cn/tags/jdbc/"/>
+    
+      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -1665,11 +1802,11 @@
       <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
+      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
+    
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
@@ -1715,6 +1852,8 @@
       <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
     
+      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
+    
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="最短路径算法" scheme="http://taowusheng.cn/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95/"/>
@@ -1724,8 +1863,6 @@
       <category term="floyd" scheme="http://taowusheng.cn/tags/floyd/"/>
     
       <category term="bellman" scheme="http://taowusheng.cn/tags/bellman/"/>
-    
-      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
   </entry>
   
@@ -1774,31 +1911,6 @@
   </entry>
   
   <entry>
-    <title>2016年11月读书笔记</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-01-16T10:44:12.511Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;挑战程序设计竞赛/C++函数速查手册/黑客与画家&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;挑战程序设计竞赛11.03&lt;br&gt;今天读了二叉搜索树的实现以及set和map的简单用法。&lt;br&gt;  二叉搜索树实际上就是一颗二叉树，但它有一个特点，就是每个节点左二子的值小于它的值，右儿子的值大于它的值。&lt;br&gt;由于是一个树形结构，他能高效的进行插入，删除，查找。每次操作时间复杂度都在logn以内。&lt;br&gt;C++的stl里面有用二叉搜索树实现的set容器，可以很方便地直接调用。
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
-    
-      <category term="黑客与画家" scheme="http://taowusheng.cn/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ACM六个月总结</title>
     <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
@@ -1825,7 +1937,7 @@
     <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
     <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-01-16T10:44:03.511Z</updated>
+    <updated>2019-10-11T14:11:40.176Z</updated>
     
     <summary type="html">
     
@@ -1836,9 +1948,34 @@
       <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
     
     
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
       <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
     
+  </entry>
+  
+  <entry>
+    <title>2016年11月读书笔记</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-01-16T10:44:12.511Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;挑战程序设计竞赛/C++函数速查手册/黑客与画家&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;挑战程序设计竞赛11.03&lt;br&gt;今天读了二叉搜索树的实现以及set和map的简单用法。&lt;br&gt;  二叉搜索树实际上就是一颗二叉树，但它有一个特点，就是每个节点左二子的值小于它的值，右儿子的值大于它的值。&lt;br&gt;由于是一个树形结构，他能高效的进行插入，删除，查找。每次操作时间复杂度都在logn以内。&lt;br&gt;C++的stl里面有用二叉搜索树实现的set容器，可以很方便地直接调用。
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
       <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
+    
+      <category term="黑客与画家" scheme="http://taowusheng.cn/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
     
   </entry>
   
