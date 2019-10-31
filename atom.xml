@@ -46,6 +46,76 @@
   </entry>
   
   <entry>
+    <title>五种IO模型</title>
+    <link href="http://taowusheng.cn/2019/10/24/20191024%20%E4%BA%94%E7%A7%8DIO%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://taowusheng.cn/2019/10/24/20191024 五种IO模型/</id>
+    <published>2019-10-23T16:00:01.000Z</published>
+    <updated>2019-10-31T08:57:48.764Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;UNIX下有5中I/O模型，分别是阻塞式、非阻塞式、IO复用、信号驱动式、异步IO。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Network_Programming" scheme="http://taowusheng.cn/categories/Network-Programming/"/>
+    
+    
+      <category term="Network_Programming" scheme="http://taowusheng.cn/tags/Network-Programming/"/>
+    
+      <category term="IO复用" scheme="http://taowusheng.cn/tags/IO%E5%A4%8D%E7%94%A8/"/>
+    
+      <category term="阻塞" scheme="http://taowusheng.cn/tags/%E9%98%BB%E5%A1%9E/"/>
+    
+      <category term="异步" scheme="http://taowusheng.cn/tags/%E5%BC%82%E6%AD%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>California_Dreaming</title>
+    <link href="http://taowusheng.cn/2019/10/11/20191011%20California_Dreaming/"/>
+    <id>http://taowusheng.cn/2019/10/11/20191011 California_Dreaming/</id>
+    <published>2019-10-10T16:00:01.000Z</published>
+    <updated>2019-10-31T08:57:48.764Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;The-furthest-distance-in-the-world&quot;&gt;&lt;a href=&quot;#The-furthest-distance-in-the-world&quot; class=&quot;headerlink&quot; title=&quot;The furthest distance in the world&quot;&gt;&lt;/a&gt;The furthest distance in the world&lt;/h5&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="http://taowusheng.cn/categories/English/"/>
+    
+    
+      <category term="English" scheme="http://taowusheng.cn/tags/English/"/>
+    
+      <category term="California_Dreaming" scheme="http://taowusheng.cn/tags/California-Dreaming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何对回显服务器进行改进_1</title>
+    <link href="http://taowusheng.cn/2019/10/10/20191010%20%E5%A6%82%E4%BD%95%E5%AF%B9%E5%9B%9E%E6%98%BE%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9B%E8%A1%8C%E6%94%B9%E8%BF%9B_1/"/>
+    <id>http://taowusheng.cn/2019/10/10/20191010 如何对回显服务器进行改进_1/</id>
+    <published>2019-10-09T16:00:01.000Z</published>
+    <updated>2019-10-31T09:06:28.864Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上一篇中写了一个基本的回显服务器，最基本的功能是有了，但是并不够健壮，那么如何对它进行改进呢？我们需要考虑以下几种情况。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Network_Programming" scheme="http://taowusheng.cn/categories/Network-Programming/"/>
+    
+    
+      <category term="Network_Programming" scheme="http://taowusheng.cn/tags/Network-Programming/"/>
+    
+      <category term="echo" scheme="http://taowusheng.cn/tags/echo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>网络编程入门_回显服务器</title>
     <link href="http://taowusheng.cn/2019/09/28/20190928%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E5%9B%9E%E6%98%BE%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     <id>http://taowusheng.cn/2019/09/28/20190928 网络编程入门_回显服务器/</id>
@@ -66,6 +136,30 @@
       <category term="Network_Programming" scheme="http://taowusheng.cn/tags/Network-Programming/"/>
     
       <category term="回显服务器" scheme="http://taowusheng.cn/tags/%E5%9B%9E%E6%98%BE%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>STL源码剖析_traits特性萃取技术</title>
+    <link href="http://taowusheng.cn/2019/09/25/20190925%20STL%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90_traits%E7%89%B9%E6%80%A7%E8%90%83%E5%8F%96%E6%8A%80%E6%9C%AF/"/>
+    <id>http://taowusheng.cn/2019/09/25/20190925 STL源码剖析_traits特性萃取技术/</id>
+    <published>2019-09-24T16:00:01.000Z</published>
+    <updated>2019-10-31T08:57:48.748Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有了迭代器之后，我们就会在各种算法的实现中，通过迭代器来操作各种容器。但是在这个过程中，我们有时候需要用到”迭代器所指向的类型”。&lt;br&gt;(理解traits需要了解模板、特化、偏特化等概念)&lt;br&gt;
+    
+    </summary>
+    
+      <category term="C_Cpp" scheme="http://taowusheng.cn/categories/C-Cpp/"/>
+    
+    
+      <category term="C_Cpp" scheme="http://taowusheng.cn/tags/C-Cpp/"/>
+    
+      <category term="STL" scheme="http://taowusheng.cn/tags/STL/"/>
+    
+      <category term="traits" scheme="http://taowusheng.cn/tags/traits/"/>
     
   </entry>
   
@@ -114,6 +208,30 @@
       <category term="代码段" scheme="http://taowusheng.cn/tags/%E4%BB%A3%E7%A0%81%E6%AE%B5/"/>
     
       <category term="rodata" scheme="http://taowusheng.cn/tags/rodata/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>New_Concept_Englsih_one_31_60</title>
+    <link href="http://taowusheng.cn/2019/09/16/20190916%20New_Concept_Englsih_one_31_60/"/>
+    <id>http://taowusheng.cn/2019/09/16/20190916 New_Concept_Englsih_one_31_60/</id>
+    <published>2019-09-15T16:00:01.000Z</published>
+    <updated>2019-10-31T08:57:48.748Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;New Concept English one, Lesson 31_60，text and expressions.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="English" scheme="http://taowusheng.cn/categories/English/"/>
+    
+    
+      <category term="english" scheme="http://taowusheng.cn/tags/english/"/>
+    
+      <category term="new" scheme="http://taowusheng.cn/tags/new/"/>
+    
+      <category term="concept" scheme="http://taowusheng.cn/tags/concept/"/>
     
   </entry>
   
@@ -671,17 +789,17 @@
     
       <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
     
-      <category term="暗时间" scheme="http://taowusheng.cn/tags/%E6%9A%97%E6%97%B6%E9%97%B4/"/>
-    
       <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
-    
-      <category term="心智" scheme="http://taowusheng.cn/tags/%E5%BF%83%E6%99%BA/"/>
-    
-      <category term="心理学" scheme="http://taowusheng.cn/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
       <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
       <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    
+      <category term="暗时间" scheme="http://taowusheng.cn/tags/%E6%9A%97%E6%97%B6%E9%97%B4/"/>
+    
+      <category term="心智" scheme="http://taowusheng.cn/tags/%E5%BF%83%E6%99%BA/"/>
+    
+      <category term="心理学" scheme="http://taowusheng.cn/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
   </entry>
   
@@ -915,11 +1033,11 @@
     
       <category term="面向对象" scheme="http://taowusheng.cn/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
+      <category term="cpp" scheme="http://taowusheng.cn/tags/cpp/"/>
+    
       <category term="面向过程" scheme="http://taowusheng.cn/tags/%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/"/>
     
       <category term="文本查询" scheme="http://taowusheng.cn/tags/%E6%96%87%E6%9C%AC%E6%9F%A5%E8%AF%A2/"/>
-    
-      <category term="cpp" scheme="http://taowusheng.cn/tags/cpp/"/>
     
   </entry>
   
@@ -1068,17 +1186,11 @@
     <link href="http://taowusheng.cn/2018/12/23/20181223%20%E5%B8%B8%E7%94%A8linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/"/>
     <id>http://taowusheng.cn/2018/12/23/20181223 常用linux软件安装过程记录/</id>
     <published>2018-12-22T16:00:01.000Z</published>
-    <updated>2019-09-08T15:25:20.535Z</updated>
+    <updated>2019-10-31T09:00:33.032Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      &lt;p&gt;常用linux软件安装过程记录…
     
     </summary>
     
@@ -1118,12 +1230,12 @@
     <link href="http://taowusheng.cn/2018/12/18/20181218%20C++%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2018/12/18/20181218 C++笔记/</id>
     <published>2018-12-17T16:00:01.000Z</published>
-    <updated>2019-04-16T11:19:15.183Z</updated>
+    <updated>2019-10-31T08:57:48.748Z</updated>
     
     <summary type="html">
     
       &lt;hr&gt;
-&lt;p&gt;文件重定向|vector初始化|const在函数名后面|struct_class|内联函数与宏定义|vector的capacity&lt;br&gt;
+&lt;p&gt;bits/stdc++|limits.h|strncasecmp|文件重定向|vector初始化|const在函数名后面|&lt;br&gt;struct_class|内联函数与宏定义|vector的capacity&lt;br&gt;
     
     </summary>
     
@@ -1373,6 +1485,35 @@
       <category term="vs2013" scheme="http://taowusheng.cn/tags/vs2013/"/>
     
       <category term="win10" scheme="http://taowusheng.cn/tags/win10/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux软件安装(伪)指南</title>
+    <link href="http://taowusheng.cn/2018/11/01/20190424%20Linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/"/>
+    <id>http://taowusheng.cn/2018/11/01/20190424 Linux软件安装指南/</id>
+    <published>2018-10-31T16:00:01.000Z</published>
+    <updated>2019-10-31T08:57:48.748Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;在一开始学习Linux的时候，就发现装个软件怎么这么难，并且有好多个命令。
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://taowusheng.cn/categories/Linux/"/>
+    
+    
+      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
+    
+      <category term="apt" scheme="http://taowusheng.cn/tags/apt/"/>
+    
+      <category term="pip" scheme="http://taowusheng.cn/tags/pip/"/>
+    
+      <category term="dpkg" scheme="http://taowusheng.cn/tags/dpkg/"/>
+    
+      <category term="yum" scheme="http://taowusheng.cn/tags/yum/"/>
     
   </entry>
   
@@ -1852,9 +1993,9 @@
       <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
     
-      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
-    
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
       <category term="最短路径算法" scheme="http://taowusheng.cn/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95/"/>
     
@@ -1911,50 +2052,6 @@
   </entry>
   
   <entry>
-    <title>ACM六个月总结</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-04-16T11:21:05.138Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
-    
-    </summary>
-    
-      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
-    
-    
-      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
-    
-      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-10-11T14:11:40.176Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
-    
-  </entry>
-  
-  <entry>
     <title>2016年11月读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
@@ -1976,6 +2073,50 @@
       <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
       <category term="黑客与画家" scheme="http://taowusheng.cn/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-10-11T14:14:01.368Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
+    
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ACM六个月总结</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-04-16T11:21:05.138Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
+    
+    </summary>
+    
+      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
