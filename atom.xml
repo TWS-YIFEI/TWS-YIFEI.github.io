@@ -46,6 +46,28 @@
   </entry>
   
   <entry>
+    <title>Ip协议详解</title>
+    <link href="http://taowusheng.cn/2020/01/05/20200105%20Ip%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://taowusheng.cn/2020/01/05/20200105 Ip协议/</id>
+    <published>2020-01-04T16:00:01.000Z</published>
+    <updated>2020-01-06T06:05:15.514Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Ip协议是Tcp/Ip协议中的核心协议，位于网络层，上层的tcp、udp、icmp等协议都要依靠它。&lt;br&gt;Ip协议提供了一种尽力交付、无连接的服务。不保证Ip数据包一定能到达目的地。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Network" scheme="http://taowusheng.cn/categories/Network/"/>
+    
+    
+      <category term="Network" scheme="http://taowusheng.cn/tags/Network/"/>
+    
+      <category term="ip" scheme="http://taowusheng.cn/tags/ip/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019年书单</title>
     <link href="http://taowusheng.cn/2019/12/30/20191230%202019%E5%B9%B4%E4%B9%A6%E5%8D%95/"/>
     <id>http://taowusheng.cn/2019/12/30/20191230 2019年书单/</id>
@@ -291,7 +313,7 @@
     <link href="http://taowusheng.cn/2019/10/10/20191010%20%E5%A6%82%E4%BD%95%E5%AF%B9%E5%9B%9E%E6%98%BE%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9B%E8%A1%8C%E6%94%B9%E8%BF%9B_1/"/>
     <id>http://taowusheng.cn/2019/10/10/20191010 如何对回显服务器进行改进_1/</id>
     <published>2019-10-09T16:00:01.000Z</published>
-    <updated>2019-10-31T09:06:28.864Z</updated>
+    <updated>2020-01-06T06:29:05.846Z</updated>
     
     <summary type="html">
     
@@ -313,7 +335,7 @@
     <link href="http://taowusheng.cn/2019/09/28/20190928%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8_%E5%9B%9E%E6%98%BE%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     <id>http://taowusheng.cn/2019/09/28/20190928 网络编程入门_回显服务器/</id>
     <published>2019-09-27T16:00:01.000Z</published>
-    <updated>2019-10-11T14:01:37.986Z</updated>
+    <updated>2020-01-06T06:29:05.854Z</updated>
     
     <summary type="html">
     
@@ -361,7 +383,7 @@
     <link href="http://taowusheng.cn/2019/09/25/20190925%20STL%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90_traits%E7%89%B9%E6%80%A7%E8%90%83%E5%8F%96%E6%8A%80%E6%9C%AF/"/>
     <id>http://taowusheng.cn/2019/09/25/20190925 STL源码剖析_traits特性萃取技术/</id>
     <published>2019-09-24T16:00:01.000Z</published>
-    <updated>2019-10-31T08:57:48.748Z</updated>
+    <updated>2020-01-06T06:29:05.862Z</updated>
     
     <summary type="html">
     
@@ -385,7 +407,7 @@
     <link href="http://taowusheng.cn/2019/09/24/20190924%20STL%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90_%E8%BF%AD%E4%BB%A3%E5%99%A8/"/>
     <id>http://taowusheng.cn/2019/09/24/20190924 STL源码剖析_迭代器/</id>
     <published>2019-09-23T16:00:01.000Z</published>
-    <updated>2019-10-11T13:55:48.940Z</updated>
+    <updated>2020-01-06T06:29:05.869Z</updated>
     
     <summary type="html">
     
@@ -433,7 +455,7 @@
     <link href="http://taowusheng.cn/2019/09/16/20190916%20New_Concept_Englsih_one_31_60/"/>
     <id>http://taowusheng.cn/2019/09/16/20190916 New_Concept_Englsih_one_31_60/</id>
     <published>2019-09-15T16:00:01.000Z</published>
-    <updated>2019-10-31T08:57:48.748Z</updated>
+    <updated>2020-01-06T06:28:00.957Z</updated>
     
     <summary type="html">
     
@@ -527,7 +549,7 @@
     <link href="http://taowusheng.cn/2019/08/22/20190822%20%E5%A6%82%E4%BD%95%E7%94%A8Cpp%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%86%85%E5%AD%98%E6%B1%A0/"/>
     <id>http://taowusheng.cn/2019/08/22/20190822 如何用Cpp实现一个内存池/</id>
     <published>2019-08-21T16:00:01.000Z</published>
-    <updated>2019-09-08T15:25:20.567Z</updated>
+    <updated>2020-01-06T06:29:05.875Z</updated>
     
     <summary type="html">
     
@@ -699,15 +721,15 @@
   </entry>
   
   <entry>
-    <title>python3_高级特性</title>
-    <link href="http://taowusheng.cn/2019/07/16/20190725%20python3_%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"/>
-    <id>http://taowusheng.cn/2019/07/16/20190725 python3_高级特性/</id>
+    <title>python3_基础</title>
+    <link href="http://taowusheng.cn/2019/07/16/20190716%20python3_%E5%9F%BA%E7%A1%80/"/>
+    <id>http://taowusheng.cn/2019/07/16/20190716 python3_基础/</id>
     <published>2019-07-15T16:00:01.000Z</published>
-    <updated>2019-12-28T07:27:34.708Z</updated>
+    <updated>2019-07-26T04:37:26.055Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;切片|迭代|列表生成式|生成器|迭代器。&lt;br&gt;
+      &lt;p&gt;用一个程序来记录python的基础语法与常用操作。&lt;br&gt;
     
     </summary>
     
@@ -719,15 +741,15 @@
   </entry>
   
   <entry>
-    <title>python3_基础</title>
-    <link href="http://taowusheng.cn/2019/07/16/20190716%20python3_%E5%9F%BA%E7%A1%80/"/>
-    <id>http://taowusheng.cn/2019/07/16/20190716 python3_基础/</id>
+    <title>python3_高级特性</title>
+    <link href="http://taowusheng.cn/2019/07/16/20190725%20python3_%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"/>
+    <id>http://taowusheng.cn/2019/07/16/20190725 python3_高级特性/</id>
     <published>2019-07-15T16:00:01.000Z</published>
-    <updated>2019-07-26T04:37:26.055Z</updated>
+    <updated>2019-12-28T07:27:34.708Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;用一个程序来记录python的基础语法与常用操作。&lt;br&gt;
+      &lt;p&gt;切片|迭代|列表生成式|生成器|迭代器。&lt;br&gt;
     
     </summary>
     
@@ -837,7 +859,7 @@
     <link href="http://taowusheng.cn/2019/06/01/20190601%20Linux%E4%B8%8B%E7%B2%BE%E7%AE%80%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
     <id>http://taowusheng.cn/2019/06/01/20190601 Linux下精简线程池的实现/</id>
     <published>2019-05-31T16:00:01.000Z</published>
-    <updated>2019-06-11T07:50:34.016Z</updated>
+    <updated>2020-01-06T06:29:05.881Z</updated>
     
     <summary type="html">
     
@@ -861,7 +883,7 @@
     <link href="http://taowusheng.cn/2019/05/29/20190529%20tinyhttpd%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
     <id>http://taowusheng.cn/2019/05/29/20190529 tinyhttpd源码阅读/</id>
     <published>2019-05-28T16:00:01.000Z</published>
-    <updated>2019-06-25T12:12:59.357Z</updated>
+    <updated>2020-01-06T06:29:05.889Z</updated>
     
     <summary type="html">
     
@@ -911,7 +933,7 @@
     <link href="http://taowusheng.cn/2019/05/21/20190521%20Effective_Cpp%E4%B8%AD%E7%9A%8455%E4%B8%AA%E5%BB%BA%E8%AE%AE/"/>
     <id>http://taowusheng.cn/2019/05/21/20190521 Effective_Cpp中的55个建议/</id>
     <published>2019-05-20T16:00:01.000Z</published>
-    <updated>2019-06-11T07:54:58.448Z</updated>
+    <updated>2020-01-06T06:26:53.997Z</updated>
     
     <summary type="html">
     
@@ -985,7 +1007,7 @@
     <link href="http://taowusheng.cn/2019/04/22/20190422%20New_Concept_Englsih_one_1_30/"/>
     <id>http://taowusheng.cn/2019/04/22/20190422 New_Concept_Englsih_one_1_30/</id>
     <published>2019-04-21T16:00:01.000Z</published>
-    <updated>2019-09-27T05:40:36.178Z</updated>
+    <updated>2020-01-06T06:27:14.116Z</updated>
     
     <summary type="html">
     
@@ -1027,38 +1049,6 @@
   </entry>
   
   <entry>
-    <title>暗时间_读书笔记</title>
-    <link href="http://taowusheng.cn/2019/04/16/20190416%20%E6%9A%97%E6%97%B6%E9%97%B4_%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2019/04/16/20190416 暗时间_笔记/</id>
-    <published>2019-04-15T16:00:01.000Z</published>
-    <updated>2019-05-31T13:37:55.747Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;一本应该早点去读的好书，作者是刘未鹏。里面的有关心智、个人成长、心理学的内容给我带来许多新的思考。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
-    
-      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
-    
-      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
-    
-      <category term="暗时间" scheme="http://taowusheng.cn/tags/%E6%9A%97%E6%97%B6%E9%97%B4/"/>
-    
-      <category term="心智" scheme="http://taowusheng.cn/tags/%E5%BF%83%E6%99%BA/"/>
-    
-      <category term="心理学" scheme="http://taowusheng.cn/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
     <title>我是一只IT小小鸟_书摘</title>
     <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
     <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
@@ -1085,6 +1075,38 @@
       <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
     
       <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>暗时间_读书笔记</title>
+    <link href="http://taowusheng.cn/2019/04/16/20190416%20%E6%9A%97%E6%97%B6%E9%97%B4_%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2019/04/16/20190416 暗时间_笔记/</id>
+    <published>2019-04-15T16:00:01.000Z</published>
+    <updated>2019-05-31T13:37:55.747Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一本应该早点去读的好书，作者是刘未鹏。里面的有关心智、个人成长、心理学的内容给我带来许多新的思考。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+      <category term="暗时间" scheme="http://taowusheng.cn/tags/%E6%9A%97%E6%97%B6%E9%97%B4/"/>
+    
+      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
+    
+      <category term="心智" scheme="http://taowusheng.cn/tags/%E5%BF%83%E6%99%BA/"/>
+    
+      <category term="心理学" scheme="http://taowusheng.cn/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    
+      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
     
   </entry>
   
@@ -1261,7 +1283,7 @@
     <link href="http://taowusheng.cn/2019/03/02/20190302%202018%E5%B7%9D%E8%97%8F%E7%BA%BF%E9%AA%91%E8%A1%8C/"/>
     <id>http://taowusheng.cn/2019/03/02/20190302 2018川藏线骑行/</id>
     <published>2019-03-01T16:00:01.000Z</published>
-    <updated>2019-04-16T11:14:30.791Z</updated>
+    <updated>2020-01-06T06:15:24.910Z</updated>
     
     <summary type="html">
     
@@ -1641,9 +1663,9 @@
       <category term="Linux" scheme="http://taowusheng.cn/categories/Linux/"/>
     
     
-      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
-    
       <category term="notes" scheme="http://taowusheng.cn/tags/notes/"/>
+    
+      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
       <category term="git" scheme="http://taowusheng.cn/tags/git/"/>
     
@@ -1818,15 +1840,15 @@
       <category term="Cryptography" scheme="http://taowusheng.cn/categories/Cryptography/"/>
     
     
+      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
+    
       <category term="SSL" scheme="http://taowusheng.cn/tags/SSL/"/>
     
       <category term="公钥" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5/"/>
     
       <category term="私钥" scheme="http://taowusheng.cn/tags/%E7%A7%81%E9%92%A5/"/>
-    
-      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
-    
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -1835,7 +1857,7 @@
     <link href="http://taowusheng.cn/2018/10/27/20181027%20%E5%AF%86%E7%A0%81%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/10/27/20181027 密码学知识总结/</id>
     <published>2018-10-26T16:00:01.000Z</published>
-    <updated>2019-03-10T01:46:22.566Z</updated>
+    <updated>2020-01-06T06:12:16.130Z</updated>
     
     <summary type="html">
     
@@ -1848,8 +1870,6 @@
     
       <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
-    
       <category term="密码体制" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6/"/>
     
       <category term="公钥密码" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81/"/>
@@ -1861,6 +1881,8 @@
       <category term="DES" scheme="http://taowusheng.cn/tags/DES/"/>
     
       <category term="SHA" scheme="http://taowusheng.cn/tags/SHA/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -2081,7 +2103,7 @@
     <link href="http://taowusheng.cn/2018/03/28/20180328%20%E8%80%83%E7%A0%94%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/03/28/20180328 考研总结/</id>
     <published>2018-03-27T16:00:01.000Z</published>
-    <updated>2019-03-10T01:46:22.534Z</updated>
+    <updated>2020-01-06T06:27:28.193Z</updated>
     
     <summary type="html">
     
