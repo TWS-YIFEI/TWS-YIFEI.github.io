@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://taowusheng.cn/"/>
-  <updated>2019-12-28T07:27:34.708Z</updated>
+  <updated>2020-03-10T13:26:13.457Z</updated>
   <id>http://taowusheng.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://taowusheng.cn/2029/11/11/20291111%20%E5%9D%9A%E6%8C%81%E9%98%85%E8%AF%BB/"/>
     <id>http://taowusheng.cn/2029/11/11/20291111 坚持阅读/</id>
     <published>2029-11-10T16:00:01.000Z</published>
-    <updated>2019-12-28T07:27:34.708Z</updated>
+    <updated>2020-03-10T13:26:13.457Z</updated>
     
     <summary type="html">
     
@@ -870,9 +870,9 @@
       <category term="System_Programming" scheme="http://taowusheng.cn/categories/System-Programming/"/>
     
     
-      <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
-    
       <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
     
       <category term="Network_Programming" scheme="http://taowusheng.cn/tags/Network-Programming/"/>
     
@@ -894,11 +894,11 @@
       <category term="System_Programming" scheme="http://taowusheng.cn/categories/System-Programming/"/>
     
     
+      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
+    
       <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
     
       <category term="线程池" scheme="http://taowusheng.cn/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/"/>
-    
-      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -920,9 +920,9 @@
     
       <category term="网络编程" scheme="http://taowusheng.cn/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
-    
       <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
     
       <category term="web服务器" scheme="http://taowusheng.cn/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
@@ -1073,6 +1073,36 @@
   </entry>
   
   <entry>
+    <title>我是一只IT小小鸟_书摘</title>
+    <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
+    <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
+    <published>2019-04-15T16:00:01.000Z</published>
+    <updated>2019-05-31T13:38:43.436Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我是从暗时间里看到的这本书。算是一本比较贴近生活的书，书中每个作者的经历能给我们带来一些参考。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
+    
+      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    
+      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    
+      <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
+    
+      <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>暗时间_读书笔记</title>
     <link href="http://taowusheng.cn/2019/04/16/20190416%20%E6%9A%97%E6%97%B6%E9%97%B4_%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2019/04/16/20190416 暗时间_笔记/</id>
@@ -1101,36 +1131,6 @@
       <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
       <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我是一只IT小小鸟_书摘</title>
-    <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
-    <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
-    <published>2019-04-15T16:00:01.000Z</published>
-    <updated>2019-05-31T13:38:43.436Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我是从暗时间里看到的这本书。算是一本比较贴近生活的书，书中每个作者的经历能给我们带来一些参考。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
-    
-      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
-    
-      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
-    
-      <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
-    
-      <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
     
   </entry>
   
@@ -1217,28 +1217,6 @@
   </entry>
   
   <entry>
-    <title>基础知识_网络</title>
-    <link href="http://taowusheng.cn/2019/03/20/20190321%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E7%BD%91%E7%BB%9C/"/>
-    <id>http://taowusheng.cn/2019/03/20/20190321 基础知识_网络/</id>
-    <published>2019-03-19T16:00:01.000Z</published>
-    <updated>2019-10-11T14:04:15.020Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;计算机网络基础知识与常见题目。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
-    
-    
-      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
-    
-      <category term="计算机网络" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>基础知识_操作系统</title>
     <link href="http://taowusheng.cn/2019/03/20/20190320%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     <id>http://taowusheng.cn/2019/03/20/20190320 基础知识_操作系统/</id>
@@ -1257,6 +1235,28 @@
       <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
     
       <category term="操作系统" scheme="http://taowusheng.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础知识_网络</title>
+    <link href="http://taowusheng.cn/2019/03/20/20190321%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E7%BD%91%E7%BB%9C/"/>
+    <id>http://taowusheng.cn/2019/03/20/20190321 基础知识_网络/</id>
+    <published>2019-03-19T16:00:01.000Z</published>
+    <updated>2019-10-11T14:04:15.020Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;计算机网络基础知识与常见题目。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
+    
+    
+      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
+    
+      <category term="计算机网络" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
@@ -1643,9 +1643,9 @@
     
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
-      <category term="gdb" scheme="http://taowusheng.cn/tags/gdb/"/>
-    
       <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
+    
+      <category term="gdb" scheme="http://taowusheng.cn/tags/gdb/"/>
     
   </entry>
   
@@ -1691,9 +1691,9 @@
     
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
-      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
-    
       <category term="git" scheme="http://taowusheng.cn/tags/git/"/>
+    
+      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
     
       <category term="github" scheme="http://taowusheng.cn/tags/github/"/>
     
@@ -1864,15 +1864,15 @@
       <category term="Cryptography" scheme="http://taowusheng.cn/categories/Cryptography/"/>
     
     
+      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
+    
       <category term="SSL" scheme="http://taowusheng.cn/tags/SSL/"/>
     
       <category term="公钥" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5/"/>
     
       <category term="私钥" scheme="http://taowusheng.cn/tags/%E7%A7%81%E9%92%A5/"/>
-    
-      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
-    
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -1894,8 +1894,6 @@
     
       <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
-    
       <category term="密码体制" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6/"/>
     
       <category term="公钥密码" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81/"/>
@@ -1907,6 +1905,8 @@
       <category term="DES" scheme="http://taowusheng.cn/tags/DES/"/>
     
       <category term="SHA" scheme="http://taowusheng.cn/tags/SHA/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -2153,7 +2153,7 @@
     <link href="http://taowusheng.cn/2018/02/02/20180202%20linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/02/02/20180202 linux常用命令总结/</id>
     <published>2018-02-01T16:00:01.000Z</published>
-    <updated>2019-12-28T07:27:34.692Z</updated>
+    <updated>2020-03-27T12:42:29.782Z</updated>
     
     <summary type="html">
     
