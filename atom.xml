@@ -46,6 +46,84 @@
   </entry>
   
   <entry>
+    <title>线段树简介</title>
+    <link href="http://taowusheng.cn/2020/06/05/20200605%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E7%AE%80%E4%BB%8B/"/>
+    <id>http://taowusheng.cn/2020/06/05/20200605 线段树简介/</id>
+    <published>2020-06-04T16:00:01.000Z</published>
+    <updated>2020-06-15T10:53:19.962Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有这样一类问题，给定一个数列，让你求某段区间内和。如果对某个值或某段区间内的值进行修改后，如何快速的求和。如果线性执行更新操作或求和操作，无疑时间复杂度太大了。&lt;br&gt;那么借助分治的思想，在执行更新区间的操作时，把它转化为几段区间的更新，同样求和操作时，也通过维护分段区间的和来达到快速求区间和的问题。线段树就是利用二叉树这种数据结构，来维护区间信息的一种数据结构。
+    
+    </summary>
+    
+      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="线段树" scheme="http://taowusheng.cn/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+      <category term="算法" scheme="http://taowusheng.cn/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/tags/ACM-Algorithm/"/>
+    
+      <category term="区间和" scheme="http://taowusheng.cn/tags/%E5%8C%BA%E9%97%B4%E5%92%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何编写一个简单地内核模块</title>
+    <link href="http://taowusheng.cn/2020/05/23/20200523%20%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E5%9C%B0%E5%86%85%E6%A0%B8%E6%A8%A1%E5%9D%97/"/>
+    <id>http://taowusheng.cn/2020/05/23/20200523 如何编写一个简单地内核模块/</id>
+    <published>2020-05-22T16:00:01.000Z</published>
+    <updated>2020-06-02T09:19:48.143Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Linux给应用程序提供了丰富的api，但是有时候我们需要跟硬件交互，访问一些特权级信息，所以可以使用编写内核模块这种方式。&lt;br&gt;另外Linux是宏内核结构，效率非常高，没有微内核那样各个模块之间的通讯损耗，但是又不能方便的对内核进行改动，可扩展性和可维护性比较差，内核模块提供了一种动态加载代码的方式，弥补了宏内核的不足。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux_Kernel" scheme="http://taowusheng.cn/categories/Linux-Kernel/"/>
+    
+    
+      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
+    
+      <category term="Linux_Kernel" scheme="http://taowusheng.cn/tags/Linux-Kernel/"/>
+    
+      <category term="内核" scheme="http://taowusheng.cn/tags/%E5%86%85%E6%A0%B8/"/>
+    
+      <category term="内核模块" scheme="http://taowusheng.cn/tags/%E5%86%85%E6%A0%B8%E6%A8%A1%E5%9D%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IO多路复用模型</title>
+    <link href="http://taowusheng.cn/2020/05/12/20200512%20IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://taowusheng.cn/2020/05/12/20200512 IO多路复用模型/</id>
+    <published>2020-05-11T16:00:01.000Z</published>
+    <updated>2020-05-12T04:53:27.885Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不同于传统的“一个进程处理一个客户端请求”的方式，IO复用可以让一个进程处理多个客户端的请求，更加节省资源。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Network_Programming" scheme="http://taowusheng.cn/categories/Network-Programming/"/>
+    
+    
+      <category term="IO多路复用" scheme="http://taowusheng.cn/tags/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/"/>
+    
+      <category term="select" scheme="http://taowusheng.cn/tags/select/"/>
+    
+      <category term="poll" scheme="http://taowusheng.cn/tags/poll/"/>
+    
+      <category term="epoll" scheme="http://taowusheng.cn/tags/epoll/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何调试Linux内核</title>
     <link href="http://taowusheng.cn/2020/03/30/20200330%20%E5%A6%82%E4%BD%95%E8%B0%83%E8%AF%95Linux%E5%86%85%E6%A0%B8/"/>
     <id>http://taowusheng.cn/2020/03/30/20200330 如何调试Linux内核/</id>
@@ -315,7 +393,7 @@
     <link href="http://taowusheng.cn/2019/10/24/20191024%20%E4%BA%94%E7%A7%8DIO%E6%A8%A1%E5%9E%8B/"/>
     <id>http://taowusheng.cn/2019/10/24/20191024 五种IO模型/</id>
     <published>2019-10-23T16:00:01.000Z</published>
-    <updated>2020-05-11T03:05:37.165Z</updated>
+    <updated>2020-05-12T01:33:16.393Z</updated>
     
     <summary type="html">
     
@@ -1243,28 +1321,6 @@
   </entry>
   
   <entry>
-    <title>基础知识_网络</title>
-    <link href="http://taowusheng.cn/2019/03/20/20190321%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E7%BD%91%E7%BB%9C/"/>
-    <id>http://taowusheng.cn/2019/03/20/20190321 基础知识_网络/</id>
-    <published>2019-03-19T16:00:01.000Z</published>
-    <updated>2019-10-11T14:04:15.020Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;计算机网络基础知识与常见题目。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
-    
-    
-      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
-    
-      <category term="计算机网络" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>基础知识_操作系统</title>
     <link href="http://taowusheng.cn/2019/03/20/20190320%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     <id>http://taowusheng.cn/2019/03/20/20190320 基础知识_操作系统/</id>
@@ -1283,6 +1339,28 @@
       <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
     
       <category term="操作系统" scheme="http://taowusheng.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础知识_网络</title>
+    <link href="http://taowusheng.cn/2019/03/20/20190321%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E7%BD%91%E7%BB%9C/"/>
+    <id>http://taowusheng.cn/2019/03/20/20190321 基础知识_网络/</id>
+    <published>2019-03-19T16:00:01.000Z</published>
+    <updated>2019-10-11T14:04:15.020Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;计算机网络基础知识与常见题目。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
+    
+    
+      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
+    
+      <category term="计算机网络" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
@@ -1504,9 +1582,9 @@
       <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
-      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
       <category term="thought" scheme="http://taowusheng.cn/tags/thought/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
       <category term="2018" scheme="http://taowusheng.cn/tags/2018/"/>
     
@@ -1576,9 +1654,9 @@
       <category term="C_Cpp" scheme="http://taowusheng.cn/categories/C-Cpp/"/>
     
     
-      <category term="C" scheme="http://taowusheng.cn/tags/C/"/>
-    
       <category term="C++" scheme="http://taowusheng.cn/tags/C/"/>
+    
+      <category term="C" scheme="http://taowusheng.cn/tags/C/"/>
     
   </entry>
   
@@ -1702,7 +1780,7 @@
     <link href="http://taowusheng.cn/2018/11/23/20181123%20git%E5%91%BD%E4%BB%A4%E9%80%9F%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2018/11/23/20181123 git命令速记/</id>
     <published>2018-11-22T16:00:01.000Z</published>
-    <updated>2019-09-27T05:40:36.178Z</updated>
+    <updated>2020-05-13T13:21:21.295Z</updated>
     
     <summary type="html">
     
@@ -2179,7 +2257,7 @@
     <link href="http://taowusheng.cn/2018/02/02/20180202%20linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2018/02/02/20180202 linux常用命令总结/</id>
     <published>2018-02-01T16:00:01.000Z</published>
-    <updated>2020-03-27T12:42:29.782Z</updated>
+    <updated>2020-05-24T01:23:24.924Z</updated>
     
     <summary type="html">
     
@@ -2300,11 +2378,11 @@
       <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
+      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
+    
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
@@ -2409,28 +2487,6 @@
   </entry>
   
   <entry>
-    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-10-11T14:14:01.368Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ACM六个月总结</title>
     <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
@@ -2449,6 +2505,28 @@
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-10-11T14:14:01.368Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
+    
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
