@@ -321,28 +321,6 @@
   </entry>
   
   <entry>
-    <title>python爬虫入门_在百度搜索手机归属地</title>
-    <link href="http://taowusheng.cn/2019/11/13/20191113%20python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8_%E5%9C%A8%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E6%89%8B%E6%9C%BA%E5%BD%92%E5%B1%9E%E5%9C%B0/"/>
-    <id>http://taowusheng.cn/2019/11/13/20191113 python爬虫入门_在百度搜索手机归属地/</id>
-    <published>2019-11-12T16:00:01.000Z</published>
-    <updated>2019-12-28T07:27:34.708Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;枚举手机号，在百度搜索手机归属地&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Python" scheme="http://taowusheng.cn/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="http://taowusheng.cn/tags/Python/"/>
-    
-      <category term="爬虫" scheme="http://taowusheng.cn/tags/%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>穷查理宝典_书摘</title>
     <link href="http://taowusheng.cn/2019/11/13/20191113%20%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8_%E4%B9%A6%E6%91%98/"/>
     <id>http://taowusheng.cn/2019/11/13/20191113 穷查理宝典_书摘/</id>
@@ -361,6 +339,28 @@
       <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
     
       <category term="查理芒格" scheme="http://taowusheng.cn/tags/%E6%9F%A5%E7%90%86%E8%8A%92%E6%A0%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python爬虫入门_在百度搜索手机归属地</title>
+    <link href="http://taowusheng.cn/2019/11/13/20191113%20python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8_%E5%9C%A8%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E6%89%8B%E6%9C%BA%E5%BD%92%E5%B1%9E%E5%9C%B0/"/>
+    <id>http://taowusheng.cn/2019/11/13/20191113 python爬虫入门_在百度搜索手机归属地/</id>
+    <published>2019-11-12T16:00:01.000Z</published>
+    <updated>2019-12-28T07:27:34.708Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;枚举手机号，在百度搜索手机归属地&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://taowusheng.cn/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://taowusheng.cn/tags/Python/"/>
+    
+      <category term="爬虫" scheme="http://taowusheng.cn/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
@@ -849,15 +849,15 @@
   </entry>
   
   <entry>
-    <title>python3_高级特性</title>
-    <link href="http://taowusheng.cn/2019/07/16/20190725%20python3_%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"/>
-    <id>http://taowusheng.cn/2019/07/16/20190725 python3_高级特性/</id>
+    <title>python3_基础</title>
+    <link href="http://taowusheng.cn/2019/07/16/20190716%20python3_%E5%9F%BA%E7%A1%80/"/>
+    <id>http://taowusheng.cn/2019/07/16/20190716 python3_基础/</id>
     <published>2019-07-15T16:00:01.000Z</published>
-    <updated>2019-12-28T07:27:34.708Z</updated>
+    <updated>2019-07-26T04:37:26.055Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;切片|迭代|列表生成式|生成器|迭代器。&lt;br&gt;
+      &lt;p&gt;用一个程序来记录python的基础语法与常用操作。&lt;br&gt;
     
     </summary>
     
@@ -869,15 +869,15 @@
   </entry>
   
   <entry>
-    <title>python3_基础</title>
-    <link href="http://taowusheng.cn/2019/07/16/20190716%20python3_%E5%9F%BA%E7%A1%80/"/>
-    <id>http://taowusheng.cn/2019/07/16/20190716 python3_基础/</id>
+    <title>python3_高级特性</title>
+    <link href="http://taowusheng.cn/2019/07/16/20190725%20python3_%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"/>
+    <id>http://taowusheng.cn/2019/07/16/20190725 python3_高级特性/</id>
     <published>2019-07-15T16:00:01.000Z</published>
-    <updated>2019-07-26T04:37:26.055Z</updated>
+    <updated>2019-12-28T07:27:34.708Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;用一个程序来记录python的基础语法与常用操作。&lt;br&gt;
+      &lt;p&gt;切片|迭代|列表生成式|生成器|迭代器。&lt;br&gt;
     
     </summary>
     
@@ -1002,11 +1002,11 @@
       <category term="System_Programming" scheme="http://taowusheng.cn/categories/System-Programming/"/>
     
     
+      <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
+    
       <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
     
       <category term="Network_Programming" scheme="http://taowusheng.cn/tags/Network-Programming/"/>
-    
-      <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
     
   </entry>
   
@@ -1026,11 +1026,11 @@
       <category term="System_Programming" scheme="http://taowusheng.cn/categories/System-Programming/"/>
     
     
+      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
+    
       <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
     
       <category term="线程池" scheme="http://taowusheng.cn/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/"/>
-    
-      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -1052,9 +1052,9 @@
     
       <category term="网络编程" scheme="http://taowusheng.cn/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
-    
       <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
     
       <category term="web服务器" scheme="http://taowusheng.cn/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
@@ -1349,28 +1349,6 @@
   </entry>
   
   <entry>
-    <title>基础知识_网络</title>
-    <link href="http://taowusheng.cn/2019/03/20/20190321%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E7%BD%91%E7%BB%9C/"/>
-    <id>http://taowusheng.cn/2019/03/20/20190321 基础知识_网络/</id>
-    <published>2019-03-19T16:00:01.000Z</published>
-    <updated>2020-09-04T07:18:13.846Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;计算机网络基础知识与常见题目。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
-    
-    
-      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
-    
-      <category term="计算机网络" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>基础知识_操作系统</title>
     <link href="http://taowusheng.cn/2019/03/20/20190320%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     <id>http://taowusheng.cn/2019/03/20/20190320 基础知识_操作系统/</id>
@@ -1389,6 +1367,28 @@
       <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
     
       <category term="操作系统" scheme="http://taowusheng.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础知识_网络</title>
+    <link href="http://taowusheng.cn/2019/03/20/20190321%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E7%BD%91%E7%BB%9C/"/>
+    <id>http://taowusheng.cn/2019/03/20/20190321 基础知识_网络/</id>
+    <published>2019-03-19T16:00:01.000Z</published>
+    <updated>2020-09-04T07:18:13.846Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;计算机网络基础知识与常见题目。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
+    
+    
+      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
+    
+      <category term="计算机网络" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
@@ -2458,8 +2458,6 @@
     
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
-      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
-    
       <category term="最短路径算法" scheme="http://taowusheng.cn/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95/"/>
     
       <category term="dijkstra" scheme="http://taowusheng.cn/tags/dijkstra/"/>
@@ -2467,6 +2465,8 @@
       <category term="floyd" scheme="http://taowusheng.cn/tags/floyd/"/>
     
       <category term="bellman" scheme="http://taowusheng.cn/tags/bellman/"/>
+    
+      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
   </entry>
   
