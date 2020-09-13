@@ -42,7 +42,7 @@ ga('send', 'pageview');
 <meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190320%20fork.jpg">
 <meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190320%20cow_fork.jpg">
 <meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190320%20vfork.jpg">
-<meta property="og:updated_time" content="2020-09-04T07:52:55.939Z">
+<meta property="og:updated_time" content="2020-09-11T07:47:46.944Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基础知识_操作系统">
 <meta name="twitter:description" content="操作系统基础知识与常见题目。">
@@ -140,6 +140,11 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
 		<!-- Table of Contents -->
+		
+		  <div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+			<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#进程与线程的区别"><span class="toc-number">1.</span> <span class="toc-text">进程与线程的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#进程间通讯有哪些"><span class="toc-number">2.</span> <span class="toc-text">进程间通讯有哪些</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fork、vfork、clone"><span class="toc-number">3.</span> <span class="toc-text">fork、vfork、clone</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#进程状态机"><span class="toc-number">4.</span> <span class="toc-text">进程状态机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#守护进程、孤儿进程与僵尸进程"><span class="toc-number">5.</span> <span class="toc-text">守护进程、孤儿进程与僵尸进程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#进程调度算法"><span class="toc-number">6.</span> <span class="toc-text">进程调度算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#进程终止的五种方式"><span class="toc-number">7.</span> <span class="toc-text">进程终止的五种方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多线程间同步方式"><span class="toc-number">8.</span> <span class="toc-text">多线程间同步方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#一个进程可以创建多少线程，和什么有关"><span class="toc-number">9.</span> <span class="toc-text">一个进程可以创建多少线程，和什么有关?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#五种IO模型"><span class="toc-number">10.</span> <span class="toc-text">五种IO模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何理解阻塞和非阻塞，同步与异步？"><span class="toc-number">11.</span> <span class="toc-text">如何理解阻塞和非阻塞，同步与异步？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#页表为什么要分级"><span class="toc-number">12.</span> <span class="toc-text">页表为什么要分级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#页面置换算法"><span class="toc-number">13.</span> <span class="toc-text">页面置换算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#死锁产生的四个条件"><span class="toc-number">14.</span> <span class="toc-text">死锁产生的四个条件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#处理死锁的四个方法"><span class="toc-number">15.</span> <span class="toc-text">处理死锁的四个方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#信号量以及PV原语"><span class="toc-number">16.</span> <span class="toc-text">信号量以及PV原语</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#银行家算法"><span class="toc-number">17.</span> <span class="toc-text">银行家算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#生产者消费者问题"><span class="toc-number">18.</span> <span class="toc-text">生产者消费者问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#哲学家进餐问题"><span class="toc-number">19.</span> <span class="toc-text">哲学家进餐问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#读者写者问题"><span class="toc-number">20.</span> <span class="toc-text">读者写者问题</span></a></li></ol>
+		  </div>
 		
         <p>操作系统基础知识与常见题目。<br><a id="more"></a></p>
 <h4 id="进程与线程的区别"><a href="#进程与线程的区别" class="headerlink" title="进程与线程的区别"></a>进程与线程的区别</h4><ul>
@@ -277,7 +282,7 @@ Network Qt Trusted_Computing
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://taowusheng.cn/2019/03/20/20190320 基础知识_操作系统/" data-id="ckew7ryh7004eusbjg9ih16dh" class="article-share-link">Share</a>
+      <a data-url="http://taowusheng.cn/2019/03/20/20190320 基础知识_操作系统/" data-id="ckf160a9k0070wcbj15clfbkc" class="article-share-link">Share</a>
       
       
         <a href="/2019/03/20/20190320 基础知识_操作系统/#comments" class="article-comment-link">
@@ -294,19 +299,19 @@ Network Qt Trusted_Computing
     
 <nav id="article-nav">
   
-    <a href="/2019/03/22/20190322 基础知识_Cpp/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/03/20/20190321 基础知识_网络/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          基础知识_Cpp
+          基础知识_网络
         
       </div>
     </a>
   
   
-    <a href="/2019/03/20/20190321 基础知识_网络/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/03/19/20190317 可信计算常用术语整理/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">基础知识_网络</div>
+      <div class="article-nav-title">可信计算常用术语整理</div>
     </a>
   
 </nav>

@@ -47,7 +47,7 @@ ga('send', 'pageview');
 <meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20zhuanmanqidong.jpg">
 <meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20tcp_state.jpg">
 <meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20tcp_state2.jpg">
-<meta property="og:updated_time" content="2020-09-04T07:18:13.846Z">
+<meta property="og:updated_time" content="2020-09-11T07:48:20.426Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基础知识_网络">
 <meta name="twitter:description" content="计算机网络基础知识与常见题目。">
@@ -229,7 +229,7 @@ ga('send', 'pageview');
 <li>两次握手不够，会出问题：<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">两次握手：</span><br><span class="line">	client&gt;&gt;server:SYN=a</span><br><span class="line">	client&lt;&lt;server:ACK=a+<span class="number">1</span>，SYN=b</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>（1）如果第二次握手的数据丢失了，server会以为成功建立了连接，但是client没有收到确认，所以会尝试重新发送SYN请求。server收到第二次SYN请求，以为是要再次建立连接就回复ACK，于是server就维护两个连接了。这样二次握手可能会导致server端单方面建立许多并不成功的连接。<br>（2）如果第一握手的信息package1在网络中滞留了，client检测超时后会重新发送SYN，server回复ACK确认，这样成功建立连接了。但这时已经失效的package1又到达了server，server不知道这是失效的请求，又会回复ACK建立连接。当client接收到第二个ACK，知道server端用失效的SYN建立了连接，只能干着急。<br>2.四次挥手</p>
+<p>（1）如果第二次握手的数据丢失了，server会以为成功建立了连接，但是client没有收到确认，所以会尝试重新发送SYN请求。server收到第二次SYN请求，以为是要再次建立连接就回复ACK，于是server就维护两个连接了。这样二次握手可能会导致server端单方面建立许多并不成功的连接。<br>（2）如果第一次握手的信息package1在网络中滞留了，client检测超时后会重新发送SYN，server回复ACK确认，这样成功建立连接了。但这时已经失效的package1又到达了server，server不知道这是失效的请求，又会回复ACK建立连接。当client接收到第二个ACK，知道server端用失效的SYN建立了连接，只能干着急。<br>2.四次挥手</p>
 <ul>
 <li>因为TCP连接是全双工的，客户端想要断开连接，服务器回复确认。这样就断开了客户端往服务器方向的连接，但是服务器可能还需要给客户端发送数据，所以第二次第三次挥手不能合并。<br>3.补充阅读<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">第一个包，即A发给B的SYN 中途被丢，没有到达B</span><br><span class="line">	A会周期性超时重传，直到收到B的确认</span><br><span class="line">第二个包，即B发给A的SYN +ACK 中途被丢，没有到达A</span><br><span class="line">	B会周期性超时重传，直到收到A的确认</span><br><span class="line">第三个包，即A发给B的ACK 中途被丢，没有到达B.A发完ACK，单方面认为TCP为 Established状态，而B显然认为TCP为Active状态：</span><br><span class="line">	a. 假定此时双方都没有数据发送，B会周期性超时重传，直到收到A的确认，收到之后B的TCP 连接也为 Established状态，双向可以发包。</span><br><span class="line">	b. 假定此时A有数据发送，B收到A的 Data + ACK，自然会切换为established 状态，并接受A的 Data。</span><br><span class="line">	c. 假定B有数据发送，数据发送不了，会一直周期性超时重传SYN + ACK，直到收到A的确认才可以发送数据。</span><br></pre></td></tr></table></figure>
 </li>
@@ -319,7 +319,6 @@ ga('send', 'pageview');
 </ul>
 <h4 id="系统收到数据到交付应用程序的整个过程"><a href="#系统收到数据到交付应用程序的整个过程" class="headerlink" title="系统收到数据到交付应用程序的整个过程"></a>系统收到数据到交付应用程序的整个过程</h4><p>？？</p>
 <h4 id="应用层协议常用的端口"><a href="#应用层协议常用的端口" class="headerlink" title="应用层协议常用的端口"></a>应用层协议常用的端口</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">文件传输协议            ftp     21</span><br><span class="line">安全shell               ssh     22</span><br><span class="line">远程登录协议            telnet  23</span><br><span class="line">传输邮件服务            smtp    25</span><br><span class="line">文本传输协议            http    80</span><br><span class="line">访问远程服务器上的邮件  pop3    110</span><br><span class="line">安全的超文本传输服务    https   443</span><br><span class="line">                        dns     53</span><br></pre></td></tr></table></figure>
-<p>下面是编程的</p>
 <h4 id="建立TCP服务器的系统调用"><a href="#建立TCP服务器的系统调用" class="headerlink" title="建立TCP服务器的系统调用"></a>建立TCP服务器的系统调用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">tcp client      tcp server</span><br><span class="line">socket          socket</span><br><span class="line">bind            bind</span><br><span class="line">connect         listen</span><br><span class="line">send            accept</span><br><span class="line">receive         receive</span><br><span class="line">                send</span><br><span class="line">========================</span><br><span class="line">int socket(int protofamily, int so_type, int protocol);</span><br><span class="line">int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);</span><br><span class="line">int listen(int sockfd, int backlog);</span><br><span class="line">int connect(int sockfd, struct sockaddr *serv_addr, int addrlen);</span><br><span class="line">int accept (int sockfd, struct sockaddr *addr, socklen_t *addrlen);</span><br><span class="line">int send(int sockfd, const void *msg, int len, int flags);</span><br><span class="line">int recv(int sockfd, void *buf, int len, unsigned int flags);</span><br></pre></td></tr></table></figure>
 <h4 id="one-thread-one-loop思想"><a href="#one-thread-one-loop思想" class="headerlink" title="one thread one loop思想"></a>one thread one loop思想</h4><p>翻译成中文的意思就是一个线程里面一个循环。一般可以让线程A接收新连接，然后将新连接的socket传给B1、B2、B3…来负责收发数据。一般的代码结构如下：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">thread_func</span><span class="params">(<span class="keyword">void</span>* thread_arg)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//这里做一些需要的初始化工作</span></span><br><span class="line">	<span class="keyword">while</span> (退出标志)&#123;</span><br><span class="line">		<span class="comment">//步骤一：利用select/poll/epoll等IO复用技术，分离读写事件</span></span><br><span class="line">		<span class="comment">//步骤二：处理读事件或写事件</span></span><br><span class="line">		<span class="comment">//步骤三：做一些其他的事情</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//这里做一些需要的清理</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>#### </p>
@@ -337,7 +336,7 @@ Network Qt Trusted_Computing
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://taowusheng.cn/2019/03/20/20190321 基础知识_网络/" data-id="ckew7ryhj004pusbjskze133n" class="article-share-link">Share</a>
+      <a data-url="http://taowusheng.cn/2019/03/20/20190321 基础知识_网络/" data-id="ckf160a9n0073wcbjp7rx1rh9" class="article-share-link">Share</a>
       
       
         <a href="/2019/03/20/20190321 基础知识_网络/#comments" class="article-comment-link">
@@ -354,19 +353,19 @@ Network Qt Trusted_Computing
     
 <nav id="article-nav">
   
-    <a href="/2019/03/20/20190320 基础知识_操作系统/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/03/22/20190322 基础知识_Cpp/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          基础知识_操作系统
+          基础知识_Cpp
         
       </div>
     </a>
   
   
-    <a href="/2019/03/19/20190317 可信计算常用术语整理/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/03/20/20190320 基础知识_操作系统/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">可信计算常用术语整理</div>
+      <div class="article-nav-title">基础知识_操作系统</div>
     </a>
   
 </nav>
