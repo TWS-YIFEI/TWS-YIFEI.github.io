@@ -39,7 +39,7 @@ ga('send', 'pageview');
 <meta property="og:site_name" content="YIFEI">
 <meta property="og:description" content="数据库笔记。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2020-10-31T06:37:35.389Z">
+<meta property="og:updated_time" content="2020-10-31T07:39:43.568Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基础知识_数据库">
 <meta name="twitter:description" content="数据库笔记。">
@@ -136,6 +136,11 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
 		<!-- Table of Contents -->
+		
+		  <div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据库原理"><span class="toc-number">1.</span> <span class="toc-text">数据库原理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#数据库设计的三大范式"><span class="toc-number">1.1.</span> <span class="toc-text">数据库设计的三大范式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#不遵守三大范式会带来哪些问题"><span class="toc-number">1.2.</span> <span class="toc-text">不遵守三大范式会带来哪些问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何理解数据库索引"><span class="toc-number">1.3.</span> <span class="toc-text">如何理解数据库索引</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据库事务以及四大特性"><span class="toc-number">1.4.</span> <span class="toc-text">数据库事务以及四大特性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#并发一致性问题"><span class="toc-number">1.5.</span> <span class="toc-text">并发一致性问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事务的四种隔离级别"><span class="toc-number">1.6.</span> <span class="toc-text">事务的四种隔离级别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#两种封锁类型-读写锁和意向锁"><span class="toc-number">1.7.</span> <span class="toc-text">两种封锁类型:读写锁和意向锁</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#读写锁"><span class="toc-number">1.7.1.</span> <span class="toc-text">读写锁</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#意向锁"><span class="toc-number">1.7.2.</span> <span class="toc-text">意向锁</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#参考"><span class="toc-number">1.7.3.</span> <span class="toc-text">参考</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#隐式锁定-amp-显示锁定"><span class="toc-number">1.8.</span> <span class="toc-text">隐式锁定&amp;显示锁定</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#封锁协议"><span class="toc-number">1.9.</span> <span class="toc-text">封锁协议</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#一级封锁协议"><span class="toc-number">1.9.1.</span> <span class="toc-text">一级封锁协议</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#二级封锁协议"><span class="toc-number">1.9.2.</span> <span class="toc-text">二级封锁协议</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#三级封锁协议"><span class="toc-number">1.9.3.</span> <span class="toc-text">三级封锁协议</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#两阶段封锁协议"><span class="toc-number">1.9.4.</span> <span class="toc-text">两阶段封锁协议</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MVCC"><span class="toc-number">1.10.</span> <span class="toc-text">MVCC</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL语句"><span class="toc-number">2.</span> <span class="toc-text">SQL语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#数据库相关操作"><span class="toc-number">2.1.</span> <span class="toc-text">数据库相关操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据表相关操作"><span class="toc-number">2.2.</span> <span class="toc-text">数据表相关操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#插入数据"><span class="toc-number">2.3.</span> <span class="toc-text">插入数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查询数据"><span class="toc-number">2.4.</span> <span class="toc-text">查询数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WHERE子句"><span class="toc-number">2.5.</span> <span class="toc-text">WHERE子句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#修改数据"><span class="toc-number">2.6.</span> <span class="toc-text">修改数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#删除数据"><span class="toc-number">2.7.</span> <span class="toc-text">删除数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LIKE子句"><span class="toc-number">2.8.</span> <span class="toc-text">LIKE子句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#UNION"><span class="toc-number">2.9.</span> <span class="toc-text">UNION</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#排序"><span class="toc-number">2.10.</span> <span class="toc-text">排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#分组"><span class="toc-number">2.11.</span> <span class="toc-text">分组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#连接"><span class="toc-number">2.12.</span> <span class="toc-text">连接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NULL值判断"><span class="toc-number">2.13.</span> <span class="toc-text">NULL值判断</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#正则表达式"><span class="toc-number">2.14.</span> <span class="toc-text">正则表达式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事务"><span class="toc-number">2.15.</span> <span class="toc-text">事务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ALTER-命令"><span class="toc-number">2.16.</span> <span class="toc-text">ALTER 命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#索引"><span class="toc-number">2.17.</span> <span class="toc-text">索引</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#临时表"><span class="toc-number">2.18.</span> <span class="toc-text">临时表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#复制表"><span class="toc-number">2.19.</span> <span class="toc-text">复制表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#获取服务器原数据"><span class="toc-number">2.20.</span> <span class="toc-text">获取服务器原数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#删除重复数据"><span class="toc-number">2.21.</span> <span class="toc-text">删除重复数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#导入导出数据"><span class="toc-number">2.22.</span> <span class="toc-text">导入导出数据</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LeetCode题解"><span class="toc-number">3.</span> <span class="toc-text">LeetCode题解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mysql"><span class="toc-number">4.</span> <span class="toc-text">Mysql</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#b树与b-树对比"><span class="toc-number">4.1.</span> <span class="toc-text">b树与b+树对比</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#为什么数据库普遍不用红黑树作索引"><span class="toc-number">4.2.</span> <span class="toc-text">为什么数据库普遍不用红黑树作索引</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#为什么数据库一般不用hash表作索引"><span class="toc-number">4.3.</span> <span class="toc-text">为什么数据库一般不用hash表作索引</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#STL为什么用红黑树实现map、set，不用平衡二叉树。"><span class="toc-number">4.4.</span> <span class="toc-text">STL为什么用红黑树实现map、set，不用平衡二叉树。</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考-1"><span class="toc-number">5.</span> <span class="toc-text">参考</span></a></li></ol>
+		  </div>
 		
         <p>数据库笔记。<br><a id="more"></a></p>
 <h3 id="数据库原理"><a href="#数据库原理" class="headerlink" title="数据库原理"></a>数据库原理</h3><h4 id="数据库设计的三大范式"><a href="#数据库设计的三大范式" class="headerlink" title="数据库设计的三大范式"></a>数据库设计的三大范式</h4><ul>
@@ -585,13 +590,7 @@ ga('send', 'pageview');
 <ul>
 <li>创建表</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> <span class="string">`test_tbl`</span>(</span><br><span class="line">   <span class="string">`test_id`</span> <span class="built_in">INT</span> <span class="keyword">UNSIGNED</span> AUTO_INCREMENT,</span><br><span class="line">   <span class="string">`test_title`</span> <span class="built_in">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`test_author`</span> <span class="built_in">VARCHAR</span>(<span class="number">40</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`submission_date`</span> <span class="built_in">DATE</span>,</span><br><span class="line">   PRIMARY <span class="keyword">KEY</span> ( <span class="string">`test_id`</span> )</span><br><span class="line">)<span class="keyword">ENGINE</span>=<span class="keyword">InnoDB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>如果你不想字段为 <strong>NULL</strong> 可以设置字段的属性为 <strong>NOT NULL</strong>， 在操作数据库时如果输入该字段的数据为<strong>NULL</strong> ，就会报错。</p>
-<p>AUTO_INCREMENT定义列为自增的属性，一般用于主键，数值会自动加1。</p>
-<p>PRIMARY KEY关键字用于定义列为主键。 您可以使用多列来定义主键，列间以逗号分隔。</p>
-<p>ENGINE 设置存储引擎，CHARSET 设置编码。</p>
-</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> <span class="string">`test_tbl`</span>(</span><br><span class="line">   <span class="string">`test_id`</span> <span class="built_in">INT</span> <span class="keyword">UNSIGNED</span> AUTO_INCREMENT,</span><br><span class="line">   <span class="string">`test_title`</span> <span class="built_in">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`test_author`</span> <span class="built_in">VARCHAR</span>(<span class="number">40</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`submission_date`</span> <span class="built_in">DATE</span>,</span><br><span class="line">   PRIMARY <span class="keyword">KEY</span> ( <span class="string">`test_id`</span> )</span><br><span class="line">)<span class="keyword">ENGINE</span>=<span class="keyword">InnoDB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8;</span><br><span class="line">============================================================</span><br><span class="line">如果你不想字段为 **NULL** 可以设置字段的属性为 **NOT NULL**， 在操作数据库时如果输入该字段的数据为**NULL** ，就会报错。</span><br><span class="line">AUTO_INCREMENT定义列为自增的属性，一般用于主键，数值会自动加1。</span><br><span class="line">PRIMARY KEY关键字用于定义列为主键。 您可以使用多列来定义主键，列间以逗号分隔。</span><br><span class="line">ENGINE 设置存储引擎，CHARSET 设置编码。</span><br></pre></td></tr></table></figure>
 <ul>
 <li>查看表的字段</li>
 </ul>
@@ -601,28 +600,14 @@ ga('send', 'pageview');
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> 表名;</span><br></pre></td></tr></table></figure>
 <h4 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> test_tbl</span><br><span class="line">(test_title,test_author,submission_date)</span><br><span class="line"><span class="keyword">VALUES</span></span><br><span class="line">(<span class="string">"study sql"</span>,<span class="string">"YIFEI"</span>,<span class="keyword">NOW</span>());</span><br></pre></td></tr></table></figure>
-<h4 id="查询数据"><a href="#查询数据" class="headerlink" title="查询数据"></a>查询数据</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#SELECT语法</span><br><span class="line"><span class="keyword">SELECT</span> column_name,column_name</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line">[<span class="keyword">WHERE</span> Clause]</span><br><span class="line">[<span class="keyword">LIMIT</span> N][ <span class="keyword">OFFSET</span> M]</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p> 查询语句中你可以使用一个或者多个表，表之间使用逗号(,)分割，并使用WHERE语句来设定查询条件。</p>
-<p>SELECT 命令可以读取一条或者多条记录。</p>
-<p>你可以使用星号（*）来代替其他字段，SELECT语句会返回表的所有字段数据</p>
-<p>你可以使用 WHERE 语句来包含任何条件。</p>
-<p>你可以使用 LIMIT 属性来设定返回的记录数。</p>
-<p>你可以通过OFFSET指定SELECT语句开始查询的数据偏移量。默认情况下偏移量为0。</p>
-</blockquote>
+<h4 id="查询数据"><a href="#查询数据" class="headerlink" title="查询数据"></a>查询数据</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#SELECT语法</span><br><span class="line"><span class="keyword">SELECT</span> column_name,column_name</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line">[<span class="keyword">WHERE</span> Clause]</span><br><span class="line">[<span class="keyword">LIMIT</span> N][ <span class="keyword">OFFSET</span> M]</span><br><span class="line">============================================</span><br><span class="line">查询语句中你可以使用一个或者多个表，表之间使用逗号(,)分割，并使用<span class="keyword">WHERE</span>语句来设定查询条件。</span><br><span class="line"><span class="keyword">SELECT</span> 命令可以读取一条或者多条记录。</span><br><span class="line">你可以使用星号（*）来代替其他字段，<span class="keyword">SELECT</span>语句会返回表的所有字段数据</span><br><span class="line">你可以使用 <span class="keyword">WHERE</span> 语句来包含任何条件。</span><br><span class="line">你可以使用 <span class="keyword">LIMIT</span> 属性来设定返回的记录数。</span><br><span class="line">你可以通过<span class="keyword">OFFSET</span>指定<span class="keyword">SELECT</span>语句开始查询的数据偏移量。默认情况下偏移量为<span class="number">0</span>。</span><br></pre></td></tr></table></figure>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> 表名;</span><br><span class="line"><span class="keyword">SELECT</span> column1,column2 <span class="keyword">FROM</span> 表名;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> column1,coulumn2 <span class="keyword">FROM</span> 表名;</span><br></pre></td></tr></table></figure>
 <h4 id="WHERE子句"><a href="#WHERE子句" class="headerlink" title="WHERE子句"></a>WHERE子句</h4><ul>
-<li>单表</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> test_author,test_id <span class="keyword">FROM</span> test_tbl</span><br><span class="line"><span class="keyword">WHERE</span> <span class="built_in">BINARY</span> test_title=<span class="string">'study php'</span> <span class="keyword">AND</span> </span><br><span class="line">	<span class="built_in">BINARY</span> test_author=<span class="string">'YIFEI'</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>多个条件用AND、OR连接。</p>
-<p>=检测是否相等，&lt;&gt;、!=检测不等，其他还有&lt;=、&gt;=。</p>
-<p>BINARY表示区分大小写。</p>
-<p>WHERE也可以用于DELETE 或者 UPDATE中。</p>
-</blockquote>
-<ul>
-<li>多表</li>
+<li><p>单表</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> test_author,test_id <span class="keyword">FROM</span> test_tbl</span><br><span class="line"><span class="keyword">WHERE</span> <span class="built_in">BINARY</span> test_title=<span class="string">'study php'</span> <span class="keyword">AND</span> </span><br><span class="line">	<span class="built_in">BINARY</span> test_author=<span class="string">'YIFEI'</span></span><br><span class="line">=======================================</span><br><span class="line">多个条件用<span class="keyword">AND</span>、<span class="keyword">OR</span>连接。</span><br><span class="line">=检测是否相等，&lt;&gt;、!=检测不等，其他还有&lt;=、&gt;=。</span><br><span class="line"><span class="built_in">BINARY</span>表示区分大小写。</span><br><span class="line"><span class="keyword">WHERE</span>也可以用于<span class="keyword">DELETE</span> 或者 <span class="keyword">UPDATE</span>中。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>多表</p>
+</li>
 </ul>
 <h4 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> test_tbl </span><br><span class="line"><span class="keyword">SET</span> test_title=<span class="string">'study cpp'</span>,test_author=<span class="string">'tws'</span></span><br><span class="line"><span class="keyword">WHERE</span> test_id=<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
 <h4 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> test_tbl <span class="keyword">WHERE</span> test_id=<span class="number">3</span>;</span><br></pre></td></tr></table></figure>
@@ -633,12 +618,7 @@ ga('send', 'pageview');
 <h4 id="UNION"><a href="#UNION" class="headerlink" title="UNION"></a>UNION</h4><ul>
 <li>联合查询</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> submission_date <span class="keyword">FROM</span> test_2</span><br><span class="line"><span class="keyword">UNION</span> all</span><br><span class="line"><span class="keyword">SELECT</span> submission_date <span class="keyword">FROM</span> test_tbl</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> submission_date；</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>all是显示所有数据，默认为distinct去重。</p>
-<p>两个select查询的列数应当相同。</p>
-<p>ORDER BY submission_date是按照该列排序。</p>
-</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> submission_date <span class="keyword">FROM</span> test_2</span><br><span class="line"><span class="keyword">UNION</span> all</span><br><span class="line"><span class="keyword">SELECT</span> submission_date <span class="keyword">FROM</span> test_tbl</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> submission_date；</span><br><span class="line">====================================</span><br><span class="line">all是显示所有数据，默认为<span class="keyword">distinct</span>去重。</span><br><span class="line">两个<span class="keyword">select</span>查询的列数应当相同。</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> submission_date是按照该列排序。</span><br></pre></td></tr></table></figure>
 <ul>
 <li>带有WHERE的联合查询</li>
 </ul>
@@ -646,29 +626,15 @@ ga('send', 'pageview');
 <h4 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h4><ul>
 <li>升序排列</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> test_tbl <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">name</span> <span class="keyword">DESC</span>,<span class="built_in">date</span> <span class="keyword">ASC</span>;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>ASC升序排列，DESC为降序排列。</p>
-<p>如果排序列为汉字，想要按照拼音排序:ORDER BY CONVERT(title using gbk);</p>
-</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> test_tbl <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">name</span> <span class="keyword">DESC</span>,<span class="built_in">date</span> <span class="keyword">ASC</span>;</span><br><span class="line">===========================================================</span><br><span class="line">ASC升序排列，DESC为降序排列。</span><br><span class="line">如果排序列为汉字，想要按照拼音排序:ORDER BY CONVERT(title using gbk);</span><br></pre></td></tr></table></figure>
 <h4 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h4><ul>
 <li>分组并统计个数</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>,<span class="keyword">COUNT</span>(*) <span class="keyword">FROM</span> employee_tbl <span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="keyword">name</span>;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>按照名字分组。</p>
-<p>count(*)统计每类的数量。</p>
-</blockquote>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>,<span class="keyword">COUNT</span>(*) <span class="keyword">FROM</span> employee_tbl <span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="keyword">name</span>;</span><br><span class="line">======================================================</span><br><span class="line">按照名字分组。</span><br><span class="line">count(*)统计每类的数量。</span><br></pre></td></tr></table></figure>
 <ul>
 <li>使用WITH ROLLUP，在group by的结果之上再统计。</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">coalesce</span>(<span class="keyword">name</span>, <span class="string">'总数'</span>), <span class="keyword">SUM</span>(singin) <span class="keyword">as</span> singin_count <span class="keyword">FROM</span>  employee_tbl <span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="keyword">name</span> <span class="keyword">WITH</span> <span class="keyword">ROLLUP</span>;</span><br><span class="line">+<span class="comment">--------------------------+--------------+</span></span><br><span class="line">| coalesce(name, '总数') | singin_count |</span><br><span class="line">+<span class="comment">--------------------------+--------------+</span></span><br><span class="line">| 小丽                   |            2 |</span><br><span class="line">| 小明                   |            7 |</span><br><span class="line">| 小王                   |            7 |</span><br><span class="line">| 总数                   |           16 |</span><br><span class="line">+<span class="comment">--------------------------+--------------+</span></span><br><span class="line">4 rows in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>coalesce(a,b,c)如果a!=null就使用a作为该列名称，如上如果name为空，就使用”总数”作列名。</p>
-<p>ifnull(a,b)跟coalesce一样的效果。</p>
-<p>WITH ROLLUP之后可以对分组结果再统计SUM(singin)。</p>
-<p>SUM之外还有AVG、COUNT等。</p>
-</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">coalesce</span>(<span class="keyword">name</span>, <span class="string">'总数'</span>), <span class="keyword">SUM</span>(singin) <span class="keyword">as</span> singin_count <span class="keyword">FROM</span>  employee_tbl <span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="keyword">name</span> <span class="keyword">WITH</span> <span class="keyword">ROLLUP</span>;</span><br><span class="line">+<span class="comment">--------------------------+--------------+</span></span><br><span class="line">| coalesce(name, '总数') | singin_count |</span><br><span class="line">+<span class="comment">--------------------------+--------------+</span></span><br><span class="line">| 小丽                   |            2 |</span><br><span class="line">| 小明                   |            7 |</span><br><span class="line">| 小王                   |            7 |</span><br><span class="line">| 总数                   |           16 |</span><br><span class="line">+<span class="comment">--------------------------+--------------+</span></span><br><span class="line">4 rows in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br><span class="line">==================================================</span><br><span class="line"><span class="keyword">coalesce</span>(a,b,c)如果a!=<span class="literal">null</span>就使用a作为该列名称，如上如果<span class="keyword">name</span>为空，就使用<span class="string">"总数"</span>作列名。</span><br><span class="line"><span class="keyword">ifnull</span>(a,b)跟<span class="keyword">coalesce</span>一样的效果。</span><br><span class="line"><span class="keyword">WITH</span> <span class="keyword">ROLLUP</span>之后可以对分组结果再统计<span class="keyword">SUM</span>(singin)。</span><br><span class="line"><span class="keyword">SUM</span>之外还有<span class="keyword">AVG</span>、<span class="keyword">COUNT</span>等。</span><br></pre></td></tr></table></figure>
 <h4 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h4><p><strong>内连接</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> a.runoob_id,a.runoob_title,b.runoob_author </span><br><span class="line"><span class="keyword">FROM</span> runoob_2 <span class="keyword">AS</span> a <span class="keyword">INNER</span> <span class="keyword">JOIN</span> runoob_tbl <span class="keyword">AS</span> b </span><br><span class="line"><span class="keyword">ON</span> <span class="built_in">BINARY</span> a.runoob_author=b.runoob_author;</span><br></pre></td></tr></table></figure>
 <p>内连接是取两表的交集，上面语句等价于以下WHERE语句：</p>
@@ -679,64 +645,55 @@ ga('send', 'pageview');
 <p><strong>右连接</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> a.runoob_id,a.runoob_title,b.runoob_author </span><br><span class="line"><span class="keyword">FROM</span> runoob_2 <span class="keyword">AS</span> a <span class="keyword">RIGHT</span> <span class="keyword">JOIN</span> runoob_tbl <span class="keyword">AS</span> b </span><br><span class="line"><span class="keyword">ON</span> <span class="built_in">BINARY</span> a.runoob_author=b.runoob_author;</span><br></pre></td></tr></table></figure>
 <h4 id="NULL值判断"><a href="#NULL值判断" class="headerlink" title="NULL值判断"></a>NULL值判断</h4><p>在WHERE子句中判断某值为空时不能<strong>WHERE name=null</strong>，应当使用如下方式：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">test</span> <span class="keyword">WHERE</span> <span class="keyword">name</span> <span class="keyword">IS</span> <span class="literal">NULL</span>;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>IS NULL:</strong> 当列的值是 NULL,此运算符返回 true。</p>
-<p><strong>IS NOT NULL:</strong> 当列的值不为 NULL, 运算符返回 true。</p>
-<p><strong>&lt;=&gt;:</strong> 比较操作符（不同于 = 运算符），当比较的的两个值相等或者都为 NULL 时返回 true。</p>
-</blockquote>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">test</span> <span class="keyword">WHERE</span> <span class="keyword">name</span> <span class="keyword">IS</span> <span class="literal">NULL</span>;</span><br><span class="line">=============================================</span><br><span class="line">**IS NULL:** 当列的值是 NULL,此运算符返回 true。</span><br><span class="line">**IS NOT NULL:** 当列的值不为 NULL, 运算符返回 true。</span><br><span class="line">**&lt;=&gt;:** 比较操作符（不同于 = 运算符），当比较的的两个值相等或者都为 NULL 时返回 true。</span><br></pre></td></tr></table></figure>
 <h4 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> runoob_2 <span class="keyword">WHERE</span> runoob_author REGEXP <span class="string">'^y'</span>;</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
 <th style="text-align:center">模式</th>
-<th style="text-align:left">描述</th>
+<th style="text-align:center">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:center">^</td>
-<td style="text-align:left">匹配输入字符串的开始位置。如果设置了 RegExp 对象的 Multiline 属性，^ 也匹配 ‘\n’ 或 ‘\r’ 之后的位置。</td>
+<td style="text-align:center">匹配输入字符串的开始位置。如果设置了 RegExp 对象的 Multiline 属性，^ 也匹配 ‘\n’ 或 ‘\r’ 之后的位置。</td>
 </tr>
 <tr>
 <td style="text-align:center">$</td>
-<td style="text-align:left">匹配输入字符串的结束位置。如果设置了RegExp 对象的 Multiline 属性，$ 也匹配 ‘\n’ 或 ‘\r’ 之前的位置。</td>
+<td style="text-align:center">匹配输入字符串的结束位置。如果设置了RegExp 对象的 Multiline 属性，$ 也匹配 ‘\n’ 或 ‘\r’ 之前的位置。</td>
 </tr>
 <tr>
 <td style="text-align:center">.</td>
-<td style="text-align:left">匹配除 “\n” 之外的任何单个字符。要匹配包括 ‘\n’ 在内的任何字符，请使用像 ‘[.\n]’ 的模式。</td>
+<td style="text-align:center">匹配除 “\n” 之外的任何单个字符。要匹配包括 ‘\n’ 在内的任何字符，请使用像 ‘[.\n]’ 的模式。</td>
 </tr>
 <tr>
 <td style="text-align:center">[…]</td>
-<td style="text-align:left">字符集合。匹配所包含的任意一个字符。例如， ‘[abc]’ 可以匹配 “plain” 中的 ‘a’。</td>
+<td style="text-align:center">字符集合。匹配所包含的任意一个字符。例如， ‘[abc]’ 可以匹配 “plain” 中的 ‘a’。</td>
 </tr>
 <tr>
 <td style="text-align:center">[^…]</td>
-<td style="text-align:left">负值字符集合。匹配未包含的任意字符。例如， ‘[^abc]’ 可以匹配 “plain” 中的’p’。</td>
+<td style="text-align:center">负值字符集合。匹配未包含的任意字符。例如， ‘[^abc]’ 可以匹配 “plain” 中的’p’。</td>
 </tr>
 <tr>
-<td style="text-align:center">p1\</td>
-<td style="text-align:left">p2\</td>
-<td>p3</td>
-<td>匹配 p1 或 p2 或 p3。例如，’z\</td>
-<td>food’ 能匹配 “z” 或 “food”。’(z\</td>
-<td>f)ood’ 则匹配 “zood” 或 “food”。</td>
+<td style="text-align:center">p1｜p2｜p3</td>
+<td style="text-align:center">匹配 p1 或 p2 或 p3。例如，’z｜food’ 能匹配 “z” 或 “food”。’(z｜f)ood’ 则匹配 “zood” 或 “food”。</td>
 </tr>
 <tr>
 <td style="text-align:center">*</td>
-<td style="text-align:left">匹配前面的子表达式零次或多次。例如，zo<em> 能匹配 “z” 以及 “zoo”。</em> 等价于{0,}。</td>
+<td style="text-align:center">匹配前面的子表达式零次或多次。例如，zo<em> 能匹配 “z” 以及 “zoo”。</em> 等价于{0,}。</td>
 </tr>
 <tr>
 <td style="text-align:center">+</td>
-<td style="text-align:left">匹配前面的子表达式一次或多次。例如，’zo+’ 能匹配 “zo” 以及 “zoo”，但不能匹配 “z”。+ 等价于 {1,}。</td>
+<td style="text-align:center">匹配前面的子表达式一次或多次。例如，’zo+’ 能匹配 “zo” 以及 “zoo”，但不能匹配 “z”。+ 等价于 {1,}。</td>
 </tr>
 <tr>
 <td style="text-align:center">{n}</td>
-<td style="text-align:left">n 是一个非负整数。匹配确定的 n 次。例如，’o{2}’ 不能匹配 “Bob” 中的 ‘o’，但是能匹配 “food” 中的两个 o。</td>
+<td style="text-align:center">n 是一个非负整数。匹配确定的 n 次。例如，’o{2}’ 不能匹配 “Bob” 中的 ‘o’，但是能匹配 “food” 中的两个 o。</td>
 </tr>
 <tr>
 <td style="text-align:center">{n,m}</td>
-<td style="text-align:left">m 和 n 均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。</td>
+<td style="text-align:center">m 和 n 均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。</td>
 </tr>
 </tbody>
 </table>
@@ -752,9 +709,7 @@ ga('send', 'pageview');
 <li>添加表字段</li>
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> runoob_1 </span><br><span class="line"><span class="keyword">ADD</span> i <span class="built_in">INT</span> <span class="keyword">AFTER</span> runoob_id;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>可以将AFTER runoob_id改为FIRST，插入到第一列，默认是末尾。</p>
-</blockquote>
+<p> 可以将AFTER runoob_id改为FIRST，插入到第一列，默认是末尾。</p>
 <ul>
 <li>删除表字段</li>
 </ul>
@@ -767,9 +722,7 @@ ga('send', 'pageview');
 <li>CHANGE修改表字段</li>
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> testalter_tbl </span><br><span class="line"><span class="keyword">CHANGE</span> i j <span class="built_in">BIGINT</span>;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>CHANGE 关键字之后，紧跟着的是你要修改的字段名，然后指定新字段名及类型。</p>
-</blockquote>
+<p> CHANGE 关键字之后，紧跟着的是你要修改的字段名，然后指定新字段名及类型。</p>
 <ul>
 <li>修改字段默认值</li>
 </ul>
@@ -903,8 +856,7 @@ ga('send', 'pageview');
 <li>LOAD DATA导入数据</li>
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">LOAD</span> <span class="keyword">DATA</span> <span class="keyword">LOCAL</span> <span class="keyword">INFILE</span> <span class="string">'dump.txt'</span> <span class="keyword">INTO</span> <span class="keyword">TABLE</span> mytbl;</span><br></pre></td></tr></table></figure>
-<h3 id="LeetCode题解"><a href="#LeetCode题解" class="headerlink" title="LeetCode题解"></a>LeetCode题解</h3><p>#### </p>
-<p>#### </p>
+<h3 id="LeetCode题解"><a href="#LeetCode题解" class="headerlink" title="LeetCode题解"></a>LeetCode题解</h3><p>%%%</p>
 <h3 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h3><h4 id="b树与b-树对比"><a href="#b树与b-树对比" class="headerlink" title="b树与b+树对比"></a>b树与b+树对比</h4><ul>
 <li>b+树的非叶子结点存储数据，所有相对于b树的结点，b+树的非叶子结点可以存储更多的索引，这样b+树会更矮更宽。</li>
 <li>b+树每次操作都是o(logn)时间复杂度，是稳定的，b树的时间复杂度在o(1)~o(logn)之间。</li>
@@ -921,8 +873,6 @@ ga('send', 'pageview');
 <h4 id="STL为什么用红黑树实现map、set，不用平衡二叉树。"><a href="#STL为什么用红黑树实现map、set，不用平衡二叉树。" class="headerlink" title="STL为什么用红黑树实现map、set，不用平衡二叉树。"></a>STL为什么用红黑树实现map、set，不用平衡二叉树。</h4><ul>
 <li>平衡二叉树维护树完全平衡，但是这样就给每次操作带来了较大的常数时间，所以采用大体上平衡的红黑树反而效率更高。</li>
 </ul>
-<p>####</p>
-<p>####</p>
 <h3 id="参考-1"><a href="#参考-1" class="headerlink" title="参考"></a>参考</h3><ul>
 <li><a href="https://github.com/CyC2018/CS-Notes" target="_blank" rel="noopener">CS-Notes</a></li>
 <li><a href="https://www.runoob.com/mysql/mysql-tutorial.html" target="_blank" rel="noopener">Mysql菜鸟教程</a></li>
@@ -941,7 +891,7 @@ Network Qt Trusted_Computing English System_Programming Network_Programming
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://taowusheng.cn/2020/07/21/20200721 基础知识_数据库/" data-id="ckgxcq6ty009p3kbjsx59pbrp" class="article-share-link">Share</a>
+      <a data-url="http://taowusheng.cn/2020/07/21/20200721 基础知识_数据库/" data-id="ckgxdrzey00a178bj70k6wx4x" class="article-share-link">Share</a>
       
       
         <a href="/2020/07/21/20200721 基础知识_数据库/#comments" class="article-comment-link">
