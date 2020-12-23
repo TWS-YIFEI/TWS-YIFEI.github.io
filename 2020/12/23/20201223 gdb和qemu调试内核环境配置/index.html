@@ -39,7 +39,7 @@ ga('send', 'pageview');
 <meta property="og:site_name" content="YIFEI">
 <meta property="og:description" content="之前学习了利用KGDB双机调试内核,这种方式需要在两个主机上，通过串口线进行连接，或者是通过VMware开启两个虚拟机进行调试，对机器要求相对高一些。通过qemu创建虚拟机，然后利用gdb进行调试相对更轻量级一点。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2020-12-23T08:17:22.721Z">
+<meta property="og:updated_time" content="2020-12-23T08:21:45.744Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gdb和qemu调试Linux内核">
 <meta name="twitter:description" content="之前学习了利用KGDB双机调试内核,这种方式需要在两个主机上，通过串口线进行连接，或者是通过VMware开启两个虚拟机进行调试，对机器要求相对高一些。通过qemu创建虚拟机，然后利用gdb进行调试相对更轻量级一点。">
@@ -101,7 +101,7 @@ ga('send', 'pageview');
 	
   <script>
     
-    var number_of_banners = 6;
+    var number_of_banners = 8;
     var randnum = Math.floor(Math.random() * number_of_banners + 1);
     document.getElementById("banner").style.backgroundImage = "url(/css/images/banner" + randnum + ".jpg)";
     
@@ -142,7 +142,7 @@ ga('send', 'pageview');
 			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境"><span class="toc-number">1.</span> <span class="toc-text">环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编译源码"><span class="toc-number">2.</span> <span class="toc-text">编译源码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装qemu"><span class="toc-number">3.</span> <span class="toc-text">安装qemu</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#busybox制作磁盘镜像"><span class="toc-number">4.</span> <span class="toc-text">busybox制作磁盘镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gdb调试"><span class="toc-number">5.</span> <span class="toc-text">gdb调试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考"><span class="toc-number">6.</span> <span class="toc-text">参考</span></a></li></ol>
 		  </div>
 		
-        <p>之前学习了利用<a href="http://taowusheng.cn/2020/03/30/20200330%20%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95Linux%E5%86%85%E6%A0%B8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">KGDB双机调试内核</a>,这种方式需要在两个主机上，通过串口线进行连接，或者是通过VMware开启两个虚拟机进行调试，对机器要求相对高一些。通过qemu创建虚拟机，然后利用gdb进行调试相对更轻量级一点。<br><a id="more"></a><br>我先在centos7下面配置调试环境，但是centos7下没有qemu_system_x86等命令，所以需要<a href="https://blog.csdn.net/muzi_since/article/details/102559043" target="_blank" rel="noopener">重新编译qemu源码</a>再进行安装，再加上各种依赖问题，于是转用ubuntu进行配置，过程简单了许多。</p>
+        <p>之前学习了利用<a href="http://taowusheng.cn/2020/03/30/20200330%20%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95Linux%E5%86%85%E6%A0%B8/">KGDB双机调试内核</a>,这种方式需要在两个主机上，通过串口线进行连接，或者是通过VMware开启两个虚拟机进行调试，对机器要求相对高一些。通过qemu创建虚拟机，然后利用gdb进行调试相对更轻量级一点。<br><a id="more"></a><br>我先在centos7下面配置调试环境，但是centos7下没有qemu_system_x86等命令，所以需要<a href="https://blog.csdn.net/muzi_since/article/details/102559043" target="_blank" rel="noopener">重新编译qemu源码</a>再进行安装，再加上各种依赖问题，于是转用ubuntu进行配置，过程简单了许多。</p>
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
 <li>vmware创建ubuntu14.04<br>处理器设置多核、勾选虚拟化引擎、硬盘空间尽量大一点(20G+)</li>
 <li><a href="https://mirrors.edge.kernel.org/pub/linux/kernel/" target="_blank" rel="noopener">Linux-3.10.0</a></li>
@@ -193,7 +193,7 @@ category :
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://taowusheng.cn/2020/12/23/20201223 gdb和qemu调试内核环境配置/" data-id="ckj159zed00aetcbjbk1r3rk7" class="article-share-link">Share</a>
+      <a data-url="http://taowusheng.cn/2020/12/23/20201223 gdb和qemu调试内核环境配置/" data-id="ckj172qp700adk4bj2plnm41n" class="article-share-link">Share</a>
       
       
         <a href="/2020/12/23/20201223 gdb和qemu调试内核环境配置/#comments" class="article-comment-link">
