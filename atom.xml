@@ -290,15 +290,15 @@
   </entry>
   
   <entry>
-    <title>如何调试Linux内核</title>
-    <link href="http://taowusheng.cn/2020/03/30/20200330%20%E5%A6%82%E4%BD%95%E8%B0%83%E8%AF%95Linux%E5%86%85%E6%A0%B8/"/>
-    <id>http://taowusheng.cn/2020/03/30/20200330 如何调试Linux内核/</id>
+    <title>双机调试Linux内核环境配置</title>
+    <link href="http://taowusheng.cn/2020/03/30/20200330%20%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95Linux%E5%86%85%E6%A0%B8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <id>http://taowusheng.cn/2020/03/30/20200330 双机调试Linux内核环境配置/</id>
     <published>2020-03-29T16:00:01.000Z</published>
-    <updated>2020-04-06T03:13:57.213Z</updated>
+    <updated>2020-12-23T04:37:06.114Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;调试Linux内核。&lt;br&gt;
+      &lt;p&gt;双机调试Linux内核环境配置。&lt;br&gt;
     
     </summary>
     
@@ -531,28 +531,6 @@
   </entry>
   
   <entry>
-    <title>穷查理宝典_书摘</title>
-    <link href="http://taowusheng.cn/2019/11/13/20191113%20%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8_%E4%B9%A6%E6%91%98/"/>
-    <id>http://taowusheng.cn/2019/11/13/20191113 穷查理宝典_书摘/</id>
-    <published>2019-11-12T16:00:01.000Z</published>
-    <updated>2019-12-28T07:34:21.117Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;查理芒格的智慧箴言录。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
-    
-      <category term="查理芒格" scheme="http://taowusheng.cn/tags/%E6%9F%A5%E7%90%86%E8%8A%92%E6%A0%BC/"/>
-    
-  </entry>
-  
-  <entry>
     <title>python爬虫入门_在百度搜索手机归属地</title>
     <link href="http://taowusheng.cn/2019/11/13/20191113%20python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8_%E5%9C%A8%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E6%89%8B%E6%9C%BA%E5%BD%92%E5%B1%9E%E5%9C%B0/"/>
     <id>http://taowusheng.cn/2019/11/13/20191113 python爬虫入门_在百度搜索手机归属地/</id>
@@ -571,6 +549,28 @@
       <category term="Python" scheme="http://taowusheng.cn/tags/Python/"/>
     
       <category term="爬虫" scheme="http://taowusheng.cn/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>穷查理宝典_书摘</title>
+    <link href="http://taowusheng.cn/2019/11/13/20191113%20%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8_%E4%B9%A6%E6%91%98/"/>
+    <id>http://taowusheng.cn/2019/11/13/20191113 穷查理宝典_书摘/</id>
+    <published>2019-11-12T16:00:01.000Z</published>
+    <updated>2019-12-28T07:34:21.117Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;查理芒格的智慧箴言录。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+      <category term="查理芒格" scheme="http://taowusheng.cn/tags/%E6%9F%A5%E7%90%86%E8%8A%92%E6%A0%BC/"/>
     
   </entry>
   
@@ -1409,36 +1409,6 @@
   </entry>
   
   <entry>
-    <title>我是一只IT小小鸟_书摘</title>
-    <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
-    <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
-    <published>2019-04-15T16:00:01.000Z</published>
-    <updated>2019-05-31T13:38:43.436Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我是从暗时间里看到的这本书。算是一本比较贴近生活的书，书中每个作者的经历能给我们带来一些参考。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
-    
-      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
-    
-      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
-    
-      <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
-    
-      <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
-    
-  </entry>
-  
-  <entry>
     <title>暗时间_读书笔记</title>
     <link href="http://taowusheng.cn/2019/04/16/20190416%20%E6%9A%97%E6%97%B6%E9%97%B4_%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2019/04/16/20190416 暗时间_笔记/</id>
@@ -1467,6 +1437,36 @@
       <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
       <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我是一只IT小小鸟_书摘</title>
+    <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
+    <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
+    <published>2019-04-15T16:00:01.000Z</published>
+    <updated>2019-05-31T13:38:43.436Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我是从暗时间里看到的这本书。算是一本比较贴近生活的书，书中每个作者的经历能给我们带来一些参考。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
+    
+      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    
+      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    
+      <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
+    
+      <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
     
   </entry>
   
@@ -1814,9 +1814,9 @@
       <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
-      <category term="thought" scheme="http://taowusheng.cn/tags/thought/"/>
-    
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="thought" scheme="http://taowusheng.cn/tags/thought/"/>
     
       <category term="2018" scheme="http://taowusheng.cn/tags/2018/"/>
     
@@ -1977,9 +1977,9 @@
       <category term="Linux" scheme="http://taowusheng.cn/categories/Linux/"/>
     
     
-      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
-    
       <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
+    
+      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
       <category term="gdb" scheme="http://taowusheng.cn/tags/gdb/"/>
     
@@ -2025,13 +2025,13 @@
     
       <category term="notes" scheme="http://taowusheng.cn/tags/notes/"/>
     
-      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
-    
       <category term="git" scheme="http://taowusheng.cn/tags/git/"/>
     
       <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
     
       <category term="github" scheme="http://taowusheng.cn/tags/github/"/>
+    
+      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
   </entry>
   
@@ -2200,15 +2200,15 @@
       <category term="Cryptography" scheme="http://taowusheng.cn/categories/Cryptography/"/>
     
     
+      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
+    
       <category term="SSL" scheme="http://taowusheng.cn/tags/SSL/"/>
     
       <category term="公钥" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5/"/>
     
       <category term="私钥" scheme="http://taowusheng.cn/tags/%E7%A7%81%E9%92%A5/"/>
-    
-      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
-    
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -2230,8 +2230,6 @@
     
       <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
-    
       <category term="密码体制" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6/"/>
     
       <category term="公钥密码" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81/"/>
@@ -2243,6 +2241,8 @@
       <category term="DES" scheme="http://taowusheng.cn/tags/DES/"/>
     
       <category term="SHA" scheme="http://taowusheng.cn/tags/SHA/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -2610,11 +2610,11 @@
       <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
-      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
-    
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
@@ -2660,9 +2660,9 @@
       <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
     
-      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
-    
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
       <category term="最短路径算法" scheme="http://taowusheng.cn/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95/"/>
     
