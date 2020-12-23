@@ -46,6 +46,30 @@
   </entry>
   
   <entry>
+    <title>gdb和qemu调试Linux内核</title>
+    <link href="http://taowusheng.cn/2020/12/23/20201223%20gdb%E5%92%8Cqemu%E8%B0%83%E8%AF%95%E5%86%85%E6%A0%B8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <id>http://taowusheng.cn/2020/12/23/20201223 gdb和qemu调试内核环境配置/</id>
+    <published>2020-12-22T16:00:01.000Z</published>
+    <updated>2020-12-23T08:17:22.721Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前学习了利用&lt;a href=&quot;http://taowusheng.cn/2020/03/30/20200330%20%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95Linux%E5%86%85%E6%A0%B8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/&quot;&gt;KGDB双机调试内核&lt;/a&gt;,这种方式需要在两个主机上，通过串口线进行连接，或者是通过VMware开启两个虚拟机进行调试，对机器要求相对高一些。通过qemu创建虚拟机，然后利用gdb进行调试相对更轻量级一点。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux_Kernel" scheme="http://taowusheng.cn/categories/Linux-Kernel/"/>
+    
+    
+      <category term="gdb" scheme="http://taowusheng.cn/tags/gdb/"/>
+    
+      <category term="Linux_Kernel" scheme="http://taowusheng.cn/tags/Linux-Kernel/"/>
+    
+      <category term="qemu" scheme="http://taowusheng.cn/tags/qemu/"/>
+    
+  </entry>
+  
+  <entry>
     <title>大多数人在一生中都明白太晚的20件事</title>
     <link href="http://taowusheng.cn/2020/11/12/20201112%20%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%E5%9C%A8%E4%B8%80%E7%94%9F%E4%B8%AD%E9%83%BD%E6%98%8E%E7%99%BD%E5%A4%AA%E6%99%9A%E7%9A%8420%E4%BB%B6%E4%BA%8B/"/>
     <id>http://taowusheng.cn/2020/11/12/20201112 大多数人在一生中都明白太晚的20件事/</id>
@@ -290,11 +314,11 @@
   </entry>
   
   <entry>
-    <title>双机调试Linux内核环境配置</title>
-    <link href="http://taowusheng.cn/2020/03/30/20200330%20%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95Linux%E5%86%85%E6%A0%B8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-    <id>http://taowusheng.cn/2020/03/30/20200330 双机调试Linux内核环境配置/</id>
+    <title>双机调试Linux内核</title>
+    <link href="http://taowusheng.cn/2020/03/30/20200330%20%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95Linux%E5%86%85%E6%A0%B8/"/>
+    <id>http://taowusheng.cn/2020/03/30/20200330 双机调试Linux内核/</id>
     <published>2020-03-29T16:00:01.000Z</published>
-    <updated>2020-12-23T04:37:06.114Z</updated>
+    <updated>2020-12-23T08:13:47.746Z</updated>
     
     <summary type="html">
     
@@ -1409,6 +1433,36 @@
   </entry>
   
   <entry>
+    <title>我是一只IT小小鸟_书摘</title>
+    <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
+    <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
+    <published>2019-04-15T16:00:01.000Z</published>
+    <updated>2019-05-31T13:38:43.436Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我是从暗时间里看到的这本书。算是一本比较贴近生活的书，书中每个作者的经历能给我们带来一些参考。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
+    
+      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    
+      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    
+      <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
+    
+      <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>暗时间_读书笔记</title>
     <link href="http://taowusheng.cn/2019/04/16/20190416%20%E6%9A%97%E6%97%B6%E9%97%B4_%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2019/04/16/20190416 暗时间_笔记/</id>
@@ -1437,36 +1491,6 @@
       <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
       <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我是一只IT小小鸟_书摘</title>
-    <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
-    <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
-    <published>2019-04-15T16:00:01.000Z</published>
-    <updated>2019-05-31T13:38:43.436Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我是从暗时间里看到的这本书。算是一本比较贴近生活的书，书中每个作者的经历能给我们带来一些参考。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
-    
-      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
-    
-      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
-    
-      <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
-    
-      <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
     
   </entry>
   
@@ -1814,9 +1838,9 @@
       <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
-      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
       <category term="thought" scheme="http://taowusheng.cn/tags/thought/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
       <category term="2018" scheme="http://taowusheng.cn/tags/2018/"/>
     
@@ -1977,9 +2001,9 @@
       <category term="Linux" scheme="http://taowusheng.cn/categories/Linux/"/>
     
     
-      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
-    
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
+    
+      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
     
       <category term="gdb" scheme="http://taowusheng.cn/tags/gdb/"/>
     
@@ -2025,13 +2049,13 @@
     
       <category term="notes" scheme="http://taowusheng.cn/tags/notes/"/>
     
+      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
+    
       <category term="git" scheme="http://taowusheng.cn/tags/git/"/>
     
       <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
     
       <category term="github" scheme="http://taowusheng.cn/tags/github/"/>
-    
-      <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
   </entry>
   
@@ -2610,11 +2634,11 @@
       <category term="Thought" scheme="http://taowusheng.cn/categories/Thought/"/>
     
     
+      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
+    
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="思考" scheme="http://taowusheng.cn/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
@@ -2719,28 +2743,6 @@
   </entry>
   
   <entry>
-    <title>ACM六个月总结</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-04-16T11:21:05.138Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
-    
-    </summary>
-    
-      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
-    
-    
-      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
-    
-      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
     <title>2016年11月读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
@@ -2784,6 +2786,28 @@
       <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
     
       <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ACM六个月总结</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-04-16T11:21:05.138Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
+    
+    </summary>
+    
+      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
