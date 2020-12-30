@@ -35,14 +35,14 @@ ga('send', 'pageview');
 <meta name="keywords" content="Summary,操作系统">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基础知识_操作系统">
-<meta property="og:url" content="http://taowusheng.cn/2019/03/20/20190320 基础知识_操作系统/index.html">
+<meta property="og:url" content="http://taowusheng.cn/2020/08/04/20200804 基础知识_操作系统/index.html">
 <meta property="og:site_name" content="YIFEI">
 <meta property="og:description" content="操作系统基础知识与常见题目。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190320%20fork.jpg">
 <meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190320%20cow_fork.jpg">
 <meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190320%20vfork.jpg">
-<meta property="og:updated_time" content="2020-11-09T07:33:42.067Z">
+<meta property="og:updated_time" content="2020-12-30T05:28:37.263Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基础知识_操作系统">
 <meta name="twitter:description" content="操作系统基础知识与常见题目。">
@@ -113,10 +113,10 @@ ga('send', 'pageview');
 
 </header>
       <div class="outer">
-        <section id="main"><article id="post-20190320 基础知识_操作系统" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-20200804 基础知识_操作系统" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/03/20/20190320 基础知识_操作系统/" class="article-date">
-  <time datetime="2019-03-19T16:00:01.000Z" itemprop="datePublished">2019-03-20</time>
+    <a href="/2020/08/04/20200804 基础知识_操作系统/" class="article-date">
+  <time datetime="2020-08-03T16:00:01.000Z" itemprop="datePublished">2020-08-04</time>
 </a>
     
   <div class="article-category">
@@ -155,7 +155,11 @@ ga('send', 'pageview');
 <li>进程的内存布局是分代码段、数据段、堆区、MMAP段、栈区，而线程栈在堆区和栈区中间的MMAP段。</li>
 <li>另外线程使用的结构体跟进程相同，都是task_struct,线程可以共享进程的堆数据、文件描述符等各种资源。</li>
 <li>一个进程中可以有多个线程。</li>
-<li>进程与线程的关系可以看成下面这样：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">o |======</span><br><span class="line">  |======</span><br><span class="line">  |------</span><br></pre></td></tr></table></figure>
+<li><p>进程与线程的关系可以看成下面这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">o |======</span><br><span class="line">  |======</span><br><span class="line">  |------</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>举例说明两者的区别</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">一个进程可以类比成一个车间，多进程就是多个车间。</span><br><span class="line">每个线程相当于车间内的一条生产，多线程就是一个车间内有多条生产线。</span><br><span class="line"></span><br><span class="line">不同车间之间需要运送货物，可以人工搬运、传送带、货车等，</span><br><span class="line">相当于进程间管道、消息队列、共享内存等IPC通信。</span><br><span class="line"></span><br><span class="line">每个车间内有需要加工的材料，不同生产线都可以使用这些材料，</span><br><span class="line">相当于线程间可以共享进程的一些资源，比如堆区数据、文件描述符等，</span><br><span class="line">于是产生了资源争用，需要一些同步互斥的手段。</span><br><span class="line"></span><br><span class="line">这个工厂内只有一个工人，就相当于CPU，他可以选择去不同的生产线去工作，</span><br><span class="line">在不同的生产线之间切换，就相当于cpu的时间片轮转。</span><br><span class="line"></span><br><span class="line">工人每次只能在一条生产线工作，代表对于内核来说，只有线程的概念，而没有进程的概念。</span><br><span class="line"></span><br><span class="line">在不同生产线之间切换是相对容易的，不同车间之间的切换是比较麻烦的。</span><br><span class="line"></span><br><span class="line">一个车间发生了事故，另一个车间一般还能继续工作。</span><br><span class="line">而一条生产线发生事故，其他生产线可能就会受影响。</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h4 id="进程间通讯有哪些"><a href="#进程间通讯有哪些" class="headerlink" title="进程间通讯有哪些"></a>进程间通讯有哪些</h4><p>1.管道</p>
@@ -297,11 +301,11 @@ Network Qt Trusted_Computing
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://taowusheng.cn/2019/03/20/20190320 基础知识_操作系统/" data-id="ckj172qj60048k4bjbcio5t2k" class="article-share-link">Share</a>
+      <a data-url="http://taowusheng.cn/2020/08/04/20200804 基础知识_操作系统/" data-id="ckjb3bqi500a3igbjlqbrq6um" class="article-share-link">Share</a>
       
       
-        <a href="/2019/03/20/20190320 基础知识_操作系统/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2019/03/20/20190320 基础知识_操作系统/" itemprop="commentCount"></span>
+        <a href="/2020/08/04/20200804 基础知识_操作系统/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2020/08/04/20200804 基础知识_操作系统/" itemprop="commentCount"></span>
           Comments
         </a>
       
@@ -314,19 +318,19 @@ Network Qt Trusted_Computing
     
 <nav id="article-nav">
   
-    <a href="/2019/03/20/20190321 基础知识_网络/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/09/20/20200920 redis常用命令/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          基础知识_网络
+          redis的安装和常用命令
         
       </div>
     </a>
   
   
-    <a href="/2019/03/19/20190317 可信计算常用术语整理/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/08/03/20200803 基础知识_网络/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">可信计算常用术语整理</div>
+      <div class="article-nav-title">基础知识_网络</div>
     </a>
   
 </nav>
@@ -366,7 +370,7 @@ Network Qt Trusted_Computing
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2029/11/">November 2029</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2029/11/">November 2029</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 

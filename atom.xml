@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://taowusheng.cn/"/>
-  <updated>2020-03-10T13:26:13.457Z</updated>
+  <updated>2020-12-27T09:47:26.364Z</updated>
   <id>http://taowusheng.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://taowusheng.cn/2029/11/11/20291111%20%E5%9D%9A%E6%8C%81%E9%98%85%E8%AF%BB/"/>
     <id>http://taowusheng.cn/2029/11/11/20291111 坚持阅读/</id>
     <published>2029-11-10T16:00:01.000Z</published>
-    <updated>2020-03-10T13:26:13.457Z</updated>
+    <updated>2020-12-27T09:47:26.364Z</updated>
     
     <summary type="html">
     
@@ -50,7 +50,7 @@
     <link href="http://taowusheng.cn/2020/12/23/20201223%20gdb%E5%92%8Cqemu%E8%B0%83%E8%AF%95%E5%86%85%E6%A0%B8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     <id>http://taowusheng.cn/2020/12/23/20201223 gdb和qemu调试内核环境配置/</id>
     <published>2020-12-22T16:00:01.000Z</published>
-    <updated>2020-12-23T08:21:45.744Z</updated>
+    <updated>2020-12-26T05:27:45.644Z</updated>
     
     <summary type="html">
     
@@ -134,6 +134,72 @@
       <category term="Middleware" scheme="http://taowusheng.cn/tags/Middleware/"/>
     
       <category term="redis" scheme="http://taowusheng.cn/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础知识_操作系统</title>
+    <link href="http://taowusheng.cn/2020/08/04/20200804%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://taowusheng.cn/2020/08/04/20200804 基础知识_操作系统/</id>
+    <published>2020-08-03T16:00:01.000Z</published>
+    <updated>2020-12-30T05:28:37.263Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;操作系统基础知识与常见题目。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
+    
+    
+      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
+    
+      <category term="操作系统" scheme="http://taowusheng.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础知识_网络</title>
+    <link href="http://taowusheng.cn/2020/08/03/20200803%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E7%BD%91%E7%BB%9C/"/>
+    <id>http://taowusheng.cn/2020/08/03/20200803 基础知识_网络/</id>
+    <published>2020-08-02T16:00:01.000Z</published>
+    <updated>2020-12-30T04:57:48.237Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;计算机网络基础知识与常见题目。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
+    
+    
+      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
+    
+      <category term="计算机网络" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础知识_Cpp</title>
+    <link href="http://taowusheng.cn/2020/08/02/20200802%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_Cpp/"/>
+    <id>http://taowusheng.cn/2020/08/02/20200802 基础知识_Cpp/</id>
+    <published>2020-08-01T16:00:01.000Z</published>
+    <updated>2020-12-30T04:57:54.949Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Cpp基础知识与常见问题。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
+    
+    
+      <category term="Cpp" scheme="http://taowusheng.cn/tags/Cpp/"/>
+    
+      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
     
   </entry>
   
@@ -388,7 +454,7 @@
     <link href="http://taowusheng.cn/2020/01/06/20200106%20%E5%88%A9%E7%94%A8ICMPv4%E5%8D%8F%E8%AE%AE%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAping%E7%A8%8B%E5%BA%8F/"/>
     <id>http://taowusheng.cn/2020/01/06/20200106 利用ICMPv4协议实现一个ping程序/</id>
     <published>2020-01-05T16:00:01.000Z</published>
-    <updated>2020-01-20T01:52:54.560Z</updated>
+    <updated>2020-12-27T07:26:16.849Z</updated>
     
     <summary type="html">
     
@@ -555,28 +621,6 @@
   </entry>
   
   <entry>
-    <title>穷查理宝典_书摘</title>
-    <link href="http://taowusheng.cn/2019/11/13/20191113%20%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8_%E4%B9%A6%E6%91%98/"/>
-    <id>http://taowusheng.cn/2019/11/13/20191113 穷查理宝典_书摘/</id>
-    <published>2019-11-12T16:00:01.000Z</published>
-    <updated>2019-12-28T07:34:21.117Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;查理芒格的智慧箴言录。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
-    
-      <category term="查理芒格" scheme="http://taowusheng.cn/tags/%E6%9F%A5%E7%90%86%E8%8A%92%E6%A0%BC/"/>
-    
-  </entry>
-  
-  <entry>
     <title>python爬虫入门_在百度搜索手机归属地</title>
     <link href="http://taowusheng.cn/2019/11/13/20191113%20python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8_%E5%9C%A8%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E6%89%8B%E6%9C%BA%E5%BD%92%E5%B1%9E%E5%9C%B0/"/>
     <id>http://taowusheng.cn/2019/11/13/20191113 python爬虫入门_在百度搜索手机归属地/</id>
@@ -595,6 +639,28 @@
       <category term="Python" scheme="http://taowusheng.cn/tags/Python/"/>
     
       <category term="爬虫" scheme="http://taowusheng.cn/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>穷查理宝典_书摘</title>
+    <link href="http://taowusheng.cn/2019/11/13/20191113%20%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8_%E4%B9%A6%E6%91%98/"/>
+    <id>http://taowusheng.cn/2019/11/13/20191113 穷查理宝典_书摘/</id>
+    <published>2019-11-12T16:00:01.000Z</published>
+    <updated>2019-12-28T07:34:21.117Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;查理芒格的智慧箴言录。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+      <category term="查理芒格" scheme="http://taowusheng.cn/tags/%E6%9F%A5%E7%90%86%E8%8A%92%E6%A0%BC/"/>
     
   </entry>
   
@@ -1230,9 +1296,9 @@
       <category term="System_Programming" scheme="http://taowusheng.cn/categories/System-Programming/"/>
     
     
-      <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
-    
       <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
+    
+      <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
     
       <category term="Network_Programming" scheme="http://taowusheng.cn/tags/Network-Programming/"/>
     
@@ -1254,11 +1320,11 @@
       <category term="System_Programming" scheme="http://taowusheng.cn/categories/System-Programming/"/>
     
     
-      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
-    
       <category term="System_Programming" scheme="http://taowusheng.cn/tags/System-Programming/"/>
     
       <category term="线程池" scheme="http://taowusheng.cn/tags/%E7%BA%BF%E7%A8%8B%E6%B1%A0/"/>
+    
+      <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -1280,9 +1346,9 @@
     
       <category term="网络编程" scheme="http://taowusheng.cn/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
-    
       <category term="系统编程" scheme="http://taowusheng.cn/tags/%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="源码阅读" scheme="http://taowusheng.cn/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"/>
     
       <category term="web服务器" scheme="http://taowusheng.cn/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
@@ -1433,6 +1499,36 @@
   </entry>
   
   <entry>
+    <title>我是一只IT小小鸟_书摘</title>
+    <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
+    <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
+    <published>2019-04-15T16:00:01.000Z</published>
+    <updated>2019-05-31T13:38:43.436Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我是从暗时间里看到的这本书。算是一本比较贴近生活的书，书中每个作者的经历能给我们带来一些参考。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
+    
+      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
+    
+      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    
+      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    
+      <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
+    
+      <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>暗时间_读书笔记</title>
     <link href="http://taowusheng.cn/2019/04/16/20190416%20%E6%9A%97%E6%97%B6%E9%97%B4_%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2019/04/16/20190416 暗时间_笔记/</id>
@@ -1461,36 +1557,6 @@
       <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
       <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我是一只IT小小鸟_书摘</title>
-    <link href="http://taowusheng.cn/2019/04/16/20190417%20%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F_%E4%B9%A6%E6%91%98/"/>
-    <id>http://taowusheng.cn/2019/04/16/20190417 我是一只IT小小鸟_书摘/</id>
-    <published>2019-04-15T16:00:01.000Z</published>
-    <updated>2019-05-31T13:38:43.436Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我是从暗时间里看到的这本书。算是一本比较贴近生活的书，书中每个作者的经历能给我们带来一些参考。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
-    
-      <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
-    
-      <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-      <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
-    
-      <category term="书摘" scheme="http://taowusheng.cn/tags/%E4%B9%A6%E6%91%98/"/>
-    
-      <category term="我是一只IT小小鸟" scheme="http://taowusheng.cn/tags/%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAIT%E5%B0%8F%E5%B0%8F%E9%B8%9F/"/>
     
   </entry>
   
@@ -1531,7 +1597,7 @@
     <link href="http://taowusheng.cn/2019/03/26/20190326%20unix%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5_7_%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E7%BC%96%E7%A8%8B/"/>
     <id>http://taowusheng.cn/2019/03/26/20190326 unix编程实践_7_事件驱动编程/</id>
     <published>2019-03-25T16:00:01.000Z</published>
-    <updated>2019-04-16T11:02:13.974Z</updated>
+    <updated>2020-12-29T08:25:47.750Z</updated>
     
     <summary type="html">
     
@@ -1551,72 +1617,6 @@
       <category term="事件驱动" scheme="http://taowusheng.cn/tags/%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8/"/>
     
       <category term="curses" scheme="http://taowusheng.cn/tags/curses/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基础知识_Cpp</title>
-    <link href="http://taowusheng.cn/2019/03/22/20190322%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_Cpp/"/>
-    <id>http://taowusheng.cn/2019/03/22/20190322 基础知识_Cpp/</id>
-    <published>2019-03-21T16:00:01.000Z</published>
-    <updated>2020-10-26T15:20:42.582Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Cpp基础知识与常见问题。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
-    
-    
-      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
-    
-      <category term="Cpp" scheme="http://taowusheng.cn/tags/Cpp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基础知识_网络</title>
-    <link href="http://taowusheng.cn/2019/03/20/20190321%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E7%BD%91%E7%BB%9C/"/>
-    <id>http://taowusheng.cn/2019/03/20/20190321 基础知识_网络/</id>
-    <published>2019-03-19T16:00:01.000Z</published>
-    <updated>2020-09-11T07:48:20.426Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;计算机网络基础知识与常见题目。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
-    
-    
-      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
-    
-      <category term="计算机网络" scheme="http://taowusheng.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基础知识_操作系统</title>
-    <link href="http://taowusheng.cn/2019/03/20/20190320%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    <id>http://taowusheng.cn/2019/03/20/20190320 基础知识_操作系统/</id>
-    <published>2019-03-19T16:00:01.000Z</published>
-    <updated>2020-11-09T07:33:42.067Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;操作系统基础知识与常见题目。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
-    
-    
-      <category term="Summary" scheme="http://taowusheng.cn/tags/Summary/"/>
-    
-      <category term="操作系统" scheme="http://taowusheng.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
@@ -2224,15 +2224,15 @@
       <category term="Cryptography" scheme="http://taowusheng.cn/categories/Cryptography/"/>
     
     
-      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
-    
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
-    
       <category term="SSL" scheme="http://taowusheng.cn/tags/SSL/"/>
     
       <category term="公钥" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5/"/>
     
       <category term="私钥" scheme="http://taowusheng.cn/tags/%E7%A7%81%E9%92%A5/"/>
+    
+      <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -2254,6 +2254,8 @@
     
       <category term="密码学" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
+      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
+    
       <category term="密码体制" scheme="http://taowusheng.cn/tags/%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6/"/>
     
       <category term="公钥密码" scheme="http://taowusheng.cn/tags/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81/"/>
@@ -2265,8 +2267,6 @@
       <category term="DES" scheme="http://taowusheng.cn/tags/DES/"/>
     
       <category term="SHA" scheme="http://taowusheng.cn/tags/SHA/"/>
-    
-      <category term="cryptography" scheme="http://taowusheng.cn/tags/cryptography/"/>
     
   </entry>
   
@@ -2743,6 +2743,28 @@
   </entry>
   
   <entry>
+    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-10-11T14:14:01.368Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2016年11月读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
@@ -2786,28 +2808,6 @@
       <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-10-11T14:14:01.368Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
-    
-      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
