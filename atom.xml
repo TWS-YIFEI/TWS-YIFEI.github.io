@@ -46,11 +46,31 @@
   </entry>
   
   <entry>
+    <title>2020年终总结</title>
+    <link href="http://taowusheng.cn/2020/12/31/20201231%202020%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2020/12/31/20201231 2020年终总结/</id>
+    <published>2020-12-30T16:00:01.000Z</published>
+    <updated>2021-01-08T12:48:11.759Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;回看年初的计划，好像大部分都没有完成。
+    
+    </summary>
+    
+      <category term="Summary" scheme="http://taowusheng.cn/categories/Summary/"/>
+    
+    
+      <category term="年终总结" scheme="http://taowusheng.cn/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>秋招总结</title>
     <link href="http://taowusheng.cn/2020/12/27/20201227%20%E7%A7%8B%E6%8B%9B%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2020/12/27/20201227 秋招总结/</id>
     <published>2020-12-26T16:00:01.000Z</published>
-    <updated>2020-12-30T10:11:06.593Z</updated>
+    <updated>2020-12-30T10:15:10.659Z</updated>
     
     <summary type="html">
     
@@ -1175,15 +1195,15 @@
   </entry>
   
   <entry>
-    <title>python3_高级特性</title>
-    <link href="http://taowusheng.cn/2019/07/16/20190725%20python3_%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"/>
-    <id>http://taowusheng.cn/2019/07/16/20190725 python3_高级特性/</id>
+    <title>python3_基础</title>
+    <link href="http://taowusheng.cn/2019/07/16/20190716%20python3_%E5%9F%BA%E7%A1%80/"/>
+    <id>http://taowusheng.cn/2019/07/16/20190716 python3_基础/</id>
     <published>2019-07-15T16:00:01.000Z</published>
-    <updated>2019-12-28T07:27:34.708Z</updated>
+    <updated>2019-07-26T04:37:26.055Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;切片|迭代|列表生成式|生成器|迭代器。&lt;br&gt;
+      &lt;p&gt;用一个程序来记录python的基础语法与常用操作。&lt;br&gt;
     
     </summary>
     
@@ -1195,15 +1215,15 @@
   </entry>
   
   <entry>
-    <title>python3_基础</title>
-    <link href="http://taowusheng.cn/2019/07/16/20190716%20python3_%E5%9F%BA%E7%A1%80/"/>
-    <id>http://taowusheng.cn/2019/07/16/20190716 python3_基础/</id>
+    <title>python3_高级特性</title>
+    <link href="http://taowusheng.cn/2019/07/16/20190725%20python3_%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"/>
+    <id>http://taowusheng.cn/2019/07/16/20190725 python3_高级特性/</id>
     <published>2019-07-15T16:00:01.000Z</published>
-    <updated>2019-07-26T04:37:26.055Z</updated>
+    <updated>2019-12-28T07:27:34.708Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;用一个程序来记录python的基础语法与常用操作。&lt;br&gt;
+      &lt;p&gt;切片|迭代|列表生成式|生成器|迭代器。&lt;br&gt;
     
     </summary>
     
@@ -1750,11 +1770,11 @@
     
       <category term="面向对象" scheme="http://taowusheng.cn/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
+      <category term="cpp" scheme="http://taowusheng.cn/tags/cpp/"/>
+    
       <category term="面向过程" scheme="http://taowusheng.cn/tags/%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/"/>
     
       <category term="文本查询" scheme="http://taowusheng.cn/tags/%E6%96%87%E6%9C%AC%E6%9F%A5%E8%AF%A2/"/>
-    
-      <category term="cpp" scheme="http://taowusheng.cn/tags/cpp/"/>
     
   </entry>
   
@@ -2029,9 +2049,9 @@
     
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
-      <category term="gdb" scheme="http://taowusheng.cn/tags/gdb/"/>
-    
       <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
+    
+      <category term="gdb" scheme="http://taowusheng.cn/tags/gdb/"/>
     
   </entry>
   
@@ -2077,9 +2097,9 @@
     
       <category term="linux" scheme="http://taowusheng.cn/tags/linux/"/>
     
-      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
-    
       <category term="git" scheme="http://taowusheng.cn/tags/git/"/>
+    
+      <category term="tools" scheme="http://taowusheng.cn/tags/tools/"/>
     
       <category term="github" scheme="http://taowusheng.cn/tags/github/"/>
     
@@ -2769,6 +2789,50 @@
   </entry>
   
   <entry>
+    <title>ACM六个月总结</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-04-16T11:21:05.138Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
+    
+    </summary>
+    
+      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-10-11T14:14:01.368Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
+    
+    </summary>
+    
+      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
+    
+    
+      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2016年11月读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
@@ -2790,50 +2854,6 @@
       <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
       <category term="黑客与画家" scheme="http://taowusheng.cn/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《决定性瞬间--布列松谈摄影》读书笔记</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20%E3%80%8A%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4-%E5%B8%83%E5%88%97%E6%9D%BE%E8%B0%88%E6%91%84%E5%BD%B1%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 《决定性瞬间-布列松谈摄影》读书笔记/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-10-11T14:14:01.368Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://baike.baidu.com/link?url=Eac_ondM6dZdkWdDLEhxqSjdw8yG4tgndW0Vy4IaqGbryT9e-rODq3g2fK3e3zaXEA3UMBRxNmUoIazm5h3Q6q1wG_gY8Ro6_78pnIbaL7yirZN9p8XHPRztyjjWbeMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;布列松&lt;/a&gt;是一个影响了整个20世纪摄影历史的人物，被称为“现代新微摄影之父”，合伙创办了玛格兰图片社。
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://taowusheng.cn/categories/Reading/"/>
-    
-    
-      <category term="摄影" scheme="http://taowusheng.cn/tags/%E6%91%84%E5%BD%B1/"/>
-    
-      <category term="读书笔记" scheme="http://taowusheng.cn/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACM六个月总结</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-04-16T11:21:05.138Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
-    
-    </summary>
-    
-      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
-    
-    
-      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
-    
-      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
