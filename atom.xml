@@ -50,7 +50,7 @@
     <link href="http://taowusheng.cn/2020/12/31/20201231%202020%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2020/12/31/20201231 2020年终总结/</id>
     <published>2020-12-30T16:00:01.000Z</published>
-    <updated>2021-01-14T05:51:16.357Z</updated>
+    <updated>2021-03-03T05:37:52.426Z</updated>
     
     <summary type="html">
     
@@ -70,7 +70,7 @@
     <link href="http://taowusheng.cn/2020/12/27/20201227%20%E7%A7%8B%E6%8B%9B%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2020/12/27/20201227 秋招总结/</id>
     <published>2020-12-26T16:00:01.000Z</published>
-    <updated>2020-12-30T10:15:10.659Z</updated>
+    <updated>2021-03-03T05:32:31.178Z</updated>
     
     <summary type="html">
     
@@ -120,7 +120,7 @@
     <link href="http://taowusheng.cn/2020/11/12/20201112%20%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%E5%9C%A8%E4%B8%80%E7%94%9F%E4%B8%AD%E9%83%BD%E6%98%8E%E7%99%BD%E5%A4%AA%E6%99%9A%E7%9A%8420%E4%BB%B6%E4%BA%8B/"/>
     <id>http://taowusheng.cn/2020/11/12/20201112 大多数人在一生中都明白太晚的20件事/</id>
     <published>2020-11-11T16:00:01.000Z</published>
-    <updated>2020-12-18T14:01:28.605Z</updated>
+    <updated>2021-03-03T05:38:12.539Z</updated>
     
     <summary type="html">
     
@@ -188,7 +188,7 @@
     <link href="http://taowusheng.cn/2020/08/04/20200804%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     <id>http://taowusheng.cn/2020/08/04/20200804 基础知识_操作系统/</id>
     <published>2020-08-03T16:00:01.000Z</published>
-    <updated>2020-12-30T07:35:01.235Z</updated>
+    <updated>2021-03-03T05:38:58.615Z</updated>
     
     <summary type="html">
     
@@ -232,7 +232,7 @@
     <link href="http://taowusheng.cn/2020/08/02/20200802%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_Cpp/"/>
     <id>http://taowusheng.cn/2020/08/02/20200802 基础知识_Cpp/</id>
     <published>2020-08-01T16:00:01.000Z</published>
-    <updated>2020-12-30T10:03:08.475Z</updated>
+    <updated>2021-03-03T05:38:40.334Z</updated>
     
     <summary type="html">
     
@@ -328,7 +328,7 @@
     <link href="http://taowusheng.cn/2020/06/05/20200605%20%E7%BA%BF%E6%AE%B5%E6%A0%91%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2020/06/05/20200605 线段树笔记/</id>
     <published>2020-06-04T16:00:01.000Z</published>
-    <updated>2020-10-18T15:00:20.324Z</updated>
+    <updated>2021-03-03T05:40:50.559Z</updated>
     
     <summary type="html">
     
@@ -476,7 +476,7 @@
     <link href="http://taowusheng.cn/2020/03/05/20200305%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86_%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2020/03/05/20200305 基础知识_算法笔记/</id>
     <published>2020-03-04T16:00:01.000Z</published>
-    <updated>2020-12-18T08:57:50.935Z</updated>
+    <updated>2021-03-03T05:39:14.402Z</updated>
     
     <summary type="html">
     
@@ -500,7 +500,7 @@
     <link href="http://taowusheng.cn/2020/01/06/20200106%20%E5%88%A9%E7%94%A8ICMPv4%E5%8D%8F%E8%AE%AE%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAping%E7%A8%8B%E5%BA%8F/"/>
     <id>http://taowusheng.cn/2020/01/06/20200106 利用ICMPv4协议实现一个ping程序/</id>
     <published>2020-01-05T16:00:01.000Z</published>
-    <updated>2020-12-27T07:26:16.849Z</updated>
+    <updated>2021-03-03T05:39:28.400Z</updated>
     
     <summary type="html">
     
@@ -569,7 +569,7 @@
     <link href="http://taowusheng.cn/2019/12/29/20191229%202019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
     <id>http://taowusheng.cn/2019/12/29/20191229 2019年终总结/</id>
     <published>2019-12-28T16:00:01.000Z</published>
-    <updated>2020-11-01T12:55:53.516Z</updated>
+    <updated>2021-03-03T05:39:40.824Z</updated>
     
     <summary type="html">
     
@@ -667,28 +667,6 @@
   </entry>
   
   <entry>
-    <title>python爬虫入门_在百度搜索手机归属地</title>
-    <link href="http://taowusheng.cn/2019/11/13/20191113%20python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8_%E5%9C%A8%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E6%89%8B%E6%9C%BA%E5%BD%92%E5%B1%9E%E5%9C%B0/"/>
-    <id>http://taowusheng.cn/2019/11/13/20191113 python爬虫入门_在百度搜索手机归属地/</id>
-    <published>2019-11-12T16:00:01.000Z</published>
-    <updated>2019-12-28T07:27:34.708Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;枚举手机号，在百度搜索手机归属地&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Python" scheme="http://taowusheng.cn/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="http://taowusheng.cn/tags/Python/"/>
-    
-      <category term="爬虫" scheme="http://taowusheng.cn/tags/%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>穷查理宝典_书摘</title>
     <link href="http://taowusheng.cn/2019/11/13/20191113%20%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8_%E4%B9%A6%E6%91%98/"/>
     <id>http://taowusheng.cn/2019/11/13/20191113 穷查理宝典_书摘/</id>
@@ -707,6 +685,28 @@
       <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
     
       <category term="查理芒格" scheme="http://taowusheng.cn/tags/%E6%9F%A5%E7%90%86%E8%8A%92%E6%A0%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python爬虫入门_在百度搜索手机归属地</title>
+    <link href="http://taowusheng.cn/2019/11/13/20191113%20python%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8_%E5%9C%A8%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E6%89%8B%E6%9C%BA%E5%BD%92%E5%B1%9E%E5%9C%B0/"/>
+    <id>http://taowusheng.cn/2019/11/13/20191113 python爬虫入门_在百度搜索手机归属地/</id>
+    <published>2019-11-12T16:00:01.000Z</published>
+    <updated>2019-12-28T07:27:34.708Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;枚举手机号，在百度搜索手机归属地&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://taowusheng.cn/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://taowusheng.cn/tags/Python/"/>
+    
+      <category term="爬虫" scheme="http://taowusheng.cn/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
@@ -953,7 +953,7 @@
     <link href="http://taowusheng.cn/2019/09/11/20190911%20%E9%95%BF%E6%9C%9F%E6%8A%95%E8%B5%84%E5%85%A5%E9%97%A8%E8%AF%BE/"/>
     <id>http://taowusheng.cn/2019/09/11/20190911 长期投资入门课/</id>
     <published>2019-09-10T16:00:01.000Z</published>
-    <updated>2019-09-27T05:46:19.752Z</updated>
+    <updated>2021-03-03T05:40:04.542Z</updated>
     
     <summary type="html">
     
@@ -1195,15 +1195,15 @@
   </entry>
   
   <entry>
-    <title>python3_基础</title>
-    <link href="http://taowusheng.cn/2019/07/16/20190716%20python3_%E5%9F%BA%E7%A1%80/"/>
-    <id>http://taowusheng.cn/2019/07/16/20190716 python3_基础/</id>
+    <title>python3_高级特性</title>
+    <link href="http://taowusheng.cn/2019/07/16/20190725%20python3_%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"/>
+    <id>http://taowusheng.cn/2019/07/16/20190725 python3_高级特性/</id>
     <published>2019-07-15T16:00:01.000Z</published>
-    <updated>2019-07-26T04:37:26.055Z</updated>
+    <updated>2019-12-28T07:27:34.708Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;用一个程序来记录python的基础语法与常用操作。&lt;br&gt;
+      &lt;p&gt;切片|迭代|列表生成式|生成器|迭代器。&lt;br&gt;
     
     </summary>
     
@@ -1215,15 +1215,15 @@
   </entry>
   
   <entry>
-    <title>python3_高级特性</title>
-    <link href="http://taowusheng.cn/2019/07/16/20190725%20python3_%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"/>
-    <id>http://taowusheng.cn/2019/07/16/20190725 python3_高级特性/</id>
+    <title>python3_基础</title>
+    <link href="http://taowusheng.cn/2019/07/16/20190716%20python3_%E5%9F%BA%E7%A1%80/"/>
+    <id>http://taowusheng.cn/2019/07/16/20190716 python3_基础/</id>
     <published>2019-07-15T16:00:01.000Z</published>
-    <updated>2019-12-28T07:27:34.708Z</updated>
+    <updated>2019-07-26T04:37:26.055Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;切片|迭代|列表生成式|生成器|迭代器。&lt;br&gt;
+      &lt;p&gt;用一个程序来记录python的基础语法与常用操作。&lt;br&gt;
     
     </summary>
     
@@ -1592,17 +1592,17 @@
     
       <category term="reading" scheme="http://taowusheng.cn/tags/reading/"/>
     
-      <category term="暗时间" scheme="http://taowusheng.cn/tags/%E6%9A%97%E6%97%B6%E9%97%B4/"/>
-    
       <category term="刘未鹏" scheme="http://taowusheng.cn/tags/%E5%88%98%E6%9C%AA%E9%B9%8F/"/>
-    
-      <category term="心智" scheme="http://taowusheng.cn/tags/%E5%BF%83%E6%99%BA/"/>
-    
-      <category term="心理学" scheme="http://taowusheng.cn/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
       <category term="个人成长" scheme="http://taowusheng.cn/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
       <category term="程序员" scheme="http://taowusheng.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    
+      <category term="暗时间" scheme="http://taowusheng.cn/tags/%E6%9A%97%E6%97%B6%E9%97%B4/"/>
+    
+      <category term="心智" scheme="http://taowusheng.cn/tags/%E5%BF%83%E6%99%BA/"/>
+    
+      <category term="心理学" scheme="http://taowusheng.cn/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
   </entry>
   
@@ -1956,9 +1956,9 @@
       <category term="C_Cpp" scheme="http://taowusheng.cn/categories/C-Cpp/"/>
     
     
-      <category term="C" scheme="http://taowusheng.cn/tags/C/"/>
-    
       <category term="C++" scheme="http://taowusheng.cn/tags/C/"/>
+    
+      <category term="C" scheme="http://taowusheng.cn/tags/C/"/>
     
   </entry>
   
@@ -2612,9 +2612,9 @@
       <category term="SQL" scheme="http://taowusheng.cn/categories/SQL/"/>
     
     
-      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="SQL" scheme="http://taowusheng.cn/tags/SQL/"/>
+    
+      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -2656,11 +2656,11 @@
       <category term="JAVA" scheme="http://taowusheng.cn/categories/JAVA/"/>
     
     
+      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
       <category term="JAVA" scheme="http://taowusheng.cn/tags/JAVA/"/>
     
       <category term="jdbc" scheme="http://taowusheng.cn/tags/jdbc/"/>
-    
-      <category term="数据库" scheme="http://taowusheng.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -2730,9 +2730,9 @@
       <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
     
     
-      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
-    
       <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
+    
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
     
       <category term="最短路径算法" scheme="http://taowusheng.cn/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95/"/>
     
@@ -2789,6 +2789,28 @@
   </entry>
   
   <entry>
+    <title>ACM六个月总结</title>
+    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
+    <published>2016-12-02T16:00:01.000Z</published>
+    <updated>2019-04-16T11:21:05.138Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
+    
+    </summary>
+    
+      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
+    
+    
+      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
+    
+      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2016年11月读书笔记</title>
     <link href="http://taowusheng.cn/2016/12/03/20161204%202016%E5%B9%B411%E6%9C%88%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://taowusheng.cn/2016/12/03/20161204 2016年11月读书笔记/</id>
@@ -2810,28 +2832,6 @@
       <category term="挑战程序设计竞赛" scheme="http://taowusheng.cn/tags/%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B/"/>
     
       <category term="黑客与画家" scheme="http://taowusheng.cn/tags/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACM六个月总结</title>
-    <link href="http://taowusheng.cn/2016/12/03/20161203%20ACM%E5%85%AD%E4%B8%AA%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    <id>http://taowusheng.cn/2016/12/03/20161203 ACM六个月总结/</id>
-    <published>2016-12-02T16:00:01.000Z</published>
-    <updated>2019-04-16T11:21:05.138Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;  从正式开始做ACM到现在已经六个月了，打过两次比赛，一次是山东省省赛，还一次区域赛邀请赛，毫无意外，两次都是打铁。比赛总结也一直拖着没有写，但是这半年的acm确实给我带来很多思考，也该整理一下思绪了。先写两次比赛流水账。
-    
-    </summary>
-    
-      <category term="ACM_Algorithm" scheme="http://taowusheng.cn/categories/ACM-Algorithm/"/>
-    
-    
-      <category term="ACM" scheme="http://taowusheng.cn/tags/ACM/"/>
-    
-      <category term="总结" scheme="http://taowusheng.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
