@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'true', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89376999-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89376999-1');
+</script>
+
+
+
+  
+  <title>基础知识_Cpp | YIFEI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Cpp基础知识与常见问题。">
+<meta name="keywords" content="Cpp,Summary">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基础知识_Cpp">
+<meta property="og:url" content="http://taowusheng.cn/2020/08/02/20200802 基础知识_Cpp/index.html">
+<meta property="og:site_name" content="YIFEI">
+<meta property="og:description" content="Cpp基础知识与常见问题。">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://taowusheng.cn/images_/2021_picture/2021_coder_yifei.jpg">
+<meta property="og:updated_time" content="2022-10-28T15:11:58.398Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基础知识_Cpp">
+<meta name="twitter:description" content="Cpp基础知识与常见问题。">
+<meta name="twitter:image" content="http://taowusheng.cn/images_/2021_picture/2021_coder_yifei.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="/googleapis-fonts/fonts.css" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YIFEI</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">每当我找到生命的意义，它就又变了...</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/links">Links</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://taowusheng.cn"></form>
+      </div>
+    </div>
+  </div>
+	
+  <script>
+    
+    var number_of_banners = 8;
+    var randnum = Math.floor(Math.random() * number_of_banners + 1);
+    document.getElementById("banner").style.backgroundImage = "url(/css/images/banner" + randnum + ".jpg)";
+    
+</script>
+
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-20200802 基础知识_Cpp" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/02/20200802 基础知识_Cpp/" class="article-date">
+  <time datetime="2020-08-02T00:00:01.000Z" itemprop="datePublished">2020-08-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Summary/">Summary</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      基础知识_Cpp
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		<!-- Table of Contents -->
+		
+		  <div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#基础语法"><span class="toc-number">1.</span> <span class="toc-text">基础语法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#static关键字"><span class="toc-number">1.1.</span> <span class="toc-text">static关键字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#const关键字"><span class="toc-number">1.2.</span> <span class="toc-text">const关键字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#friend关键字"><span class="toc-number">1.3.</span> <span class="toc-text">friend关键字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mutable关键字"><span class="toc-number">1.4.</span> <span class="toc-text">mutable关键字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#assert关键字"><span class="toc-number">1.5.</span> <span class="toc-text">assert关键字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#using-namespace-std"><span class="toc-number">1.6.</span> <span class="toc-text">using namespace std</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#noncopyable禁止拷贝"><span class="toc-number">1.7.</span> <span class="toc-text">noncopyable禁止拷贝</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#C-amp-面向对象"><span class="toc-number">2.</span> <span class="toc-text">C++&amp;面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#RAII机制"><span class="toc-number">2.1.</span> <span class="toc-text">RAII机制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是虚函数，实现原理是什么？"><span class="toc-number">2.2.</span> <span class="toc-text">什么是虚函数，实现原理是什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#面向对象三大特性"><span class="toc-number">2.3.</span> <span class="toc-text">面向对象三大特性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#编译时多态是怎样的"><span class="toc-number">2.4.</span> <span class="toc-text">编译时多态是怎样的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#类成员的权限控制"><span class="toc-number">2.5.</span> <span class="toc-text">类成员的权限控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#struct和class的区别"><span class="toc-number">2.6.</span> <span class="toc-text">struct和class的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cpp中如何禁止一个类创建对象"><span class="toc-number">2.7.</span> <span class="toc-text">Cpp中如何禁止一个类创建对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何限制类只能在堆或栈上创建对象"><span class="toc-number">2.8.</span> <span class="toc-text">如何限制类只能在堆或栈上创建对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#带默认参数的构造函数"><span class="toc-number">2.9.</span> <span class="toc-text">带默认参数的构造函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cpp构造函数私有化"><span class="toc-number">2.10.</span> <span class="toc-text">Cpp构造函数私有化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#拷贝构造函数的调用时机"><span class="toc-number">2.11.</span> <span class="toc-text">拷贝构造函数的调用时机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#在一个有指针对象的类中至少要实现哪三个函数"><span class="toc-number">2.12.</span> <span class="toc-text">在一个有指针对象的类中至少要实现哪三个函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如果没有实现拷贝赋值运算符可能会遇到什么问题-深拷贝、浅拷贝"><span class="toc-number">2.13.</span> <span class="toc-text">如果没有实现拷贝赋值运算符可能会遇到什么问题(深拷贝、浅拷贝)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#指针和引用的区别"><span class="toc-number">2.14.</span> <span class="toc-text">指针和引用的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#volatile"><span class="toc-number">2.15.</span> <span class="toc-text">volatile</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#结构体内存对齐"><span class="toc-number">2.16.</span> <span class="toc-text">结构体内存对齐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#new和malloc的区别"><span class="toc-number">2.17.</span> <span class="toc-text">new和malloc的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ptrdiff-t"><span class="toc-number">2.18.</span> <span class="toc-text">ptrdiff_t</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#STL"><span class="toc-number">3.</span> <span class="toc-text">STL</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#讲一下类型萃取机制"><span class="toc-number">3.1.</span> <span class="toc-text">讲一下类型萃取机制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#STL中分别有哪些容器，底层实现是什么"><span class="toc-number">3.2.</span> <span class="toc-text">STL中分别有哪些容器，底层实现是什么</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sort函数怎么实现的"><span class="toc-number">3.3.</span> <span class="toc-text">sort函数怎么实现的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是仿函数"><span class="toc-number">3.4.</span> <span class="toc-text">什么是仿函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#哪些情况迭代器会失效"><span class="toc-number">3.5.</span> <span class="toc-text">哪些情况迭代器会失效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#vector使用时注意问题"><span class="toc-number">3.6.</span> <span class="toc-text">vector使用时注意问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#与at-区别"><span class="toc-number">3.7.</span> <span class="toc-text">[]与at()区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#vector扩容原理"><span class="toc-number">3.8.</span> <span class="toc-text">vector扩容原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#deque扩容原理"><span class="toc-number">3.9.</span> <span class="toc-text">deque扩容原理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#C-11"><span class="toc-number">4.</span> <span class="toc-text">C++11</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#std-move-语义原理"><span class="toc-number">4.1.</span> <span class="toc-text">std::move()语义原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#std-forward"><span class="toc-number">4.2.</span> <span class="toc-text">std::forward()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#四种智能指针"><span class="toc-number">4.3.</span> <span class="toc-text">四种智能指针</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#shared-ptr"><span class="toc-number">4.3.1.</span> <span class="toc-text">shared_ptr</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#weak-ptr"><span class="toc-number">4.3.2.</span> <span class="toc-text">weak_ptr</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#unique-ptr"><span class="toc-number">4.3.3.</span> <span class="toc-text">unique_ptr</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#auto-ptr-已遗弃"><span class="toc-number">4.3.4.</span> <span class="toc-text">auto_ptr(已遗弃)</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#实现一个shared-ptr智能指针"><span class="toc-number">4.4.</span> <span class="toc-text">实现一个shared_ptr智能指针</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#shared-ptr的线程安全性"><span class="toc-number">4.5.</span> <span class="toc-text">shared_ptr的线程安全性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#C-11的四种强制类型转换"><span class="toc-number">4.6.</span> <span class="toc-text">C++11的四种强制类型转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#列表初始化"><span class="toc-number">4.7.</span> <span class="toc-text">列表初始化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#decltype作用以及与auto区别。"><span class="toc-number">4.8.</span> <span class="toc-text">decltype作用以及与auto区别。</span></a></li></ol></li></ol>
+		  </div>
+		
+        <p>Cpp基础知识与常见问题。<br><a id="more"></a></p>
+<h3 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h3><h4 id="static关键字"><a href="#static关键字" class="headerlink" title="static关键字"></a>static关键字</h4><ul>
+<li>修饰全局变量，在堆区分配内存；默认初始化为零；限定作用域为当前文件。</li>
+<li><p>修饰局部变量时，在堆区分配内存；只有首次定义时被初始化，直到程序运行结束才释放；作用域为局部作用域。</p>
+</li>
+<li><p>修饰普通函数，不能修改任何非static对象；该函数的作用域为当前文件 。</p>
+</li>
+<li>修饰类内成员，堆区分配内存；程序运行时就被初始化，直到程序结束；成员归属于类，被所有对象共享；可以通过”类名::静态成员”或”对象.静态成员”访问</li>
+<li>修饰类内函数，只能访问类内静态成员或调用类内静态函数，但是普通函数可以访问静态成员和静态函数;可以通过类名调用或对象调用。</li>
+<li><a href="https://www.cnblogs.com/BeyondAnyTime/archive/2012/06/08/2542315.html" target="_blank" rel="noopener">C++中的static关键字的总结</a></li>
+</ul>
+<h4 id="const关键字"><a href="#const关键字" class="headerlink" title="const关键字"></a>const关键字</h4><ul>
+<li>特性：(1)被修饰的对象不是常量，是一个只读变量(不能放在case关键字后面也说明const不是一个常量);(2)定义时赋值，之后不允许修改。</li>
+<li>修饰普通变量</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> a;</span><br><span class="line">a还是一个<span class="keyword">int</span>型变量，<span class="keyword">const</span> <span class="keyword">int</span> 顺序可以互换：</span><br><span class="line"><span class="keyword">int</span> <span class="keyword">const</span> a;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修饰数组</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> a[<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> <span class="keyword">const</span> a[<span class="number">5</span>];</span><br><span class="line">只读数组</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修饰指针</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> *p;</span><br><span class="line"><span class="keyword">char</span> <span class="keyword">const</span> *p;<span class="comment">//这两种，const都是修饰*p,则p指向的变量只读。(与下一种对照记忆)</span></span><br><span class="line"><span class="keyword">char</span> * <span class="keyword">const</span> p;<span class="comment">//const很明显修饰指针p，则指针p不能被修改。</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> * <span class="keyword">const</span> p;<span class="comment">//指针p不能被修改，指向的对象也不能被修改。</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>修饰函数形参</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">apple</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *a)</span></span>&#123;<span class="comment">//防止修改a指向的字符串</span></span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">apple</span><span class="params">(<span class="keyword">char</span> * <span class="keyword">const</span> a)</span></span>&#123;<span class="comment">//防止修改a本身</span></span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">apple</span><span class="params">(<span class="keyword">const</span> <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;num)</span></span>&#123;<span class="comment">//防止修改容器内容</span></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修饰函数</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getSum</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123;<span class="comment">//修饰函数，表示该函数内不能修改变量</span></span><br><span class="line">    <span class="keyword">return</span> get_Name_sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="friend关键字"><a href="#friend关键字" class="headerlink" title="friend关键字"></a>friend关键字</h4><p>friend提供了在类外访问类的私有成员的能力，friend可以修饰函数或类。当在类内声明一个友元函数时，该函数可以访问类的私有成员。当在类内声明友元类时，则友元类可以访问当前类的私有成员。</p>
+<h4 id="mutable关键字"><a href="#mutable关键字" class="headerlink" title="mutable关键字"></a>mutable关键字</h4><p>如果需要在const成员方法中修改一个成员变量的值，那么需要将这个成员变量修饰为mutable。即用mutable修饰的成员变量不受const成员方法的限制。</p>
+<h4 id="assert关键字"><a href="#assert关键字" class="headerlink" title="assert关键字"></a>assert关键字</h4><p>assert是一个宏，用于在DEBUG版本下判断表达式的真假，如果表达式为假，它会先向stderr打印错误信息，然后调用abort终止程序运行。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"test assert:"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    assert(<span class="number">2</span>*<span class="number">2</span>==<span class="number">4</span>);</span><br><span class="line">    assert(<span class="number">2</span>*<span class="number">2</span>==<span class="number">5</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">test assert:</span></span><br><span class="line"><span class="comment">20200930_test: 20200930_test.cpp:10: int main(): Assertion 2*2==5 failed.</span></span><br><span class="line"><span class="comment">已放弃 (核心已转储)</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="using-namespace-std"><a href="#using-namespace-std" class="headerlink" title="using namespace std"></a>using namespace std</h4><p>1.在头文件中一定不要使用，否则在别人引用你的头文件后，如果std中的函数名和其他库中的冲突了，可能会带来麻烦。<br>2.在cpp文件中:</p>
+<pre><code>* 在&quot;一般情况下&quot;可以使用，但是注意一定要在所有include语句之后使用。
+* 可以在函数中使用，使其只在有限作用域内有效。
+* 不直接使用命名空间using namespace xxx，可以使用using std::cin;using std::cout;这种方式。
+* 也可以在需要的地方全部加上std:: 。
+</code></pre><h4 id="noncopyable禁止拷贝"><a href="#noncopyable禁止拷贝" class="headerlink" title="noncopyable禁止拷贝"></a>noncopyable禁止拷贝</h4><p>1.通用的做法是写一个类noncopyable，凡是继承该类的任何类都无法复制和赋值。</p>
+<ul>
+<li>将拷贝构造函数和拷贝赋值运算符设置为私有，这样继承nocopyable的类给对象赋值或拷贝构造时，会先调用父类nocopyable的函数，但是这两个函数是私有的，所以会引发编译错误。</li>
+<li>将noncopyable的构造函数和析构函数设置protected，这样该类无法创建对象，但是子类中可以调用。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">noncopyable</span> &#123;</span></span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">    noncopyable() = <span class="keyword">default</span>;</span><br><span class="line">    ~noncopyable() = <span class="keyword">default</span>;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    noncopyable(<span class="keyword">const</span> noncopyable&amp;) = <span class="keyword">delete</span>;</span><br><span class="line">    <span class="keyword">const</span> noncopyable&amp; <span class="keyword">operator</span>=( <span class="keyword">const</span> noncopyable&amp; ) = <span class="keyword">delete</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">StockFactory</span>:</span>noncopyable&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    StockFactory(<span class="keyword">double</span> _price):price(_price)&#123;&#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">double</span> price;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="function">StockFactory <span class="title">s1</span><span class="params">(<span class="number">10</span>)</span></span>;</span><br><span class="line">    <span class="comment">//StockFactory s2=s1;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.使用c++11标准的简单实现:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">noncopyalbe</span>&#123;</span></span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">    noncopyable()=<span class="keyword">default</span>;</span><br><span class="line">    ~noncopyable()=<span class="keyword">default</span>;</span><br><span class="line">    noncopyable(<span class="keyword">const</span> noncopyable &amp;)=<span class="keyword">delete</span>;</span><br><span class="line">    noncopyable &amp;<span class="keyword">operator</span>=(<span class="keyword">const</span> noncopyable &amp;)=<span class="keyword">delete</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3.google开源项目风格指南建议的做法是使用 DISALLOW_COPY_AND_ASSIGN 宏:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 禁止使用拷贝构造函数和 operator= 赋值操作的宏</span></span><br><span class="line"><span class="comment">// 应该类的 private: 中使用</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> DISALLOW_COPY_AND_ASSIGN(TypeName) \</span></span><br><span class="line">            TypeName(<span class="keyword">const</span> TypeName&amp;); \</span><br><span class="line">            <span class="keyword">void</span> <span class="keyword">operator</span>=(<span class="keyword">const</span> TypeName&amp;)</span><br><span class="line">在 class foo 中使用方式如下:</span><br><span class="line">class Foo &#123;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        Foo(<span class="keyword">int</span> f);</span><br><span class="line">        ~Foo();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        DISALLOW_COPY_AND_ASSIGN(Foo);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>绝大多数情况下都应使用 DISALLOW_COPY_AND_ASSIGN 宏。如果类确实需要可拷贝，应在该类的头文件中说明原由，并合理的定义拷贝构造函数和赋值操作。注意在 operator= 中检测自我赋值的情况。</p>
+<h3 id="C-amp-面向对象"><a href="#C-amp-面向对象" class="headerlink" title="C++&amp;面向对象"></a>C++&amp;面向对象</h3><h4 id="RAII机制"><a href="#RAII机制" class="headerlink" title="RAII机制"></a>RAII机制</h4><ul>
+<li>RAII(Resource Acquisition Is Initialization),翻译过来是资源获取即初始化。也就是说当创建一个对象的时候，就对其进行初始化，同样当不需要该对象时，也要对其资源进行释放。比如当调用new来申请空间时、调用open()打开文件时，都需要对应的delete、close来释放资源，但是往往就忘掉释放资源。所以可以利用类的构造函数和析构函数，将需要分配资源的对象进行一层封装，将其获取资源和释放资源分别绑定到构造函数和析构函数里，这样当该对象生命周期结束，就会自己释放资源。</li>
+<li>示例一：编程中可能出现以下情况，但是中间如果发生异常或者return了，就执行不了unlock()了。就会导致该资源一直被占用了。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">std</span>::mutex mutex_;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">function</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    mutex_.lock();</span><br><span class="line">    ......</span><br><span class="line">    ......</span><br><span class="line">    mutex_.unlock();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>所以正确的方式是使用std::unique_lock或者std::lock_guard对互斥量进行状态管理：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">std</span>::mutex mutex_;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">function</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">std</span>::lock_guard&lt;<span class="built_in">std</span>::mutex&gt; lock(mutex_);</span><br><span class="line">    ......</span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这样只管创建一个lock对象就可以，lock生命周期结束时会自动对mutex_解锁。</p>
+<ul>
+<li>参考：<a href="https://www.cnblogs.com/jiangbin/p/6986511.html" target="_blank" rel="noopener">https://www.cnblogs.com/jiangbin/p/6986511.html</a></li>
+</ul>
+<h4 id="什么是虚函数，实现原理是什么？"><a href="#什么是虚函数，实现原理是什么？" class="headerlink" title="什么是虚函数，实现原理是什么？"></a>什么是虚函数，实现原理是什么？</h4><p>虚函数是实现运行时多态的一种机制，比如两个父类指针分别指向子类A和子类B的实例，父类指针调用虚函数时，会根据不同的子类来调用不同的函数。<br>当类中声明虚函数之后，编译器会在类的开始位置设置一个指针，来指向一个虚函数列表，当子类继承父类时，会一块继承这个指针，如果子类对父类中的虚函数进行了重写，就会用新函数的地址覆盖虚函数表中的旧函数。<br><a href="http://taowusheng.cn/2019/05/18/20190518%20C++%E8%99%9A%E5%87%BD%E6%95%B0%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E7%82%B9/">http://taowusheng.cn/2019/05/18/20190518%20C++%E8%99%9A%E5%87%BD%E6%95%B0%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E7%82%B9/</a></p>
+<h4 id="面向对象三大特性"><a href="#面向对象三大特性" class="headerlink" title="面向对象三大特性"></a>面向对象三大特性</h4><ul>
+<li>封装。通过设置资源的权限，来实现信息隐藏，提高安全性。一般讲数据设置私有，只提供公开接口来访问资源。</li>
+<li>继承。对事物进行抽象，将通用的特征放到基类，根据不同事物的分化，实现不同的子类。</li>
+<li>多态。分为编译时多态和运行时多态。编译时多态通过模板和函数重载实现，运行时多态通过虚函数实现。</li>
+</ul>
+<h4 id="编译时多态是怎样的"><a href="#编译时多态是怎样的" class="headerlink" title="编译时多态是怎样的"></a>编译时多态是怎样的</h4><ul>
+<li><p>第一种通过模板实现。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dog</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">sound</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"汪汪"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">sound</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"喵喵"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">animalSound</span><span class="params">(T t)</span></span>&#123;</span><br><span class="line">    t.sound();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//===================</span></span><br><span class="line">Dog d;</span><br><span class="line">Cat c;</span><br><span class="line">animalSound(d);</span><br><span class="line">animalSound(c);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第二种重载。函数名相同，参数不同。</p>
+</li>
+</ul>
+<h4 id="类成员的权限控制"><a href="#类成员的权限控制" class="headerlink" title="类成员的权限控制"></a>类成员的权限控制</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">　访问权限　</th>
+<th style="text-align:center">　类内　</th>
+<th style="text-align:center">　子类　</th>
+<th style="text-align:center">　类外　</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">public</td>
+<td style="text-align:center">✔</td>
+<td style="text-align:center">✔</td>
+<td style="text-align:center">✔</td>
+</tr>
+<tr>
+<td style="text-align:center">protect</td>
+<td style="text-align:center">✔</td>
+<td style="text-align:center">✔</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">private</td>
+<td style="text-align:center">✔</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="struct和class的区别"><a href="#struct和class的区别" class="headerlink" title="struct和class的区别"></a>struct和class的区别</h4><ul>
+<li>struct默认的访问权限和继承权限是public，class默认的访问权限和继承权限是private。</li>
+</ul>
+<h4 id="Cpp中如何禁止一个类创建对象"><a href="#Cpp中如何禁止一个类创建对象" class="headerlink" title="Cpp中如何禁止一个类创建对象"></a>Cpp中如何禁止一个类创建对象</h4><p>1.将构造函数设置为protected或private。<br>2.在类内声明纯虚函数。</p>
+<h4 id="如何限制类只能在堆或栈上创建对象"><a href="#如何限制类只能在堆或栈上创建对象" class="headerlink" title="如何限制类只能在堆或栈上创建对象"></a>如何限制类只能在堆或栈上创建对象</h4><p>1.编译器在为类对象分配栈空间时，会先检查类的析构函数的访问性，其实不光是析构函数，只要是非静态的函数，编译器都会进行检查。如果类的析构函数是私有的，则编译器不会在栈空间上为类对象分配内存。因此，<strong>将析构函数设为私有，类对象就无法建立在栈上了。</strong><br>缺点：(1).无法解决继承问题。如果A作为其它类的基类，则析构函数通常要设为virtual，然后在子类重写，以实现多态。因此析构函数不能设为private。还好C++提供了第三种访问控制，protected。将析构函数设为protected可以有效解决这个问题，类外无法访问protected成员，子类则可以访问。(2).类的使用很不方便，使用new建立对象，却使用destory函数释放对象，而不是使用delete。（使用delete会报错，因为delete对象的指针，会调用对象的析构函数，而析构函数类外不可访问）这种使用方式比较怪异。(3)为了统一，<strong>可以将构造函数设为protected，然后提供一个public的static函数来完成构造</strong>，这样不使用new，而是使用一个自定义函数来构造，使用一个自定义函数来析构。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span>&#123;</span></span><br><span class="line"><span class="keyword">protected</span>:  </span><br><span class="line">    A()&#123;&#125;  </span><br><span class="line">    ~A()&#123;&#125;  </span><br><span class="line"><span class="keyword">public</span>:  </span><br><span class="line">    <span class="function"><span class="keyword">static</span> A* <span class="title">create</span><span class="params">()</span></span>&#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> A();  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">destory</span><span class="params">()</span></span>&#123;  </span><br><span class="line">        <span class="keyword">delete</span> <span class="keyword">this</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>2.只有使用new运算符，对象才会建立在堆上，因此，只要<strong>禁用new运算符</strong>就可以实现类对象只能建立在栈上。虽然你不能影响new operator的能力（因为那是C++语言内建的），但是你可以利用一个事实：new operator 总是先调用 operator new,而后者我们是可以自行声明重写的。因此，将operator new()设为私有即可禁止对象被new在堆上。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span>&#123;</span>  </span><br><span class="line"><span class="keyword">private</span>:  </span><br><span class="line">    <span class="function"><span class="keyword">void</span>* <span class="keyword">operator</span> <span class="title">new</span><span class="params">(<span class="keyword">size_t</span> t)</span></span>&#123;&#125;     <span class="comment">// 注意函数的第一个参数和返回值都是固定的  </span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="keyword">operator</span> <span class="title">delete</span><span class="params">(<span class="keyword">void</span>* ptr)</span></span>&#123;&#125; <span class="comment">// 重载了new就需要重载delete  </span></span><br><span class="line"><span class="keyword">public</span>:  </span><br><span class="line">    A()&#123;&#125;  </span><br><span class="line">    ~A()&#123;&#125;  </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h4 id="带默认参数的构造函数"><a href="#带默认参数的构造函数" class="headerlink" title="带默认参数的构造函数"></a>带默认参数的构造函数</h4><ul>
+<li>如果不写构造函数，会有一个默认的无参构造。如果写了带参构造，编译器就不会创建无参构造了。</li>
+<li>创建一个如下带默认参数的构造函数，相当于手动创建四个构造函数的效果。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    A(<span class="keyword">int</span> a=<span class="number">9</span>,<span class="keyword">int</span> b=<span class="number">8</span>,<span class="keyword">int</span> c=<span class="number">7</span>)&#123;</span><br><span class="line">        x=a;</span><br><span class="line">        y=b;</span><br><span class="line">        z=c;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;x&lt;&lt;<span class="string">" "</span>&lt;&lt;y&lt;&lt;<span class="string">" "</span>&lt;&lt;z&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">int</span> x,y,z;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    A a1;</span><br><span class="line">    <span class="function">A <span class="title">a2</span><span class="params">(<span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="function">A <span class="title">a3</span><span class="params">(<span class="number">1</span>,<span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="function">A <span class="title">a4</span><span class="params">(<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">    a1.show();<span class="comment">//9 8 7</span></span><br><span class="line">    a2.show();<span class="comment">//1 8 7</span></span><br><span class="line">    a3.show();<span class="comment">//1 1 7</span></span><br><span class="line">    a4.show();<span class="comment">//1 1 1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Cpp构造函数私有化"><a href="#Cpp构造函数私有化" class="headerlink" title="Cpp构造函数私有化"></a>Cpp构造函数私有化</h4><p>一般构造函数都是公有地，创建一个对象时就会自动调用构造函数。(对象是算作类外的，它不是类本身)<br>构造函数设置为私有，那岂不是没法创建对象了。但是对于强大的Cpp来说，有方法可以绕过去。<br>构造函数还是要调用的，我们可以在有权限的地方调用，比如static函数、友元函数或友元类。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">static</span> Student* <span class="title">makeObj</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"hello"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">        <span class="keyword">return</span> (<span class="keyword">new</span> Student);</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    Student()&#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    Student* s=Student::makeObj();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这种方式可以用在单例模式的实现上。</p>
+<h4 id="拷贝构造函数的调用时机"><a href="#拷贝构造函数的调用时机" class="headerlink" title="拷贝构造函数的调用时机"></a>拷贝构造函数的调用时机</h4><ul>
+<li>用一个类的对象去初始化另一个对象时。</li>
+<li>往函数中传递对象参数时。</li>
+<li>从函数中返回一个对象时。</li>
+</ul>
+<h4 id="在一个有指针对象的类中至少要实现哪三个函数"><a href="#在一个有指针对象的类中至少要实现哪三个函数" class="headerlink" title="在一个有指针对象的类中至少要实现哪三个函数"></a>在一个有指针对象的类中至少要实现哪三个函数</h4><ul>
+<li>拷贝构造函数、拷贝赋值运算符、析构函数</li>
+</ul>
+<h4 id="如果没有实现拷贝赋值运算符可能会遇到什么问题-深拷贝、浅拷贝"><a href="#如果没有实现拷贝赋值运算符可能会遇到什么问题-深拷贝、浅拷贝" class="headerlink" title="如果没有实现拷贝赋值运算符可能会遇到什么问题(深拷贝、浅拷贝)"></a>如果没有实现拷贝赋值运算符可能会遇到什么问题(深拷贝、浅拷贝)</h4><ul>
+<li>浅拷贝,只拷贝指针的值,深拷贝会再开辟一块新空间，连同指针在堆中指向的内容一块拷贝过去。</li>
+<li>当一个类中含有对象指针时，如果把该类的一个对象复制给另一个对象，这时会导致两个对象中的指针指向同一块内存，此时一个对象销毁，可能会导致另一个对象中的指针指向的内容被销毁。</li>
+</ul>
+<h4 id="指针和引用的区别"><a href="#指针和引用的区别" class="headerlink" title="指针和引用的区别"></a>指针和引用的区别</h4><p>指针也是一个变量，里面存储的内容是一个地址。而引用本质上是一个常量指针，引用只允许初始化，不能再修改。<br>编译指针和引用的代码，在汇编上是一样的：c++中，引用和指针的区别是什么？ - RainMan的回答 - 知乎<br><a href="https://www.zhihu.com/question/37608201/answer/545635054" target="_blank" rel="noopener">https://www.zhihu.com/question/37608201/answer/545635054</a></p>
+<h4 id="volatile"><a href="#volatile" class="headerlink" title="volatile"></a>volatile</h4><ul>
+<li><p>1.保证可见性。volatile的语义是让编译器不要对变量的值做任何假设和推理，禁止用寄存器缓存变量，每次都重新读写内存。</p>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/33074506" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/33074506</a></p>
+</li>
+</ul>
+<h4 id="结构体内存对齐"><a href="#结构体内存对齐" class="headerlink" title="结构体内存对齐"></a>结构体内存对齐</h4><p><strong>对齐规则</strong></p>
+<ul>
+<li>为了提高内存的读取效率，编译器使用内存对齐的技术。</li>
+<li>1.结构体内成员对齐规则：第一个成员偏移为0，其他每个成员的开始地址需要是min(当前成员大小，默认对齐字节)的整数倍。</li>
+<li>2.结构体的对齐规则：偏移地址需要是min(“默认对齐字节”,结构体内最宽成员)的整数倍。</li>
+<li>3.结构体总大小：内部最宽基本类型的整数倍。</li>
+<li>使用预编译命令可以控制默认对齐字节，#pragma pack(4)</li>
+</ul>
+<p><strong>内存对齐作用</strong></p>
+<ul>
+<li>平台移植：有的硬件平台不能访问任意地址。</li>
+<li>性能原因：cpu是按块读取内存的，能够提高访问速度。</li>
+</ul>
+<h4 id="new和malloc的区别"><a href="#new和malloc的区别" class="headerlink" title="new和malloc的区别"></a>new和malloc的区别</h4><p><strong>malloc</strong></p>
+<ul>
+<li>malloc是一个库函数，作用是分配指定大小的空间。</li>
+<li>参数是要分配的字节数，返回void*类型的指针，返回值一般需要强制类型转换才能使用。</li>
+<li>如果申请内存失败会返回NULL。</li>
+<li>可以用realloc扩容，使用free释放内存。</li>
+<li>申请数组时:int <em>ptr=(int</em>)malloc(sizeof(int)*n);释放数组free(ptr);</li>
+</ul>
+<p><strong>operator new与new operator</strong></p>
+<ul>
+<li>operator new是一个类似加减乘除的表达式，内部会调用malloc分配内存。</li>
+<li>当A a= new A();创建新对象时，是使用的new operator。会做两件事，一是调用operator分配内存，二是调用对象的构造函数。</li>
+<li>后者编译时行为，前者运行时行为</li>
+</ul>
+<p><strong>operator new</strong></p>
+<ul>
+<li>接受数据尺寸类型，返回该类型的指针。</li>
+<li>申请内存失败会抛出异常，或者执行给设定的处理函数。</li>
+<li>使用delete释放内存。</li>
+</ul>
+<p><strong>placment new</strong></p>
+<ul>
+<li>placement new,可以给new在指定内存区创建对象,char p[1024];int *ptr=new(p) int;</li>
+<li>注意使用”放置new”创建的对象不要使用delete，需要自己手动调用析构函数。</li>
+</ul>
+<p><strong>nothrow new</strong></p>
+<ul>
+<li>new函数在分配内存失败时会抛出异常，可以通过nothrow new在申请内存失败时，将返回值设置为NULL。</li>
+<li>使用方式:char <em>myarray = new (std::nothrow)char[2047 </em> 1024 * 1024]; if(myarray==nullptr){…}</li>
+</ul>
+<p><strong>set_new_handler</strong></p>
+<ul>
+<li>该函数接收一个函数指针，当new或new[]失败时，就会执行传进来的函数。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// new_handler example</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;     // std::cout</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;      // std::exit</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;new&gt;          // std::set_new_handler</span></span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">no_memory</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Failed to allocate memory!\n"</span>;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">exit</span> (<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">std</span>::set_new_handler(no_memory);</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Attempting to allocate 1 GiB..."</span>;</span><br><span class="line">  <span class="keyword">char</span>* p = <span class="keyword">new</span> <span class="keyword">char</span> [<span class="number">1024</span>*<span class="number">1024</span>*<span class="number">1024</span>];</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Ok\n"</span>;</span><br><span class="line">  <span class="keyword">delete</span>[] p;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="ptrdiff-t"><a href="#ptrdiff-t" class="headerlink" title="ptrdiff_t"></a>ptrdiff_t</h4><p>ptrdiff_t是C/C++标准库中定义的一个与机器相关的数据类型。ptrdiff_t类型变量通常用来保存两个指针减法操作的结果。ptrdiff_t定义在stddef.h（cstddef）这个文件内。ptrdiff_t通常被定义为long int类型。</p>
+<hr>
+<h3 id="STL"><a href="#STL" class="headerlink" title="STL"></a>STL</h3><h4 id="讲一下类型萃取机制"><a href="#讲一下类型萃取机制" class="headerlink" title="讲一下类型萃取机制"></a>讲一下类型萃取机制</h4><ul>
+<li>为什么？当我们利用模板的参数推导机制，实现一个对不同迭代器通用的函数时，函数的参数类型(智能指针)能够推导出来，但是如果函数内部需要用到指针指向的类型，就很不方便了。再就是函数的返回值也要用到指针指向的类型时，仅利用模板的参数推导是做不到的。</li>
+<li>如何实现？首先需要每个迭代器来配合，迭代器内部应当储存所指向数据的类型value_type，然后我们利用typedef来将不同迭代器中的value_type都加个新名字。然后在需要用到萃取类型的地方，用我们的typedef所创造的新名字就行了。关键实现如下：<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> I&gt;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">my_traits</span>&#123;</span></span><br><span class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> I::value_type value_type;	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//使用的时候如下：</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Iter&gt;</span><br><span class="line"><span class="keyword">typename</span> my_traits&lt;Iter&gt;::value_type</span><br><span class="line">addone(Iter iter)&#123;</span><br><span class="line">    <span class="keyword">typename</span> my_traits&lt;Iter&gt;::value_type tmp=*iter;</span><br><span class="line">    tmp++;</span><br><span class="line">    <span class="keyword">return</span> tmp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>每个类型I的迭代器都会储存指向元素的类型value_type,像原生指针、const指针不是一个类，没有value_type，就得自己实现特化版本。</p>
+<h4 id="STL中分别有哪些容器，底层实现是什么"><a href="#STL中分别有哪些容器，底层实现是什么" class="headerlink" title="STL中分别有哪些容器，底层实现是什么"></a>STL中分别有哪些容器，底层实现是什么</h4><ul>
+<li>序列式容器：vector(连续空间)、list(双向链表)、deque(分段连续空间)。</li>
+<li>关联式容器：map、set、multimap、multiset。(都是红黑树)</li>
+<li>配置器：queue(对deque封装,可改为list)、stack(对deque封装,可改为list)、priority_queue(堆)。</li>
+<li>无序关联式容器：unordered_map、unordered_set、unordered_mulitimap、unordered_mulitiset。(都是hash表)</li>
+</ul>
+<h4 id="sort函数怎么实现的"><a href="#sort函数怎么实现的" class="headerlink" title="sort函数怎么实现的"></a>sort函数怎么实现的</h4><ul>
+<li>sort的主体是先借助”内省式排序(__introsort_loop())”将序列排成大体有序的，然后利用插入排序再排成完全有序的。</li>
+<li>第一步的__introsort_loop()是不完全的快排和堆排序的结合体。不完全快排是指在快排递归过程中，判断当前序列的元素个数小于等于16，就退出，不再排序了，这样的结果会让不同的序列块之间是有序的。堆排序是指在当递归深度达到logn时(即快排有递归恶化的倾向出现)，调用堆排序对序列进行排序。</li>
+<li>第二步的插入排序也不是标准的插入排序，也是将序列分段进行插入排序，节省了一次排序过程中的比较操作。</li>
+<li>sort的实现中有很多技巧对排序进行了优化，全是为了提高效率，其最坏情况的时间复杂度也是nlogn。包括使用while循环减少一半快排的函数递归调用、插入排序分段、使用堆排序优化递归层数等。</li>
+<li>推荐阅读《STL源码剖析》 &amp; <a href="http://feihu.me/blog/2014/sgi-std-sort/" target="_blank" rel="noopener">知无涯之std::sort源码剖析</a></li>
+<li>另sort为什么不直接用稳定的堆排序实现？堆排序在排序过程中是跳跃式地访问元素，缓存命中率较低。而快排每次对局部数据操作，具有较好的缓存命中率。</li>
+</ul>
+<h4 id="什么是仿函数"><a href="#什么是仿函数" class="headerlink" title="什么是仿函数"></a>什么是仿函数</h4><ul>
+<li>仿函数是对一个类的括号运算符进行重载，然后可以通过函数调用的方式来调用该类所重载的运算符。</li>
+</ul>
+<h4 id="哪些情况迭代器会失效"><a href="#哪些情况迭代器会失效" class="headerlink" title="哪些情况迭代器会失效"></a>哪些情况迭代器会失效</h4><ul>
+<li>一般发生在对容器进行insert()、erase()后。</li>
+<li>当对vector插入或删除中间一个元素后，原位置之后的迭代器会失效。</li>
+<li>对list、map、set的结点进行修改后，一般只会导致当前迭代器失效。</li>
+</ul>
+<h4 id="vector使用时注意问题"><a href="#vector使用时注意问题" class="headerlink" title="vector使用时注意问题"></a>vector使用时注意问题</h4><p>*当插入或删除中间一个元素后，原位置之后的迭代器会失效。</p>
+<h4 id="与at-区别"><a href="#与at-区别" class="headerlink" title="[]与at()区别"></a>[]与at()区别</h4><ul>
+<li>[]没有下标越界检查，效率更高，访问越界可能会segment fault。</li>
+<li>at函数有越界检查，如果越界会抛出out_of_range异常。</li>
+</ul>
+<h4 id="vector扩容原理"><a href="#vector扩容原理" class="headerlink" title="vector扩容原理"></a>vector扩容原理</h4><p>在push_back()的时候会检查是否还有剩余空间，如果没有了，就申请一块原来尺寸2倍的空间，将原来的数据直接复制过去，然后把最后一个元素添加到最后面。并释放原来的空间。</p>
+<h4 id="deque扩容原理"><a href="#deque扩容原理" class="headerlink" title="deque扩容原理"></a>deque扩容原理</h4><p>deque结构：有一个map指针数组，每一个元素都指向一个缓冲区，扩容时申请空间为原map数组长度二倍，然后把原数组内容复制到新空间的中间。</p>
+<hr>
+<h3 id="C-11"><a href="#C-11" class="headerlink" title="C++11"></a>C++11</h3><h4 id="std-move-语义原理"><a href="#std-move-语义原理" class="headerlink" title="std::move()语义原理"></a>std::move()语义原理</h4><p>简介：</p>
+<ul>
+<li>理解move要先知道左值和右值，以string str=”hello”为例，str这个变量是一个左值，可以被改变。”hello”是一个右值，不能被改变了。<br>然后对左值使用&amp;进行左值引用，对右值使用&amp;&amp;进行右值引用。</li>
+<li><p>对于左值，我们可以使用&amp;进行引用，对于右值，我们可以用&amp;&amp;给它续命。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> &amp;b=a;</span><br><span class="line"><span class="keyword">int</span> &amp;&amp;c=<span class="number">10</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果我们就想用左值引用绑定到左值上，那就需要用到move()了。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> &amp;&amp;b=<span class="built_in">std</span>::move(a);</span><br><span class="line"><span class="comment">//std::move()做的是转移控制权，将a储存的右值的所有权交给b。</span></span><br><span class="line"><span class="comment">//因为转移了所有权，所以除了对a赋值或销毁外，不要再使用a。</span></span><br><span class="line"><span class="comment">//注意使用该函数时加std::,避免潜在的名字冲突。</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>从实现上讲，std::move基本等同于一个类型转换：static_cast<t&&>(lvalue);</t&&></p>
+</li>
+</ul>
+<p>参考：</p>
+<ul>
+<li><p>Cpp primer p470</p>
+</li>
+<li><p><a href="https://www.cnblogs.com/tingshuo/archive/2013/01/21/2870035.html" target="_blank" rel="noopener">怎样理解 C++ 11中的move语义</a></p>
+</li>
+</ul>
+<h4 id="std-forward"><a href="#std-forward" class="headerlink" title="std::forward()"></a>std::forward()</h4><ul>
+<li>forward会保留参数的类型、const、引用等属性。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> F,<span class="keyword">typename</span> T1,<span class="keyword">typename</span> T2&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">flip1</span><span class="params">(F f,T1 t1,T2 t2)</span></span>&#123;</span><br><span class="line">	f(t1,t2);</span><br><span class="line">&#125;</span><br><span class="line">当传递一般的函数f或参数时，flip1一般能正常工作。但是传递的f函数是下面这样时，就得不到想要的结果。</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span> v1,<span class="keyword">int</span> &amp;v2)</span></span>&#123;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;v1&lt;&lt;<span class="string">" "</span>&lt;&lt;++v2&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line">我们期望的结果是：</span><br><span class="line">f(<span class="number">42</span>,i);	<span class="comment">//f能够改变实参i的值。</span></span><br><span class="line">但实际：</span><br><span class="line">flip1(f,<span class="number">42</span>,j);	<span class="comment">//j实参不会被改变。</span></span><br><span class="line">使用<span class="built_in">std</span>::forward()和右值引用可以解决这个问题:</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> F,<span class="keyword">typename</span> T1,<span class="keyword">typename</span> T2&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">flip1</span><span class="params">(F f,T1 &amp;&amp;t1,T2 &amp;&amp;t2)</span></span>&#123;</span><br><span class="line">	f(<span class="built_in">std</span>::forward&lt;T1&gt;(t1),<span class="built_in">std</span>::forward&lt;T2&gt;(t2));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="四种智能指针"><a href="#四种智能指针" class="headerlink" title="四种智能指针"></a>四种智能指针</h4><h5 id="shared-ptr"><a href="#shared-ptr" class="headerlink" title="shared_ptr"></a>shared_ptr</h5><p><strong>简介</strong></p>
+<p>从名字可以看出是一个共享指针，允许多个shared_ptr指针指向一个资源，shared_ptr内部会有一个计数，记录指向该资源的指针个数。当计数为0，就会自动释放资源。</p>
+<p><strong>使用场景</strong></p>
+<p>当需要频繁申请内存时，使用shared_ptr来管理内存，可以在创建对象时自动初始化资源，也能在生命周期结束时自动释放内存。</p>
+<p><strong>创建方式</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">shared_ptr</span>&lt;<span class="keyword">int</span>&gt; p=<span class="built_in">std</span>::make_shared&lt;<span class="keyword">int</span>&gt;(<span class="number">10</span>);<span class="comment">//推荐使用make_shared()方式。</span></span><br><span class="line"><span class="built_in">shared_ptr</span>&lt;T&gt; p=<span class="built_in">std</span>::make_shared&lt;T&gt;();</span><br><span class="line"><span class="built_in">shared_ptr</span>&lt;<span class="keyword">int</span>&gt; p(<span class="keyword">new</span> <span class="keyword">int</span>(<span class="number">10</span>));</span><br></pre></td></tr></table></figure>
+<p><strong>使用方式</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">shared_ptr</span>&lt;<span class="keyword">int</span>&gt; p1=<span class="built_in">std</span>::make_shared&lt;<span class="keyword">int</span>&gt;(<span class="number">10</span>);</span><br><span class="line"><span class="built_in">shared_ptr</span>&lt;<span class="keyword">int</span>&gt; p2=<span class="built_in">std</span>::make_shared&lt;<span class="keyword">int</span>&gt;(<span class="number">20</span>);</span><br><span class="line">p1=p2;<span class="comment">//p2的资源计数会加1，p1资源计数会减1(若p1指向资源计数为0，则释放资源)</span></span><br></pre></td></tr></table></figure>
+<p><strong>注意事项</strong><br>1.不混合使用普通指针和智能指针</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//有如下函数：</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">process</span><span class="params">(<span class="built_in">shared_ptr</span>&lt;<span class="keyword">int</span>&gt; ptr)</span></span>&#123;</span><br><span class="line">	使用ptr</span><br><span class="line">&#125;<span class="comment">//离开作用域，ptr被销毁。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//给process()传递参数时，不能传递普通指针和临时shared_ptr。</span></span><br><span class="line">int *x(new int(1024));</span><br><span class="line">process(x);<span class="comment">//错误，不能将int*转换为shared_ptr&lt;int&gt;</span></span><br><span class="line">process(<span class="built_in">shared_ptr</span>&lt;<span class="keyword">int</span>&gt;(x));<span class="comment">//能编译通过，但是内存会被释放</span></span><br><span class="line"><span class="keyword">int</span> j=*x;<span class="comment">//未定义行为，x已经是一个空悬指针！</span></span><br><span class="line">可以这样使用：</span><br><span class="line"><span class="built_in">shared_ptr</span>&lt;<span class="keyword">int</span>&gt; p1=<span class="built_in">std</span>::make_shared&lt;<span class="keyword">int</span>&gt;(<span class="number">1024</span>);</span><br><span class="line">process(p1);</span><br></pre></td></tr></table></figure>
+<p>2.智能指针内部有一个get()函数，可以获取到原生指针。注意get()到的指针不要再初始化另一个智能指针。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">shared_ptr</span>&lt;<span class="keyword">int</span>&gt; p(<span class="keyword">new</span> <span class="keyword">int</span>(<span class="number">1024</span>));</span><br><span class="line"><span class="keyword">int</span> *q=p.get();</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">shared_ptr</span>&lt;<span class="keyword">int</span>&gt;(q);</span><br><span class="line">&#125;<span class="comment">//程序块结束会释放掉内存。</span></span><br><span class="line"><span class="keyword">int</span> foo=*p;<span class="comment">//访问了释放掉的内存。</span></span><br></pre></td></tr></table></figure></p>
+<p>3.get()返回的指针不要去delete、reset其他智能指针、初始化其他智能指针。<br>4.如果资源不是new申请到的，要注意给智能指针传递一个删除器。</p>
+<p>5.不要两个指针相互引用，会造成内存泄漏，可以用weak_ptr解决。</p>
+<h5 id="weak-ptr"><a href="#weak-ptr" class="headerlink" title="weak_ptr"></a>weak_ptr</h5><p><strong>简介</strong></p>
+<p>这是一个弱指针，它必须跟shared_ptr结合来用，它指向shared_ptr所管理的对象，但是它不会导致资源的引用计数变化.</p>
+<p><strong>使用场景</strong></p>
+<p>使用shared_ptr会有循环引用的问题，可以用weak_ptr来解决这个问题。</p>
+<p><strong>使用方式</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方式一</span></span><br><span class="line">weak_ptr&lt;T&gt; w(sp);</span><br><span class="line"><span class="comment">//方式二</span></span><br><span class="line">weak_ptr&lt;T&gt; w;</span><br><span class="line">w=p;<span class="comment">//p可以是shared_ptr或weak_ptr。</span></span><br></pre></td></tr></table></figure>
+<p><strong>注意事项</strong><br>1.weak_ptr在使用时，它指向的shared_ptr可能已经释放了，可以使用前先调用lock()。(检查weak_ptr是否为空指针)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="built_in">shared_ptr</span>&lt;<span class="keyword">int</span>&gt; np=wp.lock())&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="unique-ptr"><a href="#unique-ptr" class="headerlink" title="unique_ptr"></a>unique_ptr</h5><p><strong>简介</strong></p>
+<p>与shared_ptr不同，在某个时刻只能有一个unique_ptr指向一个给定对象，当unique_ptr被销毁时，它所指向的对象也被销毁。</p>
+<p><strong>使用场景</strong></p>
+<p>如果不需要对资源进行共享，优先使用unique_ptr.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//要采用直接初始化形式。</span><br><span class="line">unique_ptr&lt;double&gt; p(new int(42));</span><br></pre></td></tr></table></figure>
+<p><strong>注意事项</strong><br>1.不能拷贝初始化、不能拷贝</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">unique_ptr&lt;string&gt; p2(p1);//错误</span><br><span class="line">unique_ptr&lt;string&gt; p3;</span><br><span class="line">p3=p2;//错误</span><br></pre></td></tr></table></figure>
+<p>2.不能拷贝的规则有一个例外，返回一个将要被销毁的unique_ptr可以发生拷贝。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">unique_ptr&lt;int&gt; clone(int p)&#123;</span><br><span class="line">	return unique_ptr&lt;int&gt;(new int(p));</span><br><span class="line">&#125;</span><br><span class="line">或</span><br><span class="line">unique_ptr&lt;int&gt; clone(int p)&#123;</span><br><span class="line">	unique_ptr&lt;int&gt; ret(new int(p));</span><br><span class="line">	return ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="auto-ptr-已遗弃"><a href="#auto-ptr-已遗弃" class="headerlink" title="auto_ptr(已遗弃)"></a>auto_ptr(已遗弃)</h5><p><strong>简介</strong></p>
+<p>跟unique_ptr有一些相似的特性，同一时刻只能指向一个对象。但是这个允许拷贝，unique_ptr不允许拷贝。在cpp11已经被遗弃。</p>
+<h4 id="实现一个shared-ptr智能指针"><a href="#实现一个shared-ptr智能指针" class="headerlink" title="实现一个shared_ptr智能指针"></a>实现一个shared_ptr智能指针</h4><p>000000</p>
+<p>参考：<a href="https://www.dazhuanlan.com/2019/10/14/5da3dc60e5de9/?__cf_chl_jschl_tk__=46fc6231d52b1e7deb24515a9ecbd1295c3872a6-1599726247-0-ASqOqkH1T2W6kPYD2XOj_9vU8Io3X3XKR4kemh0aRO2esfqbzvTbvR0mgCVj0z1ukCCt0sv3bvEBU8Q-wjNFyFhq4fLS8HQMZhSIwMW-eY_pwCzYfcyT1KrHtATabRoBSvTKZ7sMZrQqhWg_mtiif1iYxsK9QMAax3osGjzWoM2_WzawlYYCSwCMY1yQgQBggsduyAQIeyUzPgB713rNv1ZNEXJjETnMk7_9x-XnJ256nc926C6epIfKcRB4d48Dl65isFfMTdiTJMqqIxp-niBj5ZX9iJDlVMUOlP8F9wIno8cuWsbwAGpQhsS4qrxDVQ" target="_blank" rel="noopener">技术: C++ 智能指针实现</a></p>
+<h4 id="shared-ptr的线程安全性"><a href="#shared-ptr的线程安全性" class="headerlink" title="shared_ptr的线程安全性"></a>shared_ptr的线程安全性</h4><h4 id="C-11的四种强制类型转换"><a href="#C-11的四种强制类型转换" class="headerlink" title="C++11的四种强制类型转换"></a>C++11的四种强制类型转换</h4><p>1.static_case(静态转换)</p>
+<ul>
+<li>主要执行非多态的转换操作，用于代替C中通常的转换操作。</li>
+<li>隐式转换都建议使用 static_cast 进行标明和替换。</li>
+<li>在有类型指针与void *之间转换，不能使用static_cast在有类型指针间转换。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 使用static_cast在基本数据类型之间转换</span></span><br><span class="line"><span class="keyword">float</span> fval = <span class="number">10.12</span>;</span><br><span class="line"><span class="keyword">int</span> ival = <span class="keyword">static_cast</span>&lt;<span class="keyword">int</span>&gt;(fval);  <span class="comment">// float --&gt; int</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 使用static_cast在有类型指针与void *之间转换</span></span><br><span class="line"><span class="keyword">int</span> *intp = &amp;ival;</span><br><span class="line"><span class="keyword">void</span> *voidp = <span class="keyword">static_cast</span>&lt;<span class="keyword">void</span> *&gt;(intp); <span class="comment">// int* --&gt; void*</span></span><br><span class="line"><span class="keyword">long</span> *longp = <span class="keyword">static_cast</span>&lt;<span class="keyword">long</span> *&gt;(voidp);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3. 用于类层次结构中基类和派生类之间指针或引用的转换</span></span><br><span class="line"><span class="comment">// 上行转换（派生类----&gt;基类）是安全的</span></span><br><span class="line">CDerived *tCDerived1 = <span class="literal">nullptr</span>;</span><br><span class="line">CBase *tCBase1 = <span class="keyword">static_cast</span>&lt;CBase*&gt;(tCDerived1);</span><br><span class="line"><span class="comment">// 下行转换（基类---- &gt; 派生类）由于没有动态类型检查，所以是不安全的</span></span><br><span class="line">CBase *tCBase2 = <span class="literal">nullptr</span>;</span><br><span class="line">CDerived *tCDerived2 = <span class="keyword">static_cast</span>&lt;CDerived*&gt;(tCBase2); <span class="comment">//不会报错，但是不安全</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 不能使用static_cast在有类型指针内转换</span></span><br><span class="line"><span class="keyword">float</span> *floatp = &amp;fval;  <span class="comment">//10.12的addr</span></span><br><span class="line"><span class="comment">//int *intp1 = static_cast&lt;int *&gt;(floatp); // error,不能使用static_cast在有类型指针内转换</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.dynamic_cast(动态转换)</p>
+<ul>
+<li>用于将一个父类的指针/引用转化为子类的指针/引用（下行转换）。</li>
+<li>基类必须要有虚函数，因为 dynamic_cast 是运行时类型检查，需要运行时类型信息，而这个信息是存储在类的虚函数表中。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CBase *p_CBase = <span class="keyword">new</span> CBase;  <span class="comment">// 基类对象指针</span></span><br><span class="line">CDerived *p_CDerived = <span class="keyword">dynamic_cast</span>&lt;CDerived *&gt;(p_CBase);  <span class="comment">// 将基类对象指针类型转换为派生类对象指针</span></span><br><span class="line"></span><br><span class="line">CBase i_CBase;    <span class="comment">// 创建基类对象</span></span><br><span class="line">CBase &amp;r_CBase = i_CBase;    <span class="comment">// 基类对象的引用</span></span><br><span class="line">CDerived &amp;r_CDerived = <span class="keyword">dynamic_cast</span>&lt;CDerived &amp;&gt;(r_CBase);  <span class="comment">// 将基类对象的引用转换派生类对象的引用</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>3.const_cast(常量转换)</p>
+<ul>
+<li>常量指针（或引用）与非常量指针（或引用）之间的转换。</li>
+<li>cosnt_cast 是四种类型转换符中唯一可以对常量进行操作的转换符。</li>
+<li>去除常量性是一个危险的动作，尽量避免使用。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> value = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> *cpi = &amp;value; <span class="comment">// 定义一个常量指针</span></span><br><span class="line"><span class="comment">//*cpi = 200;   // 不能通过常量指针修改值</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 1. 将常量指针转换为非常量指针,然后可以修改常量指针指向变量的值</span></span><br><span class="line"><span class="keyword">int</span> *pi = <span class="keyword">const_cast</span>&lt;<span class="keyword">int</span> *&gt;(cpi);</span><br><span class="line">*pi = <span class="number">200</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 将非常量指针转换为常量指针</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> *cpi2 = <span class="keyword">const_cast</span>&lt;<span class="keyword">const</span> <span class="keyword">int</span> *&gt;(pi); <span class="comment">// *cpi2 = 300;  //已经是常量指针</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> value1 = <span class="number">500</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> &amp;c_value1 = value1; <span class="comment">// 定义一个常量引用</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 3. 将常量引用转换为非常量引用</span></span><br><span class="line"><span class="keyword">int</span> &amp;r_value1 = <span class="keyword">const_cast</span>&lt;<span class="keyword">int</span> &amp;&gt;(c_value1);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 4. 将非常量引用转换为常量引用</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> &amp;c_value2 = <span class="keyword">const_cast</span>&lt;<span class="keyword">const</span> <span class="keyword">int</span> &amp;&gt;(r_value1);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>4.reinterpret_cast(不相关类型的转换)</p>
+<ul>
+<li>用在任意指针（或引用）类型之间的转换。</li>
+<li>能够将整型转换为指针，也可以把指针转换为整型或数组。</li>
+<li>reinterpret_cast 是从底层对数据进行重新解释，依赖具体的平台，可移植性差。</li>
+<li>尽量不使用这个转换符，高危操作。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> value = <span class="number">100</span>;</span><br><span class="line"><span class="comment">// 1. 用在任意指针（或引用）类型之间的转换</span></span><br><span class="line"><span class="keyword">double</span> *pd = <span class="keyword">reinterpret_cast</span>&lt;<span class="keyword">double</span> *&gt;(&amp;value);</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="string">"*pd = "</span> &lt;&lt; *pd &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. reinterpret_cast能够将指针值转化为整形值</span></span><br><span class="line"><span class="keyword">int</span> *pv = &amp;value;</span><br><span class="line"><span class="keyword">int</span> pvaddr = <span class="keyword">reinterpret_cast</span>&lt;<span class="keyword">int</span>&gt;(pv);</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="string">"pvaddr = "</span> &lt;&lt; hex &lt;&lt; pvaddr &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="string">"pv = "</span> &lt;&lt; pv &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">输出结果：</span></span><br><span class="line"><span class="comment">*pd = -9.25596e+61</span></span><br><span class="line"><span class="comment">pvaddr = 8ffe60</span></span><br><span class="line"><span class="comment">pv = 008FFE60</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><a href="https://www.cnblogs.com/linuxAndMcu/p/10387829.html" target="_blank" rel="noopener">https://www.cnblogs.com/linuxAndMcu/p/10387829.html</a></p>
+<h4 id="列表初始化"><a href="#列表初始化" class="headerlink" title="列表初始化"></a>列表初始化</h4><ul>
+<li>效率，列表初始化是在变量创建的时候就进行初始化，相比构造函数体内的赋值要节省一遍拷贝操作，能提高运行时的效率。</li>
+<li><p>类内有const变量要用列表初始化，而不能赋值。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Student(<span class="keyword">int</span> a):birthday(a)&#123;<span class="comment">//如果不用列表初始化，下面的birthday无法编译通过。</span></span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;birthday&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> birthday;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="function">Student <span class="title">s1</span><span class="params">(<span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>类内有类对象(该对象没有默认构造函数)必须用。</p>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CAnimal</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    CAnimal(<span class="keyword">int</span> weight) :m_weight(weight) &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> m_weight;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CDog</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    CAnimal m_a;<span class="comment">//CAnimal类没有默认构造函数，但m_a必须得被初始化呀，Cdog构造函数就可以对m_a进行列表初始化。</span></span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> m_b;</span><br><span class="line">    CDog(<span class="keyword">int</span> a, <span class="keyword">int</span> b) : m_a(a),m_b(b) &#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>初始化顺序是根据定义顺序来的，跟初始化列表中的顺序无关。</li>
+</ul>
+<h4 id="decltype作用以及与auto区别。"><a href="#decltype作用以及与auto区别。" class="headerlink" title="decltype作用以及与auto区别。"></a>decltype作用以及与auto区别。</h4><p>1.作用：用来获取数据类型。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> tempA = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">decltype</span>(tempA) dclTempA;</span><br></pre></td></tr></table></figure></p>
+<p>2.decltype和auto都可以用来推断类型，但是二者有几处明显的差异。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">auto</span>忽略顶层<span class="keyword">const</span>，<span class="keyword">decltype</span>保留顶层<span class="keyword">const</span>；</span><br><span class="line">对引用操作，<span class="keyword">auto</span>推断出原有类型，<span class="keyword">decltype</span>推断出引用；</span><br><span class="line">对解引用操作，<span class="keyword">auto</span>推断出原有类型，<span class="keyword">decltype</span>推断出引用；</span><br><span class="line"><span class="keyword">auto</span>推断时会实际执行，<span class="keyword">decltype</span>不会执行，只做分析。总之在使用中过程中和<span class="keyword">const</span>、引用和指针结合时需要特别小心。</span><br></pre></td></tr></table></figure></p>
+<p>持续更新~</p>
+<!-- 
+category : ACM_&_Algorithm CTF C_C++ JAVA Linux Linux_Kernel 
+SQL Cryptography Life Reading Thought Security Unknown Tools  
+Network Qt Trusted_Computing
+　　←全角空格
+![keyboard](https://img-bter)   ←图片
+[keyboard](https://img-bter)    ←超链接
+
+-->
+<p>欢迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/">http://taowusheng.cn/</a><br><img src="/images_/2021_picture/2021_coder_yifei.jpg" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://taowusheng.cn/2020/08/02/20200802 基础知识_Cpp/" data-id="cl9smuymr00p29boihehn5f7d" class="article-share-link">Share</a>
+      
+      
+        <a href="/2020/08/02/20200802 基础知识_Cpp/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2020/08/02/20200802 基础知识_Cpp/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cpp/">Cpp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Summary/">Summary</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/08/03/20200803 基础知识_网络/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          基础知识_网络
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/07/21/20200721 基础知识_数据库/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">基础知识_数据库</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM-Algorithm/">ACM_Algorithm</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Assembly/">Assembly</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/C-Cpp/">C_Cpp</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Cryptography/">Cryptography</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux-Kernel/">Linux_Kernel</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Middleware/">Middleware</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network/">Network</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network-Programming/">Network_Programming</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Notes/">Notes</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt/">Qt</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading/">Reading</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading-Source/">Reading_Source</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Security/">Security</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Summary/">Summary</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/System-Programming/">System_Programming</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Thought/">Thought</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Translation/">Translation</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Trusted-Computing/">Trusted_Computing</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Unknown/">Unknown</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">reading</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/01背包/" style="font-size: 10px;">01背包</a> <a href="/tags/2017/" style="font-size: 10px;">2017</a> <a href="/tags/2018/" style="font-size: 11.11px;">2018</a> <a href="/tags/2021/" style="font-size: 10px;">2021</a> <a href="/tags/ACM/" style="font-size: 13.33px;">ACM</a> <a href="/tags/ACM-Algorithm/" style="font-size: 10px;">ACM_Algorithm</a> <a href="/tags/Algorithm/" style="font-size: 10px;">Algorithm</a> <a href="/tags/Assembly/" style="font-size: 11.11px;">Assembly</a> <a href="/tags/C/" style="font-size: 11.11px;">C</a> <a href="/tags/C/" style="font-size: 12.22px;">C++</a> <a href="/tags/CTF/" style="font-size: 10px;">CTF</a> <a href="/tags/C-Cpp/" style="font-size: 12.22px;">C_Cpp</a> <a href="/tags/California-Dreaming/" style="font-size: 10px;">California_Dreaming</a> <a href="/tags/Cpp/" style="font-size: 14.44px;">Cpp</a> <a href="/tags/DES/" style="font-size: 10px;">DES</a> <a href="/tags/EDK/" style="font-size: 10px;">EDK</a> <a href="/tags/Effective-Cpp/" style="font-size: 10px;">Effective_Cpp</a> <a href="/tags/English/" style="font-size: 11.11px;">English</a> <a href="/tags/GMP/" style="font-size: 10px;">GMP</a> <a href="/tags/GUI/" style="font-size: 10px;">GUI</a> <a href="/tags/IO/" style="font-size: 10px;">IO</a> <a href="/tags/IO复用/" style="font-size: 10px;">IO复用</a> <a href="/tags/IO多路复用/" style="font-size: 10px;">IO多路复用</a> <a href="/tags/JAVA/" style="font-size: 16.67px;">JAVA</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/JsonCpp/" style="font-size: 10px;">JsonCpp</a> <a href="/tags/KGDB/" style="font-size: 10px;">KGDB</a> <a href="/tags/LeetCode/" style="font-size: 10px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 13.33px;">Linux</a> <a href="/tags/Linux-Kernel/" style="font-size: 13.33px;">Linux_Kernel</a> <a href="/tags/Middleware/" style="font-size: 10px;">Middleware</a> <a href="/tags/Network/" style="font-size: 11.11px;">Network</a> <a href="/tags/Network-Programming/" style="font-size: 13.33px;">Network_Programming</a> <a href="/tags/Python/" style="font-size: 15.56px;">Python</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/RSA/" style="font-size: 10px;">RSA</a> <a href="/tags/SELinux/" style="font-size: 10px;">SELinux</a> <a href="/tags/SHA/" style="font-size: 10px;">SHA</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/STL/" style="font-size: 14.44px;">STL</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Summary/" style="font-size: 17.78px;">Summary</a> <a href="/tags/System-Programming/" style="font-size: 11.11px;">System_Programming</a> <a href="/tags/TSS/" style="font-size: 10px;">TSS</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/Tools/" style="font-size: 10px;">Tools</a> <a href="/tags/Translation/" style="font-size: 10px;">Translation</a> <a href="/tags/UDK/" style="font-size: 10px;">UDK</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/UEFI/" style="font-size: 10px;">UEFI</a> <a href="/tags/VMware/" style="font-size: 11.11px;">VMware</a> <a href="/tags/apt/" style="font-size: 10px;">apt</a> <a href="/tags/audit2allow/" style="font-size: 10px;">audit2allow</a> <a href="/tags/auth/" style="font-size: 10px;">auth</a> <a href="/tags/bellman/" style="font-size: 10px;">bellman</a> <a href="/tags/bitmap/" style="font-size: 10px;">bitmap</a> <a href="/tags/bjut/" style="font-size: 10px;">bjut</a> <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/concept/" style="font-size: 12.22px;">concept</a> <a href="/tags/cpp/" style="font-size: 15.56px;">cpp</a> <a href="/tags/cryptography/" style="font-size: 11.11px;">cryptography</a> <a href="/tags/curses/" style="font-size: 10px;">curses</a> <a href="/tags/deque/" style="font-size: 10px;">deque</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/dpkg/" style="font-size: 10px;">dpkg</a> <a href="/tags/echo/" style="font-size: 10px;">echo</a> <a href="/tags/emulator/" style="font-size: 10px;">emulator</a> <a href="/tags/english/" style="font-size: 12.22px;">english</a> <a href="/tags/epoll/" style="font-size: 10px;">epoll</a> <a href="/tags/floyd/" style="font-size: 10px;">floyd</a> <a href="/tags/g/" style="font-size: 10px;">g++</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/gdb/" style="font-size: 11.11px;">gdb</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/ip/" style="font-size: 11.11px;">ip</a> <a href="/tags/jdbc/" style="font-size: 10px;">jdbc</a> <a href="/tags/kernal/" style="font-size: 10px;">kernal</a> <a href="/tags/life/" style="font-size: 10px;">life</a> <a href="/tags/linus/" style="font-size: 10px;">linus</a> <a href="/tags/linux/" style="font-size: 18.89px;">linux</a> <a href="/tags/linux内核/" style="font-size: 10px;">linux内核</a> <a href="/tags/list/" style="font-size: 10px;">list</a> <a href="/tags/mail服务器/" style="font-size: 10px;">mail服务器</a> <a href="/tags/map/" style="font-size: 11.11px;">map</a> <a href="/tags/md5注入/" style="font-size: 10px;">md5注入</a> <a href="/tags/memory/" style="font-size: 10px;">memory</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/new/" style="font-size: 12.22px;">new</a> <a href="/tags/notes/" style="font-size: 12.22px;">notes</a> <a href="/tags/openstack/" style="font-size: 10px;">openstack</a> <a href="/tags/pam/" style="font-size: 10px;">pam</a> <a href="/tags/patch/" style="font-size: 10px;">patch</a> <a href="/tags/ping/" style="font-size: 10px;">ping</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/poll/" style="font-size: 10px;">poll</a> <a href="/tags/postfix/" style="font-size: 10px;">postfix</a> <a href="/tags/protobuf/" style="font-size: 10px;">protobuf</a> <a href="/tags/qemu/" style="font-size: 10px;">qemu</a> <a href="/tags/queue/" style="font-size: 10px;">queue</a> <a href="/tags/reading/" style="font-size: 20px;">reading</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/rodata/" style="font-size: 10px;">rodata</a> <a href="/tags/select/" style="font-size: 10px;">select</a> <a href="/tags/selinux/" style="font-size: 10px;">selinux</a> <a href="/tags/set/" style="font-size: 10px;">set</a> <a href="/tags/stack/" style="font-size: 10px;">stack</a> <a href="/tags/thought/" style="font-size: 12.22px;">thought</a> <a href="/tags/tinythhpd/" style="font-size: 10px;">tinythhpd</a> <a href="/tags/tinyxml/" style="font-size: 10px;">tinyxml</a> <a href="/tags/tools/" style="font-size: 12.22px;">tools</a> <a href="/tags/tpm/" style="font-size: 10px;">tpm</a> <a href="/tags/traits/" style="font-size: 10px;">traits</a> <a href="/tags/trousers/" style="font-size: 10px;">trousers</a> <a href="/tags/trusted-computing/" style="font-size: 10px;">trusted_computing</a> <a href="/tags/unix编程实践/" style="font-size: 10px;">unix编程实践</a> <a href="/tags/valgrind/" style="font-size: 10px;">valgrind</a> <a href="/tags/vector/" style="font-size: 10px;">vector</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vs2013/" style="font-size: 10px;">vs2013</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web服务器/" style="font-size: 10px;">web服务器</a> <a href="/tags/win10/" style="font-size: 10px;">win10</a> <a href="/tags/xml/" style="font-size: 10px;">xml</a> <a href="/tags/yum/" style="font-size: 10px;">yum</a> <a href="/tags/世界上最遥远的距离/" style="font-size: 10px;">世界上最遥远的距离</a> <a href="/tags/个人成长/" style="font-size: 11.11px;">个人成长</a> <a href="/tags/书单/" style="font-size: 12.22px;">书单</a> <a href="/tags/书摘/" style="font-size: 10px;">书摘</a> <a href="/tags/事件驱动/" style="font-size: 10px;">事件驱动</a> <a href="/tags/产品/" style="font-size: 10px;">产品</a> <a href="/tags/代码段/" style="font-size: 10px;">代码段</a> <a href="/tags/优先级/" style="font-size: 10px;">优先级</a> <a href="/tags/位向量/" style="font-size: 10px;">位向量</a> <a href="/tags/位图/" style="font-size: 10px;">位图</a> <a href="/tags/信号/" style="font-size: 10px;">信号</a> <a href="/tags/公钥/" style="font-size: 10px;">公钥</a> <a href="/tags/公钥密码/" style="font-size: 10px;">公钥密码</a> <a href="/tags/内存池/" style="font-size: 10px;">内存池</a> <a href="/tags/内存泄漏/" style="font-size: 10px;">内存泄漏</a> <a href="/tags/内存管理/" style="font-size: 10px;">内存管理</a> <a href="/tags/内核/" style="font-size: 10px;">内核</a> <a href="/tags/内核模块/" style="font-size: 10px;">内核模块</a> <a href="/tags/刘未鹏/" style="font-size: 11.11px;">刘未鹏</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/区间和/" style="font-size: 10px;">区间和</a> <a href="/tags/单例模式/" style="font-size: 10px;">单例模式</a> <a href="/tags/参考策略/" style="font-size: 10px;">参考策略</a> <a href="/tags/可信计算/" style="font-size: 11.11px;">可信计算</a> <a href="/tags/后台开发/" style="font-size: 10px;">后台开发</a> <a href="/tags/回显服务器/" style="font-size: 10px;">回显服务器</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/学习之路/" style="font-size: 10px;">学习之路</a> <a href="/tags/学习计划/" style="font-size: 10px;">学习计划</a> <a href="/tags/容器/" style="font-size: 10px;">容器</a> <a href="/tags/密码体制/" style="font-size: 10px;">密码体制</a> <a href="/tags/密码学/" style="font-size: 12.22px;">密码学</a> <a href="/tags/富爸爸穷爸爸/" style="font-size: 10px;">富爸爸穷爸爸</a> <a href="/tags/对称密码/" style="font-size: 10px;">对称密码</a> <a href="/tags/川藏线/" style="font-size: 10px;">川藏线</a> <a href="/tags/年终总结/" style="font-size: 13.33px;">年终总结</a> <a href="/tags/广告/" style="font-size: 10px;">广告</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a> <a href="/tags/异步/" style="font-size: 10px;">异步</a> <a href="/tags/心智/" style="font-size: 10px;">心智</a> <a href="/tags/心理学/" style="font-size: 10px;">心理学</a> <a href="/tags/思维导图/" style="font-size: 10px;">思维导图</a> <a href="/tags/思考/" style="font-size: 12.22px;">思考</a> <a href="/tags/总结/" style="font-size: 15.56px;">总结</a> <a href="/tags/我是一只IT小小鸟/" style="font-size: 10px;">我是一只IT小小鸟</a> <a href="/tags/投资/" style="font-size: 10px;">投资</a> <a href="/tags/投资理财/" style="font-size: 11.11px;">投资理财</a> <a href="/tags/指数基金/" style="font-size: 10px;">指数基金</a> <a href="/tags/挑战程序设计竞赛/" style="font-size: 11.11px;">挑战程序设计竞赛</a> <a href="/tags/提问的智慧/" style="font-size: 10px;">提问的智慧</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/摄影/" style="font-size: 11.11px;">摄影</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/数据库/" style="font-size: 12.22px;">数据库</a> <a href="/tags/文本查询/" style="font-size: 10px;">文本查询</a> <a href="/tags/暗时间/" style="font-size: 10px;">暗时间</a> <a href="/tags/最短路径算法/" style="font-size: 10px;">最短路径算法</a> <a href="/tags/析构函数/" style="font-size: 10px;">析构函数</a> <a href="/tags/查理芒格/" style="font-size: 10px;">查理芒格</a> <a href="/tags/毕业旅行/" style="font-size: 10px;">毕业旅行</a> <a href="/tags/汇编/" style="font-size: 10px;">汇编</a> <a href="/tags/汇编语言/" style="font-size: 10px;">汇编语言</a> <a href="/tags/源码阅读/" style="font-size: 12.22px;">源码阅读</a> <a href="/tags/爬虫/" style="font-size: 10px;">爬虫</a> <a href="/tags/理财/" style="font-size: 10px;">理财</a> <a href="/tags/生活随笔/" style="font-size: 10px;">生活随笔</a> <a href="/tags/知识点/" style="font-size: 10px;">知识点</a> <a href="/tags/碎碎念/" style="font-size: 10px;">碎碎念</a> <a href="/tags/私钥/" style="font-size: 10px;">私钥</a> <a href="/tags/秋招/" style="font-size: 10px;">秋招</a> <a href="/tags/程序员/" style="font-size: 11.11px;">程序员</a> <a href="/tags/立flag/" style="font-size: 10px;">立flag</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/笔试/" style="font-size: 10px;">笔试</a> <a href="/tags/算法/" style="font-size: 11.11px;">算法</a> <a href="/tags/算法题/" style="font-size: 10px;">算法题</a> <a href="/tags/系统编程/" style="font-size: 11.11px;">系统编程</a> <a href="/tags/红黑树/" style="font-size: 10px;">红黑树</a> <a href="/tags/线段树/" style="font-size: 10px;">线段树</a> <a href="/tags/线程池/" style="font-size: 10px;">线程池</a> <a href="/tags/经历/" style="font-size: 10px;">经历</a> <a href="/tags/网络编程/" style="font-size: 12.22px;">网络编程</a> <a href="/tags/翻译/" style="font-size: 10px;">翻译</a> <a href="/tags/考研/" style="font-size: 10px;">考研</a> <a href="/tags/虚函数/" style="font-size: 10px;">虚函数</a> <a href="/tags/虚基类/" style="font-size: 10px;">虚基类</a> <a href="/tags/计划/" style="font-size: 10px;">计划</a> <a href="/tags/计时器/" style="font-size: 10px;">计时器</a> <a href="/tags/计算机/" style="font-size: 10px;">计算机</a> <a href="/tags/计算机技术/" style="font-size: 10px;">计算机技术</a> <a href="/tags/计算机网络/" style="font-size: 10px;">计算机网络</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a> <a href="/tags/读书/" style="font-size: 10px;">读书</a> <a href="/tags/读书笔记/" style="font-size: 13.33px;">读书笔记</a> <a href="/tags/调试/" style="font-size: 10px;">调试</a> <a href="/tags/进程/" style="font-size: 10px;">进程</a> <a href="/tags/重定向/" style="font-size: 10px;">重定向</a> <a href="/tags/阅读/" style="font-size: 10px;">阅读</a> <a href="/tags/阻塞/" style="font-size: 10px;">阻塞</a> <a href="/tags/面向对象/" style="font-size: 11.11px;">面向对象</a> <a href="/tags/面向过程/" style="font-size: 10px;">面向过程</a> <a href="/tags/预处理/" style="font-size: 10px;">预处理</a> <a href="/tags/骑行/" style="font-size: 10px;">骑行</a> <a href="/tags/黑客与画家/" style="font-size: 10px;">黑客与画家</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2029/11/">November 2029</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2029/11/11/20291111 坚持阅读/">坚持阅读</a>
+          </li>
+        
+          <li>
+            <a href="/2022/10/27/20221027 北京香山公园一日游/">北京香山公园一日游</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/31/20211231 2021年终总结/">2021年终总结</a>
+          </li>
+        
+          <li>
+            <a href="/2021/10/11/20211011 我的毕业旅行/">我的毕业旅行</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/31/20201231 2020年终总结/">2020年终总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">visiters</h3>
+    <div class="widget">
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=534a4dn9fi8&amp;m=0c&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;cw=ffffff&amp;cb=000000" async="async"></script>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016-2021 Tao WuSheng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/links" class="mobile-nav-link">Links</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'true' == true;
+    var verify = 'true' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Please leave your footprints...",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
+
+  </div>
+</body>
+</html>

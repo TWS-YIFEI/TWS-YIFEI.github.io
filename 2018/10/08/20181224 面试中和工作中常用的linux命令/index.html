@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'true', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89376999-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89376999-1');
+</script>
+
+
+
+  
+  <title>面试中和工作中常用的linux命令 | YIFEI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="find|grep|ssh|文件传输scp|sz|清屏|创建链接|查看端口占用情况|\管道|重定向|sed|统计代码行|md5sum|解压乱码问题|">
+<meta name="keywords" content="linux,VMware">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试中和工作中常用的linux命令">
+<meta property="og:url" content="http://taowusheng.cn/2018/10/08/20181224 面试中和工作中常用的linux命令/index.html">
+<meta property="og:site_name" content="YIFEI">
+<meta property="og:description" content="find|grep|ssh|文件传输scp|sz|清屏|创建链接|查看端口占用情况|\管道|重定向|sed|统计代码行|md5sum|解压乱码问题|">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2022-10-28T15:11:58.394Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="面试中和工作中常用的linux命令">
+<meta name="twitter:description" content="find|grep|ssh|文件传输scp|sz|清屏|创建链接|查看端口占用情况|\管道|重定向|sed|统计代码行|md5sum|解压乱码问题|">
+  
+    <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="/googleapis-fonts/fonts.css" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YIFEI</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">每当我找到生命的意义，它就又变了...</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/links">Links</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://taowusheng.cn"></form>
+      </div>
+    </div>
+  </div>
+	
+  <script>
+    
+    var number_of_banners = 8;
+    var randnum = Math.floor(Math.random() * number_of_banners + 1);
+    document.getElementById("banner").style.backgroundImage = "url(/css/images/banner" + randnum + ".jpg)";
+    
+</script>
+
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-20181224 面试中和工作中常用的linux命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/08/20181224 面试中和工作中常用的linux命令/" class="article-date">
+  <time datetime="2018-10-08T00:00:01.000Z" itemprop="datePublished">2018-10-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      面试中和工作中常用的linux命令
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		<!-- Table of Contents -->
+		
+        <hr>
+<p>find|grep|ssh|文件传输scp|sz|清屏|创建链接|查看端口占用情况|\<br>管道|重定向|sed|统计代码行|md5sum|解压乱码问题|<br><a id="more"></a></p>
+<h3 id="find查找文件"><a href="#find查找文件" class="headerlink" title="find查找文件"></a>find查找文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">一.find命令</span><br><span class="line">　基本格式：find  path expression</span><br><span class="line">　1.按照文件名查找</span><br><span class="line">　 *(1)find / -name httpd.conf　　#在根目录下查找文件httpd.conf，表示在整个硬盘查找</span><br><span class="line">　　(2)find /etc -name httpd.conf　　#在/etc目录下文件httpd.conf</span><br><span class="line">　　(3)find /etc -name &apos;*srm*&apos;　　#使用通配符*(0或者任意多个)。表示在/etc目录下查找文件名中含有字符串‘srm’的文件</span><br><span class="line">　　(4)find . -name &apos;srm*&apos; 　　#表示当前目录下查找文件名开头是字符串‘srm’的文件</span><br><span class="line">　2.按照文件特征查找 　　　　</span><br><span class="line">　　(1)find / -amin -10 　　# 查找在系统中最后10分钟访问的文件(access time)</span><br><span class="line">　　(2)find / -atime -2　　 # 查找在系统中最后48小时访问的文件</span><br><span class="line">　　(3)find / -empty 　　# 查找在系统中为空的文件或者文件夹</span><br><span class="line">　　(4)find / -group cat 　　# 查找在系统中属于 group为cat的文件</span><br><span class="line">　　(5)find / -mmin -5 　　# 查找在系统中最后5分钟里修改过的文件(modify time)</span><br><span class="line">　　(6)find / -mtime -1 　　#查找在系统中最后24小时里修改过的文件</span><br><span class="line">　　(7)find / -user fred 　　#查找在系统中属于fred这个用户的文件</span><br><span class="line">　　(8)find / -size +10000c　　#查找出大于10000000字节的文件(c:字节，w:双字，k:KB，M:MB，G:GB)</span><br><span class="line">　　(9)find / -size -1000k 　　#查找出小于1000KB的文件</span><br><span class="line">　3.使用混合查找方式查找文件</span><br><span class="line">　　参数有： ！，-and(-a)，-or(-o)。</span><br><span class="line">　　(1)find /tmp -size +10000c -and -mtime +2 　　#在/tmp目录下查找大于10000字节并在最后2分钟内修改的文件</span><br><span class="line">    (2)find / -user fred -or -user george 　　#在/目录下查找用户是fred或者george的文件文件</span><br><span class="line">    (3)find /tmp ! -user panda　　#在/tmp目录中查找所有不属于panda用户的文件</span><br></pre></td></tr></table></figure>
+<h3 id="grep内容查找"><a href="#grep内容查找" class="headerlink" title="grep内容查找"></a>grep内容查找</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">二、grep命令</span><br><span class="line">  基本格式：grep  expression</span><br><span class="line">　1.主要参数</span><br><span class="line"> 　[options]主要参数：</span><br><span class="line">　　－c：只输出匹配行的计数。</span><br><span class="line">　　－i：不区分大小写</span><br><span class="line">　　－h：查询多文件时不显示文件名。</span><br><span class="line">　　－l：查询多文件时只输出包含匹配字符的文件名。</span><br><span class="line">　　－n：显示匹配行及行号。</span><br><span class="line">　　－s：不显示不存在或无匹配文本的错误信息。</span><br><span class="line">　　－v：显示不包含匹配文本的所有行。</span><br><span class="line"></span><br><span class="line"> 　pattern正则表达式主要参数：</span><br><span class="line">　　\： 忽略正则表达式中特殊字符的原有含义。</span><br><span class="line">　　^：匹配正则表达式的开始行。</span><br><span class="line">　　$: 匹配正则表达式的结束行。</span><br><span class="line">　　\&lt;：从匹配正则表达 式的行开始。</span><br><span class="line">　　\&gt;：到匹配正则表达式的行结束。</span><br><span class="line">　　[ ]：单个字符，如[A]即A符合要求 。</span><br><span class="line">　　[ - ]：范围，如[A-Z]，即A、B、C一直到Z都符合要求 。</span><br><span class="line">　　.：所有的单个字符。</span><br><span class="line">　　* ：有字符，长度可以为0。</span><br><span class="line">　2.实例　 </span><br><span class="line">　　(1)grep &apos;test&apos; d*　　#显示所有以d开头的文件中包含 test的行</span><br><span class="line">　　(2)grep ‘test’ aa bb cc 　　 #显示在aa，bb，cc文件中包含test的行</span><br><span class="line">　　(3)grep ‘[a-z]\&#123;5\&#125;’ aa 　　#显示所有包含每行字符串至少有5个连续小写字符的字符串的行</span><br><span class="line">　　(4)grep magic /usr/src　　#显示/usr/src目录下的文件(不含子目录)包含magic的行</span><br><span class="line">　 *(5)grep -r magic /usr/src　　#显示/usr/src目录下的文件(包含子目录)包含magic的行</span><br><span class="line">　　(6)grep -w pattern files ：只匹配整个单词，而不是字符串的一部分(如匹配’magic’，而不是’magical’)，</span><br></pre></td></tr></table></figure>
+<h3 id="查看网络设置"><a href="#查看网络设置" class="headerlink" title="查看网络设置"></a>查看网络设置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig</span><br></pre></td></tr></table></figure>
+<h3 id="设置ssh"><a href="#设置ssh" class="headerlink" title="设置ssh"></a>设置ssh</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">安装openssh-server。使用命令：</span><br><span class="line"># apt-get install openssh-server</span><br><span class="line">vim /etc/ssh/sshd_config </span><br><span class="line">将#PasswordAuthentication yes前的注释符#去掉 </span><br><span class="line">将#PermitRootLogin prohibit-password前的注释符#去掉，将prohibit-password改为yes </span><br><span class="line">执行service ssh start启动ssh服务 </span><br><span class="line">将其设置为开机启动 </span><br><span class="line">编辑vim /etc/rc.local </span><br><span class="line">在exit 0前一行添加 </span><br><span class="line">/etc/init.d/ssh start</span><br></pre></td></tr></table></figure>
+<p>[安装ssh][<a href="https://blog.csdn.net/java_dotar_01/article/details/76942563" target="_blank" rel="noopener">https://blog.csdn.net/java_dotar_01/article/details/76942563</a>]</p>
+<h3 id="使用ssh链接远程主机"><a href="#使用ssh链接远程主机" class="headerlink" title="使用ssh链接远程主机"></a>使用ssh链接远程主机</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@192.168.1.11</span><br></pre></td></tr></table></figure>
+<h3 id="文件传输"><a href="#文件传输" class="headerlink" title="文件传输"></a>文件传输</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">本地&gt;&gt;&gt;远程</span><br><span class="line">scp /home/space/music/1.mp3 root@www.runoob.com:/home/root/others/music </span><br><span class="line">scp /home/space/music/1.mp3 root@www.runoob.com:/home/root/others/music/001.mp3 </span><br><span class="line">scp -r /home/space/music/ root@www.runoob.com:/home/root/others/ </span><br><span class="line"></span><br><span class="line">远程&gt;&gt;&gt;本地</span><br><span class="line">scp root@www.runoob.com:/home/root/others/music /home/space/music/1.mp3 </span><br><span class="line">scp -r www.runoob.com:/home/root/others/ /home/space/music/</span><br><span class="line"></span><br><span class="line">如果远程服务器防火墙有为scp命令设置了指定的端口，需要使用 -P 参数来设置命令的端口号，格式如下：</span><br><span class="line">#scp 使用端口 4588</span><br><span class="line">scp -P 4588 remote@www.runoob.com:/usr/local/sin.sh /home/administrator</span><br><span class="line">使用scp命令要确保使用的用户具有可读取远程服务器相应文件的权限，否则scp命令是无法起作用。</span><br></pre></td></tr></table></figure>
+<h3 id="sz命令"><a href="#sz命令" class="headerlink" title="sz命令"></a>sz命令</h3><p>在linux之间传输文件使用scp就行了<br>如果是在windows下使用xshell控制linux时：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">上传文件直接到那个目录，然后把文件拖进去就可以</span><br><span class="line">从linux下载文件时，</span><br><span class="line">sz test.txt 然后再选择本地存储目录就可以。</span><br></pre></td></tr></table></figure></p>
+<h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">clear</span><br><span class="line">或者ctrl+l</span><br></pre></td></tr></table></figure>
+<h3 id="创建链接"><a href="#创建链接" class="headerlink" title="创建链接"></a>创建链接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">ln -s 源目录或文件 目标快捷方式</span><br><span class="line">-s表示创建符号链接</span><br><span class="line">-------------------------------</span><br><span class="line">符号链接的源可以是目录或文件</span><br><span class="line">硬链接一般只能是文件</span><br><span class="line">-------------------------------</span><br><span class="line">硬链接:可以看做一个指针,指向源文件.硬链接与源文件是一个文件.</span><br><span class="line">	只要某文件有一个硬链接,该文件就不会真正的物理的删除.</span><br><span class="line">	所以,给一个文件创建硬链接之后,把源文件删除,硬链接还表示源文件,可以正常用.</span><br><span class="line">符号链接(软链接):是另外一个文件,相当于windows下的快捷方式.</span><br><span class="line">	产出源文件之后,创建的符号链接就没法用了.</span><br></pre></td></tr></table></figure>
+<h3 id="查看端口占用"><a href="#查看端口占用" class="headerlink" title="查看端口占用"></a>查看端口占用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">netstat -anp | grep 1080 #打印占用1080端口的进程以及PID</span><br><span class="line">kill -9 PID #关闭那个进程</span><br><span class="line">	-9 强制结束</span><br><span class="line">	-3 ctrl+c时向进程发送这个信号,程序收到这个信号会结束.</span><br></pre></td></tr></table></figure>
+<h3 id="管道-重定向"><a href="#管道-重定向" class="headerlink" title="管道 重定向"></a>管道 重定向</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 写入到新文件 </span><br><span class="line">&gt;&gt; 追加到新文件</span><br><span class="line">| 将上一个程序的输出作为下一个程序的输入,并且两者是同时进行的，不是等到第一个完全输出之后再输入到第二个程序。</span><br></pre></td></tr></table></figure>
+<h3 id="sed文本处理"><a href="#sed文本处理" class="headerlink" title="sed文本处理"></a>sed文本处理</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">nl /etc/passwd | sed &apos;2d&apos;   #删除第二行</span><br><span class="line">nl /etc/passwd | sed &apos;3,$d&apos;  #删除3到最后一行</span><br><span class="line"></span><br><span class="line">sed -e 4a\newline testfile #使用sed 在第四行后添加新字符串  </span><br><span class="line"></span><br><span class="line">nl /etc/passwd | sed &apos;2,5d&apos;     #nl列出文件内容并带行号(不算空格行)</span><br><span class="line">1 root:x:0:0:root:/root:/bin/bash</span><br><span class="line">6 sync:x:5:0:sync:/sbin:/bin/sync</span><br><span class="line">7 shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown</span><br><span class="line">.....(后面省略).....</span><br></pre></td></tr></table></figure>
+<h3 id="统计当前目录代码行数"><a href="#统计当前目录代码行数" class="headerlink" title="统计当前目录代码行数"></a>统计当前目录代码行数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -name &quot;*&quot;  -print | xargs wc -l</span><br></pre></td></tr></table></figure>
+<h3 id="md5计算"><a href="#md5计算" class="headerlink" title="md5计算"></a>md5计算</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">md5sum test.txt</span><br><span class="line">2435345254......3422423 test.txt</span><br></pre></td></tr></table></figure>
+<h3 id="解压windows文件乱码问题"><a href="#解压windows文件乱码问题" class="headerlink" title="解压windows文件乱码问题"></a>解压windows文件乱码问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">通过unzip行命令解压，指定字符集</span><br><span class="line">unzip -O CP936 xxx.zip</span><br></pre></td></tr></table></figure>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li><a href="https://www.runoob.com/linux/linux-comm-sed.html" target="_blank" rel="noopener">https://www.runoob.com/linux/linux-comm-sed.html</a></li>
+</ul>
+<p>欢迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/">http://taowusheng.cn/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://taowusheng.cn/2018/10/08/20181224 面试中和工作中常用的linux命令/" data-id="cl9smuyeu00289boio953bl9z" class="article-share-link">Share</a>
+      
+      
+        <a href="/2018/10/08/20181224 面试中和工作中常用的linux命令/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2018/10/08/20181224 面试中和工作中常用的linux命令/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VMware/">VMware</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/10/09/20181009 动态规划_01背包_一维数组_路径记录/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          动态规划_01背包_一维数组_路径记录
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/10/07/20181007 实验吧_后台登录/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">实验吧_后台登录</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM-Algorithm/">ACM_Algorithm</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Assembly/">Assembly</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/C-Cpp/">C_Cpp</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Cryptography/">Cryptography</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux-Kernel/">Linux_Kernel</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Middleware/">Middleware</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network/">Network</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network-Programming/">Network_Programming</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Notes/">Notes</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt/">Qt</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading/">Reading</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading-Source/">Reading_Source</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Security/">Security</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Summary/">Summary</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/System-Programming/">System_Programming</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Thought/">Thought</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Translation/">Translation</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Trusted-Computing/">Trusted_Computing</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Unknown/">Unknown</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">reading</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/01背包/" style="font-size: 10px;">01背包</a> <a href="/tags/2017/" style="font-size: 10px;">2017</a> <a href="/tags/2018/" style="font-size: 11.11px;">2018</a> <a href="/tags/2021/" style="font-size: 10px;">2021</a> <a href="/tags/ACM/" style="font-size: 13.33px;">ACM</a> <a href="/tags/ACM-Algorithm/" style="font-size: 10px;">ACM_Algorithm</a> <a href="/tags/Algorithm/" style="font-size: 10px;">Algorithm</a> <a href="/tags/Assembly/" style="font-size: 11.11px;">Assembly</a> <a href="/tags/C/" style="font-size: 11.11px;">C</a> <a href="/tags/C/" style="font-size: 12.22px;">C++</a> <a href="/tags/CTF/" style="font-size: 10px;">CTF</a> <a href="/tags/C-Cpp/" style="font-size: 12.22px;">C_Cpp</a> <a href="/tags/California-Dreaming/" style="font-size: 10px;">California_Dreaming</a> <a href="/tags/Cpp/" style="font-size: 14.44px;">Cpp</a> <a href="/tags/DES/" style="font-size: 10px;">DES</a> <a href="/tags/EDK/" style="font-size: 10px;">EDK</a> <a href="/tags/Effective-Cpp/" style="font-size: 10px;">Effective_Cpp</a> <a href="/tags/English/" style="font-size: 11.11px;">English</a> <a href="/tags/GMP/" style="font-size: 10px;">GMP</a> <a href="/tags/GUI/" style="font-size: 10px;">GUI</a> <a href="/tags/IO/" style="font-size: 10px;">IO</a> <a href="/tags/IO复用/" style="font-size: 10px;">IO复用</a> <a href="/tags/IO多路复用/" style="font-size: 10px;">IO多路复用</a> <a href="/tags/JAVA/" style="font-size: 16.67px;">JAVA</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/JsonCpp/" style="font-size: 10px;">JsonCpp</a> <a href="/tags/KGDB/" style="font-size: 10px;">KGDB</a> <a href="/tags/LeetCode/" style="font-size: 10px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 13.33px;">Linux</a> <a href="/tags/Linux-Kernel/" style="font-size: 13.33px;">Linux_Kernel</a> <a href="/tags/Middleware/" style="font-size: 10px;">Middleware</a> <a href="/tags/Network/" style="font-size: 11.11px;">Network</a> <a href="/tags/Network-Programming/" style="font-size: 13.33px;">Network_Programming</a> <a href="/tags/Python/" style="font-size: 15.56px;">Python</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/RSA/" style="font-size: 10px;">RSA</a> <a href="/tags/SELinux/" style="font-size: 10px;">SELinux</a> <a href="/tags/SHA/" style="font-size: 10px;">SHA</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/STL/" style="font-size: 14.44px;">STL</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Summary/" style="font-size: 17.78px;">Summary</a> <a href="/tags/System-Programming/" style="font-size: 11.11px;">System_Programming</a> <a href="/tags/TSS/" style="font-size: 10px;">TSS</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/Tools/" style="font-size: 10px;">Tools</a> <a href="/tags/Translation/" style="font-size: 10px;">Translation</a> <a href="/tags/UDK/" style="font-size: 10px;">UDK</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/UEFI/" style="font-size: 10px;">UEFI</a> <a href="/tags/VMware/" style="font-size: 11.11px;">VMware</a> <a href="/tags/apt/" style="font-size: 10px;">apt</a> <a href="/tags/audit2allow/" style="font-size: 10px;">audit2allow</a> <a href="/tags/auth/" style="font-size: 10px;">auth</a> <a href="/tags/bellman/" style="font-size: 10px;">bellman</a> <a href="/tags/bitmap/" style="font-size: 10px;">bitmap</a> <a href="/tags/bjut/" style="font-size: 10px;">bjut</a> <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/concept/" style="font-size: 12.22px;">concept</a> <a href="/tags/cpp/" style="font-size: 15.56px;">cpp</a> <a href="/tags/cryptography/" style="font-size: 11.11px;">cryptography</a> <a href="/tags/curses/" style="font-size: 10px;">curses</a> <a href="/tags/deque/" style="font-size: 10px;">deque</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/dpkg/" style="font-size: 10px;">dpkg</a> <a href="/tags/echo/" style="font-size: 10px;">echo</a> <a href="/tags/emulator/" style="font-size: 10px;">emulator</a> <a href="/tags/english/" style="font-size: 12.22px;">english</a> <a href="/tags/epoll/" style="font-size: 10px;">epoll</a> <a href="/tags/floyd/" style="font-size: 10px;">floyd</a> <a href="/tags/g/" style="font-size: 10px;">g++</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/gdb/" style="font-size: 11.11px;">gdb</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/ip/" style="font-size: 11.11px;">ip</a> <a href="/tags/jdbc/" style="font-size: 10px;">jdbc</a> <a href="/tags/kernal/" style="font-size: 10px;">kernal</a> <a href="/tags/life/" style="font-size: 10px;">life</a> <a href="/tags/linus/" style="font-size: 10px;">linus</a> <a href="/tags/linux/" style="font-size: 18.89px;">linux</a> <a href="/tags/linux内核/" style="font-size: 10px;">linux内核</a> <a href="/tags/list/" style="font-size: 10px;">list</a> <a href="/tags/mail服务器/" style="font-size: 10px;">mail服务器</a> <a href="/tags/map/" style="font-size: 11.11px;">map</a> <a href="/tags/md5注入/" style="font-size: 10px;">md5注入</a> <a href="/tags/memory/" style="font-size: 10px;">memory</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/new/" style="font-size: 12.22px;">new</a> <a href="/tags/notes/" style="font-size: 12.22px;">notes</a> <a href="/tags/openstack/" style="font-size: 10px;">openstack</a> <a href="/tags/pam/" style="font-size: 10px;">pam</a> <a href="/tags/patch/" style="font-size: 10px;">patch</a> <a href="/tags/ping/" style="font-size: 10px;">ping</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/poll/" style="font-size: 10px;">poll</a> <a href="/tags/postfix/" style="font-size: 10px;">postfix</a> <a href="/tags/protobuf/" style="font-size: 10px;">protobuf</a> <a href="/tags/qemu/" style="font-size: 10px;">qemu</a> <a href="/tags/queue/" style="font-size: 10px;">queue</a> <a href="/tags/reading/" style="font-size: 20px;">reading</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/rodata/" style="font-size: 10px;">rodata</a> <a href="/tags/select/" style="font-size: 10px;">select</a> <a href="/tags/selinux/" style="font-size: 10px;">selinux</a> <a href="/tags/set/" style="font-size: 10px;">set</a> <a href="/tags/stack/" style="font-size: 10px;">stack</a> <a href="/tags/thought/" style="font-size: 12.22px;">thought</a> <a href="/tags/tinythhpd/" style="font-size: 10px;">tinythhpd</a> <a href="/tags/tinyxml/" style="font-size: 10px;">tinyxml</a> <a href="/tags/tools/" style="font-size: 12.22px;">tools</a> <a href="/tags/tpm/" style="font-size: 10px;">tpm</a> <a href="/tags/traits/" style="font-size: 10px;">traits</a> <a href="/tags/trousers/" style="font-size: 10px;">trousers</a> <a href="/tags/trusted-computing/" style="font-size: 10px;">trusted_computing</a> <a href="/tags/unix编程实践/" style="font-size: 10px;">unix编程实践</a> <a href="/tags/valgrind/" style="font-size: 10px;">valgrind</a> <a href="/tags/vector/" style="font-size: 10px;">vector</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vs2013/" style="font-size: 10px;">vs2013</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web服务器/" style="font-size: 10px;">web服务器</a> <a href="/tags/win10/" style="font-size: 10px;">win10</a> <a href="/tags/xml/" style="font-size: 10px;">xml</a> <a href="/tags/yum/" style="font-size: 10px;">yum</a> <a href="/tags/世界上最遥远的距离/" style="font-size: 10px;">世界上最遥远的距离</a> <a href="/tags/个人成长/" style="font-size: 11.11px;">个人成长</a> <a href="/tags/书单/" style="font-size: 12.22px;">书单</a> <a href="/tags/书摘/" style="font-size: 10px;">书摘</a> <a href="/tags/事件驱动/" style="font-size: 10px;">事件驱动</a> <a href="/tags/产品/" style="font-size: 10px;">产品</a> <a href="/tags/代码段/" style="font-size: 10px;">代码段</a> <a href="/tags/优先级/" style="font-size: 10px;">优先级</a> <a href="/tags/位向量/" style="font-size: 10px;">位向量</a> <a href="/tags/位图/" style="font-size: 10px;">位图</a> <a href="/tags/信号/" style="font-size: 10px;">信号</a> <a href="/tags/公钥/" style="font-size: 10px;">公钥</a> <a href="/tags/公钥密码/" style="font-size: 10px;">公钥密码</a> <a href="/tags/内存池/" style="font-size: 10px;">内存池</a> <a href="/tags/内存泄漏/" style="font-size: 10px;">内存泄漏</a> <a href="/tags/内存管理/" style="font-size: 10px;">内存管理</a> <a href="/tags/内核/" style="font-size: 10px;">内核</a> <a href="/tags/内核模块/" style="font-size: 10px;">内核模块</a> <a href="/tags/刘未鹏/" style="font-size: 11.11px;">刘未鹏</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/区间和/" style="font-size: 10px;">区间和</a> <a href="/tags/单例模式/" style="font-size: 10px;">单例模式</a> <a href="/tags/参考策略/" style="font-size: 10px;">参考策略</a> <a href="/tags/可信计算/" style="font-size: 11.11px;">可信计算</a> <a href="/tags/后台开发/" style="font-size: 10px;">后台开发</a> <a href="/tags/回显服务器/" style="font-size: 10px;">回显服务器</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/学习之路/" style="font-size: 10px;">学习之路</a> <a href="/tags/学习计划/" style="font-size: 10px;">学习计划</a> <a href="/tags/容器/" style="font-size: 10px;">容器</a> <a href="/tags/密码体制/" style="font-size: 10px;">密码体制</a> <a href="/tags/密码学/" style="font-size: 12.22px;">密码学</a> <a href="/tags/富爸爸穷爸爸/" style="font-size: 10px;">富爸爸穷爸爸</a> <a href="/tags/对称密码/" style="font-size: 10px;">对称密码</a> <a href="/tags/川藏线/" style="font-size: 10px;">川藏线</a> <a href="/tags/年终总结/" style="font-size: 13.33px;">年终总结</a> <a href="/tags/广告/" style="font-size: 10px;">广告</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a> <a href="/tags/异步/" style="font-size: 10px;">异步</a> <a href="/tags/心智/" style="font-size: 10px;">心智</a> <a href="/tags/心理学/" style="font-size: 10px;">心理学</a> <a href="/tags/思维导图/" style="font-size: 10px;">思维导图</a> <a href="/tags/思考/" style="font-size: 12.22px;">思考</a> <a href="/tags/总结/" style="font-size: 15.56px;">总结</a> <a href="/tags/我是一只IT小小鸟/" style="font-size: 10px;">我是一只IT小小鸟</a> <a href="/tags/投资/" style="font-size: 10px;">投资</a> <a href="/tags/投资理财/" style="font-size: 11.11px;">投资理财</a> <a href="/tags/指数基金/" style="font-size: 10px;">指数基金</a> <a href="/tags/挑战程序设计竞赛/" style="font-size: 11.11px;">挑战程序设计竞赛</a> <a href="/tags/提问的智慧/" style="font-size: 10px;">提问的智慧</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/摄影/" style="font-size: 11.11px;">摄影</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/数据库/" style="font-size: 12.22px;">数据库</a> <a href="/tags/文本查询/" style="font-size: 10px;">文本查询</a> <a href="/tags/暗时间/" style="font-size: 10px;">暗时间</a> <a href="/tags/最短路径算法/" style="font-size: 10px;">最短路径算法</a> <a href="/tags/析构函数/" style="font-size: 10px;">析构函数</a> <a href="/tags/查理芒格/" style="font-size: 10px;">查理芒格</a> <a href="/tags/毕业旅行/" style="font-size: 10px;">毕业旅行</a> <a href="/tags/汇编/" style="font-size: 10px;">汇编</a> <a href="/tags/汇编语言/" style="font-size: 10px;">汇编语言</a> <a href="/tags/源码阅读/" style="font-size: 12.22px;">源码阅读</a> <a href="/tags/爬虫/" style="font-size: 10px;">爬虫</a> <a href="/tags/理财/" style="font-size: 10px;">理财</a> <a href="/tags/生活随笔/" style="font-size: 10px;">生活随笔</a> <a href="/tags/知识点/" style="font-size: 10px;">知识点</a> <a href="/tags/碎碎念/" style="font-size: 10px;">碎碎念</a> <a href="/tags/私钥/" style="font-size: 10px;">私钥</a> <a href="/tags/秋招/" style="font-size: 10px;">秋招</a> <a href="/tags/程序员/" style="font-size: 11.11px;">程序员</a> <a href="/tags/立flag/" style="font-size: 10px;">立flag</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/笔试/" style="font-size: 10px;">笔试</a> <a href="/tags/算法/" style="font-size: 11.11px;">算法</a> <a href="/tags/算法题/" style="font-size: 10px;">算法题</a> <a href="/tags/系统编程/" style="font-size: 11.11px;">系统编程</a> <a href="/tags/红黑树/" style="font-size: 10px;">红黑树</a> <a href="/tags/线段树/" style="font-size: 10px;">线段树</a> <a href="/tags/线程池/" style="font-size: 10px;">线程池</a> <a href="/tags/经历/" style="font-size: 10px;">经历</a> <a href="/tags/网络编程/" style="font-size: 12.22px;">网络编程</a> <a href="/tags/翻译/" style="font-size: 10px;">翻译</a> <a href="/tags/考研/" style="font-size: 10px;">考研</a> <a href="/tags/虚函数/" style="font-size: 10px;">虚函数</a> <a href="/tags/虚基类/" style="font-size: 10px;">虚基类</a> <a href="/tags/计划/" style="font-size: 10px;">计划</a> <a href="/tags/计时器/" style="font-size: 10px;">计时器</a> <a href="/tags/计算机/" style="font-size: 10px;">计算机</a> <a href="/tags/计算机技术/" style="font-size: 10px;">计算机技术</a> <a href="/tags/计算机网络/" style="font-size: 10px;">计算机网络</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a> <a href="/tags/读书/" style="font-size: 10px;">读书</a> <a href="/tags/读书笔记/" style="font-size: 13.33px;">读书笔记</a> <a href="/tags/调试/" style="font-size: 10px;">调试</a> <a href="/tags/进程/" style="font-size: 10px;">进程</a> <a href="/tags/重定向/" style="font-size: 10px;">重定向</a> <a href="/tags/阅读/" style="font-size: 10px;">阅读</a> <a href="/tags/阻塞/" style="font-size: 10px;">阻塞</a> <a href="/tags/面向对象/" style="font-size: 11.11px;">面向对象</a> <a href="/tags/面向过程/" style="font-size: 10px;">面向过程</a> <a href="/tags/预处理/" style="font-size: 10px;">预处理</a> <a href="/tags/骑行/" style="font-size: 10px;">骑行</a> <a href="/tags/黑客与画家/" style="font-size: 10px;">黑客与画家</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2029/11/">November 2029</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2029/11/11/20291111 坚持阅读/">坚持阅读</a>
+          </li>
+        
+          <li>
+            <a href="/2022/10/27/20221027 北京香山公园一日游/">北京香山公园一日游</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/31/20211231 2021年终总结/">2021年终总结</a>
+          </li>
+        
+          <li>
+            <a href="/2021/10/11/20211011 我的毕业旅行/">我的毕业旅行</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/31/20201231 2020年终总结/">2020年终总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">visiters</h3>
+    <div class="widget">
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=534a4dn9fi8&amp;m=0c&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;cw=ffffff&amp;cb=000000" async="async"></script>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016-2021 Tao WuSheng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/links" class="mobile-nav-link">Links</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'true' == true;
+    var verify = 'true' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Please leave your footprints...",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
+
+  </div>
+</body>
+</html>

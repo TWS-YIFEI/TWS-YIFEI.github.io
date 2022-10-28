@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'true', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89376999-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89376999-1');
+</script>
+
+
+
+  
+  <title>利用ICMPv4协议实现一个ping程序 | YIFEI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Icmp(Internet Control Message Protocol)协议一般与IP协议结合使用，以便给IP协议提供诊断和控制信息。Icmp通常被认为是Ip协议的一部分，传输的时候也是被封装在Ip报文内。我们在判断网络状况时用的ping程序就利用了ICMP协议。接下来先运行系统上的ping程序，用tcpdump抓包查看一下传输的数据。然后解释一下icmp数据报的各个字段。最后思考一下pin">
+<meta name="keywords" content="Network,ip,ping">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用ICMPv4协议实现一个ping程序">
+<meta property="og:url" content="http://taowusheng.cn/2020/01/06/20200106 利用ICMPv4协议实现一个ping程序/index.html">
+<meta property="og:site_name" content="YIFEI">
+<meta property="og:description" content="Icmp(Internet Control Message Protocol)协议一般与IP协议结合使用，以便给IP协议提供诊断和控制信息。Icmp通常被认为是Ip协议的一部分，传输的时候也是被封装在Ip报文内。我们在判断网络状况时用的ping程序就利用了ICMP协议。接下来先运行系统上的ping程序，用tcpdump抓包查看一下传输的数据。然后解释一下icmp数据报的各个字段。最后思考一下pin">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://i.loli.net/2020/01/11/7Qdbj8U2w6DcrTe.jpg">
+<meta property="og:image" content="http://taowusheng.cn/images_/2021_picture/2021_coder_yifei.jpg">
+<meta property="og:updated_time" content="2022-10-28T15:11:58.398Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="利用ICMPv4协议实现一个ping程序">
+<meta name="twitter:description" content="Icmp(Internet Control Message Protocol)协议一般与IP协议结合使用，以便给IP协议提供诊断和控制信息。Icmp通常被认为是Ip协议的一部分，传输的时候也是被封装在Ip报文内。我们在判断网络状况时用的ping程序就利用了ICMP协议。接下来先运行系统上的ping程序，用tcpdump抓包查看一下传输的数据。然后解释一下icmp数据报的各个字段。最后思考一下pin">
+<meta name="twitter:image" content="https://i.loli.net/2020/01/11/7Qdbj8U2w6DcrTe.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="/googleapis-fonts/fonts.css" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YIFEI</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">每当我找到生命的意义，它就又变了...</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/links">Links</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://taowusheng.cn"></form>
+      </div>
+    </div>
+  </div>
+	
+  <script>
+    
+    var number_of_banners = 8;
+    var randnum = Math.floor(Math.random() * number_of_banners + 1);
+    document.getElementById("banner").style.backgroundImage = "url(/css/images/banner" + randnum + ".jpg)";
+    
+</script>
+
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-20200106 利用ICMPv4协议实现一个ping程序" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/06/20200106 利用ICMPv4协议实现一个ping程序/" class="article-date">
+  <time datetime="2020-01-06T00:00:01.000Z" itemprop="datePublished">2020-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Network-Programming/">Network_Programming</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      利用ICMPv4协议实现一个ping程序
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		<!-- Table of Contents -->
+		
+		  <div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#抓包"><span class="toc-number">1.</span> <span class="toc-text">抓包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ICMP协议数据报"><span class="toc-number">2.</span> <span class="toc-text">ICMP协议数据报</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ping程序原理"><span class="toc-number">3.</span> <span class="toc-text">ping程序原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cpp代码实现"><span class="toc-number">4.</span> <span class="toc-text">Cpp代码实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#traceroute"><span class="toc-number">5.</span> <span class="toc-text">traceroute</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#问题记录"><span class="toc-number">6.</span> <span class="toc-text">问题记录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考"><span class="toc-number">7.</span> <span class="toc-text">参考</span></a></li></ol>
+		  </div>
+		
+        <p>Icmp(Internet Control Message Protocol)协议一般与IP协议结合使用，以便给IP协议提供诊断和控制信息。<br>Icmp通常被认为是Ip协议的一部分，传输的时候也是被封装在Ip报文内。<br>我们在判断网络状况时用的ping程序就利用了ICMP协议。接下来先运行系统上的ping程序，用tcpdump抓包查看一下传输的数据。<br>然后解释一下icmp数据报的各个字段。最后思考一下ping程序的结构，然后用c++实现一个自己的ping程序。<br><a id="more"></a></p>
+<h3 id="抓包"><a href="#抓包" class="headerlink" title="抓包"></a>抓包</h3><p>首先在1号终端运行tcpdump。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcpdump -X &gt; icmp.txt   # -X是以十六进制和ascii显示数据</span><br></pre></td></tr></table></figure></p>
+<p>在2号终端执行ping程序，然后ctrl+C退出ping程序。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">root@yifei:/home/yifei# ping baidu.com</span><br><span class="line">PING baidu.com (220.181.38.148) 56(84) bytes of data.</span><br><span class="line">64 bytes from 220.181.38.148 (220.181.38.148): icmp_seq=1 ttl=44 time=5.36 ms</span><br><span class="line">64 bytes from 220.181.38.148 (220.181.38.148): icmp_seq=2 ttl=44 time=5.30 ms</span><br><span class="line">^C</span><br><span class="line">--- baidu.com ping statistics ---</span><br><span class="line">2 packets transmitted, 2 received, 0% packet loss, time 1000ms</span><br><span class="line">rtt min/avg/max/mdev = 5.300/5.330/5.360/0.030 ms</span><br></pre></td></tr></table></figure></p>
+<p>查看icmp.txt中的icmp数据包,查找到跟220.181.38.148的通信。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">13:10:07.606759 IP yifei &gt; 220.181.38.148: ICMP echo request, id 7657, seq 1, length 64</span><br><span class="line">     0x0000:  4500 0054 e26f 4000 4001 a2ee ac15 05ec  E..T.o@.@.......</span><br><span class="line">              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span><br><span class="line">     0x0010:  dcb5 2694 0800 324a 1de9 0001 af58 195e  ..&amp;...2J.....X.^</span><br><span class="line">              ^^^^^^^^^ *******************</span><br><span class="line">     0x0020:  0000 0000 1742 0900 0000 0000 1011 1213  .....B..........</span><br><span class="line">     0x0030:  1415 1617 1819 1a1b 1c1d 1e1f 2021 2223  .............!&quot;#</span><br><span class="line">     0x0040:  2425 2627 2829 2a2b 2c2d 2e2f 3031 3233  $%&amp;&apos;()*+,-./0123</span><br><span class="line">     0x0050:  3435 3637                                4567</span><br><span class="line">13:10:07.612103 IP 220.181.38.148 &gt; yifei: ICMP echo reply, id 7657, seq 1, length 64</span><br><span class="line">     0x0000:  4500 0054 e26f 4000 2c01 b6ee dcb5 2694  E..T.o@.,.....&amp;.</span><br><span class="line">     0x0010:  ac15 05ec 0000 3a4a 1de9 0001 af58 195e  ......:J.....X.^</span><br><span class="line">     0x0020:  0000 0000 1742 0900 0000 0000 1011 1213  .....B..........</span><br><span class="line">     0x0030:  1415 1617 1819 1a1b 1c1d 1e1f 2021 2223  .............!&quot;#</span><br><span class="line">     0x0040:  2425 2627 2829 2a2b 2c2d 2e2f 3031 3233  $%&amp;&apos;()*+,-./0123</span><br><span class="line">     0x0050:  3435 3637                                4567</span><br></pre></td></tr></table></figure></p>
+<p>可以看到本机先给baidu发送一个ICMP请求，然后baidu给回复了一条消息。<br>在第一个数据包中，用^标示的是ip首部，用*标示的是icmp首部，剩下的是icmp数据，具体每个字段的意义，在本文下一节中讲解。</p>
+<h3 id="ICMP协议数据报"><a href="#ICMP协议数据报" class="headerlink" title="ICMP协议数据报"></a>ICMP协议数据报</h3><p>下图是icmp报文被ip协议封装后的结构：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">----------------------------------------</span><br><span class="line">| Ipv4头部  | Icmp头部 | Icmp数据      |</span><br><span class="line">----------------------------------------</span><br></pre></td></tr></table></figure></p>
+<p>下图为icmp协议头部的结构：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">|------------------------------------------------|</span><br><span class="line">| 类型(8位) | 代码(8位) |   校验和(16位)         |</span><br><span class="line">|------------------------------------------------|</span><br><span class="line">| 依赖类型和代码的内容                           |</span><br><span class="line">|------------------------------------------------|</span><br><span class="line">| 数据(可选)                                     |</span><br><span class="line">|------------------------------------------------|</span><br></pre></td></tr></table></figure></p>
+<p>ping程序的回显请求中，类型为8，代码为0时，结构是下图这样，多了标识符和序列号两个字段：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">|------------------------------------------------|</span><br><span class="line">| 类型(8位) | 代码(8位) |   校验和(16位)         |</span><br><span class="line">|------------------------------------------------|</span><br><span class="line">| 标识符(16位)          |   序列号(16位)         |</span><br><span class="line">|------------------------------------------------|</span><br><span class="line">| 数据(可选)                                     |</span><br><span class="line">|------------------------------------------------|</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>其中的类型和代码字段都是8位，这两个字段决定了Icmp数据报的用途,两个字段表示的组合如下：<br><img src="https://i.loli.net/2020/01/11/7Qdbj8U2w6DcrTe.jpg" alt="20200106 icmp.jpeg"></li>
+<li>校验和16位，涵盖了icmp的报头和数据两部分。</li>
+<li>标识符可以设置为进程pid号，因为没有端口号来区分数据报了。</li>
+<li>序列号可以是从0开始的序号，用来标识icmp数据报。</li>
+</ul>
+<h3 id="ping程序原理"><a href="#ping程序原理" class="headerlink" title="ping程序原理"></a>ping程序原理</h3><p>了解了icmp协议之后，ping程序的原理就很好理解了，可以分为以下几步。<br>1.将输入的域名转为ip地址。<br>2.填充icmp数据报。<br>3.创建原始套接字。<br>4.使用sendoto发送icmp报文。<br>5.使用recvfrom接受数据报。</p>
+<h3 id="Cpp代码实现"><a href="#Cpp代码实现" class="headerlink" title="Cpp代码实现"></a>Cpp代码实现</h3><ul>
+<li><p>code</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;netdb.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;errno.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;arpa/inet.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/socket.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/types.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/time.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/types.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;netinet/in.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;signal.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">enum</span>&#123;ICMP_DATA_LEN=<span class="number">1024</span>&#125;;</span><br><span class="line"><span class="keyword">enum</span>&#123;IP_DATA_LEN=<span class="number">1024</span>&#125;;</span><br><span class="line"><span class="keyword">enum</span>&#123;RECV_MAX_LEN=<span class="number">1024</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 暂时用不着ip头部的结构体</span></span><br><span class="line"><span class="comment">//IP报头</span></span><br><span class="line"><span class="comment">typedef struct&#123;</span></span><br><span class="line"><span class="comment">    unsigned char hdr_len;           //4位头部长度 &amp; 4位版本号</span></span><br><span class="line"><span class="comment">    unsigned char tos;               //8位服务类型</span></span><br><span class="line"><span class="comment">    unsigned short total_len;        //16位总长度</span></span><br><span class="line"><span class="comment">    unsigned short identifier;       //16位标识符</span></span><br><span class="line"><span class="comment">    unsigned short frag_and_flags;   //3位标志加13位片偏移</span></span><br><span class="line"><span class="comment">    unsigned char ttl;               //8位生存时间</span></span><br><span class="line"><span class="comment">    unsigned char protocol;          //8位上层协议号</span></span><br><span class="line"><span class="comment">    unsigned short checksum;         //16位效验和</span></span><br><span class="line"><span class="comment">    unsigned int sourceIP;           //32位源IP地址</span></span><br><span class="line"><span class="comment">    unsigned int destIP;             //32位目的IP地址</span></span><br><span class="line"><span class="comment">&#125;IpHeader;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">//整个ip数据报</span></span><br><span class="line"><span class="comment">typedef struct&#123;</span></span><br><span class="line"><span class="comment">    IpHeader ih;</span></span><br><span class="line"><span class="comment">    char data[IP_DATA_LEN];</span></span><br><span class="line"><span class="comment">&#125;IpComplete;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//ICMP报头</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">char</span> type;     <span class="comment">//8位类型字段</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">char</span> code;     <span class="comment">//8位代码字段</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">short</span> cksum=<span class="number">0</span>;  <span class="comment">//16位效验和</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">short</span> id;     <span class="comment">//16位标识符</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">short</span> seq;    <span class="comment">//16位序列号</span></span><br><span class="line">&#125;IcmpHeader;</span><br><span class="line"></span><br><span class="line"><span class="comment">//整个icmp数据报</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">    IcmpHeader icmph;</span><br><span class="line">    <span class="keyword">char</span> data[ICMP_DATA_LEN];</span><br><span class="line">&#125;IcmpComplete;</span><br><span class="line"></span><br><span class="line"><span class="keyword">pid_t</span> pid;  <span class="comment">//当前进程pid</span></span><br><span class="line"><span class="keyword">int</span> seqnum=<span class="number">0</span>;   <span class="comment">//icmp头部中的序列号</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">sockaddr_in</span> <span class="title">sai</span>;</span> <span class="comment">//目的ip地址</span></span><br><span class="line"><span class="keyword">char</span> ipaddr[<span class="number">20</span>];    <span class="comment">//char类型ip地址</span></span><br><span class="line"><span class="keyword">clock_t</span> second,first;   <span class="comment">//记录每个数据报发出~接受到回复的时间</span></span><br><span class="line"><span class="keyword">int</span> lostpacks=<span class="number">0</span>,sumpacks=<span class="number">0</span>;<span class="comment">//记录数据报总数和丢包数</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//计算校验和</span></span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">short</span> <span class="title">CheckSum</span><span class="params">(<span class="keyword">unsigned</span> <span class="keyword">short</span> *addr,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> nleft=len;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">short</span> *w=addr;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">short</span> answer=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(nleft&gt;<span class="number">1</span>)&#123;</span><br><span class="line">        sum+=*w++;</span><br><span class="line">        nleft-=<span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(nleft==<span class="number">1</span>)&#123;</span><br><span class="line">        *(<span class="keyword">unsigned</span> <span class="keyword">short</span> *)(&amp;answer)=*(<span class="keyword">unsigned</span> <span class="keyword">char</span> *)w;</span><br><span class="line">        sum+=answer;</span><br><span class="line">    &#125;</span><br><span class="line">    sum=(sum&gt;&gt;<span class="number">16</span>)+(sum&amp;<span class="number">0xffff</span>);</span><br><span class="line">    sum+=(sum&gt;&gt;<span class="number">16</span>);</span><br><span class="line">    answer=~sum;</span><br><span class="line">    <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//填充整个icmp数据报</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">FillIcmpCom</span><span class="params">(IcmpComplete *icmpcom)</span></span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(icmpcom,<span class="number">0</span>,<span class="number">8</span>+<span class="keyword">sizeof</span>(icmpcom-&gt;data));</span><br><span class="line">    icmpcom-&gt;icmph.type=(<span class="keyword">unsigned</span> <span class="keyword">char</span>)<span class="number">8</span>;</span><br><span class="line">    icmpcom-&gt;icmph.code=<span class="number">0</span>;</span><br><span class="line">    icmpcom-&gt;icmph.cksum=<span class="number">0</span>;</span><br><span class="line">    pid=getpid();</span><br><span class="line">    icmpcom-&gt;icmph.id=pid;</span><br><span class="line">    icmpcom-&gt;icmph.seq=seqnum;</span><br><span class="line">    icmpcom-&gt;icmph.cksum=CheckSum((<span class="keyword">unsigned</span> <span class="keyword">short</span>*)icmpcom,<span class="keyword">sizeof</span>(icmpcom));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//根据域名获取ip地址</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">GetIpByName</span><span class="params">(<span class="keyword">char</span> *argv)</span></span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">addrinfo</span>*<span class="title">res</span>;</span></span><br><span class="line">    <span class="keyword">if</span>(getaddrinfo(argv,<span class="literal">nullptr</span>,<span class="literal">nullptr</span>,&amp;res)!=<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"地址解析出错！"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">        <span class="keyword">return</span> ;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="comment">//网络字节序的ip地址转为ascii字符数组中点分十进制的ip地址</span></span><br><span class="line">        inet_ntop(AF_INET,(<span class="keyword">void</span>*)&amp;((sockaddr_in*)(res-&gt;ai_addr))-&gt;sin_addr,ipaddr,<span class="number">16</span>);</span><br><span class="line">        sai.sin_family=AF_INET;</span><br><span class="line">        sai.sin_addr.s_addr=inet_addr(ipaddr);</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"PING "</span>&lt;&lt;argv&lt;&lt;<span class="string">"("</span>&lt;&lt;ipaddr&lt;&lt;<span class="string">")"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    freeaddrinfo(res);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//处理SIGINT信号</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">handler</span><span class="params">(<span class="keyword">int</span> data)</span></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>&lt;&lt;<span class="string">"------------statistics-------------"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;sumpacks&lt;&lt;<span class="string">" packets trasimitted,"</span>&lt;&lt;lostpacks&lt;&lt;<span class="string">" packets loss"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">exit</span>(<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc,<span class="keyword">char</span> **argv)</span></span>&#123;</span><br><span class="line">    GetIpByName(argv[<span class="number">1</span>]);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> sockfd;</span><br><span class="line">    <span class="comment">//创建icmp协议的原生套接字，需要自己构造icmp头部(ip头部系统自动填充，可以通过设置IP_HDRINCL套接字选项自己构造ip头部)</span></span><br><span class="line">    sockfd=socket(AF_INET,SOCK_RAW,IPPROTO_ICMP);</span><br><span class="line">    <span class="keyword">if</span>(sockfd&lt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"创建socket出错。"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">timeval</span> <span class="title">time_out</span>;</span></span><br><span class="line">    time_out.tv_sec=<span class="number">1</span>;</span><br><span class="line">    time_out.tv_usec=<span class="number">0</span>;</span><br><span class="line">    <span class="comment">//设置recvfrom函数的接收超时为1秒。</span></span><br><span class="line">    <span class="keyword">if</span>(setsockopt(sockfd,SOL_SOCKET,SO_RCVTIMEO,(<span class="keyword">void</span>*)&amp;time_out,<span class="keyword">sizeof</span>(time_out))&lt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"设置接收超时出错!"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> errnum=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">char</span> recbuf[RECV_MAX_LEN];</span><br><span class="line">    IcmpComplete icmpcomplete;</span><br><span class="line">    signal(SIGINT,handler); <span class="comment">//设置ctrl+c中断的处理函数</span></span><br><span class="line">    <span class="keyword">for</span>(;;)&#123;</span><br><span class="line">        seqnum++;</span><br><span class="line">        FillIcmpCom(&amp;icmpcomplete);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//发送整个icmp数据报</span></span><br><span class="line">        <span class="keyword">if</span>((errnum=sendto(sockfd,(<span class="keyword">void</span>*)&amp;icmpcomplete,<span class="keyword">sizeof</span>(icmpcomplete),<span class="number">0</span>,(struct sockaddr *)&amp;sai,<span class="keyword">sizeof</span>(sai)))&lt;<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;<span class="string">"ICMP数据报发送失败!   "</span>&lt;&lt;errno&lt;&lt;<span class="string">" "</span>&lt;&lt;strerror(errno)&lt;&lt;<span class="built_in">endl</span>;;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            first=clock();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//收到的recbuf数据包括ip头部，icmp头部，icmp数据</span></span><br><span class="line">        <span class="keyword">if</span>(recvfrom(sockfd,recbuf,<span class="keyword">sizeof</span>(recbuf),<span class="number">0</span>,<span class="literal">nullptr</span>,<span class="literal">nullptr</span>)&lt;<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;<span class="string">"*"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">            lostpacks++;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            second=clock();</span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;<span class="keyword">sizeof</span>(recbuf)&lt;&lt;<span class="string">" bytes from("</span>&lt;&lt;ipaddr&lt;&lt;<span class="string">"): "</span></span><br><span class="line">                &lt;&lt;<span class="string">"icmp_seq="</span>&lt;&lt;seqnum&lt;&lt;<span class="string">" "</span></span><br><span class="line">                &lt;&lt;<span class="string">"ttl="</span>&lt;&lt;(<span class="keyword">int</span>)recbuf[<span class="number">8</span>]&lt;&lt;<span class="string">" "</span></span><br><span class="line">                &lt;&lt;<span class="string">"time="</span>&lt;&lt;(second-first)&lt;&lt;<span class="string">" ms"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        sleep(<span class="number">1</span>);</span><br><span class="line">        sumpacks++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编译运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">\&gt; gcc myping.cpp -o myping</span><br><span class="line">\&gt; ./myping www.baidu.com</span><br><span class="line">PING baidu.com(39.156.69.79)</span><br><span class="line">1024 bytes from(39.156.69.79): icmp_seq=1 ttl=40 time=73 ms</span><br><span class="line">1024 bytes from(39.156.69.79): icmp_seq=2 ttl=40 time=47 ms</span><br><span class="line">1024 bytes from(39.156.69.79): icmp_seq=3 ttl=40 time=40 ms</span><br><span class="line">1024 bytes from(39.156.69.79): icmp_seq=4 ttl=40 time=39 ms</span><br><span class="line">1024 bytes from(39.156.69.79): icmp_seq=5 ttl=40 time=40 ms</span><br><span class="line">^C</span><br><span class="line">------------statistics-------------</span><br><span class="line">4 packets trasimitted,0 packets loss</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="traceroute"><a href="#traceroute" class="headerlink" title="traceroute"></a>traceroute</h3><p>traceroute工具可以查看数据报在传输过程中都是经过了哪些节点。这利用了ip协议中的ttl字段。<br>traceroute首先发送ttl字段为1的ip数据报，然后分别发送ttl字段为2,3,…的数据报。<br>当数据报经过一个节点，ttl变为0之后，就会给发送方回复一个icmp数据报。这样就能获得每个节点的ip地址了。<br>将之前的程序进行简单改动，就能实现traceroute的效果。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.在每次sendto发送icmp数据报之前，使用该函数可以直接设置IP数据报中的ttl字段，不用自己填充ip头部了。</span><br><span class="line">setsockopt(sockfd,IPPROTO_IP,IP_TTL,(void*)&amp;ittl,sizeof(ittl))</span><br><span class="line">2.接受到返回的消息后，输出ip头部中的源ip地址。</span><br></pre></td></tr></table></figure></p>
+<h3 id="问题记录"><a href="#问题记录" class="headerlink" title="问题记录"></a>问题记录</h3><ul>
+<li>sendto函数的地址参数，直接传入getaddrinfo()得到的res-&gt;ai_addr，总是返回invalid argument错误，自己填充一个sockaddr_in传入就好了。</li>
+<li>自己的ping程序测试的time要比Linux自带的高一些。</li>
+</ul>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li>《TCP/IP详解(卷1:协议)》第二版</li>
+</ul>
+<!-- 
+category : ACM_Algorithm CTF C_Cpp JAVA Linux Linux_Kernel 
+SQL Cryptography Life Reading Thought Summary Security Unknown Tools  
+Network Qt Trusted_Computing English System_Programming Network_Programming
+Python Reading_Source
+　　←全角空格
+![keyboard](https://img-bter)   ←图片
+[keyboard](https://img-bter)    ←超链接
+
+|    |   |    |
+| :----: | :----:  | :----:  |
+|      |  |      |
+|        |      |      |
+|        |       |    |
+
+```cpp
+```
+-->
+<p>欢迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/">http://taowusheng.cn/</a><br><img src="/images_/2021_picture/2021_coder_yifei.jpg" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://taowusheng.cn/2020/01/06/20200106 利用ICMPv4协议实现一个ping程序/" data-id="cl9smuykg00ki9boizj0wurqd" class="article-share-link">Share</a>
+      
+      
+        <a href="/2020/01/06/20200106 利用ICMPv4协议实现一个ping程序/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2020/01/06/20200106 利用ICMPv4协议实现一个ping程序/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Network/">Network</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ip/">ip</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ping/">ping</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/03/05/20200305 基础知识_算法笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          基础知识_算法笔记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/01/05/20200105 Ip协议/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Ip协议详解</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM-Algorithm/">ACM_Algorithm</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Assembly/">Assembly</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/C-Cpp/">C_Cpp</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Cryptography/">Cryptography</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux-Kernel/">Linux_Kernel</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Middleware/">Middleware</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network/">Network</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network-Programming/">Network_Programming</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Notes/">Notes</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt/">Qt</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading/">Reading</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading-Source/">Reading_Source</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Security/">Security</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Summary/">Summary</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/System-Programming/">System_Programming</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Thought/">Thought</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Translation/">Translation</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Trusted-Computing/">Trusted_Computing</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Unknown/">Unknown</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">reading</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/01背包/" style="font-size: 10px;">01背包</a> <a href="/tags/2017/" style="font-size: 10px;">2017</a> <a href="/tags/2018/" style="font-size: 11.11px;">2018</a> <a href="/tags/2021/" style="font-size: 10px;">2021</a> <a href="/tags/ACM/" style="font-size: 13.33px;">ACM</a> <a href="/tags/ACM-Algorithm/" style="font-size: 10px;">ACM_Algorithm</a> <a href="/tags/Algorithm/" style="font-size: 10px;">Algorithm</a> <a href="/tags/Assembly/" style="font-size: 11.11px;">Assembly</a> <a href="/tags/C/" style="font-size: 11.11px;">C</a> <a href="/tags/C/" style="font-size: 12.22px;">C++</a> <a href="/tags/CTF/" style="font-size: 10px;">CTF</a> <a href="/tags/C-Cpp/" style="font-size: 12.22px;">C_Cpp</a> <a href="/tags/California-Dreaming/" style="font-size: 10px;">California_Dreaming</a> <a href="/tags/Cpp/" style="font-size: 14.44px;">Cpp</a> <a href="/tags/DES/" style="font-size: 10px;">DES</a> <a href="/tags/EDK/" style="font-size: 10px;">EDK</a> <a href="/tags/Effective-Cpp/" style="font-size: 10px;">Effective_Cpp</a> <a href="/tags/English/" style="font-size: 11.11px;">English</a> <a href="/tags/GMP/" style="font-size: 10px;">GMP</a> <a href="/tags/GUI/" style="font-size: 10px;">GUI</a> <a href="/tags/IO/" style="font-size: 10px;">IO</a> <a href="/tags/IO复用/" style="font-size: 10px;">IO复用</a> <a href="/tags/IO多路复用/" style="font-size: 10px;">IO多路复用</a> <a href="/tags/JAVA/" style="font-size: 16.67px;">JAVA</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/JsonCpp/" style="font-size: 10px;">JsonCpp</a> <a href="/tags/KGDB/" style="font-size: 10px;">KGDB</a> <a href="/tags/LeetCode/" style="font-size: 10px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 13.33px;">Linux</a> <a href="/tags/Linux-Kernel/" style="font-size: 13.33px;">Linux_Kernel</a> <a href="/tags/Middleware/" style="font-size: 10px;">Middleware</a> <a href="/tags/Network/" style="font-size: 11.11px;">Network</a> <a href="/tags/Network-Programming/" style="font-size: 13.33px;">Network_Programming</a> <a href="/tags/Python/" style="font-size: 15.56px;">Python</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/RSA/" style="font-size: 10px;">RSA</a> <a href="/tags/SELinux/" style="font-size: 10px;">SELinux</a> <a href="/tags/SHA/" style="font-size: 10px;">SHA</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/STL/" style="font-size: 14.44px;">STL</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Summary/" style="font-size: 17.78px;">Summary</a> <a href="/tags/System-Programming/" style="font-size: 11.11px;">System_Programming</a> <a href="/tags/TSS/" style="font-size: 10px;">TSS</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/Tools/" style="font-size: 10px;">Tools</a> <a href="/tags/Translation/" style="font-size: 10px;">Translation</a> <a href="/tags/UDK/" style="font-size: 10px;">UDK</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/UEFI/" style="font-size: 10px;">UEFI</a> <a href="/tags/VMware/" style="font-size: 11.11px;">VMware</a> <a href="/tags/apt/" style="font-size: 10px;">apt</a> <a href="/tags/audit2allow/" style="font-size: 10px;">audit2allow</a> <a href="/tags/auth/" style="font-size: 10px;">auth</a> <a href="/tags/bellman/" style="font-size: 10px;">bellman</a> <a href="/tags/bitmap/" style="font-size: 10px;">bitmap</a> <a href="/tags/bjut/" style="font-size: 10px;">bjut</a> <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/concept/" style="font-size: 12.22px;">concept</a> <a href="/tags/cpp/" style="font-size: 15.56px;">cpp</a> <a href="/tags/cryptography/" style="font-size: 11.11px;">cryptography</a> <a href="/tags/curses/" style="font-size: 10px;">curses</a> <a href="/tags/deque/" style="font-size: 10px;">deque</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/dpkg/" style="font-size: 10px;">dpkg</a> <a href="/tags/echo/" style="font-size: 10px;">echo</a> <a href="/tags/emulator/" style="font-size: 10px;">emulator</a> <a href="/tags/english/" style="font-size: 12.22px;">english</a> <a href="/tags/epoll/" style="font-size: 10px;">epoll</a> <a href="/tags/floyd/" style="font-size: 10px;">floyd</a> <a href="/tags/g/" style="font-size: 10px;">g++</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/gdb/" style="font-size: 11.11px;">gdb</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/ip/" style="font-size: 11.11px;">ip</a> <a href="/tags/jdbc/" style="font-size: 10px;">jdbc</a> <a href="/tags/kernal/" style="font-size: 10px;">kernal</a> <a href="/tags/life/" style="font-size: 10px;">life</a> <a href="/tags/linus/" style="font-size: 10px;">linus</a> <a href="/tags/linux/" style="font-size: 18.89px;">linux</a> <a href="/tags/linux内核/" style="font-size: 10px;">linux内核</a> <a href="/tags/list/" style="font-size: 10px;">list</a> <a href="/tags/mail服务器/" style="font-size: 10px;">mail服务器</a> <a href="/tags/map/" style="font-size: 11.11px;">map</a> <a href="/tags/md5注入/" style="font-size: 10px;">md5注入</a> <a href="/tags/memory/" style="font-size: 10px;">memory</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/new/" style="font-size: 12.22px;">new</a> <a href="/tags/notes/" style="font-size: 12.22px;">notes</a> <a href="/tags/openstack/" style="font-size: 10px;">openstack</a> <a href="/tags/pam/" style="font-size: 10px;">pam</a> <a href="/tags/patch/" style="font-size: 10px;">patch</a> <a href="/tags/ping/" style="font-size: 10px;">ping</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/poll/" style="font-size: 10px;">poll</a> <a href="/tags/postfix/" style="font-size: 10px;">postfix</a> <a href="/tags/protobuf/" style="font-size: 10px;">protobuf</a> <a href="/tags/qemu/" style="font-size: 10px;">qemu</a> <a href="/tags/queue/" style="font-size: 10px;">queue</a> <a href="/tags/reading/" style="font-size: 20px;">reading</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/rodata/" style="font-size: 10px;">rodata</a> <a href="/tags/select/" style="font-size: 10px;">select</a> <a href="/tags/selinux/" style="font-size: 10px;">selinux</a> <a href="/tags/set/" style="font-size: 10px;">set</a> <a href="/tags/stack/" style="font-size: 10px;">stack</a> <a href="/tags/thought/" style="font-size: 12.22px;">thought</a> <a href="/tags/tinythhpd/" style="font-size: 10px;">tinythhpd</a> <a href="/tags/tinyxml/" style="font-size: 10px;">tinyxml</a> <a href="/tags/tools/" style="font-size: 12.22px;">tools</a> <a href="/tags/tpm/" style="font-size: 10px;">tpm</a> <a href="/tags/traits/" style="font-size: 10px;">traits</a> <a href="/tags/trousers/" style="font-size: 10px;">trousers</a> <a href="/tags/trusted-computing/" style="font-size: 10px;">trusted_computing</a> <a href="/tags/unix编程实践/" style="font-size: 10px;">unix编程实践</a> <a href="/tags/valgrind/" style="font-size: 10px;">valgrind</a> <a href="/tags/vector/" style="font-size: 10px;">vector</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vs2013/" style="font-size: 10px;">vs2013</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web服务器/" style="font-size: 10px;">web服务器</a> <a href="/tags/win10/" style="font-size: 10px;">win10</a> <a href="/tags/xml/" style="font-size: 10px;">xml</a> <a href="/tags/yum/" style="font-size: 10px;">yum</a> <a href="/tags/世界上最遥远的距离/" style="font-size: 10px;">世界上最遥远的距离</a> <a href="/tags/个人成长/" style="font-size: 11.11px;">个人成长</a> <a href="/tags/书单/" style="font-size: 12.22px;">书单</a> <a href="/tags/书摘/" style="font-size: 10px;">书摘</a> <a href="/tags/事件驱动/" style="font-size: 10px;">事件驱动</a> <a href="/tags/产品/" style="font-size: 10px;">产品</a> <a href="/tags/代码段/" style="font-size: 10px;">代码段</a> <a href="/tags/优先级/" style="font-size: 10px;">优先级</a> <a href="/tags/位向量/" style="font-size: 10px;">位向量</a> <a href="/tags/位图/" style="font-size: 10px;">位图</a> <a href="/tags/信号/" style="font-size: 10px;">信号</a> <a href="/tags/公钥/" style="font-size: 10px;">公钥</a> <a href="/tags/公钥密码/" style="font-size: 10px;">公钥密码</a> <a href="/tags/内存池/" style="font-size: 10px;">内存池</a> <a href="/tags/内存泄漏/" style="font-size: 10px;">内存泄漏</a> <a href="/tags/内存管理/" style="font-size: 10px;">内存管理</a> <a href="/tags/内核/" style="font-size: 10px;">内核</a> <a href="/tags/内核模块/" style="font-size: 10px;">内核模块</a> <a href="/tags/刘未鹏/" style="font-size: 11.11px;">刘未鹏</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/区间和/" style="font-size: 10px;">区间和</a> <a href="/tags/单例模式/" style="font-size: 10px;">单例模式</a> <a href="/tags/参考策略/" style="font-size: 10px;">参考策略</a> <a href="/tags/可信计算/" style="font-size: 11.11px;">可信计算</a> <a href="/tags/后台开发/" style="font-size: 10px;">后台开发</a> <a href="/tags/回显服务器/" style="font-size: 10px;">回显服务器</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/学习之路/" style="font-size: 10px;">学习之路</a> <a href="/tags/学习计划/" style="font-size: 10px;">学习计划</a> <a href="/tags/容器/" style="font-size: 10px;">容器</a> <a href="/tags/密码体制/" style="font-size: 10px;">密码体制</a> <a href="/tags/密码学/" style="font-size: 12.22px;">密码学</a> <a href="/tags/富爸爸穷爸爸/" style="font-size: 10px;">富爸爸穷爸爸</a> <a href="/tags/对称密码/" style="font-size: 10px;">对称密码</a> <a href="/tags/川藏线/" style="font-size: 10px;">川藏线</a> <a href="/tags/年终总结/" style="font-size: 13.33px;">年终总结</a> <a href="/tags/广告/" style="font-size: 10px;">广告</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a> <a href="/tags/异步/" style="font-size: 10px;">异步</a> <a href="/tags/心智/" style="font-size: 10px;">心智</a> <a href="/tags/心理学/" style="font-size: 10px;">心理学</a> <a href="/tags/思维导图/" style="font-size: 10px;">思维导图</a> <a href="/tags/思考/" style="font-size: 12.22px;">思考</a> <a href="/tags/总结/" style="font-size: 15.56px;">总结</a> <a href="/tags/我是一只IT小小鸟/" style="font-size: 10px;">我是一只IT小小鸟</a> <a href="/tags/投资/" style="font-size: 10px;">投资</a> <a href="/tags/投资理财/" style="font-size: 11.11px;">投资理财</a> <a href="/tags/指数基金/" style="font-size: 10px;">指数基金</a> <a href="/tags/挑战程序设计竞赛/" style="font-size: 11.11px;">挑战程序设计竞赛</a> <a href="/tags/提问的智慧/" style="font-size: 10px;">提问的智慧</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/摄影/" style="font-size: 11.11px;">摄影</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/数据库/" style="font-size: 12.22px;">数据库</a> <a href="/tags/文本查询/" style="font-size: 10px;">文本查询</a> <a href="/tags/暗时间/" style="font-size: 10px;">暗时间</a> <a href="/tags/最短路径算法/" style="font-size: 10px;">最短路径算法</a> <a href="/tags/析构函数/" style="font-size: 10px;">析构函数</a> <a href="/tags/查理芒格/" style="font-size: 10px;">查理芒格</a> <a href="/tags/毕业旅行/" style="font-size: 10px;">毕业旅行</a> <a href="/tags/汇编/" style="font-size: 10px;">汇编</a> <a href="/tags/汇编语言/" style="font-size: 10px;">汇编语言</a> <a href="/tags/源码阅读/" style="font-size: 12.22px;">源码阅读</a> <a href="/tags/爬虫/" style="font-size: 10px;">爬虫</a> <a href="/tags/理财/" style="font-size: 10px;">理财</a> <a href="/tags/生活随笔/" style="font-size: 10px;">生活随笔</a> <a href="/tags/知识点/" style="font-size: 10px;">知识点</a> <a href="/tags/碎碎念/" style="font-size: 10px;">碎碎念</a> <a href="/tags/私钥/" style="font-size: 10px;">私钥</a> <a href="/tags/秋招/" style="font-size: 10px;">秋招</a> <a href="/tags/程序员/" style="font-size: 11.11px;">程序员</a> <a href="/tags/立flag/" style="font-size: 10px;">立flag</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/笔试/" style="font-size: 10px;">笔试</a> <a href="/tags/算法/" style="font-size: 11.11px;">算法</a> <a href="/tags/算法题/" style="font-size: 10px;">算法题</a> <a href="/tags/系统编程/" style="font-size: 11.11px;">系统编程</a> <a href="/tags/红黑树/" style="font-size: 10px;">红黑树</a> <a href="/tags/线段树/" style="font-size: 10px;">线段树</a> <a href="/tags/线程池/" style="font-size: 10px;">线程池</a> <a href="/tags/经历/" style="font-size: 10px;">经历</a> <a href="/tags/网络编程/" style="font-size: 12.22px;">网络编程</a> <a href="/tags/翻译/" style="font-size: 10px;">翻译</a> <a href="/tags/考研/" style="font-size: 10px;">考研</a> <a href="/tags/虚函数/" style="font-size: 10px;">虚函数</a> <a href="/tags/虚基类/" style="font-size: 10px;">虚基类</a> <a href="/tags/计划/" style="font-size: 10px;">计划</a> <a href="/tags/计时器/" style="font-size: 10px;">计时器</a> <a href="/tags/计算机/" style="font-size: 10px;">计算机</a> <a href="/tags/计算机技术/" style="font-size: 10px;">计算机技术</a> <a href="/tags/计算机网络/" style="font-size: 10px;">计算机网络</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a> <a href="/tags/读书/" style="font-size: 10px;">读书</a> <a href="/tags/读书笔记/" style="font-size: 13.33px;">读书笔记</a> <a href="/tags/调试/" style="font-size: 10px;">调试</a> <a href="/tags/进程/" style="font-size: 10px;">进程</a> <a href="/tags/重定向/" style="font-size: 10px;">重定向</a> <a href="/tags/阅读/" style="font-size: 10px;">阅读</a> <a href="/tags/阻塞/" style="font-size: 10px;">阻塞</a> <a href="/tags/面向对象/" style="font-size: 11.11px;">面向对象</a> <a href="/tags/面向过程/" style="font-size: 10px;">面向过程</a> <a href="/tags/预处理/" style="font-size: 10px;">预处理</a> <a href="/tags/骑行/" style="font-size: 10px;">骑行</a> <a href="/tags/黑客与画家/" style="font-size: 10px;">黑客与画家</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2029/11/">November 2029</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2029/11/11/20291111 坚持阅读/">坚持阅读</a>
+          </li>
+        
+          <li>
+            <a href="/2022/10/27/20221027 北京香山公园一日游/">北京香山公园一日游</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/31/20211231 2021年终总结/">2021年终总结</a>
+          </li>
+        
+          <li>
+            <a href="/2021/10/11/20211011 我的毕业旅行/">我的毕业旅行</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/31/20201231 2020年终总结/">2020年终总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">visiters</h3>
+    <div class="widget">
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=534a4dn9fi8&amp;m=0c&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;cw=ffffff&amp;cb=000000" async="async"></script>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016-2021 Tao WuSheng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/links" class="mobile-nav-link">Links</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'true' == true;
+    var verify = 'true' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Please leave your footprints...",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
+
+  </div>
+</body>
+</html>

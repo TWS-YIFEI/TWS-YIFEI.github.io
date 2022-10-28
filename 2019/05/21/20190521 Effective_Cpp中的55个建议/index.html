@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'true', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89376999-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89376999-1');
+</script>
+
+
+
+  
+  <title>Effective_Cpp中的55个建议 | YIFEI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文将Effective C++中55条建议的关键内容进行了记录和总结。注：本文适合用来复习，无法用来代替第一遍学习。其中有几条还有待复习，在前面标注了？。模板与泛型编程部分略过了几条，现在还读不太懂，相信有了更多的经验之后再来读第二遍，会有更多的收获。">
+<meta name="keywords" content="Cpp,Effective_Cpp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Effective_Cpp中的55个建议">
+<meta property="og:url" content="http://taowusheng.cn/2019/05/21/20190521 Effective_Cpp中的55个建议/index.html">
+<meta property="og:site_name" content="YIFEI">
+<meta property="og:description" content="本文将Effective C++中55条建议的关键内容进行了记录和总结。注：本文适合用来复习，无法用来代替第一遍学习。其中有几条还有待复习，在前面标注了？。模板与泛型编程部分略过了几条，现在还读不太懂，相信有了更多的经验之后再来读第二遍，会有更多的收获。">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2022-10-28T15:11:58.394Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Effective_Cpp中的55个建议">
+<meta name="twitter:description" content="本文将Effective C++中55条建议的关键内容进行了记录和总结。注：本文适合用来复习，无法用来代替第一遍学习。其中有几条还有待复习，在前面标注了？。模板与泛型编程部分略过了几条，现在还读不太懂，相信有了更多的经验之后再来读第二遍，会有更多的收获。">
+  
+    <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="/googleapis-fonts/fonts.css" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YIFEI</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">每当我找到生命的意义，它就又变了...</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/links">Links</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://taowusheng.cn"></form>
+      </div>
+    </div>
+  </div>
+	
+  <script>
+    
+    var number_of_banners = 8;
+    var randnum = Math.floor(Math.random() * number_of_banners + 1);
+    document.getElementById("banner").style.backgroundImage = "url(/css/images/banner" + randnum + ".jpg)";
+    
+</script>
+
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-20190521 Effective_Cpp中的55个建议" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/21/20190521 Effective_Cpp中的55个建议/" class="article-date">
+  <time datetime="2019-05-21T00:00:01.000Z" itemprop="datePublished">2019-05-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/C-Cpp/">C_Cpp</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Effective_Cpp中的55个建议
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		<!-- Table of Contents -->
+		
+		  <div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#改善程序的55个具体做法"><span class="toc-number">1.</span> <span class="toc-text">改善程序的55个具体做法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#让自己习惯C"><span class="toc-number">1.1.</span> <span class="toc-text">让自己习惯C++</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#构造-析构-赋值运算"><span class="toc-number">1.2.</span> <span class="toc-text">构造/析构/赋值运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#资源管理"><span class="toc-number">1.3.</span> <span class="toc-text">资源管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设计与声明"><span class="toc-number">1.4.</span> <span class="toc-text">设计与声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现"><span class="toc-number">1.5.</span> <span class="toc-text">实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#继承与面向对象设计"><span class="toc-number">1.6.</span> <span class="toc-text">继承与面向对象设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模板与泛型编程"><span class="toc-number">1.7.</span> <span class="toc-text">模板与泛型编程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#定制new和delete"><span class="toc-number">1.8.</span> <span class="toc-text">定制new和delete</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#杂项讨论"><span class="toc-number">1.9.</span> <span class="toc-text">杂项讨论</span></a></li></ol></li></ol>
+		  </div>
+		
+        <p>本文将Effective C++中55条建议的关键内容进行了记录和总结。<br>注：本文适合用来复习，无法用来代替第一遍学习。<br>其中有几条还有待复习，在前面标注了？。<br>模板与泛型编程部分略过了几条，现在还读不太懂，相信有了更多的经验之后再来读第二遍，会有更多的收获。<br><a id="more"></a></p>
+<h2 id="改善程序的55个具体做法"><a href="#改善程序的55个具体做法" class="headerlink" title="改善程序的55个具体做法"></a>改善程序的55个具体做法</h2><h3 id="让自己习惯C"><a href="#让自己习惯C" class="headerlink" title="让自己习惯C++"></a>让自己习惯C++</h3><ul>
+<li><p>1：视C++为一个语言联邦<br>C++有四个次语言，分别是C、C with Classes、Template C++、STL。在不同的次语言之间切换时，某些高效编程的策略会改变。</p>
+</li>
+<li><p>2：尽量以const，enum，inline替换#define</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>如果你想这么用</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> AAA 666</span></span><br><span class="line">请替换为</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> aaa=<span class="number">666</span></span><br><span class="line"><span class="number">2.</span>#define CAL_MAX(a,b) (a&gt;b?a:b) 改为</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="keyword">inline</span> T calMax(<span class="keyword">const</span> T &amp;a,<span class="keyword">const</span> T &amp;b)&#123;</span><br><span class="line">	<span class="keyword">return</span> a&gt;b?a:b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="number">3.</span>使用这种方式：</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Game</span>&#123;</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="keyword">enum</span>&#123; Num=<span class="number">5</span> &#125;;</span><br><span class="line">	<span class="keyword">int</span> scores[Num];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>3：尽可能使用const<br>1.尽量把某些符合const特性的地方加上const，比如局部变量、全局变量、函数参数、函数返回类型，成员函数本体，这样可以让编译器帮你找出程序的错误。<br>2.当有const和non-const两个成员函数时，可以让non-const版本来调用const版本实现，避免代码重复。p24</p>
+</li>
+<li><p>4：确保对象使用前已被初始化。<br>1.内置的int double等数据类型一定要手工初始化，因为C++不保证初始化它们。<br>2.构造函数最好使用成员初始化列表，因为如果放在函数体内就成了赋值了。这样先初始化一遍，然后进行赋值，之前的初始化就白做了。(初始化列表的成员顺序一定要和成员的声明顺序相同。)<br>3.当好几个文件中都有全局静态变量，并且他们互相调用时，这时每个静态变量的初始化顺序是不确定的，可能会发生错误，可以用以下方式来避免。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">之前： <span class="keyword">static</span> <span class="keyword">int</span> test;</span><br><span class="line">改为：</span><br><span class="line"><span class="function"><span class="keyword">int</span>&amp; <span class="title">test</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">static</span> test;</span><br><span class="line">	<span class="keyword">return</span> test;</span><br><span class="line">&#125;</span><br><span class="line">即用local <span class="keyword">static</span>来代替non-local <span class="keyword">static</span>。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="构造-析构-赋值运算"><a href="#构造-析构-赋值运算" class="headerlink" title="构造/析构/赋值运算"></a>构造/析构/赋值运算</h3><ul>
+<li><p>5：了解C++默默编写并调用哪些函数</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">如果你写下：</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Empty</span>&#123;</span>&#125;;</span><br><span class="line">就好像你写下：</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Empty</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	Empty()&#123;...&#125;</span><br><span class="line">	Empty(<span class="keyword">const</span> Empty&amp; rhs)&#123;...&#125;</span><br><span class="line">	~Empty()&#123;...&#125;</span><br><span class="line"></span><br><span class="line">	Empty&amp; <span class="keyword">operator</span>=(<span class="keyword">const</span> Empty&amp; rhs)&#123;...&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>6：若不想使用编译器自动生成的函数，就该明确拒绝。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">如果你自己写出那个函数，编译器就不会再自动生成了。</span><br><span class="line">看一个常规操作：</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HomeForSale</span>&#123;</span>...&#125;;</span><br><span class="line">...</span><br><span class="line">HomeForSale h1,h2;</span><br><span class="line">h1=h2;</span><br><span class="line">但是如果你觉得每一个HomeForSale类都是独一无二的，不想让h1=h2这样的事情发生，那么你可以这样：</span><br><span class="line">class Uncopyable&#123;</span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">	Uncopyable()&#123;&#125;</span><br><span class="line">	~Uncopyable()&#123;&#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	Uncopyable(<span class="keyword">const</span> Uncopyable&amp;);</span><br><span class="line">	Uncopyable&amp; <span class="keyword">operator</span>=(<span class="keyword">const</span> Uncopyable&amp;);</span><br><span class="line">&#125;;</span><br><span class="line">然后让某个类来继承这个类就行。</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HomeForSale</span>:</span> <span class="keyword">private</span> Uncopyable&#123;...&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>7：为多态基类声明virtual析构函数<br>1.带有多态性质的基类应该声明一个虚析构函数。如果一个类里面有任何虚函数，那么它也应该有一个虚析构函数。<br>2.如果一个类的设计目的不是为了多态，那么就不该声明virtual析构函数。比如string和STL的容器就不是被设计为基类，你也不能继承它们。</p>
+</li>
+<li><p>8：别让异常逃离析构函数<br>1.析构函数绝对不要吐出异常，如果一个被析构函数调用的函数可能抛出异常，析构函数应该捕捉任何异常，然后吞下它们或结束程序。<br>2.如果客户需要对类中某个函数抛出的异常做出反应，那么这个类应当给用户提供一个普通函数，在里面调用那个会抛出异常的函数。</p>
+</li>
+<li><p>9：绝对不要在构造和析构过程中调用虚函数<br>当构造子类的时候，需要先去调用父类的构造函数，这时候子类还不存在，是无法去自动调用子类的虚函数的。</p>
+</li>
+<li><p>10：令operator=返回一个reference to * this</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Widget&amp; <span class="keyword">operator</span>=(<span class="keyword">const</span> Widget&amp; rhs)&#123;</span><br><span class="line">	...</span><br><span class="line">	<span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>11:在operator=中处理自我赋值</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">w=w;</span><br><span class="line">a[i]=a[j];</span><br><span class="line">*px=*py;</span><br><span class="line">这几种都会发生“自我赋值”。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如下代码，初看可能没什么问题：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Bitmap</span>&#123;</span>...&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Widget</span>&#123;</span></span><br><span class="line">	...</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	Bitmap* pb;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//一个不安全的operator=实现</span></span><br><span class="line">Widget&amp; Widget::<span class="keyword">operator</span>=(<span class="keyword">const</span> Widget&amp; rhs)&#123;</span><br><span class="line">	<span class="keyword">delete</span> pb;</span><br><span class="line">	pb=<span class="keyword">new</span> Bitmap(*rhs.pb);</span><br><span class="line">	<span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>但是如果发生自我赋值的时候，上面代码是不是就有问题了！可以改成下面这种方式：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Widget&amp; Widget::<span class="keyword">operator</span>=(<span class="keyword">const</span> Widget&amp; rhs)&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="keyword">this</span>==&amp;rhs) <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">	<span class="keyword">delete</span> pb;</span><br><span class="line">	pb=<span class="keyword">new</span> Bitmap(*rhs.pb);</span><br><span class="line">	<span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>也可以这样：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Widget&amp; Widget::<span class="keyword">operator</span>=(Widget rhs)&#123;</span><br><span class="line">	swap(rhs);</span><br><span class="line">	<span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>12:复制对象时勿忘其每一个成分<br>1.如果你自己写了一个拷贝构造函数或=运算符，那么如果你在里面落掉了某个成员，编译器是不会提醒你的。<br>2.如果你没有落掉，那很好。但当你再为这个类添加一个成员时，不要忘了在自己写的拷贝函数里也加上这一成员。<br>3.还有如果一个子类继承了你的这个类，那么这个子类在调用拷贝函数时，就不会自动调用父类中你写的拷贝函数了，需要你手动调用。<br>4.不要尝试以某个拷贝函数实现另一个拷贝函数，应该将共同功能的代码放入第三个函数，然后在这两个拷贝函数中调用。</li>
+</ul>
+<h3 id="资源管理"><a href="#资源管理" class="headerlink" title="资源管理"></a>资源管理</h3><ul>
+<li>13：以对象管理资源<br>1.为了防止忘记调用delete释放空间，可以借用智能指针：<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">std</span>::<span class="built_in">auto_ptr</span>&lt;Investment&gt; pInv(createInvestment());</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>但是在c++11之后，就已经弃用auto_ptr了，可以把auto_ptr改成shared_ptr<br>2.为防止资源泄露，请使用RAII(资源获取时机便是初始化时机)对象，他们在构造函数中获得资源并在析构函数中释放资源。<br>3.两个常被使用的RAII classes分别是shared_ptr和auto_ptr。前者通常是最佳选择，若选择auto_ptr，复制动作会使它指向null。</p>
+<ul>
+<li><p>14：？在资源管理类中小心copying行为<br>1.复制RAII对象必须一并复制它所管理的资源，所以资源的copying行为决定RAII对象的copying行为。<br>2.普遍而常见的RAII类copying行为是：抑制copying、施行引用计数法。不过其他行为也都可能被实现。</p>
+</li>
+<li><p>15：？在资源管理类中提供对原始资源的访问<br>1.APIs往往要求访问原始资源，所以每一个RAII class应该提供一个“取得其所管理之资源”的办法。<br>2.对原始资源的访问可能经由显式转换或隐式转换。一般而言显式转换比较安全，但隐式转换对客户比较方便。</p>
+</li>
+<li><p>16：成对使用new和delete时要采用相同形式<br>如果你用的new xxx[],那么就要用delete [] xxx。</p>
+</li>
+<li><p>17：以独立语句将newed对象置入智能指针<br>1.如果你想这么写：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">processWidget(<span class="keyword">new</span> Widget,priority());</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>那你最好改成这种：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">std</span>::<span class="built_in">shared_ptr</span>&lt;Widget&gt; pw(<span class="keyword">new</span> Widget);</span><br><span class="line">processWidget(pw,priority());</span><br></pre></td></tr></table></figure></p>
+<p>那么priority抛出异常时，会防止内存泄漏。<br>2.以独立语句将newed对象存储于智能指针内。如果不这样做，一旦异常被抛出，有可能导致难以差距的资源泄漏。</p>
+<h3 id="设计与声明"><a href="#设计与声明" class="headerlink" title="设计与声明"></a>设计与声明</h3><ul>
+<li><p>18：让接口容易被正确使用，不易被误用。<br>1.好的接口很容易被正确使用，不容易被误用。你应该在你的所有接口中努力达成这些性质。<br>2.促进正确使用的办法包括接口的一致性，以及与内置类型的行为兼容。<br>3.阻止误用的办法包括建立新类型、限制类型上的操作，束缚对象值，以及消除客户的资源管理责任。<br>4.shared_ptr支持定制型删除器。这可防范DLL问题，可被用来自动解除互斥锁。</p>
+</li>
+<li><p>19：？设计class犹如设计type<br>1.定义出高效的classes是一种挑战，可以从这些方面考虑：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">新type的对象应该如何创建和销毁？</span><br><span class="line">对象的初始化和对象的赋值该有什么样的差别？</span><br><span class="line">新type的对象如果被passed by value，意味着什么？</span><br><span class="line">什么是新type的合法值？</span><br><span class="line">你的新type需要配合某个继承图系吗？</span><br><span class="line">你的新type需要什么样的转换？</span><br><span class="line">什么样的操作符和函数对此新type而言是合理的？</span><br><span class="line">什么样的标准函数应该驳回？</span><br><span class="line">谁该取用新type的成员？</span><br><span class="line">什么是新type的未声明接口？</span><br><span class="line">你的新type有多么一般化？</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>20：最好用pass-by-reference-to-const替换pass-by-value<br>1.引用传值，本质上也是传递一个指针，如果是传递内置类型，就不如采用直接传值了。(另外STL的迭代器和函数对象也是)<br>2.用引用传值通常比较高效，并可避免切割问题。<br>3.切割问题：当使用传值方式时，一个子类对象被传递，被当一个父类对象接收时，此时只能调用父类中拥有的操作，子类扩展的就被切割了。</p>
+</li>
+<li><p>21：?必须返回对象时，别妄想返回其reference。<br>注：(如果不是重载*运算符，是不是第三种代码就可以用了？这种方式和左值引用有什么区别?)<br>1.以下几种都是糟糕的代码：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Rational&amp; <span class="keyword">operator</span>*(<span class="keyword">const</span> Rational&amp; lhs,<span class="keyword">const</span> Rational&amp; rhs)&#123;</span><br><span class="line">	<span class="function">Rational <span class="title">result</span><span class="params">(lhs.n*rhs.n,lhs.d*rhs.d)</span></span>;</span><br><span class="line">	<span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line">-----------------------</span><br><span class="line"><span class="keyword">const</span> Rational&amp; <span class="keyword">operator</span>*(<span class="keyword">const</span> Rational&amp; lhs,<span class="keyword">const</span> Rational&amp; rhs)&#123;</span><br><span class="line">	Rational * result=<span class="keyword">new</span> Rational(lhs.n*rhs.n,lhs.d*rhs.d);</span><br><span class="line">	<span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//当这种情况时会发生资源泄露：</span></span><br><span class="line">Rational w,x,y,z;</span><br><span class="line">w=x*y*z;</span><br><span class="line">-----------------------</span><br><span class="line"><span class="keyword">const</span> Rational&amp; <span class="keyword">operator</span>*(<span class="keyword">const</span> Rational&amp; lhs,<span class="keyword">const</span> Rational&amp; rhs)&#123;</span><br><span class="line">	<span class="keyword">static</span> Rational result；</span><br><span class="line">	result = ...;</span><br><span class="line">	<span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//以下情况时会出错：</span></span><br><span class="line">Rational a,b,c,d;</span><br><span class="line">...</span><br><span class="line"><span class="keyword">if</span>((a*b)==(c*d))&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//此时永远都是true;</span></span><br><span class="line">-----------------------</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.绝不要返回pointer或reference指向一个local stack对象，或返回reference指向一个heap-allocated对象，或返回pointer或reference指向一个local static对象而有可能同时需要多个这样的对象。条款4已经为“在单线程环境中合理返回reference指向一个local static对象”提供了一份设计实例。</p>
+<ul>
+<li><p>22：将成员变量声明为private<br>1.如果是public：如果用户能直接访问成员变量，那么以后你就无法更改这个变量了，因为一旦你改了，可能就需要再去更改大量的用户代码！<br>2.如果仅声明为protected也不行：一旦你以后更改了这个变量，那么他的子类就会遭到破坏，因为它的子类很可能已经对这个变量进行了某些操作！<br>3.封装的重要性远比你想象的要重要。<br>4.切记将成员变量声明为private。这可赋予客户访问数据的一致性、可细微划分访问控制、允诺约束条件获得保证，并提供class作者以充分的实现弹性。<br>5.protected不比public更具封装性。</p>
+</li>
+<li><p>23：？宁以non-member、non-friend替换member函数。<br>1.这样做可以增加封装性、包裹弹性和机能扩充性。</p>
+</li>
+<li><p>24：？若所有参数皆需类型转换，请为此采用non-member函数。</p>
+</li>
+<li><p>25：？考虑写出一个不抛异常的swap函数<br>1.特化std::swap是什么意思？<br>2.不要尝试在std内加入某些对std而言全新的东西。</p>
+</li>
+</ul>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><ul>
+<li>26：尽可能延后变量定义式的出现时间。<br>1.比如：<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">encryptPassword</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span> &amp;password)</span></span>&#123;</span><br><span class="line">	<span class="built_in">string</span> encry;</span><br><span class="line">	fun();</span><br><span class="line">	<span class="keyword">return</span> encry;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//如果再运行fun()的时候抛出异常，encry就白定义了，所以改成下面这样会好一些：</span></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">encryptPassword</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span> &amp;password)</span></span>&#123;</span><br><span class="line">	fun();</span><br><span class="line">	<span class="built_in">string</span> encry;</span><br><span class="line">	<span class="keyword">return</span> encry;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.另外：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">encryptPassword</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span> &amp;password)</span></span>&#123;</span><br><span class="line">	<span class="built_in">string</span> encry;</span><br><span class="line">	encry==password;</span><br><span class="line">	...</span><br><span class="line">	<span class="keyword">return</span> encry;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>不如改成：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">encryptPassword</span><span class="params">(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span> &amp;password)</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="built_in">string</span> <span class="title">encry</span><span class="params">(password)</span></span>;</span><br><span class="line">	<span class="keyword">return</span> encry;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3.尽可能延后变量定义式的出现。这样做可增加程序清晰度并改善程序效率。</p>
+<ul>
+<li><p>27：尽量少做转型动作<br>1.如果可以，尽量避免转型，特别是在注重效率的代码中避免dynamic_cast,试着改成无需转型的设计。<br>2.如果转型是必要的，试着将它藏在某个函数背后，客户再调用这个函数即可。<br>3.宁可使用C++新式转型，不要使用旧式转型，前者很容易辨识出来，并且有着分门别类转型方式。</p>
+</li>
+<li><p>28：避免返回handles指向对象内部成分。<br>1.如果你用public成员函数返回一个private成员，那么这个私有成员的权限也就谈不上私有了。<br>2.避免返回handles指向对象内部。遵守这个条款可增加封装性，帮助const成员函数的行为像个const，并将发生”虚吊号码牌”的可能性降到最低。</p>
+</li>
+<li><p>29：为异常安全而努力是值得的<br>1.异常安全函数即使发生异常也不会泄露资源或允许任何数据结构败坏。这样的函数区分为三种可能的保证：基本型、强烈型、不抛异常型。<br>2.“强烈保证”往往能够以copy-and-swap实现出来，但“强烈保证”并非对所有函数都可实现或具备现实意义。<br>3.函数提供的“异常安全保证”通常最高只等于其所调用之各个函数的“异常安全保证”中的最弱者。</p>
+</li>
+<li><p>30：透彻了解inlining的里里外外<br>1.inline只是对编译器的一个申请，不是强制命令(如果函数复杂了，编译器就会把它当普通函数对待)。这项申请可以隐喻提出，也可以明确提出。如下就是隐喻提出：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    ...</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">age</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> theAge; &#125;</span><br><span class="line">    ...</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">int</span> theAge;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.如果你让一个函数指针指向内联函数，那么通过函数指针来调用函数时，此时不是通过内联的方式调用。<br>3.内联函数也是有代价的，它会把所有用到这个函数的地方都插入这些代码，那么当你需要更改这个函数的时候，就需要重新编译所有客户端，而不是只重新链接就好。<br>4.将大多数inlining限制在小型、被频繁调用的函数身上。这可使日后的调试过程和二进制升级更容易，也可使潜在的代码膨胀问题最小化，使程序的速度提升机会最大化。<br>5.不要只因为function template出现在头文件，就将他们声明为inline。</p>
+<ul>
+<li>31：将文件间的编译依存关系降到最低。<br>1.如果一个头文件被改变，那么所有依赖这个头文件的类都需要重新编译。<br>2.尽量以class声明式替换class定义式。<br>3.程序库头文件应该以“完全且仅有声明式”的形式存在。这种做法不论是否涉及templates都适用。</li>
+</ul>
+<h3 id="继承与面向对象设计"><a href="#继承与面向对象设计" class="headerlink" title="继承与面向对象设计"></a>继承与面向对象设计</h3><ul>
+<li><p>32：确定你的public继承塑模出is-a关系。<br>1.public继承意味着is-a。适用于base classes身上的每一件事情也一定适用于derived classes身上，因为每一个derived class对象也都是一个base class对象。</p>
+</li>
+<li><p>33：避免遮掩继承而来的名称<br>1.只要名称相同，子类的成员函数就会把基类中所有同名函数覆盖掉。<br>2.为了让被遮掩的名称再见天日，可使用using声明式或转交函数。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//using声明式</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Derived</span>:</span> <span class="keyword">public</span> Base&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">using</span> Base::mf1;</span><br><span class="line">    <span class="keyword">using</span> Base::mf3;</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">mf1</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">mf3</span><span class="params">()</span></span>;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//转交函数</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Derived</span>:</span><span class="keyword">private</span> Base&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">mf1</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Base::mf1();</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>34：?区分接口继承和实现继承<br>1.声明一个pure virtual函数的目的是为了让derived classes只继承函数接口。<br>2.实际上任何class如果打算被用来当做一个基类，都会拥有若干虚函数。<br>3.接口继承和实现继承不同。在public继承之下，derived classes总是继承基类的接口。<br>4.pure virtual只具体指定接口继承。<br>5.简朴的非纯虚函数具体制定接口继承及缺省实现继承。<br>6.非虚函数具体指定接口继承以及强制性实现继承。</p>
+</li>
+<li><p>35：?考虑virtual函数以外的其他选择。</p>
+</li>
+<li><p>36：绝不重新定义继承而来的非虚函数。</p>
+</li>
+<li><p>37：绝不重新定义继承而来的缺省参数值。<br>1.缺省参数是静态绑定的，你如果重新定义了，你在调用该函数时会动态调用子类的，但是他的默认参数却是基类的。</p>
+</li>
+<li><p>38：通过复合塑模出has-a或根据某物实现出<br>1.复合的意义和public继承完全不同。<br>2.?在应用域，复合意味着has-a。在实现域，复合意味着is-implemented-in-terms-of(根据某物实现出)</p>
+</li>
+<li><p>39：明智而审慎地使用private继承</p>
+</li>
+<li><p>40：明智而审慎地使用多重继承<br>1.非必要不要使用虚基类，平时请使用非虚继承。如果你必须使用虚基类，尽可能避免在其中饭放置数据。<br>2.多重继承比单一继承复杂。他可能导致新的歧义性，以及对虚继承的需要。<br>3.虚继承会增加大小、速度、初始化(及赋值)复杂度等成本。如果虚基类不带任何数据，将是最具实用价值的情况。<br>4.多重继承的确有正当用途。其中一个情节涉及public继承某个接口类和私有继承某个协助实现的class的两相结合。</p>
+</li>
+</ul>
+<h3 id="模板与泛型编程"><a href="#模板与泛型编程" class="headerlink" title="模板与泛型编程"></a>模板与泛型编程</h3><ul>
+<li><p>41：了解隐式接口和编译器多态<br>1.classes和templates都支持接口和多台。<br>2.对classes而言接口是显式的，以函数签名为中心。多台则是通过virtual函数发生于运行期。<br>3.对template参数而言，接口是隐式的，奠基于有效表达式。多台则是通过template具现化和函数重载解析发生于编译器。</p>
+</li>
+<li><p>42：了解typename的双重意义<br>1.c++并不总是把class和typename视为等价。有时候你一定得用typename。<br>2.(如果某个名称依赖于某个template参数，称之为从属名称)你使用这个从属名称时前面要加上typename</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> C&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print2nd</span><span class="params">(<span class="keyword">const</span> C&amp; container)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(container.size()&gt;=<span class="number">2</span>)&#123;</span><br><span class="line">        <span class="comment">//C::const_iterator iter(container.begin());//错误,const_iterator可能会被当做某个全局变量。</span></span><br><span class="line">        typename C::const_iterator iter(container.begin());//你使用这个从属名称时前面要加上typenameme</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>3.在使用typename标示从属类型名称时，不能在继承类和成员初值列内用。<br>4.平时在声明template参数时，class和typename可以互换。</p>
+<ul>
+<li>43-47未读</li>
+</ul>
+<h3 id="定制new和delete"><a href="#定制new和delete" class="headerlink" title="定制new和delete"></a>定制new和delete</h3><ul>
+<li><p>48：了解new-handler的行为。<br>1.set_new_handler允许客户指定一个函数，在内存分配无法获得满足时被调用。<br>2.Nothrow new是一个颇为局限的工具，它只适用于内存分配，后继的构造函数调用函数可能抛出异常。</p>
+</li>
+<li><p>49-52未读</p>
+</li>
+</ul>
+<h3 id="杂项讨论"><a href="#杂项讨论" class="headerlink" title="杂项讨论"></a>杂项讨论</h3><ul>
+<li><p>53：不要轻忽编译器的警告<br>1.严肃对待编译器发出的警告信息。努力在你的编译器的最高警告级别下争取无任何警告。<br>2.不要过度依赖编译器的报警能力，因为不同的编译器对待事情的态度并不相同。一旦移植到另一个编译器上，你原本依赖的警告信息有可能消失。</p>
+</li>
+<li><p>54：让自己熟悉包括TR1在内的标准程序库</p>
+</li>
+<li><p>55：让自己熟悉boost。<br>1.boost是一个标准程序库，相当于STL的延续和扩充，里面包含了各种工具类，一些新的特性会被先加在这里面。</p>
+</li>
+</ul>
+<p>欢迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/">http://taowusheng.cn/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://taowusheng.cn/2019/05/21/20190521 Effective_Cpp中的55个建议/" data-id="cl9smuyll00mx9boipa7qnme4" class="article-share-link">Share</a>
+      
+      
+        <a href="/2019/05/21/20190521 Effective_Cpp中的55个建议/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2019/05/21/20190521 Effective_Cpp中的55个建议/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cpp/">Cpp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Effective-Cpp/">Effective_Cpp</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/05/25/20190525 2019字节跳动夏令营在线笔试题/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          2019字节跳动夏令营在线笔试题
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/05/20/20190520 Cpp后台学习计划与记录/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Cpp后台学习计划与记录</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM-Algorithm/">ACM_Algorithm</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Assembly/">Assembly</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/C-Cpp/">C_Cpp</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Cryptography/">Cryptography</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux-Kernel/">Linux_Kernel</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Middleware/">Middleware</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network/">Network</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network-Programming/">Network_Programming</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Notes/">Notes</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt/">Qt</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading/">Reading</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading-Source/">Reading_Source</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Security/">Security</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Summary/">Summary</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/System-Programming/">System_Programming</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Thought/">Thought</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Translation/">Translation</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Trusted-Computing/">Trusted_Computing</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Unknown/">Unknown</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">reading</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/01背包/" style="font-size: 10px;">01背包</a> <a href="/tags/2017/" style="font-size: 10px;">2017</a> <a href="/tags/2018/" style="font-size: 11.11px;">2018</a> <a href="/tags/2021/" style="font-size: 10px;">2021</a> <a href="/tags/ACM/" style="font-size: 13.33px;">ACM</a> <a href="/tags/ACM-Algorithm/" style="font-size: 10px;">ACM_Algorithm</a> <a href="/tags/Algorithm/" style="font-size: 10px;">Algorithm</a> <a href="/tags/Assembly/" style="font-size: 11.11px;">Assembly</a> <a href="/tags/C/" style="font-size: 11.11px;">C</a> <a href="/tags/C/" style="font-size: 12.22px;">C++</a> <a href="/tags/CTF/" style="font-size: 10px;">CTF</a> <a href="/tags/C-Cpp/" style="font-size: 12.22px;">C_Cpp</a> <a href="/tags/California-Dreaming/" style="font-size: 10px;">California_Dreaming</a> <a href="/tags/Cpp/" style="font-size: 14.44px;">Cpp</a> <a href="/tags/DES/" style="font-size: 10px;">DES</a> <a href="/tags/EDK/" style="font-size: 10px;">EDK</a> <a href="/tags/Effective-Cpp/" style="font-size: 10px;">Effective_Cpp</a> <a href="/tags/English/" style="font-size: 11.11px;">English</a> <a href="/tags/GMP/" style="font-size: 10px;">GMP</a> <a href="/tags/GUI/" style="font-size: 10px;">GUI</a> <a href="/tags/IO/" style="font-size: 10px;">IO</a> <a href="/tags/IO复用/" style="font-size: 10px;">IO复用</a> <a href="/tags/IO多路复用/" style="font-size: 10px;">IO多路复用</a> <a href="/tags/JAVA/" style="font-size: 16.67px;">JAVA</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/JsonCpp/" style="font-size: 10px;">JsonCpp</a> <a href="/tags/KGDB/" style="font-size: 10px;">KGDB</a> <a href="/tags/LeetCode/" style="font-size: 10px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 13.33px;">Linux</a> <a href="/tags/Linux-Kernel/" style="font-size: 13.33px;">Linux_Kernel</a> <a href="/tags/Middleware/" style="font-size: 10px;">Middleware</a> <a href="/tags/Network/" style="font-size: 11.11px;">Network</a> <a href="/tags/Network-Programming/" style="font-size: 13.33px;">Network_Programming</a> <a href="/tags/Python/" style="font-size: 15.56px;">Python</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/RSA/" style="font-size: 10px;">RSA</a> <a href="/tags/SELinux/" style="font-size: 10px;">SELinux</a> <a href="/tags/SHA/" style="font-size: 10px;">SHA</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/STL/" style="font-size: 14.44px;">STL</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Summary/" style="font-size: 17.78px;">Summary</a> <a href="/tags/System-Programming/" style="font-size: 11.11px;">System_Programming</a> <a href="/tags/TSS/" style="font-size: 10px;">TSS</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/Tools/" style="font-size: 10px;">Tools</a> <a href="/tags/Translation/" style="font-size: 10px;">Translation</a> <a href="/tags/UDK/" style="font-size: 10px;">UDK</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/UEFI/" style="font-size: 10px;">UEFI</a> <a href="/tags/VMware/" style="font-size: 11.11px;">VMware</a> <a href="/tags/apt/" style="font-size: 10px;">apt</a> <a href="/tags/audit2allow/" style="font-size: 10px;">audit2allow</a> <a href="/tags/auth/" style="font-size: 10px;">auth</a> <a href="/tags/bellman/" style="font-size: 10px;">bellman</a> <a href="/tags/bitmap/" style="font-size: 10px;">bitmap</a> <a href="/tags/bjut/" style="font-size: 10px;">bjut</a> <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/concept/" style="font-size: 12.22px;">concept</a> <a href="/tags/cpp/" style="font-size: 15.56px;">cpp</a> <a href="/tags/cryptography/" style="font-size: 11.11px;">cryptography</a> <a href="/tags/curses/" style="font-size: 10px;">curses</a> <a href="/tags/deque/" style="font-size: 10px;">deque</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/dpkg/" style="font-size: 10px;">dpkg</a> <a href="/tags/echo/" style="font-size: 10px;">echo</a> <a href="/tags/emulator/" style="font-size: 10px;">emulator</a> <a href="/tags/english/" style="font-size: 12.22px;">english</a> <a href="/tags/epoll/" style="font-size: 10px;">epoll</a> <a href="/tags/floyd/" style="font-size: 10px;">floyd</a> <a href="/tags/g/" style="font-size: 10px;">g++</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/gdb/" style="font-size: 11.11px;">gdb</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/ip/" style="font-size: 11.11px;">ip</a> <a href="/tags/jdbc/" style="font-size: 10px;">jdbc</a> <a href="/tags/kernal/" style="font-size: 10px;">kernal</a> <a href="/tags/life/" style="font-size: 10px;">life</a> <a href="/tags/linus/" style="font-size: 10px;">linus</a> <a href="/tags/linux/" style="font-size: 18.89px;">linux</a> <a href="/tags/linux内核/" style="font-size: 10px;">linux内核</a> <a href="/tags/list/" style="font-size: 10px;">list</a> <a href="/tags/mail服务器/" style="font-size: 10px;">mail服务器</a> <a href="/tags/map/" style="font-size: 11.11px;">map</a> <a href="/tags/md5注入/" style="font-size: 10px;">md5注入</a> <a href="/tags/memory/" style="font-size: 10px;">memory</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/new/" style="font-size: 12.22px;">new</a> <a href="/tags/notes/" style="font-size: 12.22px;">notes</a> <a href="/tags/openstack/" style="font-size: 10px;">openstack</a> <a href="/tags/pam/" style="font-size: 10px;">pam</a> <a href="/tags/patch/" style="font-size: 10px;">patch</a> <a href="/tags/ping/" style="font-size: 10px;">ping</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/poll/" style="font-size: 10px;">poll</a> <a href="/tags/postfix/" style="font-size: 10px;">postfix</a> <a href="/tags/protobuf/" style="font-size: 10px;">protobuf</a> <a href="/tags/qemu/" style="font-size: 10px;">qemu</a> <a href="/tags/queue/" style="font-size: 10px;">queue</a> <a href="/tags/reading/" style="font-size: 20px;">reading</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/rodata/" style="font-size: 10px;">rodata</a> <a href="/tags/select/" style="font-size: 10px;">select</a> <a href="/tags/selinux/" style="font-size: 10px;">selinux</a> <a href="/tags/set/" style="font-size: 10px;">set</a> <a href="/tags/stack/" style="font-size: 10px;">stack</a> <a href="/tags/thought/" style="font-size: 12.22px;">thought</a> <a href="/tags/tinythhpd/" style="font-size: 10px;">tinythhpd</a> <a href="/tags/tinyxml/" style="font-size: 10px;">tinyxml</a> <a href="/tags/tools/" style="font-size: 12.22px;">tools</a> <a href="/tags/tpm/" style="font-size: 10px;">tpm</a> <a href="/tags/traits/" style="font-size: 10px;">traits</a> <a href="/tags/trousers/" style="font-size: 10px;">trousers</a> <a href="/tags/trusted-computing/" style="font-size: 10px;">trusted_computing</a> <a href="/tags/unix编程实践/" style="font-size: 10px;">unix编程实践</a> <a href="/tags/valgrind/" style="font-size: 10px;">valgrind</a> <a href="/tags/vector/" style="font-size: 10px;">vector</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vs2013/" style="font-size: 10px;">vs2013</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web服务器/" style="font-size: 10px;">web服务器</a> <a href="/tags/win10/" style="font-size: 10px;">win10</a> <a href="/tags/xml/" style="font-size: 10px;">xml</a> <a href="/tags/yum/" style="font-size: 10px;">yum</a> <a href="/tags/世界上最遥远的距离/" style="font-size: 10px;">世界上最遥远的距离</a> <a href="/tags/个人成长/" style="font-size: 11.11px;">个人成长</a> <a href="/tags/书单/" style="font-size: 12.22px;">书单</a> <a href="/tags/书摘/" style="font-size: 10px;">书摘</a> <a href="/tags/事件驱动/" style="font-size: 10px;">事件驱动</a> <a href="/tags/产品/" style="font-size: 10px;">产品</a> <a href="/tags/代码段/" style="font-size: 10px;">代码段</a> <a href="/tags/优先级/" style="font-size: 10px;">优先级</a> <a href="/tags/位向量/" style="font-size: 10px;">位向量</a> <a href="/tags/位图/" style="font-size: 10px;">位图</a> <a href="/tags/信号/" style="font-size: 10px;">信号</a> <a href="/tags/公钥/" style="font-size: 10px;">公钥</a> <a href="/tags/公钥密码/" style="font-size: 10px;">公钥密码</a> <a href="/tags/内存池/" style="font-size: 10px;">内存池</a> <a href="/tags/内存泄漏/" style="font-size: 10px;">内存泄漏</a> <a href="/tags/内存管理/" style="font-size: 10px;">内存管理</a> <a href="/tags/内核/" style="font-size: 10px;">内核</a> <a href="/tags/内核模块/" style="font-size: 10px;">内核模块</a> <a href="/tags/刘未鹏/" style="font-size: 11.11px;">刘未鹏</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/区间和/" style="font-size: 10px;">区间和</a> <a href="/tags/单例模式/" style="font-size: 10px;">单例模式</a> <a href="/tags/参考策略/" style="font-size: 10px;">参考策略</a> <a href="/tags/可信计算/" style="font-size: 11.11px;">可信计算</a> <a href="/tags/后台开发/" style="font-size: 10px;">后台开发</a> <a href="/tags/回显服务器/" style="font-size: 10px;">回显服务器</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/学习之路/" style="font-size: 10px;">学习之路</a> <a href="/tags/学习计划/" style="font-size: 10px;">学习计划</a> <a href="/tags/容器/" style="font-size: 10px;">容器</a> <a href="/tags/密码体制/" style="font-size: 10px;">密码体制</a> <a href="/tags/密码学/" style="font-size: 12.22px;">密码学</a> <a href="/tags/富爸爸穷爸爸/" style="font-size: 10px;">富爸爸穷爸爸</a> <a href="/tags/对称密码/" style="font-size: 10px;">对称密码</a> <a href="/tags/川藏线/" style="font-size: 10px;">川藏线</a> <a href="/tags/年终总结/" style="font-size: 13.33px;">年终总结</a> <a href="/tags/广告/" style="font-size: 10px;">广告</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a> <a href="/tags/异步/" style="font-size: 10px;">异步</a> <a href="/tags/心智/" style="font-size: 10px;">心智</a> <a href="/tags/心理学/" style="font-size: 10px;">心理学</a> <a href="/tags/思维导图/" style="font-size: 10px;">思维导图</a> <a href="/tags/思考/" style="font-size: 12.22px;">思考</a> <a href="/tags/总结/" style="font-size: 15.56px;">总结</a> <a href="/tags/我是一只IT小小鸟/" style="font-size: 10px;">我是一只IT小小鸟</a> <a href="/tags/投资/" style="font-size: 10px;">投资</a> <a href="/tags/投资理财/" style="font-size: 11.11px;">投资理财</a> <a href="/tags/指数基金/" style="font-size: 10px;">指数基金</a> <a href="/tags/挑战程序设计竞赛/" style="font-size: 11.11px;">挑战程序设计竞赛</a> <a href="/tags/提问的智慧/" style="font-size: 10px;">提问的智慧</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/摄影/" style="font-size: 11.11px;">摄影</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/数据库/" style="font-size: 12.22px;">数据库</a> <a href="/tags/文本查询/" style="font-size: 10px;">文本查询</a> <a href="/tags/暗时间/" style="font-size: 10px;">暗时间</a> <a href="/tags/最短路径算法/" style="font-size: 10px;">最短路径算法</a> <a href="/tags/析构函数/" style="font-size: 10px;">析构函数</a> <a href="/tags/查理芒格/" style="font-size: 10px;">查理芒格</a> <a href="/tags/毕业旅行/" style="font-size: 10px;">毕业旅行</a> <a href="/tags/汇编/" style="font-size: 10px;">汇编</a> <a href="/tags/汇编语言/" style="font-size: 10px;">汇编语言</a> <a href="/tags/源码阅读/" style="font-size: 12.22px;">源码阅读</a> <a href="/tags/爬虫/" style="font-size: 10px;">爬虫</a> <a href="/tags/理财/" style="font-size: 10px;">理财</a> <a href="/tags/生活随笔/" style="font-size: 10px;">生活随笔</a> <a href="/tags/知识点/" style="font-size: 10px;">知识点</a> <a href="/tags/碎碎念/" style="font-size: 10px;">碎碎念</a> <a href="/tags/私钥/" style="font-size: 10px;">私钥</a> <a href="/tags/秋招/" style="font-size: 10px;">秋招</a> <a href="/tags/程序员/" style="font-size: 11.11px;">程序员</a> <a href="/tags/立flag/" style="font-size: 10px;">立flag</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/笔试/" style="font-size: 10px;">笔试</a> <a href="/tags/算法/" style="font-size: 11.11px;">算法</a> <a href="/tags/算法题/" style="font-size: 10px;">算法题</a> <a href="/tags/系统编程/" style="font-size: 11.11px;">系统编程</a> <a href="/tags/红黑树/" style="font-size: 10px;">红黑树</a> <a href="/tags/线段树/" style="font-size: 10px;">线段树</a> <a href="/tags/线程池/" style="font-size: 10px;">线程池</a> <a href="/tags/经历/" style="font-size: 10px;">经历</a> <a href="/tags/网络编程/" style="font-size: 12.22px;">网络编程</a> <a href="/tags/翻译/" style="font-size: 10px;">翻译</a> <a href="/tags/考研/" style="font-size: 10px;">考研</a> <a href="/tags/虚函数/" style="font-size: 10px;">虚函数</a> <a href="/tags/虚基类/" style="font-size: 10px;">虚基类</a> <a href="/tags/计划/" style="font-size: 10px;">计划</a> <a href="/tags/计时器/" style="font-size: 10px;">计时器</a> <a href="/tags/计算机/" style="font-size: 10px;">计算机</a> <a href="/tags/计算机技术/" style="font-size: 10px;">计算机技术</a> <a href="/tags/计算机网络/" style="font-size: 10px;">计算机网络</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a> <a href="/tags/读书/" style="font-size: 10px;">读书</a> <a href="/tags/读书笔记/" style="font-size: 13.33px;">读书笔记</a> <a href="/tags/调试/" style="font-size: 10px;">调试</a> <a href="/tags/进程/" style="font-size: 10px;">进程</a> <a href="/tags/重定向/" style="font-size: 10px;">重定向</a> <a href="/tags/阅读/" style="font-size: 10px;">阅读</a> <a href="/tags/阻塞/" style="font-size: 10px;">阻塞</a> <a href="/tags/面向对象/" style="font-size: 11.11px;">面向对象</a> <a href="/tags/面向过程/" style="font-size: 10px;">面向过程</a> <a href="/tags/预处理/" style="font-size: 10px;">预处理</a> <a href="/tags/骑行/" style="font-size: 10px;">骑行</a> <a href="/tags/黑客与画家/" style="font-size: 10px;">黑客与画家</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2029/11/">November 2029</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2029/11/11/20291111 坚持阅读/">坚持阅读</a>
+          </li>
+        
+          <li>
+            <a href="/2022/10/27/20221027 北京香山公园一日游/">北京香山公园一日游</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/31/20211231 2021年终总结/">2021年终总结</a>
+          </li>
+        
+          <li>
+            <a href="/2021/10/11/20211011 我的毕业旅行/">我的毕业旅行</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/31/20201231 2020年终总结/">2020年终总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">visiters</h3>
+    <div class="widget">
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=534a4dn9fi8&amp;m=0c&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;cw=ffffff&amp;cb=000000" async="async"></script>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016-2021 Tao WuSheng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/links" class="mobile-nav-link">Links</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'true' == true;
+    var verify = 'true' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Please leave your footprints...",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
+
+  </div>
+</body>
+</html>

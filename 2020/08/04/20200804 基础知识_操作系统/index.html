@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'true', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89376999-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89376999-1');
+</script>
+
+
+
+  
+  <title>基础知识_操作系统 | YIFEI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="操作系统基础知识与常见题目。">
+<meta name="keywords" content="Summary,操作系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基础知识_操作系统">
+<meta property="og:url" content="http://taowusheng.cn/2020/08/04/20200804 基础知识_操作系统/index.html">
+<meta property="og:site_name" content="YIFEI">
+<meta property="og:description" content="操作系统基础知识与常见题目。">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190320%20fork.jpg">
+<meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190320%20cow_fork.jpg">
+<meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190320%20vfork.jpg">
+<meta property="og:image" content="http://taowusheng.cn/images_/2021_picture/2021_coder_yifei.jpg">
+<meta property="og:updated_time" content="2022-10-28T15:11:58.398Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基础知识_操作系统">
+<meta name="twitter:description" content="操作系统基础知识与常见题目。">
+<meta name="twitter:image" content="http://taowusheng.cn/images_/2019_picture/20190320%20fork.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="/googleapis-fonts/fonts.css" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YIFEI</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">每当我找到生命的意义，它就又变了...</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/links">Links</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://taowusheng.cn"></form>
+      </div>
+    </div>
+  </div>
+	
+  <script>
+    
+    var number_of_banners = 8;
+    var randnum = Math.floor(Math.random() * number_of_banners + 1);
+    document.getElementById("banner").style.backgroundImage = "url(/css/images/banner" + randnum + ".jpg)";
+    
+</script>
+
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-20200804 基础知识_操作系统" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/04/20200804 基础知识_操作系统/" class="article-date">
+  <time datetime="2020-08-04T00:00:01.000Z" itemprop="datePublished">2020-08-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Summary/">Summary</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      基础知识_操作系统
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		<!-- Table of Contents -->
+		
+		  <div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+			<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#进程与线程的区别"><span class="toc-number">1.</span> <span class="toc-text">进程与线程的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#进程间通讯有哪些"><span class="toc-number">2.</span> <span class="toc-text">进程间通讯有哪些</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fork、vfork、clone"><span class="toc-number">3.</span> <span class="toc-text">fork、vfork、clone</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#进程状态机"><span class="toc-number">4.</span> <span class="toc-text">进程状态机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#守护进程、孤儿进程与僵尸进程"><span class="toc-number">5.</span> <span class="toc-text">守护进程、孤儿进程与僵尸进程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#进程调度算法"><span class="toc-number">6.</span> <span class="toc-text">进程调度算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#进程终止的五种方式"><span class="toc-number">7.</span> <span class="toc-text">进程终止的五种方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多线程间同步方式"><span class="toc-number">8.</span> <span class="toc-text">多线程间同步方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#一个进程可以创建多少线程，和什么有关"><span class="toc-number">9.</span> <span class="toc-text">一个进程可以创建多少线程，和什么有关?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#五种IO模型"><span class="toc-number">10.</span> <span class="toc-text">五种IO模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何理解阻塞和非阻塞，同步与异步？"><span class="toc-number">11.</span> <span class="toc-text">如何理解阻塞和非阻塞，同步与异步？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#页表为什么要分级"><span class="toc-number">12.</span> <span class="toc-text">页表为什么要分级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#页面置换算法"><span class="toc-number">13.</span> <span class="toc-text">页面置换算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#死锁产生的四个条件"><span class="toc-number">14.</span> <span class="toc-text">死锁产生的四个条件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#处理死锁的四个方法"><span class="toc-number">15.</span> <span class="toc-text">处理死锁的四个方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#信号量以及PV原语"><span class="toc-number">16.</span> <span class="toc-text">信号量以及PV原语</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#银行家算法"><span class="toc-number">17.</span> <span class="toc-text">银行家算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#生产者消费者问题"><span class="toc-number">18.</span> <span class="toc-text">生产者消费者问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#哲学家进餐问题"><span class="toc-number">19.</span> <span class="toc-text">哲学家进餐问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#读者写者问题"><span class="toc-number">20.</span> <span class="toc-text">读者写者问题</span></a></li></ol>
+		  </div>
+		
+        <p>操作系统基础知识与常见题目。<br><a id="more"></a></p>
+<h4 id="进程与线程的区别"><a href="#进程与线程的区别" class="headerlink" title="进程与线程的区别"></a>进程与线程的区别</h4><ul>
+<li>进程是系统进行资源调度和分配的独立单位；而线程是CPU调度和分配的基本单位。</li>
+<li>进程间相互独立，享有独立的资源；一个进程内的多个线程可以共享资源，但对于其他进程内的线程是不可见的。</li>
+<li>进程间可以通过管道、消息队列、信号量、共享内存、信号、套接字等IPC机制来通信；线程间可以直接访问全局变量等共享的内存，但需要一定的同步和互斥手段。</li>
+<li>切换线程的开销要比切换进程的开销小很多。</li>
+<li>进程的内存布局是分代码段、数据段、堆区、MMAP段、栈区，而线程栈在堆区和栈区中间的MMAP段。</li>
+<li>另外线程使用的结构体跟进程相同，都是task_struct,线程可以共享进程的堆数据、文件描述符等各种资源。</li>
+<li>一个进程中可以有多个线程。</li>
+<li><p>进程与线程的关系可以看成下面这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">o |======</span><br><span class="line">  |======</span><br><span class="line">  |------</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>举例说明两者的区别</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">一个进程可以类比成一个车间，多进程就是多个车间。</span><br><span class="line">每个线程相当于车间内的一条生产，多线程就是一个车间内有多条生产线。</span><br><span class="line"></span><br><span class="line">不同车间之间需要运送货物，可以人工搬运、传送带、货车等，</span><br><span class="line">相当于进程间管道、消息队列、共享内存等IPC通信。</span><br><span class="line"></span><br><span class="line">每个车间内有需要加工的材料，不同生产线都可以使用这些材料，</span><br><span class="line">相当于线程间可以共享进程的一些资源，比如堆区数据、文件描述符等，</span><br><span class="line">于是产生了资源争用，需要一些同步互斥的手段。</span><br><span class="line"></span><br><span class="line">这个工厂内只有一个工人，就相当于CPU，他可以选择去不同的生产线去工作，</span><br><span class="line">在不同的生产线之间切换，就相当于cpu的时间片轮转。</span><br><span class="line"></span><br><span class="line">工人每次只能在一条生产线工作，代表对于内核来说，只有线程的概念，而没有进程的概念。</span><br><span class="line"></span><br><span class="line">工人在不同生产线之间切换是相对容易的，不同车间之间的切换是比较麻烦的。</span><br><span class="line"></span><br><span class="line">一个车间发生了事故，另一个车间一般还能继续工作。</span><br><span class="line">而一条生产线发生事故，其他生产线可能就会受影响。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="进程间通讯有哪些"><a href="#进程间通讯有哪些" class="headerlink" title="进程间通讯有哪些"></a>进程间通讯有哪些</h4><p>1.管道</p>
+<ul>
+<li>面向字节流，创建匿名管道的时候使用int pipe(int fd[2])，产生两个文件描述符，从fd[0]读出数据，从fd[1]写入数据，然后fork进程，就可以实现两个进程间的通讯。</li>
+<li>优点是使用简单。</li>
+<li>缺点是必须A全部写完，B才能读取数据，效率不高，不适合频繁的交换数据。</li>
+</ul>
+<p>2.消息队列</p>
+<ul>
+<li>消息队列是保存在内核中的消息链表，在发送数据时，会分成一个一个独立的数据单元，也就是消息体（数据块），消息体是用户自定义的数据类型，消息的发送方和接收方要约定好消息体的数据类型，所以每个消息体都是固定大小的存储块，不像管道是无格式的字节流数据。</li>
+<li>优点是能够频繁通讯。</li>
+<li>缺点是(1)数据量大了，用户态和内核态之间拷贝数据的时间比较多，(2)并且对消息体的大小和队列长度有限制，所以也不适合大数据量的进程间通讯。</li>
+</ul>
+<p>3.共享内存</p>
+<ul>
+<li>因为不同的进程都有自己的虚拟空间，它的原理是让不同进程的虚拟空间指向相同的物理内存，这样不同进程都可以共享这块物理内存。适合进程间共享大块数据的情况。</li>
+<li>优点是数据量大的情况下效率仍然比较高。</li>
+<li>缺点是需要同步互斥机制保证数据的安全。</li>
+</ul>
+<p>4.信号量</p>
+<ul>
+<li>信号量本身不用来传递数据，可以用来对共享内存进行同步互斥的控制。信号量定义了两种操作，分别是P(申请资源)、V(释放资源)。(进程通讯使用的有名信号量，以一个设备文件形式存在。)</li>
+</ul>
+<p>5.信号</p>
+<ul>
+<li>信号是进程间通信机制中唯一的异步通信机制，一旦有信号产生，可以执行默认操作、可以执行设定的信号处理函数、可以忽略信号(有两个信号是应用进程无法捕捉和忽略的，即 SIGKILL 和 SEGSTOP)。</li>
+</ul>
+<p>6.socket</p>
+<ul>
+<li>套接字可以实现不同主机间的进程通讯，也可以进行本地进程间通讯。<br>参考：<a href="https://mp.weixin.qq.com/s/MnIcTR0KKpgnSoA3xaPUSA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/MnIcTR0KKpgnSoA3xaPUSA</a></li>
+</ul>
+<h4 id="fork、vfork、clone"><a href="#fork、vfork、clone" class="headerlink" title="fork、vfork、clone"></a>fork、vfork、clone</h4><p>1.在创建新的进程时，fork函数会复制父进程的所有资源，包括打开的文件描述符、信号处理函数、虚拟页、物理数据页、页表等，后来添加了写时复制，fork时就不用复制父进程的数据页了，等到其中一个进程执行写操作，就将该资源复制一份。<br>2.vfork是专门为exec而生的，很多时候复制一个新的进程后，接着就调用exec加载新进程了，这样复制的资源就浪费了。vfork复制的资源更少，并且执行后会保证子进程先执行，并且等到执行exec或者exit之后才会让父进程执行。<br>3.clone函数能够指定创建新进程时复制哪些资源。<br>4.进程包含的资源主要是物理内存的数据量较大，其中原始fork和写时复制fork分别如下：<br><img src="/images_/2019_picture/20190320 fork.jpg" alt=""><br><img src="/images_/2019_picture/20190320 cow_fork.jpg" alt=""><br>vfork的流程图如下：<br><img src="/images_/2019_picture/20190320 vfork.jpg" alt=""><br>5.fork的具体工作如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">功能总结：</span><br><span class="line">进程创建的核心实现在于copy_process()方法过程，而copy_process() 的主要实现在于copy_xxx()方法，根据不同的flags来决策采用何种拷贝方式。</span><br><span class="line">执行dup_task_struct()，拷贝当前进程task_struct</span><br><span class="line">检查进程数是否超过系统所允许的上限(默认<span class="number">32678</span>)</span><br><span class="line">执行sched_fork()，设置调度器相关信息，设置task进程状态为TASK_RUNNING，并分配CPU资源</span><br><span class="line">执行copy_xxx()，拷贝进程的相关资源信息</span><br><span class="line">	copy_semundo: 当设置CLONE_SYSVSEM，则父子进程间共享SEM_UNDO状态</span><br><span class="line">	copy_files: 当设置CLONE_FILES，则只增加文件引用计数，不创建新的files_struct</span><br><span class="line">	copy_fs: 当设置CLONE_FS，且没有执行exec, 则设置用户数加<span class="number">1</span></span><br><span class="line">	copy_sighand: 当设置CLONE_SIGHAND, 则增加sighand-&gt;count计数</span><br><span class="line">	copy_signal: 拷贝进程信号</span><br><span class="line">	copy_mm：当设置CLONE_VM，则增加mm_users计数</span><br><span class="line">	copy_namespaces：一般情况，不需要创建新用户空间</span><br><span class="line">	copy_io： 当设置CLONE_IO，则父子进程间共享io context，增加nr_tasks计数</span><br><span class="line">	copy_thread_tls：设置子进程的寄存器等信息，从父进程拷贝thread_struct的sp0，sp,io_bitmap_ptr等成员变量值</span><br><span class="line">执行copy_thread_tls(), 拷贝子进程的内核栈信息</span><br><span class="line">执行alloc_pid()，为新进程分配新pid</span><br><span class="line"></span><br><span class="line">链接：https:<span class="comment">//www.jianshu.com/p/d811fb1017d3</span></span><br></pre></td></tr></table></figure>
+<p>6.参考：<a href="https://blog.leosocy.top/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3Linux-COW%E5%86%99%E6%97%B6%E6%8B%B7%E8%B4%9D%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" target="_blank" rel="noopener">https://blog.leosocy.top/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3Linux-COW%E5%86%99%E6%97%B6%E6%8B%B7%E8%B4%9D%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</a></p>
+<h4 id="进程状态机"><a href="#进程状态机" class="headerlink" title="进程状态机"></a>进程状态机</h4><p>1.三态模型：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">就绪←→运行</span><br><span class="line">  ↖  ↙</span><br><span class="line">   阻塞</span><br></pre></td></tr></table></figure></p>
+<p>2.五态模型：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">新建→就绪←→运行→终止</span><br><span class="line">	  ↖  ↙</span><br><span class="line">	   阻塞</span><br></pre></td></tr></table></figure></p>
+<p>3.实际系统的7态：</p>
+<ul>
+<li>TASK_RUNNING可运行状态，进程要么在CPU运行了，要么就准备运行。</li>
+<li>TASK_INTERRUPTIBLE可中断的等待状态，进程执行sleep或者等待某些系统资源会进入该状态，直到某个条件变为真或者资源获得了，重新进入可运行状态。</li>
+<li>TASK_UNINTERRUPTIBLE不可中断的等待状态，很少使用的状态，当进程访问某个设备文件时，驱动程序会去探测硬件，驱动程序此时就处于这种状态，不能被中断。</li>
+<li>TASK_STOPPED暂停状态，当进程收到SIGSTOP、SIGTSTP、SIGTTIN、SIGTTOU信号后会进入暂停状态。</li>
+<li>TASK_TRACED跟踪状态，gdb就借助了ptrace系统调用，被别的进程跟踪后的进程处于跟踪状态。</li>
+<li>EXIT_ZOMBIE僵死状态，当子进程结束，父进程没有调用wait4或waitpid进行回收，子进程会变成僵尸进程，处于僵死状态。</li>
+<li>EXIT_DEAD僵死撤销状态，父进程调用wait后，会进入该状态，是为了避免父进程中有第二个线程，调用wait函数回收该进程。</li>
+</ul>
+<h4 id="守护进程、孤儿进程与僵尸进程"><a href="#守护进程、孤儿进程与僵尸进程" class="headerlink" title="守护进程、孤儿进程与僵尸进程"></a>守护进程、孤儿进程与僵尸进程</h4><ul>
+<li>守护进程：守护进程就是在后台运行，不与任何终端关联的进程，通常情况下守护进程在系统启动时就在运行，它们以root用户或其他特殊用户运行，并能处理一些系统级的任务。</li>
+<li>孤儿进程：父进程退出，而它的一个或多个子进程还在运行，那么那些子进程将成为孤儿进程。孤儿进程将被父进程(一般是进程号为1的init进程所收养，并由父进程对它们完成状态收集工作。</li>
+<li>僵尸进程：一个进程使用fork创建子进程，如果子进程退出，而父进程并没有调用wait或waitpid获取子进程的状态信息，那么子进程的进程描述符仍然保存在系统中并占用系统资源，这种进程称之为僵尸进程。</li>
+</ul>
+<h4 id="进程调度算法"><a href="#进程调度算法" class="headerlink" title="进程调度算法"></a>进程调度算法</h4><h4 id="进程终止的五种方式"><a href="#进程终止的五种方式" class="headerlink" title="进程终止的五种方式"></a>进程终止的五种方式</h4><ul>
+<li>正常退出</li>
+<li>从main函数返回</li>
+<li>调用exit</li>
+<li>调用_exit</li>
+<li>异常退出</li>
+<li>调用abort   产生SIGABOUT信号</li>
+<li>由信号终止  ctrl+c SIGINT</li>
+</ul>
+<h4 id="多线程间同步方式"><a href="#多线程间同步方式" class="headerlink" title="多线程间同步方式"></a>多线程间同步方式</h4><p>1.mutex，互斥锁，用来保证资源只能同时被一个线程获取。<br>2.条件变量，与互斥锁结合使用。<br>3.读写锁，多个读操作之间是不互斥的，写操作与其他任何操作都互斥。<br>4.信号量，线程同步是使用的匿名信号量，导入信号量头文件，然后创建信号量变量。</p>
+<h4 id="一个进程可以创建多少线程，和什么有关"><a href="#一个进程可以创建多少线程，和什么有关" class="headerlink" title="一个进程可以创建多少线程，和什么有关?"></a>一个进程可以创建多少线程，和什么有关?</h4><ul>
+<li>通过ulimit -a 查看线程的栈大小，用户空间的内存除以栈大小是可创建线程的最大数量。</li>
+</ul>
+<h4 id="五种IO模型"><a href="#五种IO模型" class="headerlink" title="五种IO模型"></a>五种IO模型</h4><ul>
+<li>阻塞IO、非阻塞IO、IO复用、信号驱动IO、异步IO</li>
+</ul>
+<h4 id="如何理解阻塞和非阻塞，同步与异步？"><a href="#如何理解阻塞和非阻塞，同步与异步？" class="headerlink" title="如何理解阻塞和非阻塞，同步与异步？"></a>如何理解阻塞和非阻塞，同步与异步？</h4><ul>
+<li><p>举例</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">老张爱喝茶，废话不说，煮开水。</span><br><span class="line">出场人物：老张，水壶两把（普通水壶，简称水壶；会响的水壶，简称响水壶）。</span><br><span class="line"><span class="number">1.</span>老张把水壶放到火上，立等水开（同步阻塞）,老张觉得自己有点傻。</span><br><span class="line"><span class="number">2.</span>老张把水壶放到火上，去客厅看电视，时不时去厨房看看水开没有。（同步非阻塞）老张还是觉得自己有点傻，于是变高端了，买了把会响笛的那种水壶。水开之后，能大声发出嘀~~~~的噪音。</span><br><span class="line"><span class="number">3.</span>老张把响水壶放到火上，立等水开。（异步阻塞）老张觉得这样傻等意义不大.</span><br><span class="line"><span class="number">4.</span>老张把响水壶放到火上，去客厅看电视，水壶响之前不再去看它了，响了再去拿壶。（异步非阻塞）老张觉得自己聪明了。</span><br><span class="line"></span><br><span class="line">所谓同步异步，只是对于水壶而言。普通水壶，同步；响水壶，异步。</span><br><span class="line">	虽然都能干活，但响水壶可以在自己完工之后，提示老张水开了。这是普通水壶所不能及的。</span><br><span class="line">	同步只能让调用者去轮询自己（情况<span class="number">2</span>中），造成老张效率的低下。</span><br><span class="line">所谓阻塞非阻塞，仅仅对于老张而言。立等的老张，阻塞；看电视的老张，非阻塞。</span><br><span class="line">	情况<span class="number">1</span>和情况<span class="number">3</span>中老张就是阻塞的，媳妇喊他都不知道。</span><br><span class="line">虽然<span class="number">3</span>中响水壶是异步的，可对于立等的老张没有太大的意义。</span><br><span class="line">所以一般异步是配合非阻塞使用的，这样才能发挥异步的效用。</span><br><span class="line">来源：https:<span class="comment">//www.zhihu.com/question/19732473/answer/23434554</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>IO &amp; 进程线程</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxx</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>参考：<a href="https://www.zhihu.com/question/19732473/answer/241673170" target="_blank" rel="noopener">https://www.zhihu.com/question/19732473/answer/241673170</a></p>
+<h4 id="页表为什么要分级"><a href="#页表为什么要分级" class="headerlink" title="页表为什么要分级"></a>页表为什么要分级</h4><p>1.首先页表分级能够节省存储空间。因为虚拟地址空间比实际的物理内存要大许多，但是一个进程可能只用到一部分虚拟地址，如果存储所有虚拟地址到物理地址的一一映射，那就会浪费空间。采用多级页表之后，只有一级页表直接被创建，只有用到的二级页表，才会分配空间来存储。<br>2.一级页表需要常驻内存，二级页表可以调入或调出到磁盘存储。<br>3.举例：如果虚拟地址位数是10位，一个进程只能用到10%的虚拟地址。采用一级页表，我们需要2^10=1024个页表项。采用5|5的二级页表，就只需要2^5+1024*10%=32+102=134个页表项。</p>
+<h4 id="页面置换算法"><a href="#页面置换算法" class="headerlink" title="页面置换算法"></a>页面置换算法</h4><ul>
+<li><p>最佳置换算法(opt),这是一个无法实现的理论上最优的算法，因为每次缺页时需要判断哪个页面在之后最长时间内都不会被访问。<br>假如按照如下顺序访问内存页:7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">访问页	7	0	1	2	0	3	0	4	2	3	0	3	2	1	2	0	1	7	0	1</span><br><span class="line">一号页	7	7	7	2		2		2			2			2				7	 	 </span><br><span class="line">二号页		0	0	0		0		4			0			0				0	 	 </span><br><span class="line">三号页			1	1		3		3			3			1				1	 	 </span><br><span class="line">缺页否	√	√	√	√		√		√			√			√				√	 	 </span><br><span class="line"></span><br><span class="line">缺页9次，置换6次。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>先进先出置换算法(FIFO:first in first out),这也是最简单的页面置换算法，基本思想是:当需要淘汰一个页面时，总是选择驻留时间最长的页面进行淘汰，即按照先入先出的规则来淘汰。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">访问页	7	0	1	2	0	3	0	4	2	3	0	3	2	1	2	0	1	7	0	1</span><br><span class="line">一号页	7	7	7	2		2	2	4	4	4	0			0	0			7	7	7</span><br><span class="line">二号页		0	0	0		3	3	3	2	2	2			1	1			1	0	0</span><br><span class="line">三号页			1	1		1	0	0	0	3	3			3	2			2	2	1</span><br><span class="line">缺页否	√	√	√	√		√	√	√	√	√	√			√	√			√	√	√</span><br><span class="line"></span><br><span class="line">缺页15次，置换12次</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>最近最久未使用算法(LRU:Least Recently Used)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">访问页	7	0	1	2	0	3	0	4	2	3	0	3	2	1	2	0	1	7	0	1</span><br><span class="line">一号页	7	7	7	2		2		4	4	4	0			1		1		1		</span><br><span class="line">二号页		0	0	0		0		0	0	3	3			3		0		0       </span><br><span class="line">三号页			1	1		3		3	2	2	2			2		2		7       </span><br><span class="line">缺页否	√	√	√	√		√		√	√	√	√			√		√		√</span><br><span class="line"></span><br><span class="line">缺页12次，置换9次</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><a href="https://leetcode.com/problems/lru-cache/" target="_blank" rel="noopener">LeetCode 146. LRU Cache</a><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> __=[]()&#123;<span class="built_in">std</span>::ios::sync_with_stdio(<span class="literal">false</span>);<span class="keyword">return</span> <span class="number">0</span>;&#125;();</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LRUCache</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    LRUCache(<span class="keyword">int</span> capacity) &#123;</span><br><span class="line">        pageNumber=capacity;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//如果访问页在内存中，返回其value并更新该key。如果访问页不在，返回-1。</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">get</span><span class="params">(<span class="keyword">int</span> key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">auto</span> it=pageToCache.find(key);</span><br><span class="line">        <span class="keyword">if</span>(it==pageToCache.end())&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; tmp=*(it-&gt;second);</span><br><span class="line">        cache.erase(it-&gt;second);</span><br><span class="line">        cache.push_front(tmp);</span><br><span class="line">        pageToCache[key]=cache.begin();</span><br><span class="line">        <span class="keyword">return</span> tmp.second;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//如果要设置的页不在内存，则插入该页，并判断是否超出限制。如果该页在内存，则更新该页。</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">put</span><span class="params">(<span class="keyword">int</span> key, <span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">auto</span> it=pageToCache.find(key);</span><br><span class="line">        pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; tmp(key,value);</span><br><span class="line">        <span class="keyword">if</span>(it!=pageToCache.end())&#123;</span><br><span class="line">            (*(it-&gt;second)).second=value;</span><br><span class="line">            cache.erase(it-&gt;second);</span><br><span class="line">            cache.push_front(tmp);</span><br><span class="line">            pageToCache[key]=cache.begin();</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            cache.push_front(tmp);</span><br><span class="line">            pageToCache[key]=cache.begin();</span><br><span class="line">            <span class="keyword">if</span>(cache.size()&gt;pageNumber)&#123;</span><br><span class="line">                pageToCache.erase(cache.back().first);</span><br><span class="line">                cache.pop_back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">list</span>&lt;pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt;&gt; cache;</span><br><span class="line">    <span class="built_in">unordered_map</span>&lt;<span class="keyword">int</span>,<span class="built_in">list</span>&lt;pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt;&gt;::iterator&gt; pageToCache;</span><br><span class="line">    <span class="keyword">int</span> pageNumber;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>最少使用算法(LFU:least frequently used)<br>LeetCode 460 LFU Cache: <a href="https://leetcode.com/problems/lfu-cache/submissions/" target="_blank" rel="noopener">https://leetcode.com/problems/lfu-cache/submissions/</a><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> key;</span><br><span class="line">    <span class="keyword">int</span> val;</span><br><span class="line">    <span class="keyword">int</span> freq;</span><br><span class="line">    Node(<span class="keyword">int</span> k,<span class="keyword">int</span> v,<span class="keyword">int</span> f):key(k),val(v),freq(f)&#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LFUCache</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    LFUCache(<span class="keyword">int</span> _capacity):minfreq(<span class="number">0</span>),capacity(_capacity) &#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">get</span><span class="params">(<span class="keyword">int</span> key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(capacity==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">auto</span> it=cache.find(key);</span><br><span class="line">        <span class="keyword">if</span>(it==cache.end()) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">int</span> val=it-&gt;second-&gt;val,freq=it-&gt;second-&gt;freq;</span><br><span class="line">        freq_page[freq].erase(it-&gt;second);</span><br><span class="line">        <span class="keyword">if</span>(minfreq==freq &amp;&amp; freq_page[freq].size()==<span class="number">0</span>) minfreq++;</span><br><span class="line">        freq_page[freq+<span class="number">1</span>].push_front(Node(key,val,freq+<span class="number">1</span>));</span><br><span class="line">        cache[key]=freq_page[freq+<span class="number">1</span>].begin();</span><br><span class="line">        <span class="keyword">return</span> val;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">put</span><span class="params">(<span class="keyword">int</span> key, <span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//如果容量为0，则退出</span></span><br><span class="line">        <span class="keyword">if</span>(capacity==<span class="number">0</span>) <span class="keyword">return</span> ;</span><br><span class="line">        <span class="keyword">auto</span> it=cache.find(key);</span><br><span class="line">        <span class="comment">//如果hash表中没有该key，需要添加当前key value</span></span><br><span class="line">        <span class="keyword">if</span>(it==cache.end())&#123;</span><br><span class="line">            <span class="comment">//如果当前容量满了，需要先删除访问频率最小的那页，再添加新页</span></span><br><span class="line">            <span class="keyword">if</span>(cache.size()==capacity)&#123;</span><br><span class="line">                <span class="keyword">int</span> lastkey=freq_page[minfreq].back().key;</span><br><span class="line">                freq_page[minfreq].pop_back();</span><br><span class="line">                <span class="keyword">if</span>(freq_page[minfreq].size()==<span class="number">0</span>) minfreq++;</span><br><span class="line">                cache.erase(lastkey);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//添加新的一页</span></span><br><span class="line">            freq_page[<span class="number">1</span>].push_front(Node(key,value,<span class="number">1</span>));</span><br><span class="line">            minfreq=<span class="number">1</span>;</span><br><span class="line">            cache[key]=freq_page[<span class="number">1</span>].begin();</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;  <span class="comment">//如果hash表中有该key，则更新其value，跟get()操作相似</span></span><br><span class="line">            <span class="keyword">int</span> freq=it-&gt;second-&gt;freq;</span><br><span class="line">            freq_page[freq].erase(it-&gt;second);</span><br><span class="line">            <span class="keyword">if</span>(minfreq==freq &amp;&amp; freq_page[minfreq].size()==<span class="number">0</span>) minfreq++;</span><br><span class="line">            freq_page[freq+<span class="number">1</span>].push_front(Node(key,value,freq+<span class="number">1</span>));</span><br><span class="line">            cache[key]=freq_page[freq+<span class="number">1</span>].begin();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">int</span> minfreq;</span><br><span class="line">    <span class="keyword">int</span> capacity;</span><br><span class="line">    <span class="built_in">unordered_map</span>&lt;<span class="keyword">int</span>,<span class="built_in">list</span>&lt;Node&gt;::iterator&gt; cache;</span><br><span class="line">    <span class="built_in">unordered_map</span>&lt;<span class="keyword">int</span>,<span class="built_in">list</span>&lt;Node&gt;&gt; freq_page;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your LFUCache object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * LFUCache* obj = new LFUCache(capacity);</span></span><br><span class="line"><span class="comment"> * int param_1 = obj-&gt;get(key);</span></span><br><span class="line"><span class="comment"> * obj-&gt;put(key,value);</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><a href="https://leetcode-cn.com/problems/lfu-cache/solution/lfuhuan-cun-by-leetcode-solution/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/lfu-cache/solution/lfuhuan-cun-by-leetcode-solution/</a></p>
+<h4 id="死锁产生的四个条件"><a href="#死锁产生的四个条件" class="headerlink" title="死锁产生的四个条件"></a>死锁产生的四个条件</h4><ul>
+<li>互斥：某种资源一次只允许一个实体访问。</li>
+<li>不可抢占：别人已经占用了资源，你无法因为自己需要就将资源抢过来。</li>
+<li>占有且等待：一个进程或线程本身占有了一定资源，同时还有资源未得到满足，正在等待其他进程释放资源。</li>
+<li>循环等待：发生死锁时，有一个这样的进程链:p1在等待p2占用的资源，p2在等待p3占用的…pn在等待p1占用的资源。</li>
+</ul>
+<h4 id="处理死锁的四个方法"><a href="#处理死锁的四个方法" class="headerlink" title="处理死锁的四个方法"></a>处理死锁的四个方法</h4><ul>
+<li><p>预防死锁<br>破坏产生死锁的一个或几个条件。</p>
+</li>
+<li><p>避免死锁<br>银行家算法</p>
+</li>
+<li><p>死锁的检测<br>死锁定理：当某状态的资源分配图是不可完全简化的，说明发生了死锁。</p>
+</li>
+<li><p>死锁的解除<br>1.抢占资源<br>2.终止进程</p>
+</li>
+</ul>
+<h4 id="信号量以及PV原语"><a href="#信号量以及PV原语" class="headerlink" title="信号量以及PV原语"></a>信号量以及PV原语</h4><p>1.信号量表示资源的数量，控制信号量的方式有两种原子操作：<br>一个是 P 操作，这个操作会把信号量减去 -1，相减后如果信号量 &lt; 0，则表明资源已被占用，进程需阻塞等待；相减后如果信号量 &gt;= 0，则表明还有资源可使用，进程可正常继续执行。<br>另一个是 V 操作，这个操作会把信号量加上 1，相加后如果信号量 &lt;= 0，则表明当前有阻塞中的进程，于是会将该进程唤醒运行；相加后如果信号量&gt;0，则表明当前没有阻塞中的进程；<br>2.如果信号量资源数初始化为1，则为互斥信号量。初始化为0，则为同步信号量。</p>
+<h4 id="银行家算法"><a href="#银行家算法" class="headerlink" title="银行家算法"></a>银行家算法</h4><h4 id="生产者消费者问题"><a href="#生产者消费者问题" class="headerlink" title="生产者消费者问题"></a>生产者消费者问题</h4><p>1.用记录型信号量解决</p>
+<ul>
+<li>由于生产者消费者可能会同时访问缓冲池，所以需要一个mutex信号量来实现对缓冲池的互斥访问。</li>
+<li>为了实现同步，可以设置empty,full两个信号量，分别表示空缓冲池和满缓冲池的数量。</li>
+<li>实现同步为什么需要两个信号量呢？因为生产者受资源满的制约，如果资源满了，就不能再生产了。消费者受资源空的制约。如果只用一个信号量，表示资源数量，资源为空时，消费者可以被阻塞，当资源满时，生产者仅靠PV操作是无法判断的。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">int in=0,out=0;</span><br><span class="line">item buffer[n];</span><br><span class="line">semaphore mutex=1,empty=n,full=0;</span><br><span class="line"></span><br><span class="line">void producer()&#123;</span><br><span class="line">    do&#123;</span><br><span class="line">        producer an item nextp;</span><br><span class="line">        ...</span><br><span class="line">        P(empty); //使empty减1；</span><br><span class="line">        P(mutex); //同步互斥一块出现时同步在前。(如果先获得锁，接着在P操作阻塞了。消费者就会在获取锁的时候也阻塞)</span><br><span class="line">        buffer[in]=nextp;</span><br><span class="line">        in=(in+1)%n;</span><br><span class="line">        V(mutex); //mutex+1；</span><br><span class="line">        V(full);</span><br><span class="line">    &#125;while(true)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void consumer()&#123;</span><br><span class="line">    do&#123;</span><br><span class="line">        P(full);</span><br><span class="line">        P(mutex);</span><br><span class="line">        nextc=buffer[out];</span><br><span class="line">        out=(out+1)%n;</span><br><span class="line">        V(mutex);</span><br><span class="line">        V(empty);</span><br><span class="line">        consummer the item in mutex;</span><br><span class="line">        ...</span><br><span class="line">    &#125;while(true);</span><br><span class="line">&#125;</span><br><span class="line">//注意两个程序中的加锁操作(P操作)不能颠倒，否则可能引起进程死锁，解锁顺序无所谓。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="哲学家进餐问题"><a href="#哲学家进餐问题" class="headerlink" title="哲学家进餐问题"></a>哲学家进餐问题</h4><p>题意：有五个哲学家，喜欢思考问题，思考完了就会饿，然后就要吃饭。现在有5个哲学家围坐在圆桌上，每个人右手边有1根筷子，每个哲学家需要获取左右手边的两根筷子才能吃面条。<br>方案一:这是很容易想到的方法，每个人先拿左手边筷子，再拿右手边筷子。但是可能会发生死锁。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 5</span></span><br><span class="line">semaphore chopstick[<span class="number">5</span>];	<span class="comment">//对应5根筷子的信号量，初值为1.</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">philosopher</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;	<span class="comment">//i是哲学家编号，0-4</span></span><br><span class="line">	<span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">		think();	<span class="comment">//思考</span></span><br><span class="line">		P(chopstick[i]);	<span class="comment">//取左手边筷子</span></span><br><span class="line">		P(chopstick[(i+<span class="number">1</span>)%N]);	<span class="comment">//取右手边筷子</span></span><br><span class="line">		eat();	<span class="comment">//吃饭</span></span><br><span class="line">		V(chopstick[i]);	<span class="comment">//放下左手边筷子</span></span><br><span class="line">		V(chopstick[(i+<span class="number">1</span>)%N]);	<span class="comment">//放下右手边筷子</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>当所有人同时拿起左手边筷子时，就会发生死锁。<br>方案二：为了改进方案，可以<strong>加一个mutex，每次只让一个哲学家取筷子</strong>。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 5</span></span><br><span class="line">semaphore chopstick[<span class="number">5</span>];	<span class="comment">//对应5根筷子的信号量，初值为1.</span></span><br><span class="line">semaphore mutex;	<span class="comment">//*互斥信号量，初值为1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">philosopher</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;	<span class="comment">//i是哲学家编号，0-4</span></span><br><span class="line">	<span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">		think();	<span class="comment">//思考</span></span><br><span class="line">		P(mutex);	<span class="comment">//*进入临界区，加锁</span></span><br><span class="line">		P(chopstick[i]);	<span class="comment">//取左手边筷子</span></span><br><span class="line">		P(chopstick[(i+<span class="number">1</span>)%N]);	<span class="comment">//取右手边筷子</span></span><br><span class="line">		eat();	<span class="comment">//吃饭</span></span><br><span class="line">		V(chopstick[i]);	<span class="comment">//放下左手边筷子</span></span><br><span class="line">		V(chopstick[(i+<span class="number">1</span>)%N]);	<span class="comment">//放下右手边筷子</span></span><br><span class="line">		V(mutex);	<span class="comment">//*退出临界区解锁</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>但是这种方案同一时刻只能有一个人吃饭，其他人都看着，效率有点低。<br>方案三：对方案一再次改进，可以每次让奇数号哲学家<strong>“先拿右边筷子，再拿左边筷子”</strong>,让偶数号哲学家<strong>“先拿左边筷子，再拿右边筷子”</strong>。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 5</span></span><br><span class="line">semaphore chopstick[<span class="number">5</span>];	<span class="comment">//对应5根筷子的信号量，初值为1.</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">philosopher</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;	<span class="comment">//i是哲学家编号，0-4</span></span><br><span class="line">	<span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">		think();	<span class="comment">//思考</span></span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span>(i%<span class="number">2</span>==<span class="number">0</span>)&#123;</span><br><span class="line">			P(chopstick[i]);	<span class="comment">//取左手边筷子</span></span><br><span class="line">			P(chopstick[(i+<span class="number">1</span>)%N]);	<span class="comment">//取右手边筷子</span></span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			P(chopstick[(i+<span class="number">1</span>)%N]);	<span class="comment">//取右手边筷子</span></span><br><span class="line">			P(chopstick[i]);	<span class="comment">//取左手边筷子</span></span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		eat();	<span class="comment">//吃饭</span></span><br><span class="line">		V(chopstick[i]);	<span class="comment">//放下左手边筷子</span></span><br><span class="line">		V(chopstick[(i+<span class="number">1</span>)%N]);	<span class="comment">//放下右手边筷子</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>方案四：之前的信号量都是是对应5根筷子的，也可以添加一个state数组标记5个哲学家的状态，当哲学家A想要用餐时，需要先判断左右两边的人是不是思考状态，如果都是思考状态，就拿起两根筷子。这样哲学家拿两根筷子的动作就成了原子的。另外state数组是临界资源，访问的时候需要互斥，所以再添加一个mutex互斥信号量。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 5</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LEFT (i+N-1)%N</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> RIGHT (i+1)%N</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> THINKING 0	<span class="comment">//思考状态</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> HUNGRY 1	<span class="comment">//饥饿状态</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> EATING 2	<span class="comment">//进餐状态</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> state[N];	<span class="comment">//记录5根筷子的状态</span></span><br><span class="line">semaphore mutex;	<span class="comment">//访问state需要的互斥锁，初值为1</span></span><br><span class="line"></span><br><span class="line">semaphore s[<span class="number">5</span>];		<span class="comment">//每个哲学家一个信号量，初值为0.(可以将哲学家左右两根筷子看做一个整体)</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;<span class="comment">//尝试让i号哲学家拿起两根筷子</span></span><br><span class="line">	<span class="keyword">if</span>(state[i]==HUNGRY &amp;&amp; state[LEFT]!=EATING &amp;&amp; state[RIGHT]!=EATING)&#123;</span><br><span class="line">		state[i]=EATING;	<span class="comment">//条件符合，设置为进餐状态</span></span><br><span class="line">		V(s[i]);	<span class="comment">//表示i号哲学家的两根筷子都能拿了</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">take_chopstick</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;	<span class="comment">//取筷子</span></span><br><span class="line">	P(mutex);</span><br><span class="line">	state[i]=HUNGRY;	<span class="comment">//修改自己为饥饿状态</span></span><br><span class="line">	test(i);	<span class="comment">//尝试取筷子</span></span><br><span class="line">	V(mutex);</span><br><span class="line">	P(s[i]);	<span class="comment">//没有筷子则阻塞，有筷子就获取筷子进餐。</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">put_chopstick</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;	<span class="comment">//放下筷子</span></span><br><span class="line">	P(mutex);</span><br><span class="line">	state[i]=THINKING;	<span class="comment">//设置自己为思考状态</span></span><br><span class="line">	test(LEFT);		<span class="comment">//通知左边的人尝试进餐</span></span><br><span class="line">	test(RIGHT);	<span class="comment">//通知右边的人尝试进餐</span></span><br><span class="line">	V(mutex);	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">philosopher</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">	<span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">		think();	<span class="comment">//思考</span></span><br><span class="line">		take_chopstick(i);	<span class="comment">//取两根筷子</span></span><br><span class="line">		eat();	<span class="comment">//进餐</span></span><br><span class="line">		put_chopstick(i);	<span class="comment">//放下两根筷子</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>参考：<a href="https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&amp;mid=2247485264&amp;idx=1&amp;sn=78585cbabd1e0c333b43a3abd2b2ff64&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&amp;mid=2247485264&amp;idx=1&amp;sn=78585cbabd1e0c333b43a3abd2b2ff64&amp;scene=21#wechat_redirect</a></p>
+<h4 id="读者写者问题"><a href="#读者写者问题" class="headerlink" title="读者写者问题"></a>读者写者问题</h4><p>题意：读者只会读取数据，写者可以读数据也可以修改数据。(该模型为数据库访问建立了模型)<br>读者写者可能有以下三种状态：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">读-读	允许，同一时刻可以有多个读操作</span><br><span class="line">读-写 	互斥，同一时刻只能有一个主体去写。</span><br><span class="line">		一个读者或写者在读操作，另一个写者就不能去写。</span><br><span class="line">		一个写者在写，其他读者和写者就不能去读。</span><br><span class="line">写-写	互斥，同一时刻只能一个写者在写。</span><br></pre></td></tr></table></figure></p>
+<p>xxxxxx</p>
+<p>参考：<a href="https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&amp;mid=2247485264&amp;idx=1&amp;sn=78585cbabd1e0c333b43a3abd2b2ff64&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&amp;mid=2247485264&amp;idx=1&amp;sn=78585cbabd1e0c333b43a3abd2b2ff64&amp;scene=21#wechat_redirect</a><br><a href="http://c.biancheng.net/cpp/html/2601.html" target="_blank" rel="noopener">http://c.biancheng.net/cpp/html/2601.html</a></p>
+<!-- 
+category : ACM_&_Algorithm CTF C_C++ JAVA Linux Linux_Kernel 
+SQL Cryptography Life Reading Thought Security Unknown Tools  
+Network Qt Trusted_Computing
+　　←全角空格
+![keyboard](https://img-bter)   ←图片
+[keyboard](https://img-bter)    ←超链接
+
+-->
+<p>欢迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/">http://taowusheng.cn/</a><br><img src="/images_/2021_picture/2021_coder_yifei.jpg" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://taowusheng.cn/2020/08/04/20200804 基础知识_操作系统/" data-id="cl9smuyms00p59boiq43dknnw" class="article-share-link">Share</a>
+      
+      
+        <a href="/2020/08/04/20200804 基础知识_操作系统/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2020/08/04/20200804 基础知识_操作系统/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Summary/">Summary</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/操作系统/">操作系统</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/09/20/20200920 redis常用命令/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          redis的安装和常用命令
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/08/03/20200803 基础知识_网络/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">基础知识_网络</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM-Algorithm/">ACM_Algorithm</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Assembly/">Assembly</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/C-Cpp/">C_Cpp</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Cryptography/">Cryptography</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux-Kernel/">Linux_Kernel</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Middleware/">Middleware</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network/">Network</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network-Programming/">Network_Programming</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Notes/">Notes</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt/">Qt</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading/">Reading</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading-Source/">Reading_Source</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Security/">Security</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Summary/">Summary</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/System-Programming/">System_Programming</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Thought/">Thought</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Translation/">Translation</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Trusted-Computing/">Trusted_Computing</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Unknown/">Unknown</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">reading</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/01背包/" style="font-size: 10px;">01背包</a> <a href="/tags/2017/" style="font-size: 10px;">2017</a> <a href="/tags/2018/" style="font-size: 11.11px;">2018</a> <a href="/tags/2021/" style="font-size: 10px;">2021</a> <a href="/tags/ACM/" style="font-size: 13.33px;">ACM</a> <a href="/tags/ACM-Algorithm/" style="font-size: 10px;">ACM_Algorithm</a> <a href="/tags/Algorithm/" style="font-size: 10px;">Algorithm</a> <a href="/tags/Assembly/" style="font-size: 11.11px;">Assembly</a> <a href="/tags/C/" style="font-size: 11.11px;">C</a> <a href="/tags/C/" style="font-size: 12.22px;">C++</a> <a href="/tags/CTF/" style="font-size: 10px;">CTF</a> <a href="/tags/C-Cpp/" style="font-size: 12.22px;">C_Cpp</a> <a href="/tags/California-Dreaming/" style="font-size: 10px;">California_Dreaming</a> <a href="/tags/Cpp/" style="font-size: 14.44px;">Cpp</a> <a href="/tags/DES/" style="font-size: 10px;">DES</a> <a href="/tags/EDK/" style="font-size: 10px;">EDK</a> <a href="/tags/Effective-Cpp/" style="font-size: 10px;">Effective_Cpp</a> <a href="/tags/English/" style="font-size: 11.11px;">English</a> <a href="/tags/GMP/" style="font-size: 10px;">GMP</a> <a href="/tags/GUI/" style="font-size: 10px;">GUI</a> <a href="/tags/IO/" style="font-size: 10px;">IO</a> <a href="/tags/IO复用/" style="font-size: 10px;">IO复用</a> <a href="/tags/IO多路复用/" style="font-size: 10px;">IO多路复用</a> <a href="/tags/JAVA/" style="font-size: 16.67px;">JAVA</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/JsonCpp/" style="font-size: 10px;">JsonCpp</a> <a href="/tags/KGDB/" style="font-size: 10px;">KGDB</a> <a href="/tags/LeetCode/" style="font-size: 10px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 13.33px;">Linux</a> <a href="/tags/Linux-Kernel/" style="font-size: 13.33px;">Linux_Kernel</a> <a href="/tags/Middleware/" style="font-size: 10px;">Middleware</a> <a href="/tags/Network/" style="font-size: 11.11px;">Network</a> <a href="/tags/Network-Programming/" style="font-size: 13.33px;">Network_Programming</a> <a href="/tags/Python/" style="font-size: 15.56px;">Python</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/RSA/" style="font-size: 10px;">RSA</a> <a href="/tags/SELinux/" style="font-size: 10px;">SELinux</a> <a href="/tags/SHA/" style="font-size: 10px;">SHA</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/STL/" style="font-size: 14.44px;">STL</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Summary/" style="font-size: 17.78px;">Summary</a> <a href="/tags/System-Programming/" style="font-size: 11.11px;">System_Programming</a> <a href="/tags/TSS/" style="font-size: 10px;">TSS</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/Tools/" style="font-size: 10px;">Tools</a> <a href="/tags/Translation/" style="font-size: 10px;">Translation</a> <a href="/tags/UDK/" style="font-size: 10px;">UDK</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/UEFI/" style="font-size: 10px;">UEFI</a> <a href="/tags/VMware/" style="font-size: 11.11px;">VMware</a> <a href="/tags/apt/" style="font-size: 10px;">apt</a> <a href="/tags/audit2allow/" style="font-size: 10px;">audit2allow</a> <a href="/tags/auth/" style="font-size: 10px;">auth</a> <a href="/tags/bellman/" style="font-size: 10px;">bellman</a> <a href="/tags/bitmap/" style="font-size: 10px;">bitmap</a> <a href="/tags/bjut/" style="font-size: 10px;">bjut</a> <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/concept/" style="font-size: 12.22px;">concept</a> <a href="/tags/cpp/" style="font-size: 15.56px;">cpp</a> <a href="/tags/cryptography/" style="font-size: 11.11px;">cryptography</a> <a href="/tags/curses/" style="font-size: 10px;">curses</a> <a href="/tags/deque/" style="font-size: 10px;">deque</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/dpkg/" style="font-size: 10px;">dpkg</a> <a href="/tags/echo/" style="font-size: 10px;">echo</a> <a href="/tags/emulator/" style="font-size: 10px;">emulator</a> <a href="/tags/english/" style="font-size: 12.22px;">english</a> <a href="/tags/epoll/" style="font-size: 10px;">epoll</a> <a href="/tags/floyd/" style="font-size: 10px;">floyd</a> <a href="/tags/g/" style="font-size: 10px;">g++</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/gdb/" style="font-size: 11.11px;">gdb</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/ip/" style="font-size: 11.11px;">ip</a> <a href="/tags/jdbc/" style="font-size: 10px;">jdbc</a> <a href="/tags/kernal/" style="font-size: 10px;">kernal</a> <a href="/tags/life/" style="font-size: 10px;">life</a> <a href="/tags/linus/" style="font-size: 10px;">linus</a> <a href="/tags/linux/" style="font-size: 18.89px;">linux</a> <a href="/tags/linux内核/" style="font-size: 10px;">linux内核</a> <a href="/tags/list/" style="font-size: 10px;">list</a> <a href="/tags/mail服务器/" style="font-size: 10px;">mail服务器</a> <a href="/tags/map/" style="font-size: 11.11px;">map</a> <a href="/tags/md5注入/" style="font-size: 10px;">md5注入</a> <a href="/tags/memory/" style="font-size: 10px;">memory</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/new/" style="font-size: 12.22px;">new</a> <a href="/tags/notes/" style="font-size: 12.22px;">notes</a> <a href="/tags/openstack/" style="font-size: 10px;">openstack</a> <a href="/tags/pam/" style="font-size: 10px;">pam</a> <a href="/tags/patch/" style="font-size: 10px;">patch</a> <a href="/tags/ping/" style="font-size: 10px;">ping</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/poll/" style="font-size: 10px;">poll</a> <a href="/tags/postfix/" style="font-size: 10px;">postfix</a> <a href="/tags/protobuf/" style="font-size: 10px;">protobuf</a> <a href="/tags/qemu/" style="font-size: 10px;">qemu</a> <a href="/tags/queue/" style="font-size: 10px;">queue</a> <a href="/tags/reading/" style="font-size: 20px;">reading</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/rodata/" style="font-size: 10px;">rodata</a> <a href="/tags/select/" style="font-size: 10px;">select</a> <a href="/tags/selinux/" style="font-size: 10px;">selinux</a> <a href="/tags/set/" style="font-size: 10px;">set</a> <a href="/tags/stack/" style="font-size: 10px;">stack</a> <a href="/tags/thought/" style="font-size: 12.22px;">thought</a> <a href="/tags/tinythhpd/" style="font-size: 10px;">tinythhpd</a> <a href="/tags/tinyxml/" style="font-size: 10px;">tinyxml</a> <a href="/tags/tools/" style="font-size: 12.22px;">tools</a> <a href="/tags/tpm/" style="font-size: 10px;">tpm</a> <a href="/tags/traits/" style="font-size: 10px;">traits</a> <a href="/tags/trousers/" style="font-size: 10px;">trousers</a> <a href="/tags/trusted-computing/" style="font-size: 10px;">trusted_computing</a> <a href="/tags/unix编程实践/" style="font-size: 10px;">unix编程实践</a> <a href="/tags/valgrind/" style="font-size: 10px;">valgrind</a> <a href="/tags/vector/" style="font-size: 10px;">vector</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vs2013/" style="font-size: 10px;">vs2013</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web服务器/" style="font-size: 10px;">web服务器</a> <a href="/tags/win10/" style="font-size: 10px;">win10</a> <a href="/tags/xml/" style="font-size: 10px;">xml</a> <a href="/tags/yum/" style="font-size: 10px;">yum</a> <a href="/tags/世界上最遥远的距离/" style="font-size: 10px;">世界上最遥远的距离</a> <a href="/tags/个人成长/" style="font-size: 11.11px;">个人成长</a> <a href="/tags/书单/" style="font-size: 12.22px;">书单</a> <a href="/tags/书摘/" style="font-size: 10px;">书摘</a> <a href="/tags/事件驱动/" style="font-size: 10px;">事件驱动</a> <a href="/tags/产品/" style="font-size: 10px;">产品</a> <a href="/tags/代码段/" style="font-size: 10px;">代码段</a> <a href="/tags/优先级/" style="font-size: 10px;">优先级</a> <a href="/tags/位向量/" style="font-size: 10px;">位向量</a> <a href="/tags/位图/" style="font-size: 10px;">位图</a> <a href="/tags/信号/" style="font-size: 10px;">信号</a> <a href="/tags/公钥/" style="font-size: 10px;">公钥</a> <a href="/tags/公钥密码/" style="font-size: 10px;">公钥密码</a> <a href="/tags/内存池/" style="font-size: 10px;">内存池</a> <a href="/tags/内存泄漏/" style="font-size: 10px;">内存泄漏</a> <a href="/tags/内存管理/" style="font-size: 10px;">内存管理</a> <a href="/tags/内核/" style="font-size: 10px;">内核</a> <a href="/tags/内核模块/" style="font-size: 10px;">内核模块</a> <a href="/tags/刘未鹏/" style="font-size: 11.11px;">刘未鹏</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/区间和/" style="font-size: 10px;">区间和</a> <a href="/tags/单例模式/" style="font-size: 10px;">单例模式</a> <a href="/tags/参考策略/" style="font-size: 10px;">参考策略</a> <a href="/tags/可信计算/" style="font-size: 11.11px;">可信计算</a> <a href="/tags/后台开发/" style="font-size: 10px;">后台开发</a> <a href="/tags/回显服务器/" style="font-size: 10px;">回显服务器</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/学习之路/" style="font-size: 10px;">学习之路</a> <a href="/tags/学习计划/" style="font-size: 10px;">学习计划</a> <a href="/tags/容器/" style="font-size: 10px;">容器</a> <a href="/tags/密码体制/" style="font-size: 10px;">密码体制</a> <a href="/tags/密码学/" style="font-size: 12.22px;">密码学</a> <a href="/tags/富爸爸穷爸爸/" style="font-size: 10px;">富爸爸穷爸爸</a> <a href="/tags/对称密码/" style="font-size: 10px;">对称密码</a> <a href="/tags/川藏线/" style="font-size: 10px;">川藏线</a> <a href="/tags/年终总结/" style="font-size: 13.33px;">年终总结</a> <a href="/tags/广告/" style="font-size: 10px;">广告</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a> <a href="/tags/异步/" style="font-size: 10px;">异步</a> <a href="/tags/心智/" style="font-size: 10px;">心智</a> <a href="/tags/心理学/" style="font-size: 10px;">心理学</a> <a href="/tags/思维导图/" style="font-size: 10px;">思维导图</a> <a href="/tags/思考/" style="font-size: 12.22px;">思考</a> <a href="/tags/总结/" style="font-size: 15.56px;">总结</a> <a href="/tags/我是一只IT小小鸟/" style="font-size: 10px;">我是一只IT小小鸟</a> <a href="/tags/投资/" style="font-size: 10px;">投资</a> <a href="/tags/投资理财/" style="font-size: 11.11px;">投资理财</a> <a href="/tags/指数基金/" style="font-size: 10px;">指数基金</a> <a href="/tags/挑战程序设计竞赛/" style="font-size: 11.11px;">挑战程序设计竞赛</a> <a href="/tags/提问的智慧/" style="font-size: 10px;">提问的智慧</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/摄影/" style="font-size: 11.11px;">摄影</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/数据库/" style="font-size: 12.22px;">数据库</a> <a href="/tags/文本查询/" style="font-size: 10px;">文本查询</a> <a href="/tags/暗时间/" style="font-size: 10px;">暗时间</a> <a href="/tags/最短路径算法/" style="font-size: 10px;">最短路径算法</a> <a href="/tags/析构函数/" style="font-size: 10px;">析构函数</a> <a href="/tags/查理芒格/" style="font-size: 10px;">查理芒格</a> <a href="/tags/毕业旅行/" style="font-size: 10px;">毕业旅行</a> <a href="/tags/汇编/" style="font-size: 10px;">汇编</a> <a href="/tags/汇编语言/" style="font-size: 10px;">汇编语言</a> <a href="/tags/源码阅读/" style="font-size: 12.22px;">源码阅读</a> <a href="/tags/爬虫/" style="font-size: 10px;">爬虫</a> <a href="/tags/理财/" style="font-size: 10px;">理财</a> <a href="/tags/生活随笔/" style="font-size: 10px;">生活随笔</a> <a href="/tags/知识点/" style="font-size: 10px;">知识点</a> <a href="/tags/碎碎念/" style="font-size: 10px;">碎碎念</a> <a href="/tags/私钥/" style="font-size: 10px;">私钥</a> <a href="/tags/秋招/" style="font-size: 10px;">秋招</a> <a href="/tags/程序员/" style="font-size: 11.11px;">程序员</a> <a href="/tags/立flag/" style="font-size: 10px;">立flag</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/笔试/" style="font-size: 10px;">笔试</a> <a href="/tags/算法/" style="font-size: 11.11px;">算法</a> <a href="/tags/算法题/" style="font-size: 10px;">算法题</a> <a href="/tags/系统编程/" style="font-size: 11.11px;">系统编程</a> <a href="/tags/红黑树/" style="font-size: 10px;">红黑树</a> <a href="/tags/线段树/" style="font-size: 10px;">线段树</a> <a href="/tags/线程池/" style="font-size: 10px;">线程池</a> <a href="/tags/经历/" style="font-size: 10px;">经历</a> <a href="/tags/网络编程/" style="font-size: 12.22px;">网络编程</a> <a href="/tags/翻译/" style="font-size: 10px;">翻译</a> <a href="/tags/考研/" style="font-size: 10px;">考研</a> <a href="/tags/虚函数/" style="font-size: 10px;">虚函数</a> <a href="/tags/虚基类/" style="font-size: 10px;">虚基类</a> <a href="/tags/计划/" style="font-size: 10px;">计划</a> <a href="/tags/计时器/" style="font-size: 10px;">计时器</a> <a href="/tags/计算机/" style="font-size: 10px;">计算机</a> <a href="/tags/计算机技术/" style="font-size: 10px;">计算机技术</a> <a href="/tags/计算机网络/" style="font-size: 10px;">计算机网络</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a> <a href="/tags/读书/" style="font-size: 10px;">读书</a> <a href="/tags/读书笔记/" style="font-size: 13.33px;">读书笔记</a> <a href="/tags/调试/" style="font-size: 10px;">调试</a> <a href="/tags/进程/" style="font-size: 10px;">进程</a> <a href="/tags/重定向/" style="font-size: 10px;">重定向</a> <a href="/tags/阅读/" style="font-size: 10px;">阅读</a> <a href="/tags/阻塞/" style="font-size: 10px;">阻塞</a> <a href="/tags/面向对象/" style="font-size: 11.11px;">面向对象</a> <a href="/tags/面向过程/" style="font-size: 10px;">面向过程</a> <a href="/tags/预处理/" style="font-size: 10px;">预处理</a> <a href="/tags/骑行/" style="font-size: 10px;">骑行</a> <a href="/tags/黑客与画家/" style="font-size: 10px;">黑客与画家</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2029/11/">November 2029</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2029/11/11/20291111 坚持阅读/">坚持阅读</a>
+          </li>
+        
+          <li>
+            <a href="/2022/10/27/20221027 北京香山公园一日游/">北京香山公园一日游</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/31/20211231 2021年终总结/">2021年终总结</a>
+          </li>
+        
+          <li>
+            <a href="/2021/10/11/20211011 我的毕业旅行/">我的毕业旅行</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/31/20201231 2020年终总结/">2020年终总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">visiters</h3>
+    <div class="widget">
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=534a4dn9fi8&amp;m=0c&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;cw=ffffff&amp;cb=000000" async="async"></script>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016-2021 Tao WuSheng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/links" class="mobile-nav-link">Links</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'true' == true;
+    var verify = 'true' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Please leave your footprints...",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
+
+  </div>
+</body>
+</html>

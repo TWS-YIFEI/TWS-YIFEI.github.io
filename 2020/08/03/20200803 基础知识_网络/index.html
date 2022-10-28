@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'true', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89376999-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89376999-1');
+</script>
+
+
+
+  
+  <title>基础知识_网络 | YIFEI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="计算机网络基础知识与常见题目。">
+<meta name="keywords" content="Summary,计算机网络">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基础知识_网络">
+<meta property="og:url" content="http://taowusheng.cn/2020/08/03/20200803 基础知识_网络/index.html">
+<meta property="og:site_name" content="YIFEI">
+<meta property="og:description" content="计算机网络基础知识与常见题目。">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20calRTO.jpg">
+<meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20fasongchuangkou.jpg">
+<meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20jieshouchuangkou.jpg">
+<meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20yongsaibimian.jpg">
+<meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20zhuanyongsaibimian.jpg">
+<meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20zhuanmanqidong.jpg">
+<meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20tcp_state.jpg">
+<meta property="og:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20tcp_state2.jpg">
+<meta property="og:updated_time" content="2022-10-28T15:11:58.398Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基础知识_网络">
+<meta name="twitter:description" content="计算机网络基础知识与常见题目。">
+<meta name="twitter:image" content="http://taowusheng.cn/images_/2019_picture/20190321%20calRTO.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="YIFEI" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="/googleapis-fonts/fonts.css" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YIFEI</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">每当我找到生命的意义，它就又变了...</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/links">Links</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://taowusheng.cn"></form>
+      </div>
+    </div>
+  </div>
+	
+  <script>
+    
+    var number_of_banners = 8;
+    var randnum = Math.floor(Math.random() * number_of_banners + 1);
+    document.getElementById("banner").style.backgroundImage = "url(/css/images/banner" + randnum + ".jpg)";
+    
+</script>
+
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-20200803 基础知识_网络" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/03/20200803 基础知识_网络/" class="article-date">
+  <time datetime="2020-08-03T00:00:01.000Z" itemprop="datePublished">2020-08-03</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Summary/">Summary</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      基础知识_网络
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		<!-- Table of Contents -->
+		
+		  <div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+			<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#网络的分层结构"><span class="toc-number">1.</span> <span class="toc-text">网络的分层结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IP协议头部"><span class="toc-number">2.</span> <span class="toc-text">IP协议头部</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP协议头部"><span class="toc-number">3.</span> <span class="toc-text">TCP协议头部</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP的重传机制"><span class="toc-number">4.</span> <span class="toc-text">TCP的重传机制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP的流量控制"><span class="toc-number">5.</span> <span class="toc-text">TCP的流量控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP的滑动窗口"><span class="toc-number">6.</span> <span class="toc-text">TCP的滑动窗口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP拥塞控制的几个算法"><span class="toc-number">7.</span> <span class="toc-text">TCP拥塞控制的几个算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP三次握手与四次挥手的过程"><span class="toc-number">8.</span> <span class="toc-text">TCP三次握手与四次挥手的过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#为什么需要三次握手和四次挥手"><span class="toc-number">9.</span> <span class="toc-text">为什么需要三次握手和四次挥手</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP的状态机"><span class="toc-number">10.</span> <span class="toc-text">TCP的状态机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TIME-WAIT状态"><span class="toc-number">11.</span> <span class="toc-text">TIME_WAIT状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP长连接和短连接"><span class="toc-number">12.</span> <span class="toc-text">TCP长连接和短连接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#web服务器-TCP接受连接的最大数量"><span class="toc-number">13.</span> <span class="toc-text">web服务器/TCP接受连接的最大数量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP粘包问题"><span class="toc-number">14.</span> <span class="toc-text">TCP粘包问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#UDP协议头部"><span class="toc-number">15.</span> <span class="toc-text">UDP协议头部</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#QUIC协议"><span class="toc-number">16.</span> <span class="toc-text">QUIC协议</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP和UDP的区别"><span class="toc-number">17.</span> <span class="toc-text">TCP和UDP的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP消息格式"><span class="toc-number">18.</span> <span class="toc-text">HTTP消息格式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP请求头部中有哪些字段"><span class="toc-number">19.</span> <span class="toc-text">HTTP请求头部中有哪些字段</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP的状态码"><span class="toc-number">20.</span> <span class="toc-text">HTTP的状态码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#介绍一下https协议"><span class="toc-number">21.</span> <span class="toc-text">介绍一下https协议</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ping命令的原理"><span class="toc-number">22.</span> <span class="toc-text">ping命令的原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#点击网页上的登录按钮后-发生了什么"><span class="toc-number">23.</span> <span class="toc-text">点击网页上的登录按钮后,发生了什么</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#系统收到数据到交付应用程序的整个过程"><span class="toc-number">24.</span> <span class="toc-text">系统收到数据到交付应用程序的整个过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#应用层协议常用的端口"><span class="toc-number">25.</span> <span class="toc-text">应用层协议常用的端口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#建立TCP服务器的系统调用"><span class="toc-number">26.</span> <span class="toc-text">建立TCP服务器的系统调用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#one-thread-one-loop思想"><span class="toc-number">27.</span> <span class="toc-text">one thread one loop思想</span></a></li></ol>
+		  </div>
+		
+        <p>计算机网络基础知识与常见题目。<br><a id="more"></a></p>
+<h4 id="网络的分层结构"><a href="#网络的分层结构" class="headerlink" title="网络的分层结构"></a>网络的分层结构</h4><ul>
+<li><p>OSI七层模型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">应用层 |</span><br><span class="line">表示层 &#125; 数据</span><br><span class="line">会话层 |</span><br><span class="line">传输层：分段</span><br><span class="line">网络层：分组数据报</span><br><span class="line">数据链路层：帧</span><br><span class="line">物理层：比特流</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>TCP/IP四层模型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">应用层</span><br><span class="line">运输层</span><br><span class="line">网际层</span><br><span class="line">网络接口层</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>五层</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">应用层：http、ftp、smtp、telnet</span><br><span class="line">传输层：tcp、udp</span><br><span class="line">网络层：IP</span><br><span class="line">数据链路层：</span><br><span class="line">物理层：IEEE802.2、Ethernet v.2</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="IP协议头部"><a href="#IP协议头部" class="headerlink" title="IP协议头部"></a>IP协议头部</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">|--------------------------------------------------------------------------------------|----|-----------------</span><br><span class="line">| Version <span class="number">4b</span>its | IHL <span class="number">4b</span>its | 区分服务<span class="number">8</span>位 |                  总长度<span class="number">16</span>位                    |    |             首部</span><br><span class="line">|--------------------------------------------------------------------------------------|    |</span><br><span class="line">|                   标识                  |  标志<span class="number">2</span>位 |         片偏移                     | 固定部分</span><br><span class="line">|--------------------------------------------------------------------------------------| <span class="number">20</span>个字节</span><br><span class="line">|     生存时间TTL      |       上层协议   |              首部校验和                         |    |</span><br><span class="line">|--------------------------------------------------------------------------------------|    |</span><br><span class="line">|                                   <span class="number">32</span>位源IP地址                                         |    |</span><br><span class="line">|--------------------------------------------------------------------------------------|    |</span><br><span class="line">|                                   <span class="number">32</span>位目的IP地址                                       |    |</span><br><span class="line">|--------------------------------------------------------------------------------------|----|</span><br><span class="line">|                可选字段(长度可变)                            |           填充            |</span><br><span class="line">|--------------------------------------------------------------------------------------|-----------------------</span><br><span class="line">|                                   数据部分                                             |</span><br><span class="line">|--------------------------------------------------------------------------------------|</span><br></pre></td></tr></table></figure>
+<ul>
+<li>基本的ip头部长度为20字节，可变长度的选项最多可达40字节，ip头部总长最多60字节，ip数据最多65515字节。</li>
+<li>第一个字段是版本字段，占4位。记录本数据报是ipv4还是ipv6.</li>
+<li>IHL(Internet head length)是头部长度字段，占4位。记录数据报头部中32位字的数量。所以最多只能表示60个字节.</li>
+<li>DS字段和ECN字段在最初是统称为服务类型(ToS)字段，后来才分成两个。</li>
+<li>DS(Differentiated Services)为区分服务字段,占6位。这个字段是用来提供差异化服务的，以给数据报提供不同的优先级。<br>  6位中最后一位是1，表示实验或本地用途；以0结尾表示标准用途。前5位对流量类别和丢弃优先级进行了区分，具体参考RFC2474/2597/3246/5865.</li>
+<li>ECN(Explicit Congestion Notification)显式拥塞通知字段，占2位。在数据报传输途中，如果一台具有拥塞感知功能的路由器检测到了拥塞，就会设置这2位，以此来通知目的主机，目的主机接收到之后会通知发送方降低发送速度。</li>
+<li>总长度字段记录数据报的总长度，长度16位，可以表示ipv4数据报的最大长度为65535字节。通过这个字段和IHL字段，可以知道数据报的数据部分从哪里开始。</li>
+<li>标示、标志、分片偏移三个字段对ip数据报的分片至关重要。</li>
+<li>16位的标示字段，是用来标记数据报的分片的。发送方主机在每次发送数据报时，会将本地计数器的值加1，然后存到该字段。如果该数据报在传送途中被分片，每个分片会分别复制这个值，目的主机接收到这些分片，就可以根据这个标示来判断哪些数据报是一伙的。</li>
+<li>3位标志字段分别是保留位、DF(don’t frame)、MF(more frame)。DF为1表示本数据报不能分片。MF为1表示后面还有分片，MF为0表示这是最后一个分片。</li>
+<li>13位的分片偏移字段，记录该数据报分片之前的位置。</li>
+<li>生存期(TTL)字段用来设置一个数据报可能经过的路由器数量上限。每台路由器再转发数据报时会将该值减1，如果达到0，就丢弃该数报并用一个ICMP消息通知发送方。</li>
+<li>8位的上层协议字段用来标示ip数据报所承载的数据报类型，17为udp，6为tcp，4表示ipv4.</li>
+<li>16位首部校验和字段仅计算ipv4的头部。所以内部的tcp等数据报需要自己记录本身的校验和。另外由于TTL字段每经过一台路由器就要减1，导致每次需要重新计算校验和。</li>
+<li>剩下的两块为源ip地址和目的ip地址。<br><a href="http://taowusheng.cn/2020/01/05/20200105%20Ip%E5%8D%8F%E8%AE%AE/">IP协议详解</a></li>
+</ul>
+<h4 id="TCP协议头部"><a href="#TCP协议头部" class="headerlink" title="TCP协议头部"></a>TCP协议头部</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">|-------------------------------------------------------------------------------------|</span><br><span class="line">|        <span class="number">16</span>位源端口号                   |              <span class="number">16</span>位目的端口号                     |</span><br><span class="line">|-------------------------------------------------------------------------------------|</span><br><span class="line">|                                   序列号                                             |</span><br><span class="line">|-------------------------------------------------------------------------------------|  </span><br><span class="line">|                                   确认号(acknowledgement number)                     |  </span><br><span class="line">|-------------------------------------------------------------------------------------|</span><br><span class="line">| <span class="number">4</span>位头部长度|<span class="number">6</span>位保留| <span class="number">6</span>个标志位           |                <span class="number">16</span>位窗口大小                     |</span><br><span class="line">|-------------------------------------------------------------------------------------|</span><br><span class="line">|         <span class="number">16</span>位校验和                    |                   <span class="number">16</span>位紧急指针                  |</span><br><span class="line">|-------------------------------------------------------------------------------------|</span><br><span class="line">|                                选项信息 最多<span class="number">40</span>字节                                     |</span><br><span class="line">|-------------------------------------------------------------------------------------|</span><br></pre></td></tr></table></figure>
+<ul>
+<li>16位源端口号和16位目的端口号。</li>
+<li>32位序列号，用来标识数据的序号。</li>
+<li>32位确认号比如收到的上个数据包的序列号是n，那这里的确认号就是n+1.</li>
+<li>4位头部，标识该tcp头部有多少个4字节，最长15*4=60个字节，同IP协议头部。</li>
+<li>6位保留。</li>
+<li>6位标志，URG:紧急指针是否有效，ACK:确认号是否有效，PSH:提示接收端应用程序应立即从缓冲区读数据，RST:要求对方重新建立连接，SYN:请求建立连接，FIN:通知对方本端要关闭连接。</li>
+<li>16位窗口大小，用于流量控制的字段。</li>
+<li>16位校验和。</li>
+<li>16位紧急指针，是一个正的偏移字节量。序列号+偏移量为带外数据的位置。(带外数据的应用场景是什么？)</li>
+</ul>
+<h4 id="TCP的重传机制"><a href="#TCP的重传机制" class="headerlink" title="TCP的重传机制"></a>TCP的重传机制</h4><p>1.超时重传<br>顾名思义，如果检测到某一个数据包的定时器超出时间RTO(Retransmission Timeout超时重传时间)了，就需要重新发送该数据包了,RTO是由RTT计算出来的。RTT(Round-Trip Time 往返时延)这是从发送一个消息直到收到确认的时间。下面是RTO的计算方式：<br><img src="/images_/2019_picture/20190321 calRTO.jpg" alt="RTO计算方式"><br>其中 SRTT 是计算平滑的RTT ，DevRTR 是计算平滑的RTT 与 最新 RTT 的差距。在 Linux 下，α = 0.125，β = 0.25， μ = 1，∂ = 4。这是通过实验选定的系数。<br>如果对数据重传之后，再设定的超时时间是原来的2倍。<br>2.快速重传<br>等着计时器超时会浪费一些不必要的时间，如果发送方发送1、2、3、4、5数据包，当1丢失后，接收方收到234数据包，会回复三次ACK=1，发送方收到三次相同的ack，就知道1数据包丢了，于是重新发送1号数据包。<br>但是如果1号2号数据包都丢失了，345数据到达接收方时，接收方还是回复三次ACK=1，这时如果只重传1号数据包是不够的。于是有了SACK方法。<br>3.SACK方法<br>SACK(Selective Acknowledgment 选择性确认)，是在接收方回复的ACK中，TCP头部的”选项”字段里，添加SACK字段，用来标识哪些数据被接收了。例如当发送方发送1-5数据，1、2号数据丢失，当接收方收到3号数据，回复ACK=1，SACK=3。接收方收到4号数据，回复ACK=1，SACK=3-4。接收方收到5号数据，回复ACK=1,SACK=3-5.这样发送方明白3-5已经发送成功，只需要重传1-2号数据。<br>SACK是解决”丢失多个发送方-&gt;接收方的数据包”问题。<br>4.Duplicate SACK<br>D-SACK是在接收方回复ACK确认的时候，借助TCP头部”选项”里的SACK字段，标识哪些数据被重复发送了。例如，当发送方发送1-5数据，接收方回复的ACK=1和ACK=2丢失了，超时之后发送方会重复发送1、2数据，此时接收方回复ACK=3，SACK=1-2。这时发送方看到ACK是3，大于1、2，说明1-2数据是被重复发送了。<br>D-SACK是解决”丢失多个接收方-&gt;发送方的ACK确认”问题。</p>
+<h4 id="TCP的流量控制"><a href="#TCP的流量控制" class="headerlink" title="TCP的流量控制"></a>TCP的流量控制</h4><p>发送方应当根据接收方的处理能力来发送数据，如果接收方的应用程序读取数据速度下降，接收窗口的可用空间就会变小，于是发送方对应的会减小发送窗口的大小。<br>1.如果接收方的应用程序没有及时读取缓存，接收窗口不断下降，最终下降到0，这样发送窗口也被调整为0了。之后发送方应当发送探测报文，不然可能会死锁下去。为了解决这个死锁问题，TCP 为每个连接设有一个持续定时器，只要TCP 连接一方收到对方的零窗口通知，就启动持续计时器。如果持续计时器超时，就会发送窗口探测(Window probe) 报文，而对方在确认这个探测报文时，给出自己现在的接收窗口大小。<br>2.如果接收方直接减小了缓存大小，也就是接收窗口的大小，发送方已经发送的一部分数据，还没确认，可能就因为降低窗口大小，被丢弃了。<br>3.接收方处理能力下降后，有可能出现这样一种情况，接收方通知发送方一个小的窗口大小，然后发送方发送很小的数据。这样可能只为了几个字节的数据就加上几十个自己的协议头部，开销还是挺大的。TCP使用的解决方法是不让接收方通知小窗口&amp;不让发送方发送小数据。如果接收方的接收窗口小于min(MSS,缓存的一半)，就直接通告0窗口，发送方判断的接收方窗口如果大于MSS或者自己储存的数据量大于MSS(Nagle算法)，才开始发送数据。</p>
+<h4 id="TCP的滑动窗口"><a href="#TCP的滑动窗口" class="headerlink" title="TCP的滑动窗口"></a>TCP的滑动窗口</h4><ul>
+<li>滑动窗口要解决的问题：1.如果发送方发送一个数据包a，等收到接收方的确认再发送下一个数据包b。这样<strong>效率太低</strong>了。2.于是改成连着发送abcd多个数据包，但是又有可能到达接收方时的顺序bacd，所以还要保证数据在两端的<strong>顺序相同且无丢包</strong>。</li>
+<li>滑动窗口有两个，分别是发送窗口和接收窗口，发送窗口不能超过接收窗口。</li>
+<li><strong>发送窗口</strong>分为两部分，前面一段是已发送但未收到ACK确认的数据，后一段是马上要发送并且在接收方处理范围内。发送窗口左边的的数据是已发送并收到ACK确认的，发送窗口右边的是以后要被发送的。<br>如下图，SND.WND是发送窗口的大小，SND.UNA指向已发送但未收到ACK确认的第一个字节，SND.NXT指向未发送但马上要发送的第一个字节。<br><img src="/images_/2019_picture/20190321 fasongchuangkou.jpg" alt="发送窗口"><br>如果收到对5个字节数据的ACK确认，发送窗口就会往右滑动5个字节。</li>
+<li><strong>接收窗口</strong>只有一部分，表示还未收到但正准备接收的数据。接收窗口左边的是已经接收并回复确认的数据，右边是未接收并且现在还无法接收的数据。<br><img src="/images_/2019_picture/20190321 jieshouchuangkou.jpg" alt="接收窗口"><br>参考：<a href="https://mp.weixin.qq.com/s/Tc09ovdNacOtnMOMeRc_uA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/Tc09ovdNacOtnMOMeRc_uA</a></li>
+</ul>
+<h4 id="TCP拥塞控制的几个算法"><a href="#TCP拥塞控制的几个算法" class="headerlink" title="TCP拥塞控制的几个算法"></a>TCP拥塞控制的几个算法</h4><p>首先要知道拥塞窗口的概念，对应的还有个发送窗口的概念。发送窗口swnd’(这是参考值)的大小是根据接收方的接收能力来定的。而拥塞窗口cwnd是根据线路的拥堵程度确定的。实际的发送窗口大小是swnd=min(swnd’,cwnd)。以下几个算法便是用来设置拥塞窗口的值：</p>
+<ul>
+<li>慢启动<br>慢启动的意思是，初始cwnd是1，之后每收到接收方一个ACK，就将cwnd的大小加1。所以<strong>慢启动</strong>过程是这样的：一开始cwnd=1，收到1个ACK确认，然后cwnd变成2。接着发送2个数据包，收到2个ACK确认后cwnd变成4。之后是8、16…(所以慢启动并不是说增长的速度慢，而是刚开始发送少量数据包。)</li>
+<li>拥塞避免<br>在慢启动算法中，cwnd是以指数级别变大的，增长速度很快的，当然不能让它这样增长下去。于是设置了一个慢启动门限ssthresh(slow start threshold)状态变量，当cwnd到达慢启动门限后，就启用<strong>拥塞避免算法</strong>：它的规则是每收到1个ACK，cwnd增加1/cwnd，换言之，每发送cwnd个数据包，收到cwnd个确认后，cwnd加1.<br><img src="/images_/2019_picture/20190321 yongsaibimian.jpg" alt="拥塞避免"></li>
+<li>拥塞发生<br>当网络状况不好时，需要重传数据包，有两种情况：<br>当线路拥塞程度比较低时，发送方发送abcd四个数据包，只丢失了a，接收方会在收到bcd后，回复三次ACK=a，发送方检测到三次重复的ACK确认后，知道数据包a丢失了，但是能收到三次ACK说明线路状况还不至于太差。于是启动<strong>快速重传算法</strong>，将cwnd=cwnd/2,ssthresh=cwnd。这样的结果就是检测到少量丢包，就切换到快速恢复算法(意味着之后会切换到拥塞避免算法)。<br><img src="/images_/2019_picture/20190321 zhuanyongsaibimian.jpg" alt="拥塞发生-&gt;拥塞避免"><br>当拥塞程度高的时候，发送方发送abcd四个数据包，全部丢了。等发送方的计时器超时了，就知道数据包都丢了或者说接收方回复的ACK确认都丢了。这时候使用<strong>超时重传算法</strong>，将慢启动门限ssthresh设置为cwnd/2，cwnd设置为1.这样的结果就是检测到消息超时了，就切换到慢启动算法上了。<br><img src="/images_/2019_picture/20190321 zhuanmanqidong.jpg" alt="拥塞发生-&gt;慢启动"></li>
+<li>快速恢复<br>当超时重传后，cwnd直接变成1了，这样就传输速度一下子就降到很低了。如果只是少量丢包，也那样处理就反应过度了，所以快速重传后，使用<strong>快速恢复算法</strong>：cwnd=ssthresh+3(3代表刚收到的三个重复的ACK确认)，这样cwnd是大于ssthresh的，之后执行的就是拥塞避免算法了。<br>参考：<a href="https://mp.weixin.qq.com/s/Tc09ovdNacOtnMOMeRc_uA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/Tc09ovdNacOtnMOMeRc_uA</a></li>
+</ul>
+<h4 id="TCP三次握手与四次挥手的过程"><a href="#TCP三次握手与四次挥手的过程" class="headerlink" title="TCP三次握手与四次挥手的过程"></a>TCP三次握手与四次挥手的过程</h4><ul>
+<li>第一次握手：client设置syn包中的同步序列号SYN=i，然后将syn包发送到服务器，并进入SYN_SENT状态，等待服务器确认。</li>
+<li>第二次：服务器收到syn包，需要进行确认，设置(ack=i+1)，同时自己也发一个syn包(SYN=j),即发送SYN+ACK包，然后服务器进入SYN_RECV状态。</li>
+<li>第三次：客户端收到SYN+ACK包之后，向服务器发送ACK包(ack=j+1)进行确认，然后客户端和服务器都会进入ESTABLISHED状态，完成三次握手。</li>
+<li>传输数据</li>
+<li>第一次挥手：主动关闭方A发送FIN包(seq=a).</li>
+<li>第二次：被动关闭方B回复ACK包(seq=a+1).</li>
+<li>第三次：B成为新的主动关闭方，向A发送FIN包(seq=b)</li>
+<li>第四次：A回复ACK包(seq=b+1)</li>
+</ul>
+<h4 id="为什么需要三次握手和四次挥手"><a href="#为什么需要三次握手和四次挥手" class="headerlink" title="为什么需要三次握手和四次挥手"></a>为什么需要三次握手和四次挥手</h4><p>1.三次握手</p>
+<ul>
+<li>三次握手本质上是要建立一个对序列号的共识(双方对一件事情共同认可)，因为之后要保证数据的可靠和顺序。</li>
+<li>四次握手有点多余，可以简化：<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">四次握手是这样的:</span><br><span class="line">	client&gt;&gt;server:SYN=a</span><br><span class="line">	client&lt;&lt;server:ACK=a+<span class="number">1</span></span><br><span class="line">	client&lt;&lt;server:SYN=b</span><br><span class="line">	client&gt;&gt;server:ACK=b+<span class="number">1</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>前两次握手，双方对client的序号产生了共识,后两次握手，双方对server的序号产生共识，这样tcp双向的传输通道建立。第二次和第三次握手可以直接放一块发送，这样简化为三次就可以了。</p>
+<ul>
+<li>两次握手不够，会出问题：<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">两次握手：</span><br><span class="line">	client&gt;&gt;server:SYN=a</span><br><span class="line">	client&lt;&lt;server:ACK=a+<span class="number">1</span>，SYN=b</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>（1）如果第二次握手的数据丢失了，server会以为成功建立了连接，但是client没有收到确认，所以会尝试重新发送SYN请求。server收到第二次SYN请求，以为是要再次建立连接就回复ACK，于是server就维护两个连接了。这样二次握手可能会导致server端单方面建立许多并不成功的连接。<br>（2）如果第一次握手的信息package1在网络中滞留了，client检测超时后会重新发送SYN，server回复ACK确认，这样成功建立连接了。但这时已经失效的package1又到达了server，server不知道这是失效的请求，又会回复ACK建立连接。当client接收到第二个ACK，知道server端用失效的SYN建立了连接，只能干着急。<br>2.四次挥手</p>
+<ul>
+<li>因为TCP连接是全双工的，客户端想要断开连接，服务器回复确认。这样就断开了客户端往服务器方向的连接，但是服务器可能还需要给客户端发送数据，所以第二次第三次挥手不能合并。<br>3.补充阅读<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">第一个包，即A发给B的SYN 中途被丢，没有到达B</span><br><span class="line">	A会周期性超时重传，直到收到B的确认</span><br><span class="line">第二个包，即B发给A的SYN +ACK 中途被丢，没有到达A</span><br><span class="line">	B会周期性超时重传，直到收到A的确认</span><br><span class="line">第三个包，即A发给B的ACK 中途被丢，没有到达B.A发完ACK，单方面认为TCP为 Established状态，而B显然认为TCP为Active状态：</span><br><span class="line">	a. 假定此时双方都没有数据发送，B会周期性超时重传，直到收到A的确认，收到之后B的TCP 连接也为 Established状态，双向可以发包。</span><br><span class="line">	b. 假定此时A有数据发送，B收到A的 Data + ACK，自然会切换为established 状态，并接受A的 Data。</span><br><span class="line">	c. 假定B有数据发送，数据发送不了，会一直周期性超时重传SYN + ACK，直到收到A的确认才可以发送数据。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>4.参考</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/24853633" target="_blank" rel="noopener">https://www.zhihu.com/question/24853633</a></li>
+</ul>
+<h4 id="TCP的状态机"><a href="#TCP的状态机" class="headerlink" title="TCP的状态机"></a>TCP的状态机</h4><p><img src="/images_/2019_picture/20190321 tcp_state.jpg" alt="TCP状态转换图1"><br><img src="/images_/2019_picture/20190321 tcp_state2.jpg" alt="TCP状态转换图2"><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">上半部分是TCP三路握手过程的状态变迁，下半部分是TCP四次挥手过程的状态变迁。</span><br><span class="line">CLOSED：起始点，在超时或者连接关闭时候进入此状态，这并不是一个真正的状态，而是这个状态图的假想起点和终点。</span><br><span class="line">LISTEN：服务器端等待连接的状态。服务器经过 socket，bind，listen 函数之后进入此状态，开始监听客户端发过来的连接请求。此称为应用程序被动打开（等到客户端连接请求）。</span><br><span class="line">SYN_SENT：第一次握手发生阶段，客户端发起连接。客户端调用 connect，发送 SYN 给服务器端，然后进入 SYN_SENT 状态，等待服务器端确认（三次握手中的第二个报文）。如果服务器端不能连接，则直接进入CLOSED状态。</span><br><span class="line">SYN_RCVD：第二次握手发生阶段，跟 <span class="number">3</span> 对应，这里是服务器端接收到了客户端的 SYN，此时服务器由 LISTEN 进入 SYN_RCVD状态，同时服务器端回应一个 ACK，然后再发送一个 SYN 即 SYN+ACK 给客户端。状态图中还描绘了这样一种情况，当客户端在发送 SYN 的同时也收到服务器端的 SYN请求，即两个同时发起连接请求，那么客户端就会从 SYN_SENT 转换到 SYN_REVD 状态。</span><br><span class="line">ESTABLISHED：第三次握手发生阶段，客户端接收到服务器端的 ACK 包（ACK，SYN）之后，也会发送一个 ACK 确认包，客户端进入 ESTABLISHED 状态，表明客户端这边已经准备好，但TCP 需要两端都准备好才可以进行数据传输。服务器端收到客户端的 ACK 之后会从 SYN_RCVD 状态转移到 ESTABLISHED 状态，表明服务器端也准备好进行数据传输了。这样客户端和服务器端都是 ESTABLISHED 状态，就可以进行后面的数据传输了。所以 ESTABLISHED 也可以说是一个数据传送状态。</span><br><span class="line">上面就是 TCP 三次握手过程的状态变迁。结合第一张三次握手过程图，从报文的角度看状态变迁：SYN_SENT 状态表示已经客户端已经发送了 SYN 报文，SYN_RCVD 状态表示服务器端已经接收到了 SYN 报文。</span><br><span class="line"></span><br><span class="line">下面看看TCP四次挥手过程的状态变迁。结合第一张四次挥手过程图来理解。</span><br><span class="line">FIN_WAIT_1：第一次挥手。主动关闭的一方（执行主动关闭的一方既可以是客户端，也可以是服务器端，这里以客户端执行主动关闭为例），终止连接时，发送 FIN 给对方，然后等待对方返回 ACK 。调用 close() 第一次挥手就进入此状态。</span><br><span class="line">CLOSE_WAIT：接收到FIN 之后，被动关闭的一方进入此状态。具体动作是接收到 FIN，同时发送 ACK。之所以叫 CLOSE_WAIT 可以理解为被动关闭的一方此时正在等待上层应用程序发出关闭连接指令。前面已经说过，TCP关闭是全双工过程，这里客户端执行了主动关闭，被动方服务器端接收到FIN 后也需要调用 close 关闭，这个 CLOSE_WAIT 就是处于这个状态，等待发送 FIN，发送了FIN 则进入 LAST_ACK 状态。</span><br><span class="line">FIN_WAIT_2：主动端（这里是客户端）先执行主动关闭发送FIN，然后接收到被动方返回的 ACK 后进入此状态。</span><br><span class="line">LAST_ACK：被动方（服务器端）发起关闭请求，由状态<span class="number">2</span> 进入此状态，具体动作是发送 FIN给对方，同时在接收到ACK 时进入CLOSED状态。</span><br><span class="line">CLOSING：两边同时发起关闭请求时（即主动方发送FIN，等待被动方返回ACK，同时被动方也发送了FIN，主动方接收到了FIN之后，发送ACK给被动方），主动方会由FIN_WAIT_1 进入此状态，等待被动方返回ACK。</span><br><span class="line">TIME_WAIT：从状态变迁图会看到，四次挥手操作最后都会经过这样一个状态然后进入CLOSED状态。共有三个状态会进入该状态</span><br><span class="line">*由CLOSING进入：同时发起关闭情况下，当主动端接收到ACK后，进入此状态，实际上这里的同时是这样的情况：客户端发起关闭请求，发送FIN之后等待服务器端回应ACK，但此时服务器端同时也发起关闭请求，也发送了FIN，并且被客户端先于ACK接收到。</span><br><span class="line">*由FIN_WAIT_1进入：发起关闭后，发送了FIN，等待ACK的时候，正好被动方（服务器端）也发起关闭请求，发送了FIN，这时客户端接收到了先前ACK，也收到了对方的FIN，然后发送ACK（对对方FIN的回应），与CLOSING进入的状态不同的是接收到FIN和ACK的先后顺序。</span><br><span class="line">*由FIN_WAIT_2进入：这是不同时的情况，主动方在完成自身发起的主动关闭请求后，接收到了对方发送过来的FIN，然后回应 ACK。</span><br></pre></td></tr></table></figure></p>
+<p>参考：<a href="https://blog.csdn.net/wenqian1991/article/details/40110703" target="_blank" rel="noopener">https://blog.csdn.net/wenqian1991/article/details/40110703</a></p>
+<h4 id="TIME-WAIT状态"><a href="#TIME-WAIT状态" class="headerlink" title="TIME_WAIT状态"></a>TIME_WAIT状态</h4><p>主动关闭连接的那一方最后会进入TIME_WAIT状态，这个状态可以解决两个问题：</p>
+<ul>
+<li>保证连接被可靠地关闭。主动关闭连接的一方先发送FIN，收到ACK。然后再收到被动方的FIN，需要回复ACK，但是最后这个ACK有可能被丢失，TIME_WAIT状态持续了2MSL时间，如果最后的ACK丢失了，被动方没有收到ACK，然后会重新发送FIN，这样主动方可以重新发送ACK确认。保证连接被可靠地关闭。</li>
+<li>保证网络中没有残留的报文干扰之后的连接。如果客户端主动断开连接，之后四次挥手连接关闭了。但这是如果网络中还有残存的数据包，然后客户端和服务端又重新建立连接后，使用的还是之前的IP地址和端口号，这时数据包又到达了，此时连接就会被干扰。</li>
+</ul>
+<h4 id="TCP长连接和短连接"><a href="#TCP长连接和短连接" class="headerlink" title="TCP长连接和短连接"></a>TCP长连接和短连接</h4><ul>
+<li>TCP本身只是面向连接的，长连接和短连接取决于我们如何使用。</li>
+<li>短连接：如果我们在三次握手后，进行一次传输，然后就四次挥手关闭连接，可以认为这是一次短连接。如果再需要传输，就再建立一次连接。</li>
+<li>长连接：对于传输频率比较频繁的场景，用短连接就不适合了。此时应当是三次握手..传输数据…传输数据..四次挥手，这叫做长连接。这样又有一个问题，连接需要一直保持着，如果客户端断网了或者死机了，服务器可以释放这个连接的资源。</li>
+<li>保活机制：这样就有一个保活机制，来让服务端检测客户端是否在线。tcp附带了一个keepalive机制，默认一个连接在两个小时内没有任何动作，服务器就向客户端发送一个探测。<br>  1.如果收到回复，则将定时器再设置两个小时。<br>  2.如果客户端崩溃或者关机或者重启，服务器会每隔75秒，总共发送10个探测，如果没有收到一个响应，就关闭连接。<br>  3.如果客户端崩溃并重新启动了，客户端会给服务端回复一个复位信息，让服务器终止连接。<br>  4.如果客户端正常，中间线路出现问题，对于服务器来说，这与情况2相同对待。</li>
+<li>应用层保活机制：？</li>
+<li>应用场景：？</li>
+<li><a href="http://docs.52im.net/extend/docs/book/tcpip/vol1/23/" target="_blank" rel="noopener">http://docs.52im.net/extend/docs/book/tcpip/vol1/23/</a></li>
+</ul>
+<h4 id="web服务器-TCP接受连接的最大数量"><a href="#web服务器-TCP接受连接的最大数量" class="headerlink" title="web服务器/TCP接受连接的最大数量"></a>web服务器/TCP接受连接的最大数量</h4><ul>
+<li>tcp有一个监听套接字负责监听，如果调用accept接受了一个连接，就为其新创建一个套接字描述符，tcp并不会受端口数限制，它可以用一个端口跟多个客户端通讯，所以连接数量是受内存大小限制，或进程的设置的限制。</li>
+</ul>
+<h4 id="TCP粘包问题"><a href="#TCP粘包问题" class="headerlink" title="TCP粘包问题"></a>TCP粘包问题</h4><h4 id="UDP协议头部"><a href="#UDP协议头部" class="headerlink" title="UDP协议头部"></a>UDP协议头部</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">|-------------------------------------------------------------------------------------|---</span><br><span class="line">|                                   <span class="number">32</span>位源IP地址                                        |</span><br><span class="line">|-------------------------------------------------------------------------------------|  UDP伪首部</span><br><span class="line">|                                   <span class="number">32</span>位目的IP地址                                      |  (伪首部是计算校验和用的)</span><br><span class="line">|-------------------------------------------------------------------------------------|</span><br><span class="line">|          <span class="number">0</span>         |    <span class="number">8</span>位协议       |                  <span class="number">16</span>位UDP长度                  |</span><br><span class="line">|-------------------------------------------------------------------------------------|-------------------------</span><br><span class="line">|        <span class="number">16</span>位源端口号                    |               <span class="number">16</span>位目的端口号                   |</span><br><span class="line">|-------------------------------------------------------------------------------------|</span><br><span class="line">|        <span class="number">16</span>位UDP长度                    |               <span class="number">16</span>位UDP校验和                    |  UDP首部</span><br><span class="line">|-------------------------------------------------------------------------------------|</span><br><span class="line">|                                      数据                                            |</span><br><span class="line">|-------------------------------------------------------------------------------------|---</span><br></pre></td></tr></table></figure>
+<h4 id="QUIC协议"><a href="#QUIC协议" class="headerlink" title="QUIC协议"></a>QUIC协议</h4><p><a href="http://leungyukshing.cn/archives/QUIC.html" target="_blank" rel="noopener">http://leungyukshing.cn/archives/QUIC.html</a></p>
+<h4 id="TCP和UDP的区别"><a href="#TCP和UDP的区别" class="headerlink" title="TCP和UDP的区别"></a>TCP和UDP的区别</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">TCP</th>
+<th style="text-align:center">UDP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">面向连接的、可靠的传输</td>
+<td style="text-align:center">无连接、不可靠的传输</td>
+</tr>
+<tr>
+<td style="text-align:center">面向字节流，有一个缓冲区来储存字节序列</td>
+<td style="text-align:center">面向报文的，来一个报文就发送</td>
+</tr>
+<tr>
+<td style="text-align:center">只能是点对点的</td>
+<td style="text-align:center">可以一对一、一对多、多对多</td>
+</tr>
+<tr>
+<td style="text-align:center">有三次握手、确认、拥塞控制、流量控制等机制来保证可靠传输</td>
+<td style="text-align:center">没有这些机制</td>
+</tr>
+<tr>
+<td style="text-align:center">占用资源多，速度慢</td>
+<td style="text-align:center">速度快</td>
+</tr>
+<tr>
+<td style="text-align:center">适合对数据可靠性要求严格的场景，如传输文件、网页</td>
+<td style="text-align:center">适合对时间要求严格的</td>
+</tr>
+</tbody>
+</table>
+<h4 id="HTTP消息格式"><a href="#HTTP消息格式" class="headerlink" title="HTTP消息格式"></a>HTTP消息格式</h4><p>1.http请求可以分为三部分，第一部分是请求行，第二部分是请求头部，由一个个的key-value组成，第三部分是请求包体。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">请求方法 URL 协议版本 &lt;回车符换行符&gt;</span><br><span class="line">头部字段<span class="number">1</span> ： 值<span class="number">1</span> &lt;回车符换行符&gt;</span><br><span class="line">... : ...</span><br><span class="line">头部字段n ： 值n &lt;回车符换行符&gt;</span><br><span class="line">&lt;空行&gt;</span><br><span class="line">请求包体</span><br></pre></td></tr></table></figure></p>
+<p>样例：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">GET/sample.Jsp HTTP/<span class="number">1.1</span></span><br><span class="line">Accept:image/gif.image/jpeg,*<span class="comment">/*</span></span><br><span class="line"><span class="comment">Accept-Language:zh-cn</span></span><br><span class="line"><span class="comment">Connection:Keep-Alive</span></span><br><span class="line"><span class="comment">Host:localhost</span></span><br><span class="line"><span class="comment">User-Agent:Mozila/4.0(compatible;MSIE5.01;Window NT5.0)</span></span><br><span class="line"><span class="comment">Accept-Encoding:gzip,deflate</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">username=jinqiao&amp;password=1234</span></span><br></pre></td></tr></table></figure></p>
+<p>2.http相应格式也分为三部分，分别是状态行、响应头部、响应包体。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">协议版本 状态码 状态码描述 &lt;回车符换行符&gt;</span><br><span class="line">头部字段<span class="number">1</span> : 值<span class="number">1</span> &lt;回车符换行符&gt;</span><br><span class="line">... : ...</span><br><span class="line">头部字段n : 值n &lt;回车符换行符&gt;</span><br><span class="line">&lt;空行&gt;</span><br><span class="line">响应包体</span><br></pre></td></tr></table></figure></p>
+<p>样例：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">HTTP/<span class="number">1.1</span> <span class="number">200</span> OK</span><br><span class="line">Date: Mon, <span class="number">10</span> Aug <span class="number">2020</span> <span class="number">09</span>:<span class="number">45</span>:<span class="number">14</span> GMT</span><br><span class="line">Server: Apache/<span class="number">2.4</span><span class="number">.6</span></span><br><span class="line">Last-Modified: Wed, <span class="number">04</span> Dec <span class="number">2013</span> <span class="number">11</span>:<span class="number">03</span>:<span class="number">37</span> GMT</span><br><span class="line">ETag: <span class="number">1386155017</span></span><br><span class="line">Keep-Alive: timeout=<span class="number">5</span>, max=<span class="number">99</span></span><br><span class="line">Connection: Keep-Alive</span><br><span class="line">Transfer-Encoding: chunked</span><br><span class="line">Content-Type: text/html; charset=UTF<span class="number">-8</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="HTTP请求头部中有哪些字段"><a href="#HTTP请求头部中有哪些字段" class="headerlink" title="HTTP请求头部中有哪些字段"></a>HTTP请求头部中有哪些字段</h4><p>Accept : 浏览器（或者其他基于HTTP的客户端程序）可以接收的内容类型（Content-types）,例如 Accept: text/plain<br>Accept-Charset：浏览器能识别的字符集，例如 Accept-Charset: utf-8<br>Accept-Encoding：浏览器可以处理的编码方式，注意这里的编码方式有别于字符集，这里的编码方式通常指gzip,deflate等。例如 Accept-Encoding: gzip, deflate<br>Accept-Language：浏览器接收的语言，其实也就是用户在什么语言地区，例如简体中文的就是 Accept-Language: zh-CN<br>Authorization：在HTTP中，服务器可以对一些资源进行认证保护，如果你要访问这些资源，就要提供用户名和密码，这个用户名和密码就是在Authorization头中附带的，格式是“username:password”字符串的base64编码，例如：Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==中，basic指使用basic认证方式，QWxhZGRpbjpvcGVuIHNlc2FtZQ==使用base64解码就是Aladdin:open sesame<br>Cookie：浏览器向服务器发送请求时发送cookie，或者服务器向浏览器附加cookie<br>Content-Length：一个请求的请求体的内存长度，单位为字节(byte)。请求体是指在HTTP头结束后，两个CR-LF字符组之后的内容，常见的有POST提交的表单数据，这个Content-Length并不包含请求行和HTTP头的数据长度。<br>Content-MD5：使用base64进行了编码的请求体的MD5校验和。例如：Content-MD5: Q2hlY2sgSW50ZWdyaXR5IQ==<br>User-Agent：通常就是用户的浏览器相关信息。例如：User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0<br>…</p>
+<h4 id="HTTP的状态码"><a href="#HTTP的状态码" class="headerlink" title="HTTP的状态码"></a>HTTP的状态码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">1xx 代表请求已被接受，需要继续处理。但由于HTTP/1.0中没有定义任何1xx状态码，所以很少使用。</span><br><span class="line">2×× 代表请求已成功被服务器接收、理解、并接受。</span><br><span class="line">    200 OK 请求成功</span><br><span class="line">3xx 一般是用来重定向</span><br><span class="line">	302 暂时性转移</span><br><span class="line">	301 永久性转移</span><br><span class="line">	305	使用代理，所请求的资源必须通过代理访问</span><br><span class="line">4xx 请求错误，一般是客户端导致的错误</span><br><span class="line">    400 Bad Request 当前请求有误，无法被理解</span><br><span class="line">    401 Unauthorized 当前请求需要用户验证</span><br><span class="line">    403 Forbidden 服务器已经理解请求，但是拒绝执行，比如访问了没有权限的目录。</span><br><span class="line">    404 Not Found 服务器没有找到所请求的资源</span><br><span class="line">5xx 服务器内部错误</span><br><span class="line">	500 Internal Server Error ：服务器正在执行请求时发生错误。</span><br><span class="line">	503 Service Unavailable ：服务器暂时处于超负载或正在进行停机维护，现在无法处理请求。</span><br></pre></td></tr></table></figure>
+<h4 id="介绍一下https协议"><a href="#介绍一下https协议" class="headerlink" title="介绍一下https协议"></a>介绍一下https协议</h4><ul>
+<li>https对消息进行了加密，还用证书来保证服务器不被冒充。</li>
+<li>首先了解两种密码体系，非对称加密，双方使用不同的密钥，计算量大，也更安全。对称加密计算量小，相对速度更快。</li>
+<li>https是首先让双方通过非对称加密来交换一个密钥，之后用这个密钥对消息进行对称加密。</li>
+<li>在执行非对称加密时，客户端需要获取服务器的公钥，这个需要通过证书来保证公钥传输的安全。</li>
+<li>证书就是ca机构，用自己的私钥对服务器的公钥加密，客户端用ca的公钥解密后，获取服务器公钥。</li>
+<li><a href="https://blog.csdn.net/guolin_blog/article/details/104546558?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.compare&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.compare" target="_blank" rel="noopener">写一篇最好懂的HTTPS讲解</a></li>
+<li><a href="http://taowusheng.cn/2018/10/29/20181029%20SSL%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/">SSL协议的基本原理</a></li>
+</ul>
+<h4 id="ping命令的原理"><a href="#ping命令的原理" class="headerlink" title="ping命令的原理"></a>ping命令的原理</h4><p><a href="http://taowusheng.cn/2020/01/06/20200106%20%E5%88%A9%E7%94%A8ICMPv4%E5%8D%8F%E8%AE%AE%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAping%E7%A8%8B%E5%BA%8F/">利用ICMPv4协议实现一个ping程序</a></p>
+<h4 id="点击网页上的登录按钮后-发生了什么"><a href="#点击网页上的登录按钮后-发生了什么" class="headerlink" title="点击网页上的登录按钮后,发生了什么"></a>点击网页上的登录按钮后,发生了什么</h4><ul>
+<li>DNS解析<br>　　1.首先查找浏览器缓存，看是否有该网址对应的IP，如果有则返回IP，否则再去调用操作系统缓存。<br>　　2.如果没找到，再发送请求到路由器上，如果有则返回。<br>　　3.仍然没找到，请求就会被发送到DNS服务器。<br>  4.DNS的查询过程分别经过：浏览器缓存-操作系统缓存-路由器缓存-本地域名服务器-根域名服务器。</li>
+<li>TCP连接<br>　　向获取到的ip进行三次握手，获取tcp连接。</li>
+<li>浏览器发送HTTP请求<br>　　1.浏览器构造http请求，然后发送到指定ip。<br>　　2.http请求会分别被加上tcp头、ip头，然后发送出去。</li>
+<li>服务器接收请求并回复<br>　　1.一层层把消息头去掉之后，获取到http请求。<br>　　2.然后执行相应的请求，再进行回复。</li>
+<li>浏览器接收到html，进行解析和渲染页面</li>
+<li>四次挥手，关闭tcp连接</li>
+</ul>
+<h4 id="系统收到数据到交付应用程序的整个过程"><a href="#系统收到数据到交付应用程序的整个过程" class="headerlink" title="系统收到数据到交付应用程序的整个过程"></a>系统收到数据到交付应用程序的整个过程</h4><p>？？</p>
+<h4 id="应用层协议常用的端口"><a href="#应用层协议常用的端口" class="headerlink" title="应用层协议常用的端口"></a>应用层协议常用的端口</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">文件传输协议            ftp     21</span><br><span class="line">安全shell               ssh     22</span><br><span class="line">远程登录协议            telnet  23</span><br><span class="line">传输邮件服务            smtp    25</span><br><span class="line">文本传输协议            http    80</span><br><span class="line">访问远程服务器上的邮件  pop3    110</span><br><span class="line">安全的超文本传输服务    https   443</span><br><span class="line">                        dns     53</span><br></pre></td></tr></table></figure>
+<h4 id="建立TCP服务器的系统调用"><a href="#建立TCP服务器的系统调用" class="headerlink" title="建立TCP服务器的系统调用"></a>建立TCP服务器的系统调用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">tcp client      tcp server</span><br><span class="line">socket          socket</span><br><span class="line">bind            bind</span><br><span class="line">connect         listen</span><br><span class="line">send            accept</span><br><span class="line">receive         receive</span><br><span class="line">                send</span><br><span class="line">========================</span><br><span class="line">int socket(int protofamily, int so_type, int protocol);</span><br><span class="line">int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);</span><br><span class="line">int listen(int sockfd, int backlog);</span><br><span class="line">int connect(int sockfd, struct sockaddr *serv_addr, int addrlen);</span><br><span class="line">int accept (int sockfd, struct sockaddr *addr, socklen_t *addrlen);</span><br><span class="line">int send(int sockfd, const void *msg, int len, int flags);</span><br><span class="line">int recv(int sockfd, void *buf, int len, unsigned int flags);</span><br></pre></td></tr></table></figure>
+<h4 id="one-thread-one-loop思想"><a href="#one-thread-one-loop思想" class="headerlink" title="one thread one loop思想"></a>one thread one loop思想</h4><p>翻译成中文的意思就是一个线程里面一个循环。一般可以让线程A接收新连接，然后将新连接的socket传给B1、B2、B3…来负责收发数据。一般的代码结构如下：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">thread_func</span><span class="params">(<span class="keyword">void</span>* thread_arg)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//这里做一些需要的初始化工作</span></span><br><span class="line">	<span class="keyword">while</span> (退出标志)&#123;</span><br><span class="line">		<span class="comment">//步骤一：利用select/poll/epoll等IO复用技术，分离读写事件</span></span><br><span class="line">		<span class="comment">//步骤二：处理读事件或写事件</span></span><br><span class="line">		<span class="comment">//步骤三：做一些其他的事情</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//这里做一些需要的清理</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>#### </p>
+<!-- 
+category : ACM_&_Algorithm CTF C_C++ JAVA Linux Linux_Kernel 
+SQL Cryptography Life Reading Thought Security Unknown Tools  
+Network Qt Trusted_Computing
+　　←全角空格
+![keyboard](https://img-bter)   ←图片
+[keyboard](https://img-bter)    ←超链接
+
+-->
+<p>欢迎与我分享你的看法。<br>转载请注明出处：<a href="http://taowusheng.cn/">http://taowusheng.cn/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://taowusheng.cn/2020/08/03/20200803 基础知识_网络/" data-id="cl9smuynb00po9boiaiu42508" class="article-share-link">Share</a>
+      
+      
+        <a href="/2020/08/03/20200803 基础知识_网络/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2020/08/03/20200803 基础知识_网络/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Summary/">Summary</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机网络/">计算机网络</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/08/04/20200804 基础知识_操作系统/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          基础知识_操作系统
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/08/02/20200802 基础知识_Cpp/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">基础知识_Cpp</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM-Algorithm/">ACM_Algorithm</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Assembly/">Assembly</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/C-Cpp/">C_Cpp</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Cryptography/">Cryptography</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/English/">English</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JAVA/">JAVA</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux-Kernel/">Linux_Kernel</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Middleware/">Middleware</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network/">Network</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Network-Programming/">Network_Programming</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Notes/">Notes</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Qt/">Qt</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading/">Reading</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading-Source/">Reading_Source</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Security/">Security</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Summary/">Summary</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/System-Programming/">System_Programming</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Thought/">Thought</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Translation/">Translation</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Trusted-Computing/">Trusted_Computing</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Unknown/">Unknown</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">reading</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/01背包/" style="font-size: 10px;">01背包</a> <a href="/tags/2017/" style="font-size: 10px;">2017</a> <a href="/tags/2018/" style="font-size: 11.11px;">2018</a> <a href="/tags/2021/" style="font-size: 10px;">2021</a> <a href="/tags/ACM/" style="font-size: 13.33px;">ACM</a> <a href="/tags/ACM-Algorithm/" style="font-size: 10px;">ACM_Algorithm</a> <a href="/tags/Algorithm/" style="font-size: 10px;">Algorithm</a> <a href="/tags/Assembly/" style="font-size: 11.11px;">Assembly</a> <a href="/tags/C/" style="font-size: 11.11px;">C</a> <a href="/tags/C/" style="font-size: 12.22px;">C++</a> <a href="/tags/CTF/" style="font-size: 10px;">CTF</a> <a href="/tags/C-Cpp/" style="font-size: 12.22px;">C_Cpp</a> <a href="/tags/California-Dreaming/" style="font-size: 10px;">California_Dreaming</a> <a href="/tags/Cpp/" style="font-size: 14.44px;">Cpp</a> <a href="/tags/DES/" style="font-size: 10px;">DES</a> <a href="/tags/EDK/" style="font-size: 10px;">EDK</a> <a href="/tags/Effective-Cpp/" style="font-size: 10px;">Effective_Cpp</a> <a href="/tags/English/" style="font-size: 11.11px;">English</a> <a href="/tags/GMP/" style="font-size: 10px;">GMP</a> <a href="/tags/GUI/" style="font-size: 10px;">GUI</a> <a href="/tags/IO/" style="font-size: 10px;">IO</a> <a href="/tags/IO复用/" style="font-size: 10px;">IO复用</a> <a href="/tags/IO多路复用/" style="font-size: 10px;">IO多路复用</a> <a href="/tags/JAVA/" style="font-size: 16.67px;">JAVA</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/JsonCpp/" style="font-size: 10px;">JsonCpp</a> <a href="/tags/KGDB/" style="font-size: 10px;">KGDB</a> <a href="/tags/LeetCode/" style="font-size: 10px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 13.33px;">Linux</a> <a href="/tags/Linux-Kernel/" style="font-size: 13.33px;">Linux_Kernel</a> <a href="/tags/Middleware/" style="font-size: 10px;">Middleware</a> <a href="/tags/Network/" style="font-size: 11.11px;">Network</a> <a href="/tags/Network-Programming/" style="font-size: 13.33px;">Network_Programming</a> <a href="/tags/Python/" style="font-size: 15.56px;">Python</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/RSA/" style="font-size: 10px;">RSA</a> <a href="/tags/SELinux/" style="font-size: 10px;">SELinux</a> <a href="/tags/SHA/" style="font-size: 10px;">SHA</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/STL/" style="font-size: 14.44px;">STL</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Summary/" style="font-size: 17.78px;">Summary</a> <a href="/tags/System-Programming/" style="font-size: 11.11px;">System_Programming</a> <a href="/tags/TSS/" style="font-size: 10px;">TSS</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/Tools/" style="font-size: 10px;">Tools</a> <a href="/tags/Translation/" style="font-size: 10px;">Translation</a> <a href="/tags/UDK/" style="font-size: 10px;">UDK</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/UEFI/" style="font-size: 10px;">UEFI</a> <a href="/tags/VMware/" style="font-size: 11.11px;">VMware</a> <a href="/tags/apt/" style="font-size: 10px;">apt</a> <a href="/tags/audit2allow/" style="font-size: 10px;">audit2allow</a> <a href="/tags/auth/" style="font-size: 10px;">auth</a> <a href="/tags/bellman/" style="font-size: 10px;">bellman</a> <a href="/tags/bitmap/" style="font-size: 10px;">bitmap</a> <a href="/tags/bjut/" style="font-size: 10px;">bjut</a> <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/concept/" style="font-size: 12.22px;">concept</a> <a href="/tags/cpp/" style="font-size: 15.56px;">cpp</a> <a href="/tags/cryptography/" style="font-size: 11.11px;">cryptography</a> <a href="/tags/curses/" style="font-size: 10px;">curses</a> <a href="/tags/deque/" style="font-size: 10px;">deque</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/dpkg/" style="font-size: 10px;">dpkg</a> <a href="/tags/echo/" style="font-size: 10px;">echo</a> <a href="/tags/emulator/" style="font-size: 10px;">emulator</a> <a href="/tags/english/" style="font-size: 12.22px;">english</a> <a href="/tags/epoll/" style="font-size: 10px;">epoll</a> <a href="/tags/floyd/" style="font-size: 10px;">floyd</a> <a href="/tags/g/" style="font-size: 10px;">g++</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/gdb/" style="font-size: 11.11px;">gdb</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/ip/" style="font-size: 11.11px;">ip</a> <a href="/tags/jdbc/" style="font-size: 10px;">jdbc</a> <a href="/tags/kernal/" style="font-size: 10px;">kernal</a> <a href="/tags/life/" style="font-size: 10px;">life</a> <a href="/tags/linus/" style="font-size: 10px;">linus</a> <a href="/tags/linux/" style="font-size: 18.89px;">linux</a> <a href="/tags/linux内核/" style="font-size: 10px;">linux内核</a> <a href="/tags/list/" style="font-size: 10px;">list</a> <a href="/tags/mail服务器/" style="font-size: 10px;">mail服务器</a> <a href="/tags/map/" style="font-size: 11.11px;">map</a> <a href="/tags/md5注入/" style="font-size: 10px;">md5注入</a> <a href="/tags/memory/" style="font-size: 10px;">memory</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/new/" style="font-size: 12.22px;">new</a> <a href="/tags/notes/" style="font-size: 12.22px;">notes</a> <a href="/tags/openstack/" style="font-size: 10px;">openstack</a> <a href="/tags/pam/" style="font-size: 10px;">pam</a> <a href="/tags/patch/" style="font-size: 10px;">patch</a> <a href="/tags/ping/" style="font-size: 10px;">ping</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/poll/" style="font-size: 10px;">poll</a> <a href="/tags/postfix/" style="font-size: 10px;">postfix</a> <a href="/tags/protobuf/" style="font-size: 10px;">protobuf</a> <a href="/tags/qemu/" style="font-size: 10px;">qemu</a> <a href="/tags/queue/" style="font-size: 10px;">queue</a> <a href="/tags/reading/" style="font-size: 20px;">reading</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/rodata/" style="font-size: 10px;">rodata</a> <a href="/tags/select/" style="font-size: 10px;">select</a> <a href="/tags/selinux/" style="font-size: 10px;">selinux</a> <a href="/tags/set/" style="font-size: 10px;">set</a> <a href="/tags/stack/" style="font-size: 10px;">stack</a> <a href="/tags/thought/" style="font-size: 12.22px;">thought</a> <a href="/tags/tinythhpd/" style="font-size: 10px;">tinythhpd</a> <a href="/tags/tinyxml/" style="font-size: 10px;">tinyxml</a> <a href="/tags/tools/" style="font-size: 12.22px;">tools</a> <a href="/tags/tpm/" style="font-size: 10px;">tpm</a> <a href="/tags/traits/" style="font-size: 10px;">traits</a> <a href="/tags/trousers/" style="font-size: 10px;">trousers</a> <a href="/tags/trusted-computing/" style="font-size: 10px;">trusted_computing</a> <a href="/tags/unix编程实践/" style="font-size: 10px;">unix编程实践</a> <a href="/tags/valgrind/" style="font-size: 10px;">valgrind</a> <a href="/tags/vector/" style="font-size: 10px;">vector</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vs2013/" style="font-size: 10px;">vs2013</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web服务器/" style="font-size: 10px;">web服务器</a> <a href="/tags/win10/" style="font-size: 10px;">win10</a> <a href="/tags/xml/" style="font-size: 10px;">xml</a> <a href="/tags/yum/" style="font-size: 10px;">yum</a> <a href="/tags/世界上最遥远的距离/" style="font-size: 10px;">世界上最遥远的距离</a> <a href="/tags/个人成长/" style="font-size: 11.11px;">个人成长</a> <a href="/tags/书单/" style="font-size: 12.22px;">书单</a> <a href="/tags/书摘/" style="font-size: 10px;">书摘</a> <a href="/tags/事件驱动/" style="font-size: 10px;">事件驱动</a> <a href="/tags/产品/" style="font-size: 10px;">产品</a> <a href="/tags/代码段/" style="font-size: 10px;">代码段</a> <a href="/tags/优先级/" style="font-size: 10px;">优先级</a> <a href="/tags/位向量/" style="font-size: 10px;">位向量</a> <a href="/tags/位图/" style="font-size: 10px;">位图</a> <a href="/tags/信号/" style="font-size: 10px;">信号</a> <a href="/tags/公钥/" style="font-size: 10px;">公钥</a> <a href="/tags/公钥密码/" style="font-size: 10px;">公钥密码</a> <a href="/tags/内存池/" style="font-size: 10px;">内存池</a> <a href="/tags/内存泄漏/" style="font-size: 10px;">内存泄漏</a> <a href="/tags/内存管理/" style="font-size: 10px;">内存管理</a> <a href="/tags/内核/" style="font-size: 10px;">内核</a> <a href="/tags/内核模块/" style="font-size: 10px;">内核模块</a> <a href="/tags/刘未鹏/" style="font-size: 11.11px;">刘未鹏</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/区间和/" style="font-size: 10px;">区间和</a> <a href="/tags/单例模式/" style="font-size: 10px;">单例模式</a> <a href="/tags/参考策略/" style="font-size: 10px;">参考策略</a> <a href="/tags/可信计算/" style="font-size: 11.11px;">可信计算</a> <a href="/tags/后台开发/" style="font-size: 10px;">后台开发</a> <a href="/tags/回显服务器/" style="font-size: 10px;">回显服务器</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/学习之路/" style="font-size: 10px;">学习之路</a> <a href="/tags/学习计划/" style="font-size: 10px;">学习计划</a> <a href="/tags/容器/" style="font-size: 10px;">容器</a> <a href="/tags/密码体制/" style="font-size: 10px;">密码体制</a> <a href="/tags/密码学/" style="font-size: 12.22px;">密码学</a> <a href="/tags/富爸爸穷爸爸/" style="font-size: 10px;">富爸爸穷爸爸</a> <a href="/tags/对称密码/" style="font-size: 10px;">对称密码</a> <a href="/tags/川藏线/" style="font-size: 10px;">川藏线</a> <a href="/tags/年终总结/" style="font-size: 13.33px;">年终总结</a> <a href="/tags/广告/" style="font-size: 10px;">广告</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a> <a href="/tags/异步/" style="font-size: 10px;">异步</a> <a href="/tags/心智/" style="font-size: 10px;">心智</a> <a href="/tags/心理学/" style="font-size: 10px;">心理学</a> <a href="/tags/思维导图/" style="font-size: 10px;">思维导图</a> <a href="/tags/思考/" style="font-size: 12.22px;">思考</a> <a href="/tags/总结/" style="font-size: 15.56px;">总结</a> <a href="/tags/我是一只IT小小鸟/" style="font-size: 10px;">我是一只IT小小鸟</a> <a href="/tags/投资/" style="font-size: 10px;">投资</a> <a href="/tags/投资理财/" style="font-size: 11.11px;">投资理财</a> <a href="/tags/指数基金/" style="font-size: 10px;">指数基金</a> <a href="/tags/挑战程序设计竞赛/" style="font-size: 11.11px;">挑战程序设计竞赛</a> <a href="/tags/提问的智慧/" style="font-size: 10px;">提问的智慧</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/摄影/" style="font-size: 11.11px;">摄影</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/数据库/" style="font-size: 12.22px;">数据库</a> <a href="/tags/文本查询/" style="font-size: 10px;">文本查询</a> <a href="/tags/暗时间/" style="font-size: 10px;">暗时间</a> <a href="/tags/最短路径算法/" style="font-size: 10px;">最短路径算法</a> <a href="/tags/析构函数/" style="font-size: 10px;">析构函数</a> <a href="/tags/查理芒格/" style="font-size: 10px;">查理芒格</a> <a href="/tags/毕业旅行/" style="font-size: 10px;">毕业旅行</a> <a href="/tags/汇编/" style="font-size: 10px;">汇编</a> <a href="/tags/汇编语言/" style="font-size: 10px;">汇编语言</a> <a href="/tags/源码阅读/" style="font-size: 12.22px;">源码阅读</a> <a href="/tags/爬虫/" style="font-size: 10px;">爬虫</a> <a href="/tags/理财/" style="font-size: 10px;">理财</a> <a href="/tags/生活随笔/" style="font-size: 10px;">生活随笔</a> <a href="/tags/知识点/" style="font-size: 10px;">知识点</a> <a href="/tags/碎碎念/" style="font-size: 10px;">碎碎念</a> <a href="/tags/私钥/" style="font-size: 10px;">私钥</a> <a href="/tags/秋招/" style="font-size: 10px;">秋招</a> <a href="/tags/程序员/" style="font-size: 11.11px;">程序员</a> <a href="/tags/立flag/" style="font-size: 10px;">立flag</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/笔试/" style="font-size: 10px;">笔试</a> <a href="/tags/算法/" style="font-size: 11.11px;">算法</a> <a href="/tags/算法题/" style="font-size: 10px;">算法题</a> <a href="/tags/系统编程/" style="font-size: 11.11px;">系统编程</a> <a href="/tags/红黑树/" style="font-size: 10px;">红黑树</a> <a href="/tags/线段树/" style="font-size: 10px;">线段树</a> <a href="/tags/线程池/" style="font-size: 10px;">线程池</a> <a href="/tags/经历/" style="font-size: 10px;">经历</a> <a href="/tags/网络编程/" style="font-size: 12.22px;">网络编程</a> <a href="/tags/翻译/" style="font-size: 10px;">翻译</a> <a href="/tags/考研/" style="font-size: 10px;">考研</a> <a href="/tags/虚函数/" style="font-size: 10px;">虚函数</a> <a href="/tags/虚基类/" style="font-size: 10px;">虚基类</a> <a href="/tags/计划/" style="font-size: 10px;">计划</a> <a href="/tags/计时器/" style="font-size: 10px;">计时器</a> <a href="/tags/计算机/" style="font-size: 10px;">计算机</a> <a href="/tags/计算机技术/" style="font-size: 10px;">计算机技术</a> <a href="/tags/计算机网络/" style="font-size: 10px;">计算机网络</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a> <a href="/tags/读书/" style="font-size: 10px;">读书</a> <a href="/tags/读书笔记/" style="font-size: 13.33px;">读书笔记</a> <a href="/tags/调试/" style="font-size: 10px;">调试</a> <a href="/tags/进程/" style="font-size: 10px;">进程</a> <a href="/tags/重定向/" style="font-size: 10px;">重定向</a> <a href="/tags/阅读/" style="font-size: 10px;">阅读</a> <a href="/tags/阻塞/" style="font-size: 10px;">阻塞</a> <a href="/tags/面向对象/" style="font-size: 11.11px;">面向对象</a> <a href="/tags/面向过程/" style="font-size: 10px;">面向过程</a> <a href="/tags/预处理/" style="font-size: 10px;">预处理</a> <a href="/tags/骑行/" style="font-size: 10px;">骑行</a> <a href="/tags/黑客与画家/" style="font-size: 10px;">黑客与画家</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2029/11/">November 2029</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2029/11/11/20291111 坚持阅读/">坚持阅读</a>
+          </li>
+        
+          <li>
+            <a href="/2022/10/27/20221027 北京香山公园一日游/">北京香山公园一日游</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/31/20211231 2021年终总结/">2021年终总结</a>
+          </li>
+        
+          <li>
+            <a href="/2021/10/11/20211011 我的毕业旅行/">我的毕业旅行</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/31/20201231 2020年终总结/">2020年终总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">visiters</h3>
+    <div class="widget">
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=534a4dn9fi8&amp;m=0c&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=0&amp;cw=ffffff&amp;cb=000000" async="async"></script>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016-2021 Tao WuSheng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/links" class="mobile-nav-link">Links</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'true' == true;
+    var verify = 'true' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "IwNQge9YG0FIzuQKmRVrBgCL-gzGzoHsz",
+        appKey: "IP8hmPLhobMvvjpkfm1OKzuv",
+        placeholder: "Please leave your footprints...",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
+
+  </div>
+</body>
+</html>
